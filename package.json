@@ -19,7 +19,8 @@
     "standard": "^10.0.3"
   },
   "standard": {
-    "globals": [ "$" ]
+    "globals": [
+      "$"
+    ]
   }
-
 }
