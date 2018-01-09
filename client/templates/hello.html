@@ -5,5 +5,15 @@
   <select id="months"></select>
   <select id="years"></select>
   <button>Click Me</button>
-  <p>You've are {{counter}}.</p>
+  <p>You are {{counter}}.</p>
+
+  {{#if _between counter 18 30}}
+      <p>You are over 18 and younger then 30</p>
+  {{/if}}
+  {{#if _between counter 30 55}}
+      <p>You are over 30 and younger then 55</p>
+  {{/if}}
+  {{#if _greaterThan counter 55}}
+      <p>You are over 55</p>
+  {{/if}}
 </template>
