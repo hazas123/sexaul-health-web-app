@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My first X3DOM page</title>
+    <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'/>
+</head>
+<body>
+<h1>Using the Inline Node</h1>
+
+
+<div id="NewArea"> </div>
+<script type="text/javascript">
+    function redNose()
+    {
+console.log("click");
+
+if(document.getElementById('Ball__MA_Red').getAttribute('diffuseColor')!= '0 5 0')
+    document.getElementById('Ball__MA_Red').setAttribute('diffuseColor', '0 5 0');
+else
+    document.getElementById('Ball__MA_Red').setAttribute('diffuseColor', '9 0 0'); }
+
+
+function MonkeyHead() {
+
+console.log("moneyclick");
+if(document.getElementById('Ball__MA_Material_001').getAttribute('diffuseColor')!= '0 5 0')
+    document.getElementById('Ball__MA_Material_001').setAttribute('diffuseColor', '0 5 0');
+else
+    document.getElementById('Ball__MA_Material_001').setAttribute('diffuseColor', '9 0 0');
+
+
+
+}
+
+
+function CreateAreaTest() {
+
+  var newAreaHolder = document.getElementsById('NewArea');
+
+  newAreaHolder.innerHTML = "Paragraph changed!";
+
+}
+
+</script>
+<p>
+    This example includes an external x3d scene. You can even manipulate its content during runtime.
+</p>
+<x3d width='500px' height='400px' showStat="true">
+    <scene>
+        <viewpoint position="-1.94639 1.79771 -2.89271" orientation="0.03886 0.99185 0.12133 3.75685"></viewpoint>
+            <Inline  nameSpaceName="Ball" mapDEFToID="true"
+            url="/../Images/Test6_Head.x3d"  ></Inline>
+    </scene>
+</x3d>
+</body>
+</html>
