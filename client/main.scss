@@ -1,0 +1,21 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+$primaryColor: rgb(255, 69, 69);
+$secondaryColor: rgb(0, 0, 255);
+$link-color: rgb(0, 0, 255);
+
+a {
+
+    color: $primaryColor;
+    transition: all 225ms ease 0ms;
+
+    &:hover,
+    &:focus {
+        color: lighten($link-color, 50%);
+    }
+}
+
+h1 {
+  color: $secondaryColor;
+}
