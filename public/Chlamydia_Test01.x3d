@@ -50,7 +50,7 @@
 			           rotation="0.000000 0.000000 0.000000 0.000000"
 			           >
 				<Group DEF="group_ME_typeMesh2Mesh">
-					<Shape onclick="ChlamydiaClick()" >
+					<Shape onclick="redNose()" >
 						<Appearance>
 							<Material DEF="MA_typeBlinn1"
 							          diffuseColor="1.000 1.000 1.000"

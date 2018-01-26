@@ -29,23 +29,30 @@
 <button onclick="document.getElementById('ChlamydiaModel__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');">Right</button>
 <button onclick="document.getElementById('front').setAttribute('set_bind','true');">front </button>
 
+{{#if _greaterThan counter 55}}
+    <p>You are over 55</p>
+{{/if}}
+
+
 <script type="text/javascript">
 
-function ChlamydiaClick() {
-  console.log("clickmedone");
+function redNose(){
 
-console.log(document.getElementById('clickmedone').innerHMTL);
-  document.getElementById('clickmedone').innerHMTL = 'You are looking at the symptoms for Chlamydia';
+  console.log("redNose");
 
+  if(document.getElementById('ChlamydiaModel__MA_typeBlinn1').getAttribute('diffuseColor')!= '0 5 0'){
+    document.getElementById('ChlamydiaModel__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
+      areaChangeHold = true;
+      console.log(areaChangeHold);}
 
+        else{
+    document.getElementById('ChlamydiaModel__MA_typeBlinn1').setAttribute('diffuseColor', '9 0 0');
 
-//document.getElementById('clickmedone').childNodes[0].text;
-
-  console.log(document.getElementById('clickmedone').innerHMTL);
+areaChangeHold = false;
+console.log(areaChangeHold);
 }
-
-
-
+    //console.log("countx")
+    }
 
 
 </script>

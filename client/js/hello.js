@@ -7,7 +7,8 @@ Template.hello.onCreated(function helloOnCreated () {
   // counter starts at 0
   this.counter = new ReactiveVar(0)
   this.areaChange = new ReactiveVar()
-
+  var counter22 = "data"
+  console.log(counter22)
   $(function () {
     var i
     for (i = new Date().getFullYear(); i > 1900; i--) {
@@ -40,8 +41,8 @@ Template.hello.onCreated(function helloOnCreated () {
     return new Date(year, month, 0).getDate()
   }
 
-  var x = document.getElementById('ChlamydiaModel__MA_typeBlinn1')
-  console.log(x)
+  //  var x = document.getElementById('ChlamydiaModel__MA_typeBlinn1')
+  //  console.log(x)
 })
 
 Template.hello.helpers({
@@ -69,4 +70,5 @@ Template.hello.events({
   'click x' (event, instance) {
     instance.areaChange.set('You are looking at the symptoms for Chlamydia')
   }
+
 })
