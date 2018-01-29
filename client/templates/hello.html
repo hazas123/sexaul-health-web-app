@@ -9,6 +9,7 @@
 
   {{#if _between counter 18 30}}
       <p>You are over 18 and younger then 30</p>
+      {{> Chlamydia}}
   {{/if}}
   {{#if _between counter 30 55}}
       <p>You are over 30 and younger then 55</p>
@@ -16,47 +17,5 @@
   {{#if _greaterThan counter 55}}
       <p>You are over 55</p>
   {{/if}}
-
-  <x3d width='400px' height='600px' showStat="true" >
-    <scene>    <!-- -0.93 -0.36 -0.01 0.00 -->
-        <viewpoint  position="-0.02427 0.95329 -2.79608"  orientation='-0.01451 1.0 0.00319 3.15833'></viewpoint>
-        <Viewpoint id="front" position="-0.07427 0.95329 -2.79608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera"></Viewpoint>
-        <Viewpoint id="right" position="-2.43383 1.07351 -1.28700" orientation="-0.00318 -0.99950 -0.03159 2.06609" description="camera"></Viewpoint>
-
-            <Transform><inline  nameSpaceName="ChlamydiaModel" mapDEFToID="true" url="./Chlamydia_Test01.x3d"  ></inline></Transform>
-    </scene>
-</x3d>
-<button onclick="document.getElementById('ChlamydiaModel__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');">Right</button>
-<button onclick="document.getElementById('front').setAttribute('set_bind','true');">front </button>
-
-{{#if _greaterThan counter 55}}
-    <p>You are over 55</p>
-{{/if}}
-
-
-<script type="text/javascript">
-
-function redNose(){
-
-  console.log("redNose");
-
-  if(document.getElementById('ChlamydiaModel__MA_typeBlinn1').getAttribute('diffuseColor')!= '0 5 0'){
-    document.getElementById('ChlamydiaModel__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
-      areaChangeHold = true;
-      console.log(areaChangeHold);}
-
-        else{
-    document.getElementById('ChlamydiaModel__MA_typeBlinn1').setAttribute('diffuseColor', '9 0 0');
-
-areaChangeHold = false;
-console.log(areaChangeHold);
-}
-    //console.log("countx")
-    }
-
-
-</script>
-
-
 
 </template>
