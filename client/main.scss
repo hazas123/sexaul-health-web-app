@@ -1,9 +1,19 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-
+//@import '../node_modules/font-awesome/scss/font-awesome.scss';
 
 $primaryColor: rgb(255, 69, 69);
 $secondaryColor: rgb(0, 0, 255);
 $link-color: rgb(0, 0, 255);
+
+body, html {
+    height: 100%;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Slab", sans-serif;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    letter-spacing: 0.05rem;
+}
 
 a {
 
@@ -18,4 +28,147 @@ a {
 
 h1 {
   color: $secondaryColor;
+}
+
+//=== Drawing effect
+
+@mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+  box-shadow: inset 0 0 0 $width $color;
+  color: $color;
+  transition: color $duration $duration/3;
+  position: relative;
+
+  &::before,
+  &::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0; height: 0;
+
+    #{$vertical}: 0;
+    #{$horizontal}: 0;
+  }
+
+  &::before {
+    $h-side: if($horizontal == 'left', 'right', 'left');
+
+    border-#{$vertical}-width: $width;
+    border-#{$h-side}-width: $width;
+  }
+
+  &::after {
+    $v-side: if($vertical == 'top', 'bottom', 'top');
+
+    border-#{$v-side}-width: $width;
+    border-#{$horizontal}-width: $width;
+  }
+
+  &:hover {
+    color: $hover;
+
+    &::before,
+    &::after {
+      border-color: $hover;
+      transition: border-color 0s, width $duration, height $duration;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before { transition-delay: 0s, 0s, $duration; }
+
+    &::after { transition-delay: 0s, $duration, 0s; }
+  }
+}
+
+.draw-border {
+  @include btn-border-drawing(#58afd1, #ffe593, 4px, bottom, right);
+}
+
+//=== Button styling, semi-ignore
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+
+
+  &:focus { outline: 2px dotted #55d7dc; }
+}
+
+/* The hero image */
+.full-image {
+    /* The image used */
+    background-image: url("./loading-gif.gif");
+
+    /* Set a specific height */
+    height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.image-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.wrapper {
+    min-height:100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#row1 {
+    background-color: green;
+    flex:2;
+    display: flex;
+    justify-content: center;
+
+}
+#col1 {
+    background-color: yellow;
+    flex: 0 0 240px;
+    margin: 25px 25px 25px 25px;
+    justify-content: center;
+}
+#col2 {
+    background-color: orange;
+    flex: 0 0 240px;
+    margin: 25px 25px 25px 25px;
+}
+#col3 {
+    background-color: purple;
+    flex: 0 0 240px;
+    margin: 25px 25px 25px 25px;
+}
+#col4 {
+    background-color: blue;
+    flex: 0 0 240px;
+    margin: 25px 25px 25px 25px;
+}
+#row2 {
+    background-color: red;
+    display: flex;
+    flex: .2;
+    justify-content: center;
+}
+#col5 {
+    background-color: pink;
+    flex: 0 0 80%;
+    margin: 25px 25px 25px 25px;
 }
