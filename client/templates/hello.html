@@ -9,6 +9,13 @@
 
   {{#if _between counter 18 30}}
       <p>You are over 18 and younger then 30</p>
+{{> x3dLinks}}      
+{{> Chlamydia}}
+
+
+
+
+
   {{/if}}
   {{#if _between counter 30 55}}
       <p>You are over 30 and younger then 55</p>
@@ -16,12 +23,5 @@
   {{#if _greaterThan counter 55}}
       <p>You are over 55</p>
   {{/if}}
-
-  <x3d width='500px' height='400px' showStat="true">
-    <scene>
-        <viewpoint position="-1.94639 1.79771 -2.89271" orientation="0.03886 0.99185 0.12133 3.75685"></viewpoint>
-            <inline  nameSpaceName="Ball" mapDEFToID="true" url="./Test6_Head.x3d"  ></inline>
-    </scene>
-</x3d>
 
 </template>

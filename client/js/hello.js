@@ -6,7 +6,7 @@ import '../templates/hello.html'
 Template.hello.onCreated(function helloOnCreated () {
   // counter starts at 0
   this.counter = new ReactiveVar(0)
-
+  this.areaChange = new ReactiveVar()
   $(function () {
     var i
     for (i = new Date().getFullYear(); i > 1900; i--) {
