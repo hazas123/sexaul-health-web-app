@@ -4,12 +4,17 @@
 <div id="Chlam_STI" class="STIX3dHold">
 <div id="stiHolder">
 <x3d width='400px' height='600px' showStat="true" >
-  <scene>    <!-- -0.93 -0.36 -0.01 0.00 -->
+  <scene>
+    <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
       <viewpoint  position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
       <Viewpoint id="front" position="-0.07427 0.95329 -2.79608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera"></Viewpoint>
       <Viewpoint id="right" position="-2.43383 1.07351 -1.28700" orientation="-0.00318 -0.99950 -0.03159 2.06609" description="camera"></Viewpoint>
 
-          <Transform><inline  nameSpaceName="ChlamydiaModel" mapDEFToID="true" url="./Chlamydia_Test01.x3d"  ></inline></Transform>
+      <Viewpoint id="symptom1Area" position="-0.00427 0.85329 -0.69608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+      <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
+          <Transform><inline  nameSpaceName="ChlamydiaModel" mapDEFToID="true" url="./Woman_with_fruit_Export_04.x3d"  ></inline>
+
+          </Transform>
   </scene>
 </x3d></div>
 <div id="STIoptionsChlam" class="STIX3dOptions">
@@ -17,7 +22,9 @@
 <button onclick="cameraChange('front')">front</button>
 <button onclick="cameraChange('right')"  >right</button>
 
-<button id="symptom1Chl" onclick="symptom1()">Symptom 1</button>
+<!--<button onclick="cameraChange('right')"  >right</button> -->
+
+<button id="symptom1Chl" onclick="symptomzoom('symptom1Area')">Symptom 1</button>
 
 
 </div></div>
@@ -25,6 +32,11 @@
 <script type="text/javascript">
 
 
+function symptomzoom(symptoms) {
+document.getElementById(symptoms).setAttribute('set_bind','true');
+
+
+}
 
 function cameraChange(Camera) {
 document.getElementById(Camera).setAttribute('set_bind','true');
