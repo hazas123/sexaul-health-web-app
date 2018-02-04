@@ -1,10 +1,36 @@
 <template name="loadingScreen">
 
+
+
+
+<div id="Hold">
+
+
   <div class="full-image">
-  <div class="image-content">
-    
+    <div class="image-content">
+
     <p>Helping you get the information you need</p>
-    <button class="btn draw-border">Enter</button>
+    <button class="btn draw-border" onclick="ShiftLoadingScreen()">Enter</button>
+    </div>
   </div>
 </div>
+
+
+
+<script type="text/javascript">
+
+function ShiftLoadingScreen() {
+  $('#Hold').animate({
+		'marginLeft' : "-=100vw"},4000);
+
+document.body.style.overflowY = "visible";
+
+//hey
+};
+
+
+
+</script>
+
+
 </template>

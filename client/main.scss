@@ -1,6 +1,12 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 //@import '../node_modules/font-awesome/scss/font-awesome.scss';
 
+
+
+
+
+
+
 $primaryColor: rgb(255, 69, 69);
 $secondaryColor: rgb(0, 0, 255);
 $link-color: rgb(0, 0, 255);
@@ -13,7 +19,13 @@ body, html {
     font-family: "Roboto Slab", sans-serif;
     font: 700 1.2rem 'Roboto Slab', sans-serif;
     letter-spacing: 0.05rem;
+
 }
+
+body {
+  overflow: hidden;
+}
+
 
 a {
 
@@ -113,7 +125,42 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    left: 0px;
+
 }
+
+
+#Hold {
+
+height: 100vh;
+width: 100vw;
+-webkit-transition: left 2s;
+z-index: 1;
+
+}
+
+
+#choiceHoldMain {
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+
+
+.choicehold {
+  position: relative;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+
+
+
+
+
+
 
 /* Place text in the middle of the image */
 .image-content {
@@ -124,6 +171,8 @@ h1 {
     transform: translate(-50%, -50%);
     color: white;
 }
+
+
 
 .wrapper {
     min-height:100%;
