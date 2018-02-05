@@ -1,0 +1,85 @@
+<template name="ChlamydiaMaleT">
+<p>
+  Chlamydia template Male
+</p>
+
+<div class="StiX3d">
+<x3d width='400px' height='600px' showStat="true" >
+  <scene>
+    <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
+    <viewpoint position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+      <viewpoint id="Reset" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+      <Viewpoint id="front" position="-0.07427 0.95329 -2.79608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera"></Viewpoint>
+      <Viewpoint id="right" position="-2.43383 1.07351 -1.28700" orientation="-0.00318 -0.99950 -0.03159 2.06609" description="camera"></Viewpoint>
+
+      <Viewpoint id="symptomArea" position="-0.00427 0.85329 -0.69608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+      <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
+          <Transform><inline  nameSpaceName="ChlamydiaModel" mapDEFToID="true" url="./Man_with_fruit_02.x3d"  ></inline>
+
+          </Transform>
+  </scene>
+</x3d></div>
+<div id="STIoptionsChlam" class="STIX3dOptions">
+
+
+    <button onclick="cameraChange('right')"  >right</button>
+
+    <button onclick="cameraChange('Reset')" >Reset</button>
+
+    <!--<button onclick="cameraChange('right')"  >right</button> -->
+
+      <button id="symptom1Chl" onclick="symptomzoom('symptomArea', 'ChlamydiaModel__MA_Man_skin', 'ChlamydiaModel__MA_Pain_Texture', 'ChlamydiaModel__MA_Pee_texture')">Symptom 1</button>
+      <button id="symptom2Chl" onclick="symptomzoom1('symptomArea', 'ChlamydiaModel__MA_Man_skin', 'ChlamydiaModel__MA_PainSwell', 'ChlamydiaModel__MA_Banana_02:lambert2')">Symptom 2</button>
+
+    </div>
+
+
+<script type="text/javascript">
+
+
+
+function ResetCamera(cameraReset) {
+  document.getElementById(cameraReset).setAttribute('set_bind','true');
+  document.getElementById('ChlamydiaModel__MA_Material_001').setAttribute('transparency', '1.0');
+}
+
+function symptomzoom(symptoms, texture1, texture2, texture3) {
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.7');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+document.getElementById(texture3).setAttribute('transparency', '0.0');
+document.getElementById("symptom2Chl").disabled = true;
+}
+
+function symptomzoom1(symptoms, texture1, texture2, texture3) {
+
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.7');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+document.getElementById(texture3).setAttribute('transparency', '1.0');
+document.getElementById("symptom1Chl").disabled = true;
+}
+
+function cameraChange(Camera) {
+document.getElementById(Camera).setAttribute('set_bind','true');
+document.getElementById('ChlamydiaModel__MA_Man_skin').setAttribute('transparency', '0.0');
+document.getElementById('ChlamydiaModel__MA_Pain_Texture').setAttribute('transparency', '1.0');
+document.getElementById('ChlamydiaModel__MA_Pee_texture').setAttribute('transparency', '1.0');
+document.getElementById('ChlamydiaModel__MA_PainSwell').setAttribute('transparency', '1.0');
+document.getElementById('ChlamydiaModel__MA_Banana_02:lambert2').setAttribute('transparency', '0.0');
+document.getElementById("symptom1Chl").disabled = false;
+document.getElementById("symptom2Chl").disabled = false;
+}
+
+//function ChlamydiaName(){
+//document.getElementById('ChlamydiaModel__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
+//document.getElementById('ChlamydiaModel__MA_typeBlinn1').setAttribute('transparency', '0.0');
+//}
+function symptom1(){
+document.getElementById('ChlamydiaModel__MA_Pain_when').setAttribute('transparency', '0.0');
+document.getElementById('ChlamydiaModel__MA_Pain_when').setAttribute('diffuseColor', '1.000 1.000 1.000');
+document.getElementById('ChlamydiaModel__MA_Red').setAttribute('diffuseColor', '1.000 0.000 0.022');
+}
+
+</script>
+</template>

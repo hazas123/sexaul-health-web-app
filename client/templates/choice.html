@@ -75,6 +75,7 @@ var clickedCol1 = false;
 var clickedCol3 = false;
 var clickedCol4 = false;
 
+//option1
 $('#checkbox1').click(function(){
 
   if (clickedCol1 == true){
@@ -86,7 +87,10 @@ $('#checkbox1').click(function(){
   }
 });
 
+//option2
 $('#checkbox3').click(function(){
+
+console.log("clicked");
 
   if (clickedCol3 == true){
     $( "#col3Options" ).removeClass( "disableItemSelect" );
@@ -97,6 +101,7 @@ $('#checkbox3').click(function(){
     }
 });
 
+//option4
 $('#checkbox4').click(function(){
 
   if (clickedCol4 == true){
