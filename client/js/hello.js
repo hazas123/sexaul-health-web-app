@@ -6,6 +6,7 @@ import { Promise } from 'meteor/promise'
 
 import '../templates/hello.html'
 import '../templates/choice.html'
+import '../templates/loadingScreen.html'
 
 Template.choice.onCreated(function choiceOnCreated () {
   // counter starts at 0
@@ -96,5 +97,5 @@ Template.choice.events({
     //     })
     //   })
     // }
-  //}
+  // }
 })
