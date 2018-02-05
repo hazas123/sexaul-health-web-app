@@ -5,14 +5,14 @@
 <div class="choiceHoldMain">
 
   <div id="choiceHoldInfo">
-      
+
 
 
   </div>
 
 
 
-
+<!-- hi -->
 
 
   <div class="choicehold">
@@ -20,10 +20,42 @@
 
       <div class="wrapper">
           <div id="row1">
-              <div id="col1">Add icons for sex</div>
-              <div id="col2">Add James age verifcation</div>
-              <div id="col3"></div>
-              <div id="col4">col4</div>
+              <div id="col1" >
+                <div id="checkbox1"> Use object</div>
+                  <div id="col1Options">
+                    <!--Add icons for sex -->
+
+                    <select>man</select>
+                    <select>Woman</select>
+                    <select>other</select>
+                    </div>
+                </div>
+              <div id="col2">
+
+
+
+
+                    <select id="days"></select>
+                    <select id="months"></select>
+                    <select id="years"></select>
+                    <button class="clickbtn">Click Me</button>
+                    <p>You are {{counter}}.</p>
+
+
+              </div>
+              <div id="col3">
+                <div id="checkbox3"> Use object</div>
+                <div id="col3Options">
+                  Hello
+                </div>
+              </div>
+              <div id="col4">
+                <div id="checkbox4"> Use object</div>
+                <div id="col4Options">
+                  Hello
+                </div>
+
+              </div>
           </div>
           <div id="row2">
             <div id="col5">col1</div>
@@ -35,6 +67,44 @@
 
 <script type="text/javascript">
 
+
+//Functions to disable options selects
+var clickedCol1 = false;
+var clickedCol3 = false;
+var clickedCol4 = false;
+
+$('#checkbox1').click(function(){
+
+  if (clickedCol1 == true){
+    $( "#col1Options" ).removeClass( "disableItemSelect" );
+    clickedCol1 = false;
+  } else {
+    $( "#col1Options" ).addClass( "disableItemSelect" );
+    clickedCol1 = true;
+  }
+});
+
+$('#checkbox3').click(function(){
+
+  if (clickedCol3 == true){
+    $( "#col3Options" ).removeClass( "disableItemSelect" );
+    clickedCol3 = false;
+  } else {
+      $( "#col3Options" ).addClass( "disableItemSelect" );
+      clickedCol3 = true;
+    }
+});
+
+$('#checkbox4').click(function(){
+
+  if (clickedCol4 == true){
+    $( "#col4Options" ).removeClass( "disableItemSelect" );
+    clickedCol4 = false;
+  } else {
+      $( "#col4Options" ).addClass( "disableItemSelect" );
+      clickedCol4 = true;
+    }
+});
 
 
 

@@ -221,3 +221,12 @@ z-index: 1;
     flex: 0 0 80%;
     margin: 25px;
 }
+
+
+
+
+/* disables choices options */
+.disableItemSelect {
+  pointer-events:none;
+  opacity: 0.3;
+}
