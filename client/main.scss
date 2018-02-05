@@ -235,3 +235,80 @@ z-index: 1;
   pointer-events:none;
   opacity: 0.3;
 }
+
+
+
+.STIMainHold{
+  margin-left: 5%;
+  margin-right: 25%;
+width: 75vw;
+
+height: 80vh;
+}
+
+
+.StiX3d{
+  height: 600px;
+  width: 400px;
+  background-color: yellow;
+  float: left;
+}
+
+.STIButtons {
+width: 30%;
+height: 100%;
+display: block;
+float: left;
+
+
+}
+
+
+
+.ButtonStylingSTI {
+margin-top: 10%;
+margin-bottom:  10%;
+background-color: #243854;
+font: 700 1.2rem 'Roboto Slab', sans-serif;
+padding-left: 10%;
+color: white;
+}
+
+
+.ButtonStylingSTI:hover {
+  background-color: blue;
+}
+
+.STISmallHeading{
+  margin-top: 10%;
+  margin-bottom:  10%;
+  background-color: transparent;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding-left: 10%;
+  font-size: 200%;
+  color: #243854;
+}
+
+.STISmallHeading:hover {
+background-color: transparent;
+
+}
+
+
+.STIInfo{
+
+}
+
+
+.STIsymptomInfoBox{
+  
+  height: 60px;
+  overflow: hidden;
+  opacity: 0.0;
+
+  -webkit-transition: opacity 2s;
+}
+
+.STIsymptomInfoBox h1 {
+  color: #243854;
+}
