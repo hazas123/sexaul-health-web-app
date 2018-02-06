@@ -296,16 +296,20 @@ background-color: transparent;
 
 
 .STIInfo{
-
+  width: 30%;
+  height: 100%;
+  float: right;
 }
 
 
 .STIsymptomInfoBox{
-  
+
   height: 60px;
   overflow: hidden;
   opacity: 0.0;
-
+  position: absolute;
+  top: 10%;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
   -webkit-transition: opacity 2s;
 }
 

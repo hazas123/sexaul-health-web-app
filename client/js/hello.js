@@ -57,6 +57,7 @@ Template.choice.result = function () {
 
 Template.choice.events({
   'click .clickbtn' (event, instance) {
+    // clicked the .clickbtn class
     // increment the counter when button is clicked
     var day = $('#days').find(':selected').text()
     var month = $('#months').find(':selected').text()
