@@ -150,7 +150,7 @@
 							<Group DEF="group_ME_Untitled_013">
 								<Shape>
 									<Appearance>
-										<Material USE="MA_Pain_Texture" />
+										<Material USE="MA_PainSwell" />
 									</Appearance>
 									<IndexedFaceSet solid="true"
 									                creaseAngle="0.5236"
@@ -179,7 +179,7 @@
 							<Group DEF="group_ME_Untitled_001">
 								<Shape>
 									<Appearance>
-										<Material USE="MA_Pain_Texture" />
+										<Material USE="MA_PainSwell" />
 									</Appearance>
 									<IndexedFaceSet solid="true"
 									                creaseAngle="0.5236"
@@ -214,7 +214,7 @@
 							<Group DEF="group_ME_Untitled_003">
 								<Shape>
 									<Appearance>
-										<Material USE="MA_Pain_Texture" />
+										<Material USE="MA_PainSwell" />
 									</Appearance>
 									<IndexedFaceSet solid="true"
 									                creaseAngle="0.5236"
@@ -243,7 +243,7 @@
 							<Group DEF="group_ME_Untitled_014">
 								<Shape>
 									<Appearance>
-										<Material USE="MA_Pain_Texture" />
+										<Material USE="MA_PainSwell" />
 									</Appearance>
 									<IndexedFaceSet solid="true"
 									                creaseAngle="0.5236"
