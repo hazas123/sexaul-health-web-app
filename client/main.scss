@@ -323,3 +323,40 @@ background-color: transparent;
 .STIsymptomInfoBox h1 {
   color: #243854;
 }
+
+#OptionsHolder {
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  top: 100vh;
+  visibility: hidden;
+}
+
+#AvaliableOptions{
+  float: right;
+  background-color: green;
+}
+
+
+
+#ReselectChoices{
+width: 20%;
+background-color: #243854;
+
+height: 100vh;
+}
+
+
+.itemOpt {
+background-color: yellow;
+margin: 25px ;
+width: 20%;
+display: inline;
+}
+
+/*
+::-webkit-scrollbar {
+display: none;
+}*/
