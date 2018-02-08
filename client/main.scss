@@ -140,9 +140,10 @@ z-index: 1;
 }
 
 
-#choiceHoldMain {
+.choiceHoldMain {
   position: absolute;
-  top: -100vh;
+
+
   z-index: -1;
 }
 
@@ -150,6 +151,7 @@ z-index: 1;
   height: 100vh;
   width: 100vw;
   z-index: -1;
+  padding-top: 10vh;
 }
 
 .choicehold {
@@ -168,7 +170,7 @@ z-index: 1;
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
+
   background-color: #f04d25 ;
 }
 
@@ -253,11 +255,16 @@ z-index: 1;
 
 
 .STIMainHold{
-  margin-left: 5%;
-  margin-right: 25%;
-width: 75vw;
 
-height: 80vh;
+position: absolute;
+top: 0px;
+left: 100vw;
+z-index: 3;
+background-color: white;
+width: 100vw;
+height: 100vh;
+margin: 0px;
+
 }
 
 
@@ -339,6 +346,7 @@ background-color: transparent;
   z-index: 1;
   top: 100vh;
   visibility: hidden;
+
 }
 
 #AvaliableOptions{
@@ -359,8 +367,9 @@ height: 100vh;
 .itemOpt {
 background-color: #243854;
 margin: 25px ;
-width: 20%;
+width: 10%;
 display: inline;
+height: 30vh;
 }
 
 /*
