@@ -254,16 +254,18 @@ z-index: 1;
 
 
 
+
 .STIMainHold{
 
 position: absolute;
-top: 0px;
+top: 100vh;
 left: 100vw;
-z-index: 3;
+overflow: hidden;
 background-color: white;
-width: 100vw;
-height: 100vh;
+width: 0vw;
+height: 0vh;
 margin: 0px;
+padding: 0px;
 
 }
 
@@ -286,13 +288,17 @@ float: left;
 
 
 
+
 .ButtonStylingSTI {
-margin-top: 10%;
-margin-bottom:  10%;
+
+display: inline-block;
 background-color: #243854;
-font: 700 1.2rem 'Roboto Slab', sans-serif;
-padding-left: 10%;
+font: 700 1rem 'Roboto Slab', sans-serif;
+
+margin-right: 50%;
 color: white;
+width: 200px;
+text-align: center;
 }
 
 
@@ -305,7 +311,7 @@ color: white;
   margin-bottom:  10%;
   background-color: transparent;
   font: 700 1.2rem 'Roboto Slab', sans-serif;
-  padding-left: 10%;
+
   font-size: 200%;
   color: #243854;
 }
@@ -315,11 +321,23 @@ background-color: transparent;
 
 }
 
+.closeSTI{height: 100px;
+width: 100px;
+background-color: grey;}
+
+.x3d_scene{
+  background-color: red;
+  height: 10px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .STIInfo{
-  width: 30%;
+
+  width: 20%;
   height: 100%;
-  float: right;
+
 }
 
 
@@ -328,14 +346,22 @@ background-color: transparent;
   height: 60px;
   overflow: hidden;
   opacity: 0.0;
-  position: absolute;
-  top: 10%;
+  position: absolute ;
+
+
   font: 700 1.2rem 'Roboto Slab', sans-serif;
   -webkit-transition: opacity 2s;
+  width: 70%;
 }
 
 .STIsymptomInfoBox h1 {
   color: #243854;
+}
+
+.STIsymptomInfoBoxMove{
+margin-top: 5%;
+
+background-color: pink;
 }
 
 #OptionsHolder {
@@ -370,6 +396,12 @@ margin: 25px ;
 width: 10%;
 display: inline;
 height: 30vh;
+}
+
+.ButtonStylingSTIHolder{
+  margin-top: 10px;
+  background-color: red;
+  width: 10%;
 }
 
 /*

@@ -21,7 +21,10 @@ Template.OptionsSelected.events({
     $('.choiceHoldMain').css('visibility', 'hidden')
     $('#OptionsHolder').css('visibility', 'hidden')
     $('.STIMainHold').css('visibility', 'visible')
-    $('.STIMainHold').css('left', '-17vw')
-    console.log('BOONewM')
+    $('.STIMainHold').css('height', '100vh')
+    $('.STIMainHold').css('width', '100vw')
+    $('.STIMainHold').css('left', '0vw')
+    $('body').css('overflow-y', 'hidden')
+    console.log('item')
   }
 })

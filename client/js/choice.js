@@ -18,14 +18,6 @@ Template.choice.onRendered(function () {
 Template.choice.events({
   'click #col6': function (event) {
     $('#OptionsHolder').css('visibility', 'visible')
-    setTimeout(() => Blaze.remove(view), 3400)
-    console.log('BOONewM')
+    console.log('visible')
   }
 })
-
-Template.choice.onDestroyed(function () {
-  $('#choiceHoldMain').remove()
-  console.log('BOOM')
-}
-
-)
