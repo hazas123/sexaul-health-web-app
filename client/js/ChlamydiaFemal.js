@@ -18,3 +18,17 @@ Template.ChlamydiaMaleT.events({
     console.log('iamclicked')
   }
 })
+
+Template.ChlamydiaFemaleC.events({
+  'click .closeSTI': function (event) {
+    $('#FemalChlamydiaOPTI').css('background-color', 'red')
+    $('.choiceHoldMain').css('visibility', 'visible')
+    $('#OptionsHolder').css('visibility', 'visible')
+    $('.STIMainHoldWoman').css('visibility', 'hidden')
+    $('.STIMainHoldWoman').css('height', '0vh')
+    $('.STIMainHoldWoman').css('width', '0vw')
+    $('.STIMainHoldWoman').css('left', '100vw')
+    $('body').css('overflow-y', 'visible')
+    console.log('iamclicked')
+  }
+})

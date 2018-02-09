@@ -16,7 +16,7 @@ Template.choice.onRendered(function () {
 })
 
 Template.OptionsSelected.events({
-  'click .itemOpt': function (event) {
+  'click #MaleChlamydiaOPTI': function (event) {
     $('#MaleChlamydiaOPTI').css('background-color', 'red')
     $('.choiceHoldMain').css('visibility', 'hidden')
     $('#OptionsHolder').css('visibility', 'hidden')
@@ -24,6 +24,22 @@ Template.OptionsSelected.events({
     $('.STIMainHold').css('height', '100vh')
     $('.STIMainHold').css('width', '100vw')
     $('.STIMainHold').css('left', '0vw')
+    $('.ChoiceholdBackSTI').css('visibility', 'visible')
+    $('body').css('overflow-y', 'hidden')
+    console.log('item')
+  }
+})
+
+Template.OptionsSelected.events({
+  'click #FemalChlamydiaOPTI': function (event) {
+    $('#FemalChlamydiaOPTI').css('background-color', 'red')
+    $('.choiceHoldMain').css('visibility', 'hidden')
+    $('#OptionsHolder').css('visibility', 'hidden')
+    $('.STIMainHoldWoman').css('visibility', 'visible')
+    $('.STIMainHoldWoman').css('height', '100vh')
+    $('.STIMainHoldWoman').css('width', '100vw')
+    $('.STIMainHoldWoman').css('left', '0vw')
+    $('.ChoiceholdBackSTI').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
     console.log('item')
   }
