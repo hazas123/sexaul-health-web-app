@@ -160,9 +160,11 @@ clip-path: ellipse(100% 60% at 26% 36%);
 
 .choicehold {
   position: relative;
-  left: 0px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-top: 20vh;
   height: 100vh;
-  width: 100vw;
+  width: 80vw;
 
 }
 
@@ -222,29 +224,24 @@ color: white;
     flex:2;
     display: flex;
     justify-content: center;
+}
+
+.CircleChoiceSize{
+  height: 30vh;
+  width: 100%;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding-top:  50%;
+}
+
+.aiOption {
+ background-color: red;
 
 }
-#col1 {
-    background-color: #243854 ;
-    flex: 0 0 150px;
-    margin: 25px ;
-    justify-content: center;
-}
-#col2 {
-    background-color: #4353a4 ;
-    flex: 0 0 150px;
-    margin: 25px ;
-}
-#col3 {
-    background-color: #f04d25 ;
-    flex: 0 0 150px;
-    margin: 25px;
-}
-#col4 {
-    background-color: grey;
-    flex: 0 0 150px;
-    margin: 25px ;
-}
+
 #row2 {
     background-color: red;
     display: flex;
@@ -253,15 +250,16 @@ color: white;
 }
 #col5 {
     background-color: pink;
-    flex: 0 0 80%;
+
     margin: 25px;
 }
 
 #col6 {
   background-color: grey;
-  flex: 0 0 100px;
-  margin: 25px ;
+   /* 1:1 Aspect Ratio */
 
+  margin: 25px ;
+  border-radius: 50%;
 }
 
 

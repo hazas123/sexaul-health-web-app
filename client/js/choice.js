@@ -16,7 +16,7 @@ Template.choice.onRendered(function () {
 })
 
 Template.choice.events({
-  'click #col6': function (event) {
+  'click #SelectOptionCol4': function (event) {
     $('#OptionsHolder').css('visibility', 'visible')
     console.log('visible')
   }
