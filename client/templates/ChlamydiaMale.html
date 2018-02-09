@@ -43,6 +43,7 @@
               <div class="ButtonStylingSTI " id="symptom1ChlMAN" onclick="symptomzoomMAN('symptomAreaMAN', 'ChlamydiaModel__MA_Man_skin', 'ChlamydiaModel__MA_Pain_Texture', 'ChlamydiaModel__MA_Pee_texture')">Symptom 1</div>
               <div class="ButtonStylingSTI " id="symptom2ChlMAN" onclick="symptomzoom1MAN('symptomAreaMAN', 'ChlamydiaModel__MA_Man_skin', 'ChlamydiaModel__MA_PainSwell', 'ChlamydiaModel__MA_Banana_02:lambert2')">Symptom 2</div>
               <div class="ButtonStylingSTI " id="symptom3ChlMAN" onclick="symptomzoom2MAN('symptomAreaMAN', 'ChlamydiaModel__MA_Man_skin', 'ChlamydiaModel__MA_Discharge1', 'ChlamydiaModel__MA_Discharge2', 'ChlamydiaModel__MA_Discharge3')">Symptom 3</div>
+              <div class="ButtonStylingSTI " id="symptom4ChlMAN" onclick="symptomzoom3MAN('symptomAreaMAN', 'ChlamydiaModel__MA_Man_skin')">Symptom 4</div>
               <div class="ButtonStylingSTI " onclick="cameraChangeMAN('ResetMAN')" >Reset</div>
 
             </div>
@@ -62,6 +63,10 @@
           <h1>Symptom 3</h1>
           <p>A white, cloudy or watery discharge from the tip of the penis</p>
         </div>
+        <div class="STIsymptomInfoBox" id="symptom4ChlInfoMAN">
+          <h1>Symptom 4</h1>
+          <p>No symptoms</p>
+        </div>
 
       </div>
 
@@ -79,13 +84,6 @@
 
 <script type="text/javascript">
 
-
-
-function ResetCameraMAN(cameraReset) {
-  document.getElementById(cameraReset).setAttribute('set_bind','true');
-  document.getElementById('ChlamydiaModel__MA_Material_001').setAttribute('transparency', '1.0');
-}
-
 function symptomzoomMAN(symptoms, texture1, texture2, texture3) {
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.7');
@@ -96,6 +94,7 @@ document.getElementById('symptom1ChlInfoMAN').style.height = '400px';
 document.getElementById('symptom1ChlInfoMAN').style.opacity = '1.0';
 $( "#symptom2ChlMAN" ).addClass( "disableItemSelect" );
 $( "#symptom3ChlMAN" ).addClass( "disableItemSelect" );
+$( "#symptom4ChlMAN" ).addClass( "disableItemSelect" );
 }
 
 function symptomzoom1MAN(symptoms, texture1, texture2, texture3) {
@@ -109,6 +108,7 @@ document.getElementById('symptom2ChlInfoMAN').style.height = '400px';
 document.getElementById('symptom2ChlInfoMAN').style.opacity = '1.0';
 $( "#symptom1ChlMAN" ).addClass( "disableItemSelect" );
 $( "#symptom3ChlMAN" ).addClass( "disableItemSelect" );
+$( "#symptom4ChlMAN" ).addClass( "disableItemSelect" );
 }
 
 function symptomzoom2MAN (symptoms, texture1, texture2, texture3, texture4){
@@ -120,6 +120,18 @@ function symptomzoom2MAN (symptoms, texture1, texture2, texture3, texture4){
 
   document.getElementById('symptom3ChlInfoMAN').style.height = '400px';
   document.getElementById('symptom3ChlInfoMAN').style.opacity = '1.0';
+  $( "#symptom2ChlMAN" ).addClass( "disableItemSelect" );
+  $( "#symptom1ChlMAN" ).addClass( "disableItemSelect" );
+  $( "#symptom4ChlMAN" ).addClass( "disableItemSelect" );
+}
+
+function symptomzoom3MAN (symptoms, texture1){
+  document.getElementById(symptoms).setAttribute('set_bind','true');
+  document.getElementById(texture1).setAttribute('transparency', '0.7');
+
+  document.getElementById('symptom4ChlInfoMAN').style.height = '400px';
+  document.getElementById('symptom4ChlInfoMAN').style.opacity = '1.0';
+  $( "#symptom3ChlMAN" ).addClass( "disableItemSelect" );
   $( "#symptom2ChlMAN" ).addClass( "disableItemSelect" );
   $( "#symptom1ChlMAN" ).addClass( "disableItemSelect" );
 }
@@ -138,12 +150,15 @@ document.getElementById('ChlamydiaModel__MA_Discharge3').setAttribute('transpare
 $( "#symptom1ChlMAN" ).removeClass( "disableItemSelect" );
 $( "#symptom2ChlMAN" ).removeClass( "disableItemSelect" );
 $( "#symptom3ChlMAN" ).removeClass( "disableItemSelect" );
+$( "#symptom4ChlMAN" ).removeClass( "disableItemSelect" );
 document.getElementById('symptom1ChlInfoMAN').style.height = '60px';
 document.getElementById('symptom2ChlInfoMAN').style.height = '60px';
 document.getElementById('symptom3ChlInfoMAN').style.height = '60px';
+document.getElementById('symptom4ChlInfoMAN').style.height = '60px';
 document.getElementById('symptom1ChlInfoMAN').style.opacity = '0.0';
 document.getElementById('symptom2ChlInfoMAN').style.opacity = '0.0';
 document.getElementById('symptom3ChlInfoMAN').style.opacity = '0.0';
+document.getElementById('symptom4ChlInfoMAN').style.opacity = '0.0';
 }
 
 //function ChlamydiaName(){

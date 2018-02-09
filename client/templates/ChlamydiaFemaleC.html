@@ -34,6 +34,7 @@
             <div class="ButtonStylingSTI" id="symptom2Chl" onclick="symptomzoom1('symptomArea', 'ChlamydiaModel__MA_Woman_skin', 'ChlamydiaModel__MA_Pain_in_the_tummy')">Symptom 2</div>
             <div class="ButtonStylingSTI" id="symptom3Chl" onclick="symptomzoom2('symptomArea', 'ChlamydiaModel__MA_Woman_skin', 'ChlamydiaModel__MA_Discharge1', 'ChlamydiaModel__MA_Discharge2', 'ChlamydiaModel__MA_Discharge3', 'ChlamydiaModel__MA_Pain_in_the_tummy')">Symptom 3</div>
             <div class="ButtonStylingSTI" id="symptom4Chl" onclick="symptomzoom3('symptomArea', 'ChlamydiaModel__MA_Woman_skin', 'ChlamydiaModel__MA_Blood', 'ChlamydiaModel__MA_Pain_in_the_tummy')">Symptom 4</div>
+            <div class="ButtonStylingSTI" id="symptom5Chl" onclick="symptomzoom4('symptomArea', 'ChlamydiaModel__MA_Woman_skin', 'ChlamydiaModel__MA_Pain_in_the_tummy')">Symptom 5</div>
             <div class="ButtonStylingSTI" onclick="cameraChange('Reset')" >Reset</div>
 
             </div>
@@ -59,6 +60,10 @@
         <div class="STIsymptomInfoBox" id="symptom4ChlInfo">
           <h1>Symptom 4</h1>
           <p>Bleeding during or after sex or between periods</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom5ChlInfo">
+          <h1>Symptom 5</h1>
+          <p>No Symptoms</p>
         </div>
 
       </div>
@@ -92,6 +97,7 @@
       $( "#symptom2Chl" ).addClass( "disableItemSelect" );
       $( "#symptom3Chl" ).addClass( "disableItemSelect" );
       $( "#symptom4Chl" ).addClass( "disableItemSelect" );
+      $( "#symptom5Chl" ).addClass( "disableItemSelect" );
       }
 
       function symptomzoom1(symptoms, texture1, texture2) {
@@ -106,6 +112,7 @@
       $( "#symptom1Chl" ).addClass( "disableItemSelect" );
       $( "#symptom3Chl" ).addClass( "disableItemSelect" );
       $( "#symptom4Chl" ).addClass( "disableItemSelect" );
+      $( "#symptom5Chl" ).addClass( "disableItemSelect" );
       }
 
       function symptomzoom2 (symptoms, texture1, texture2, texture3, texture4, texture5){
@@ -121,6 +128,7 @@
         $( "#symptom2Chl" ).addClass( "disableItemSelect" );
         $( "#symptom1Chl" ).addClass( "disableItemSelect" );
         $( "#symptom4Chl" ).addClass( "disableItemSelect" );
+        $( "#symptom5Chl" ).addClass( "disableItemSelect" );
       }
 
       function symptomzoom3 (symptoms, texture1, texture2, texture3){
@@ -132,6 +140,20 @@
 
         document.getElementById('symptom4ChlInfo').style.height = '400px';
         document.getElementById('symptom4ChlInfo').style.opacity = '1.0';
+        $( "#symptom3Chl" ).addClass( "disableItemSelect" );
+        $( "#symptom2Chl" ).addClass( "disableItemSelect" );
+        $( "#symptom1Chl" ).addClass( "disableItemSelect" );
+        $( "#symptom5Chl" ).addClass( "disableItemSelect" );
+      }
+
+      function symptomzoom4 (symptoms, texture1, texture2){
+        document.getElementById(symptoms).setAttribute('set_bind','true');
+        document.getElementById(texture1).setAttribute('transparency', '0.7');
+        document.getElementById(texture2).setAttribute('transparency', '1.0');
+
+        document.getElementById('symptom5ChlInfo').style.height = '400px';
+        document.getElementById('symptom5ChlInfo').style.opacity = '1.0';
+        $( "#symptom4Chl" ).addClass( "disableItemSelect" );
         $( "#symptom3Chl" ).addClass( "disableItemSelect" );
         $( "#symptom2Chl" ).addClass( "disableItemSelect" );
         $( "#symptom1Chl" ).addClass( "disableItemSelect" );
@@ -153,14 +175,17 @@
       $( "#symptom2Chl" ).removeClass( "disableItemSelect" );
       $( "#symptom3Chl" ).removeClass( "disableItemSelect" );
       $( "#symptom4Chl" ).removeClass( "disableItemSelect" );
+      $( "#symptom5Chl" ).removeClass( "disableItemSelect" );
       document.getElementById('symptom1ChlInfo').style.height = '60px';
       document.getElementById('symptom2ChlInfo').style.height = '60px';
       document.getElementById('symptom3ChlInfo').style.height = '60px';
       document.getElementById('symptom4ChlInfo').style.height = '60px';
+      document.getElementById('symptom5ChlInfo').style.height = '60px';
       document.getElementById('symptom1ChlInfo').style.opacity = '0.0';
       document.getElementById('symptom2ChlInfo').style.opacity = '0.0';
       document.getElementById('symptom3ChlInfo').style.opacity = '0.0';
       document.getElementById('symptom4ChlInfo').style.opacity = '0.0';
+      document.getElementById('symptom5ChlInfo').style.opacity = '0.0';
       }
 
       //function ChlamydiaName(){
