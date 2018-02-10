@@ -15,6 +15,7 @@ Template.ChlamydiaMaleT.events({
     $('.STIMainHold').css('width', '0vw')
     $('.STIMainHold').css('left', '100vw')
     $('body').css('overflow-y', 'visible')
+    $('.closeSTI').css('visibility', 'hidden')
     console.log('iamclicked')
   }
 })
@@ -28,6 +29,7 @@ Template.ChlamydiaFemaleC.events({
     $('.STIMainHoldWoman').css('height', '0vh')
     $('.STIMainHoldWoman').css('width', '0vw')
     $('.STIMainHoldWoman').css('left', '100vw')
+    $('.closeSTI').css('visibility', 'hidden')
     $('body').css('overflow-y', 'visible')
     console.log('iamclicked')
   }

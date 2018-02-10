@@ -150,7 +150,7 @@ z-index: 1;
 
 #choiceHoldInfo {
   height: 100vh;
-  width: 100vw;
+  width: 95vw;
   z-index: -1;
   padding-top: 10vh;
   background-color: #243854;
@@ -416,10 +416,17 @@ background-color: transparent;
 }
 
 .closeSTI{height: 100px;
-width: 100px;
-background-color: grey;}
+width: 5vw;
+background-color: grey;
+position: fixed;
+top: 14vh;
+left: 3vw;
+font-size: 90%;
+visibility: hidden;
+}
 
 .x3d_scene{
+  margin-top: 5vh;
   background-color: red;
   height: 10px;
   width: 400px;
@@ -505,6 +512,54 @@ height: 30vh;
     height: 200px;
     background-color: blue;
   }
+
+
+.OpenMenu{
+  height: 10vh;
+  width: 5vw;
+
+  position: fixed;
+  z-index: 3;
+  top: 3vh;
+  left: 3vw;
+  visibility: hidden;
+}
+
+.OpenMenuLook {
+  width: 4vw;
+  height: 2vh;
+  margin-top: 5px;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  margin-bottom: 5px;
+  background-color: #f04d25;
+
+}
+
+.CloseMenu{
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+  background-color: blue;
+  width: 2vw;
+  height: 2rem;
+}
+
+.MenuOverride {
+    height: 100vw;
+    width: 0;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: #f04d25;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+
 
 
 

@@ -21,3 +21,15 @@ Template.choice.events({
     console.log('visible')
   }
 })
+
+Template.choice.events({
+  'click .OpenMenu': function (event) {
+    $('.MenuOverride').css('width', '20vw')
+  }
+})
+
+Template.choice.events({
+  'click .CloseMenu': function (event) {
+    $('.MenuOverride').css('width', '0vw')
+  }
+})

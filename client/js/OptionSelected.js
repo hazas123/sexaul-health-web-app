@@ -25,6 +25,8 @@ Template.OptionsSelected.events({
     $('.STIMainHold').css('width', '100vw')
     $('.STIMainHold').css('left', '0vw')
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
+    $('.closeSTI').css('visibility', 'visible')
+
     $('body').css('overflow-y', 'hidden')
     console.log('item')
   }
@@ -40,6 +42,7 @@ Template.OptionsSelected.events({
     $('.STIMainHoldWoman').css('width', '100vw')
     $('.STIMainHoldWoman').css('left', '0vw')
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
+    $('.closeSTI').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
     console.log('item')
   }
