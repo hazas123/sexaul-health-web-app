@@ -431,15 +431,34 @@ background-color: transparent;
 
 }
 
-.closeSTI{height: 100px;
-width: 5vw;
-background-color: grey;
-position: fixed;
-top: 14vh;
-left: 3vw;
-font-size: 90%;
-visibility: hidden;
+
+
+#closeSTIMale{
+  height: 100px;
+  width: 5vw;
+  background-color: grey;
+  position: fixed;
+  top: 14vh;
+  left: 3vw;
+  font-size: 90%;
+  visibility: hidden;
+  z-index: 6;
 }
+
+
+#closeSTIFemale{
+  height: 100px;
+  width: 5vw;
+  background-color: grey;
+  position: fixed;
+  top: 14vh;
+  left: 3vw;
+  font-size: 90%;
+  visibility: hidden;
+  z-index: 5;
+}
+
+
 
 .x3d_scene{
   margin-top: 5vh;
@@ -513,6 +532,7 @@ margin: 25px ;
 width: 10%;
 display: inline;
 height: 30vh;
+color: white;
 }
 
 .ButtonStylingSTIHolder{
@@ -581,8 +601,9 @@ height: 30vh;
 }
 
 #MainMenuOption1{
-background-color: red;
+background-color: white;
 visibility: hidden;
+border: solid 2px red;
 }
 
 #MainMenuOption2{
@@ -593,6 +614,15 @@ visibility: hidden;
 .menuLinkFormat{
 
   margin: 25px;
+}
+
+.closeMainMenuOptionStyling{
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+  height: 4vh;
+  width: 2vw;
+  background-color: blue;
 }
 
 .FooterHold{

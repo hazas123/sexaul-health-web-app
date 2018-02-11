@@ -33,5 +33,11 @@ Template.choice.events({
   'click #MenuLink1': function (event) {
     $('#MainMenuOption1').css('visibility', 'visible')
     console.log('area visible')
+  },
+  'click #closeMainMenuOption1': function (event) {
+    $('#MainMenuOption1').css('visibility', 'hidden')
+  },
+  'click #closeMainMenuOption2': function (event) {
+    $('#MainMenuOption2').css('visibility', 'hidden')
   }
 })
