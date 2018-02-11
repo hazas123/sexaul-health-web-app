@@ -16,20 +16,22 @@ Template.choice.onRendered(function () {
 })
 
 Template.choice.events({
+  'click .OpenMenu': function (event) {
+    $('.MenuOverride').css('width', '20vw')
+  },
+  'click .CloseMenu': function (event) {
+    $('.MenuOverride').css('width', '0vw')
+  },
   'click #SelectOptionCol4': function (event) {
     $('#OptionsHolder').css('visibility', 'visible')
     console.log('visible')
-  }
-})
-
-Template.choice.events({
-  'click .OpenMenu': function (event) {
-    $('.MenuOverride').css('width', '20vw')
-  }
-})
-
-Template.choice.events({
-  'click .CloseMenu': function (event) {
-    $('.MenuOverride').css('width', '0vw')
+  },
+  'click #closeDisclamer': function (event) {
+    $('#disclamer').css('visibility', 'hidden')
+    console.log('disclamer visible')
+  },
+  'click #MenuLink1': function (event) {
+    $('#MainMenuOption1').css('visibility', 'visible')
+    console.log('area visible')
   }
 })

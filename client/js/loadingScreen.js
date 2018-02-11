@@ -8,6 +8,7 @@ var view
 
 Template.loadingScreen.onRendered(function () {
   view = this.view
+  setTimeout(function () { $('.btn').css('visibility', 'visible') }, 4000)
 })
 
 Template.loadingScreen.events({
@@ -18,6 +19,7 @@ Template.loadingScreen.events({
     setTimeout(function () { $('.OpenMenu').css('visibility', 'visible') }, 3500)
     $('body').css('overflow-y', 'visible')
     setTimeout(() => Blaze.remove(view), 3400)
+    setTimeout(function () { $('#disclamer').css('visibility', 'visible') }, 3500)
   }
 })
 
@@ -25,5 +27,4 @@ Template.loadingScreen.onDestroyed(function () {
   $('#Hold').remove()
   console.log('BOOM')
 }
-
 )
