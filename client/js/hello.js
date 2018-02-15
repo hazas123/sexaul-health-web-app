@@ -56,7 +56,7 @@ Template.choice.result = function () {
 }
 
 Template.choice.events({
-  'click #col6' (event, instance) {
+  'click #SelectOptionCol4' (event, instance) {
     // clicked the .clickbtn class
     // increment the counter when button is clicked
     var day = $('#days').find(':selected').text()
@@ -68,6 +68,11 @@ Template.choice.events({
     var ageDate = new Date(ageDifMs) // miliseconds from epoch
     var age = Math.abs(ageDate.getUTCFullYear() - 1970)
 
+    var Gender = $('input[name=GenderOption]:checked', '#col1Options').val()
+    var Sexaulity = $('input[name=SexualityOption]:checked', '#col3Options').val()
+
+    console.log(Sexaulity)
+    console.log(Gender)
     console.log(age)
     instance.counter.set(age)
   }
