@@ -5,8 +5,10 @@ import { Session } from 'meteor/session'
 import { Promise } from 'meteor/promise'
 
 import '../templates/hello.html'
+import '../templates/choice.html'
+import '../templates/loadingScreen.html'
 
-Template.hello.onCreated(function helloOnCreated () {
+Template.choice.onCreated(function choiceOnCreated () {
   // counter starts at 0
   this.counter = new ReactiveVar(0)
 
@@ -43,18 +45,19 @@ Template.hello.onCreated(function helloOnCreated () {
   }
 })
 
-Template.hello.helpers({
+Template.choice.helpers({
   counter () {
     return Template.instance().counter.get()
   }
 })
 
-Template.hello.result = function () {
+Template.choice.result = function () {
   return Session.get('serverDataResponse') || ''
 }
 
-Template.hello.events({
-  'click .clickbtn' (event, instance) {
+Template.choice.events({
+  'click #col6' (event, instance) {
+    // clicked the .clickbtn class
     // increment the counter when button is clicked
     var day = $('#days').find(':selected').text()
     var month = $('#months').find(':selected').text()
@@ -95,5 +98,5 @@ Template.hello.events({
     //     })
     //   })
     // }
-  //}
+  // }
 })
