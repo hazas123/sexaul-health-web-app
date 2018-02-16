@@ -1,12 +1,23 @@
 import { Template } from 'meteor/templating'
 import { Session } from 'meteor/session'
+import { ReactiveVar } from 'meteor/reactive-var'
 import { Blaze } from 'meteor/blaze'
+import { Meteor } from 'meteor/meteor'
 import '../templates/OptionsSelected.html'
 import '../templates/choice.html'
 import '../js/hello.js'
 
 var view
-var car = Session.get('GenderSession')
+var Man = 'Man'
+var Woman = 'Woman'
+var OtherGender = 'Other'
+
+Template.OptionsSelected.helpers({
+  myValue: function () {
+        // As usual, this will be reactive.
+    return Template.instance().data.sharedVar1.get()
+  }
+})
 
 Template.OptionsSelected.onRendered(function () {
 
@@ -29,8 +40,9 @@ Template.OptionsSelected.events({
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
     $('#closeSTIMale').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
-    console.log('MaleOpen')
-    console.log(car)
+    var collectingTmplInstance = this.view.parentView.templateInstance()
+    this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
+    console.log('yummy', this.myReactiveVarGender)
   }
 })
 
@@ -46,6 +58,5 @@ Template.OptionsSelected.events({
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
     $('#closeSTIFemale').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
-    console.log('FemaleOpen')
   }
 })
