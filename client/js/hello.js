@@ -7,6 +7,11 @@ import { Promise } from 'meteor/promise'
 import '../templates/hello.html'
 import '../templates/choice.html'
 import '../templates/loadingScreen.html'
+import '../templates/OptionsSelected.html'
+
+var Man = 'Man'
+var Woman = 'Woman'
+var OtherGender = 'Other'
 
 Template.choice.onCreated(function choiceOnCreated () {
   // counter starts at 0
@@ -75,6 +80,7 @@ Template.choice.events({
     console.log(Gender)
     console.log(age)
     instance.counter.set(age)
+    Session.set('GenderSession', Gender)
   }
 
   // 'click .clickAPI' (event, instance) {

@@ -3,8 +3,10 @@ import { Session } from 'meteor/session'
 import { Blaze } from 'meteor/blaze'
 import '../templates/OptionsSelected.html'
 import '../templates/choice.html'
+import '../js/hello.js'
 
 var view
+var car = Session.get('GenderSession')
 
 Template.OptionsSelected.onRendered(function () {
 
@@ -28,6 +30,7 @@ Template.OptionsSelected.events({
     $('#closeSTIMale').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
     console.log('MaleOpen')
+    console.log(car)
   }
 })
 

@@ -17,24 +17,34 @@
 <div id="AvaliableOptions" class="col">
 <div class="row">
 
-  <div class="col-3 itemOpt" id="MaleChlamydiaOPTI">
+{{#if _equals Gender Man}}
 
+  <div class="col-3 itemOpt" id="MaleChlamydiaOPTI">
+<p>
+  {{counter}}
+</p>
     Male Chlamydia
 
   </div>
+  {{/if}}
 
+  {{#if _equals Gender Woman}}
   <div class="col-3 itemOpt" id="FemalChlamydiaOPTI">
+    <p>
+      {{counter}}
 
+    </p>
     Female Chlamydia
 
   </div>
-
+  {{/if}}
+  {{#if _equals Gender OtherGender}}
   <div class="col-3 itemOpt">
 
     Test
 
   </div>
-
+  {{/if}}
 </div>
 
 </div>
