@@ -7,10 +7,14 @@ import '../templates/OptionsSelected.html'
 import '../templates/choice.html'
 import '../js/hello.js'
 
+var hello = require('../js/choice.js')
 var view
-var Man = 'Man'
+var GenderSel = hello.car
 var Woman = 'Woman'
 var OtherGender = 'Other'
+var Sex = hello.cake
+
+// var m = require('mymodule')
 
 Template.OptionsSelected.helpers({
   myValue: function () {
@@ -40,9 +44,11 @@ Template.OptionsSelected.events({
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
     $('#closeSTIMale').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
-    var collectingTmplInstance = this.view.parentView.templateInstance()
-    this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
-    console.log('yummy', this.myReactiveVarGender)
+    // var collectingTmplInstance = this.view.parentView.templateInstance()
+    // this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
+    console.log('GenderSel', hello.car)
+    // var m = require('mymodule')
+    console.log('yummy ', hello.car, 'another', hello.cake)
   }
 })
 
@@ -58,5 +64,6 @@ Template.OptionsSelected.events({
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
     $('#closeSTIFemale').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
+    console.log('yummy ', hello.car, 'another', hello.cake)
   }
 })

@@ -6,7 +6,8 @@ import '../templates/OptionsSelected.html'
 import '../templates/choice.html'
 
 var view
-
+var car
+var cake
 Template.OptionsSelected.onCreated(function () {
 })
 
@@ -57,6 +58,11 @@ Template.choice.events({
     instance.counter.set(age)
     instance.myReactiveVarGender.set(Gender)
     instance.myReactiveVarSexuality.set(Sexaulity)
+    car = Gender
+    cake = Sexaulity
+    module.exports.car = car
+    module.exports.cake = cake
+    //exports.car = instance.myReactiveVarSexuality
     Session.set('GenderSession', Gender)
   }
 })
