@@ -78,28 +78,30 @@ Salus team
 
         <div class="col">
           <div id="SelectOptionCol0" class="CircleChoiceSize">
-            <div id="checkbox1"> Use object</div>
               <div id="col1Options">
-                <input type="checkbox" name="Man" id="ManSelecter"/>Man
-                <input type="checkbox" name="woman" id="WomanSelecter"/>woman
-                <input type="checkbox" name="Other" id="OtherSelecter"/>Other
+                <div id="checkbox1"> Use object</div>
+                <ul>
+                <li><input type="checkbox" name="Man" id="ManSelecter"/><label for="ManSelecter">Man</label></li>
+                <li><input type="checkbox" name="Woman" id="WomanSelecter"/><label for="WomanSelecter">Woman</label></li>
+                <li><input type="checkbox" name="Other" id="OtherSelecter"/><label for="OtherSelecter">Other</label></li>
+                </ul>
               </div>
           </div>
         </div>
 
 
         <div class="col">
-          <div id="SelectOptionCol1" class="CircleChoiceSize">
-            <select id="days"></select>
-            <select id="months"></select>
-            <select id="years"></select>
-            <button class="clickbtn">Click Me</button>
-            <p>You are {{counter}}.</p>
+          <div id="SelectOptionCol1" class="CircleChoiceSize choice">
+            <div id="col2Options">
+              <select id="days"></select>
+              <select id="months"></select>
+              <select id="years"></select>
+            </div>
           </div>
         </div>
 
         <div class="col">
-          <div id="SelectOptionCol2" class="CircleChoiceSize">
+          <div id="SelectOptionCol2" class="CircleChoiceSize choice">
               <div id="checkbox3"> Use object</div>
                 <div id="col3Options">
                   hey
@@ -107,7 +109,7 @@ Salus team
           </div>
         </div>
         <div class="col">
-          <div id="SelectOptionCol3" class="CircleChoiceSize">
+          <div id="SelectOptionCol3" class="CircleChoiceSize choice">
             <div id="checkbox4"> Use object</div>
             <div id="col4Options">
               Hello
@@ -117,18 +119,19 @@ Salus team
 
 
         <div class="col">
-          <div id="SelectOptionCol4" class="CircleChoiceSize">
-            click me
+          <div id="SelectOptionCol4" class="CircleChoiceSize proceed">
+            <a href="" onclick="return false;"><i class="far fa-arrow-alt-circle-right fa-5x"></i></a>
           </div>
         </div>
-
       </div>
 
 
 
 <div class="row h-50">
-  <div class="col aiOption">
-    AIHOLD AREA
+  <div class="col">
+    <div class="aiOption">
+      <button class="btn draw-border">Or ask us a question?</button>
+    </div>
   </div>
 </div>
 

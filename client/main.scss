@@ -22,9 +22,9 @@ display: inline;
   display: inline;
 }
 
-$primaryColor: rgb(255, 69, 69);
-$secondaryColor: rgb(0, 0, 255);
-$link-color: rgb(0, 0, 255);
+$primaryColor: #4353a4;
+$secondaryColor: #f04d25;
+//$link-color: rgb(0, 0, 255);
 
 body, html {
     height: 100%;
@@ -43,16 +43,16 @@ body {
 }
 
 
-a {
-
-    color: $primaryColor;
-    transition: all 225ms ease 0ms;
-
-    &:hover,
-    &:focus {
-        color: lighten($link-color, 50%);
-    }
-}
+// a {
+//
+//     color: $primaryColor;
+//     transition: all 225ms ease 0ms;
+//
+//     &:hover,
+//     &:focus {
+//         color: lighten($link-color, 50%);
+//     }
+// }
 
 h1 {
   color: $secondaryColor;
@@ -111,7 +111,7 @@ h1 {
 }
 
 .draw-border {
-  @include btn-border-drawing(#58afd1, #ffe593, 4px, bottom, right);
+  @include btn-border-drawing($primaryColor, $secondaryColor, 4px, bottom, right);
 }
 
 //=== Button styling, semi-ignore
@@ -126,7 +126,7 @@ h1 {
   visibility: hidden;
 
 
-  &:focus { outline: 2px dotted #55d7dc; }
+  &:focus { outline: 2px $primaryColor; }
 }
 
 /* The hero image */
@@ -265,7 +265,7 @@ color: white;
 
   font: 900 2.2rem 'Roboto Slab', sans-serif;
 
-  color: #f04d25;
+  color: $secondaryColor;
 }
 
 /* Place text in the middle of the image */
@@ -281,23 +281,45 @@ color: white;
 
 
 #SelectOptionCol0{
-  background-color: #4353a4;
+  background-color: $primaryColor;
 }
 
 #SelectOptionCol1{
-  background-color: #4353a4;
+  background-color: $primaryColor;
+
+  #col2Options{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10% 0 10%;
+
+    select {
+      margin-bottom: 5%;
+    }
+  }
+}
+
+.choice{
+
+}
+
+.proceed{
+  color: $primaryColor !important;
+  transition: all 225ms ease 0ms;
+
+  &:hover, &:focus { color: $secondaryColor; }
 }
 
 #SelectOptionCol2{
-  background-color: #4353a4;
+  background-color: $primaryColor;
 }
 
 #SelectOptionCol3{
-  background-color: #4353a4;
+  background-color: $primaryColor;
 }
 
 #SelectOptionCol4{
-  background-color: #4353a4;
+
 }
 
 #row1 {
@@ -310,21 +332,37 @@ color: white;
 .CircleChoiceSize{
   height: 30vh;
   width: 100%;
-  background-color: red;
 
-  display: inline-block;
+  display: flex;
   text-align: center;
   vertical-align: middle;
-  padding-top:  50%;
+  border-radius: 25px;
+  justify-content: center;
+  flex-direction: column;
+
+  ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   li{
+     label{
+       padding-left: 20px;
+     }
+   }
+ }
+}
+
+.choice {
+  box-shadow: 5px 10px #D4D4D4;
 }
 
 
-
 .aiOption {
- background-color: #f04d25;
-height: 20%;
-position: relative;
-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 20%;
+  margin: 0 20% 0 20%; 
 }
 
 #row2 {
@@ -568,7 +606,7 @@ color: white;
   margin-left: 0.5vw;
   margin-right: 0.5vw;
   margin-bottom: 5px;
-  background-color: #f04d25;
+  background-color: $secondaryColor;
 
 }
 
@@ -588,7 +626,7 @@ color: white;
     z-index: 4;
     top: 0;
     left: 0;
-    background-color: #f04d25;
+    background-color: $secondaryColor;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
