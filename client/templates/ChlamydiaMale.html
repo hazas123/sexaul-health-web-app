@@ -20,7 +20,7 @@
 
                 <Viewpoint id="symptomAreaMAN" position="-0.00427 0.85329 -0.69608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
               <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
-                <Transform><inline  nameSpaceName="ChlamydiaModel" mapDEFToID="true" url="./Chlamydia_Models/Man_with_fruit_05.x3d"  ></inline></Transform>
+                <Transform><inline  nameSpaceName="ChlamydiaModelMan" mapDEFToID="true" url="./Chlamydia_Models/Man_with_fruit_05.x3d"  ></inline></Transform>
 
 
 
@@ -40,10 +40,10 @@
 <div class="ButtonStylingSTI STISmallHeading">Chlamydia</div>
       <div class="ButtonStylingSTIHolder">
           <div class="row">
-              <div class="ButtonStylingSTI " id="symptom1ChlMAN" onclick="symptomzoomMAN('symptomAreaMAN', 'ChlamydiaModel__MA_Man_skin', 'ChlamydiaModel__MA_Pain_Texture', 'ChlamydiaModel__MA_Pee_texture')">Symptom 1</div>
-              <div class="ButtonStylingSTI " id="symptom2ChlMAN" onclick="symptomzoom1MAN('symptomAreaMAN', 'ChlamydiaModel__MA_Man_skin', 'ChlamydiaModel__MA_PainSwell', 'ChlamydiaModel__MA_Banana_02:lambert2')">Symptom 2</div>
-              <div class="ButtonStylingSTI " id="symptom3ChlMAN" onclick="symptomzoom2MAN('symptomAreaMAN', 'ChlamydiaModel__MA_Man_skin', 'ChlamydiaModel__MA_Discharge1', 'ChlamydiaModel__MA_Discharge2', 'ChlamydiaModel__MA_Discharge3')">Symptom 3</div>
-              <div class="ButtonStylingSTI " id="symptom4ChlMAN" onclick="symptomzoom3MAN('symptomAreaMAN', 'ChlamydiaModel__MA_Man_skin')">Symptom 4</div>
+              <div class="ButtonStylingSTI " id="symptom1ChlMAN" onclick="symptomzoomMAN('symptomAreaMAN', 'ChlamydiaModelMan__MA_Man_skin', 'ChlamydiaModelMan__MA_Pain_Texture', 'ChlamydiaModelMan__MA_Pee_texture')">Symptom 1</div>
+              <div class="ButtonStylingSTI " id="symptom2ChlMAN" onclick="symptomzoom1MAN('symptomAreaMAN', 'ChlamydiaModelMan__MA_Man_skin', 'ChlamydiaModelMan__MA_PainSwell', 'ChlamydiaModelMan__MA_Banana_02:lambert2')">Symptom 2</div>
+              <div class="ButtonStylingSTI " id="symptom3ChlMAN" onclick="symptomzoom2MAN('symptomAreaMAN', 'ChlamydiaModelMan__MA_Man_skin', 'ChlamydiaModelMan__MA_Discharge1', 'ChlamydiaModelMan__MA_Discharge2', 'ChlamydiaModelMan__MA_Discharge3')">Symptom 3</div>
+              <div class="ButtonStylingSTI " id="symptom4ChlMAN" onclick="symptomzoom3MAN('symptomAreaMAN', 'ChlamydiaModelMan__MA_Man_skin')">Symptom 4</div>
               <div class="ButtonStylingSTI " onclick="cameraChangeMAN('ResetMAN')" >Reset</div>
 
             </div>
@@ -138,14 +138,14 @@ function symptomzoom3MAN (symptoms, texture1){
 
 function cameraChangeMAN(Camera) {
 document.getElementById(Camera).setAttribute('set_bind','true');
-document.getElementById('ChlamydiaModel__MA_Man_skin').setAttribute('transparency', '0.0');
-document.getElementById('ChlamydiaModel__MA_Pain_Texture').setAttribute('transparency', '1.0');
-document.getElementById('ChlamydiaModel__MA_Pee_texture').setAttribute('transparency', '1.0');
-document.getElementById('ChlamydiaModel__MA_PainSwell').setAttribute('transparency', '1.0');
-document.getElementById('ChlamydiaModel__MA_Banana_02:lambert2').setAttribute('transparency', '0.0');
-document.getElementById('ChlamydiaModel__MA_Discharge1').setAttribute('transparency', '1.0');
-document.getElementById('ChlamydiaModel__MA_Discharge2').setAttribute('transparency', '1.0');
-document.getElementById('ChlamydiaModel__MA_Discharge3').setAttribute('transparency', '1.0');
+document.getElementById('ChlamydiaModelMan__MA_Man_skin').setAttribute('transparency', '0.0');
+document.getElementById('ChlamydiaModelMan__MA_Pain_Texture').setAttribute('transparency', '1.0');
+document.getElementById('ChlamydiaModelMan__MA_Pee_texture').setAttribute('transparency', '1.0');
+document.getElementById('ChlamydiaModelMan__MA_PainSwell').setAttribute('transparency', '1.0');
+document.getElementById('ChlamydiaModelMan__MA_Banana_02:lambert2').setAttribute('transparency', '0.0');
+document.getElementById('ChlamydiaModelMan__MA_Discharge1').setAttribute('transparency', '1.0');
+document.getElementById('ChlamydiaModelMan__MA_Discharge2').setAttribute('transparency', '1.0');
+document.getElementById('ChlamydiaModelMan__MA_Discharge3').setAttribute('transparency', '1.0');
 
 $( "#symptom1ChlMAN" ).removeClass( "disableItemSelect" );
 $( "#symptom2ChlMAN" ).removeClass( "disableItemSelect" );
@@ -162,13 +162,13 @@ document.getElementById('symptom4ChlInfoMAN').style.opacity = '0.0';
 }
 
 //function ChlamydiaName(){
-//document.getElementById('ChlamydiaModel__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
-//document.getElementById('ChlamydiaModel__MA_typeBlinn1').setAttribute('transparency', '0.0');
+//document.getElementById('ChlamydiaModelMan__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
+//document.getElementById('ChlamydiaModelMan__MA_typeBlinn1').setAttribute('transparency', '0.0');
 //}
 function symptom1MAN(){
-document.getElementById('ChlamydiaModel__MA_Pain_when').setAttribute('transparency', '0.0');
-document.getElementById('ChlamydiaModel__MA_Pain_when').setAttribute('diffuseColor', '1.000 1.000 1.000');
-document.getElementById('ChlamydiaModel__MA_Red').setAttribute('diffuseColor', '1.000 0.000 0.022');
+document.getElementById('ChlamydiaModelMan__MA_Pain_when').setAttribute('transparency', '0.0');
+document.getElementById('ChlamydiaModelMan__MA_Pain_when').setAttribute('diffuseColor', '1.000 1.000 1.000');
+document.getElementById('ChlamydiaModelMan__MA_Red').setAttribute('diffuseColor', '1.000 0.000 0.022');
 }
 
 </script>
