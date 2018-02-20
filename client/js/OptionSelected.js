@@ -22,9 +22,13 @@ Template.OptionsSelected.helpers({
     return Template.instance().data.sharedVar1.get()
   }
 })
+Template.OptionsSelected.onCreated(function () {
+  this.gentest = new ReactiveVar(hello.car)
+  console.log(this.gentest)
+})
 
 Template.OptionsSelected.onRendered(function () {
-
+  $('#OptionsHolder').css('visibility', 'visible')
 })
 
 Template.choice.onRendered(function () {
@@ -65,5 +69,12 @@ Template.OptionsSelected.events({
     $('#closeSTIFemale').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
     console.log('yummy ', hello.car, 'another', hello.cake)
+  }
+})
+
+Template.OptionsSelected.helpers({
+    // This is what will be sent to Child1 and Child2.
+  gentest () {
+    return Template.instance().gentest.get()
   }
 })

@@ -8,7 +8,9 @@ import '../templates/choice.html'
 var view
 var car
 var cake
-Template.OptionsSelected.onCreated(function () {
+
+Template.choice.onCreated(function choiceOnCreated () {
+  this.isTrue = new ReactiveVar(false)
 })
 
 Template.choice.onRendered(function () {
@@ -62,8 +64,11 @@ Template.choice.events({
     cake = Sexaulity
     module.exports.car = car
     module.exports.cake = cake
-    //exports.car = instance.myReactiveVarSexuality
+    // exports.car = instance.myReactiveVarSexuality
     Session.set('GenderSession', Gender)
+    instance.isTrue.set(true)
+    this.train = new ReactiveVar(true)
+    console.log(this.train)
   }
 })
 
@@ -74,5 +79,8 @@ Template.choice.helpers({
   },
   sharedVarS: function () {
     return this.myReactiveVarSexuality
+  },
+  isTrue () {
+    return Template.instance().isTrue.get()
   }
 })
