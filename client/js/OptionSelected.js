@@ -53,10 +53,24 @@ Template.OptionsSelected.events({
     console.log('GenderSel', hello.car)
     // var m = require('mymodule')
     console.log('yummy ', hello.car, 'another', hello.cake)
-  }
-})
-
-Template.OptionsSelected.events({
+  },
+  'click #MaleGenitalWartsOPTI': function (event) {
+    $('#MaleChlamydiaOPTI').css('background-color', 'red')
+    $('.choiceHoldMain').css('visibility', 'hidden')
+    $('#OptionsHolder').css('visibility', 'hidden')
+    $('.STIMainHoldGW').css('visibility', 'visible')
+    $('.STIMainHoldGW').css('height', '100vh')
+    $('.STIMainHoldGW').css('width', '100vw')
+    $('.STIMainHoldGW').css('left', '0vw')
+    $('.ChoiceholdBackSTI').css('visibility', 'visible')
+    $('#closeSTIMale').css('visibility', 'visible')
+    $('body').css('overflow-y', 'hidden')
+    // var collectingTmplInstance = this.view.parentView.templateInstance()
+    // this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
+    console.log('GenderSel', hello.car)
+    // var m = require('mymodule')
+    console.log('yummy ', hello.car, 'another', hello.cake)
+  },
   'click #FemalChlamydiaOPTI': function (event) {
     $('#FemalChlamydiaOPTI').css('background-color', 'red')
     $('.choiceHoldMain').css('visibility', 'hidden')
