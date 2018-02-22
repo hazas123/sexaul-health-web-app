@@ -1,45 +1,27 @@
 <template name="choice">
 
-
-<div id="disclamer">
-  <p id="disclamerText">
-  Salus - site disclaimer and Cookie information can be found here <a href="https://drive.google.com/open?id=1wAKIT1UL7C4R6TJmnXFaWrQOH9m9ylNgDW1DaZdBnxU">Link</a>
-  </p>
-  <div id="closeDisclamer">
-    X
-  </div>
-
+<div class="banner-wrapper">
+    <div id="disclamer" class="cookie-banner highlight top full show">
+      <p>Salus - site disclaimer and Cookie information can be found here <a href="https://drive.google.com/open?id=1wAKIT1UL7C4R6TJmnXFaWrQOH9m9ylNgDW1DaZdBnxU">Link</a></p>
+      <a id="closeDisclamer" class="button" href="#">OK</a>
+    </div>
 </div>
 
-<div class="OpenMenu">
-  <div class="OpenMenuLook"></div>
-  <div class="OpenMenuLook"></div>
-  <div class="OpenMenuLook"></div>
-</div>
-<div class="MenuOverride">
-
-
-
-  <div class="CloseMenu">
-  X
-  </div>
-  <div id="MenuLinks">
-
-    <div id="MenuLink1" class="menuLinkFormat">
-      About Salus
-    </div>
-    <div id="MenuLink2" class="menuLinkFormat">
-      Select content to display
-    </div>
-    <div id="MenuLink3" class="menuLinkFormat">
-      Holder
-    </div>
-
-  </div>
-</div>
-
+<section id="page-slide">
+  <button id="toggle">
+    <i class="fas fa-bars"></i>
+  </button>
+  <nav class="MenuOverride" role='navigation'>
+    <ul>
+      <li><a href="">About Salus</a></li>
+      <li><a href="">Select content to display</a></li>
+      <li><a href="">Holder</a></li>
+    </ul>
+  </nav>
+</section>
 
 <div class="choiceHoldMain">
+
 
 
   <div id="choiceHoldInfo">
