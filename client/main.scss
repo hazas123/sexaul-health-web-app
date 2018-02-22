@@ -359,7 +359,7 @@ bottom: 0px;
 
 
 
-.STIMainHold, .STIMainHoldWoman, .STIMainHoldGW{
+.STIMainHold, .STIMainHoldWoman, .STIMainHoldGW, .STIMainHoldGH{
 
 position: absolute;
 top: 100vh;
@@ -433,7 +433,7 @@ background-color: transparent;
 
 
 
-#closeSTIMale{
+#closeSTIMale, #closeSTIMaleGH, #closeSTIMaleGW{
   height: 100px;
   width: 5vw;
   background-color: grey;

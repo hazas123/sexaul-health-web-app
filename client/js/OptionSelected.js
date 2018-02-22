@@ -9,10 +9,10 @@ import '../js/hello.js'
 
 var hello = require('../js/choice.js')
 var view
-var GenderSel = hello.car
+var GenderSel = hello.GenderToExport
 var Woman = 'Woman'
 var OtherGender = 'Other'
-var Sex = hello.cake
+var Sex = hello.SexaulityToExport
 
 // var m = require('mymodule')
 
@@ -23,8 +23,10 @@ Template.OptionsSelected.helpers({
   }
 })
 Template.OptionsSelected.onCreated(function () {
-  this.gentest = new ReactiveVar(hello.car)
-  console.log(this.gentest)
+  this.GenderExportedVar = new ReactiveVar(hello.GenderToExport)
+  this.SexualityExportedVar = new ReactiveVar(hello.SexaulityToExport)
+  console.log(this.GenderExportedVar)
+  console.log(this.SexualityExportedVar)
 })
 
 Template.OptionsSelected.onRendered(function () {
@@ -50,9 +52,9 @@ Template.OptionsSelected.events({
     $('body').css('overflow-y', 'hidden')
     // var collectingTmplInstance = this.view.parentView.templateInstance()
     // this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
-    console.log('GenderSel', hello.car)
+    console.log('GenderSel', hello.GenderToExport)
     // var m = require('mymodule')
-    console.log('yummy ', hello.car, 'another', hello.cake)
+    console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
   },
   'click #MaleGenitalWartsOPTI': function (event) {
     $('#MaleChlamydiaOPTI').css('background-color', 'red')
@@ -67,9 +69,27 @@ Template.OptionsSelected.events({
     $('body').css('overflow-y', 'hidden')
     // var collectingTmplInstance = this.view.parentView.templateInstance()
     // this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
-    console.log('GenderSel', hello.car)
+    console.log('GenderSel', hello.GenderToExport)
     // var m = require('mymodule')
-    console.log('yummy ', hello.car, 'another', hello.cake)
+    console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
+  },
+  'click #MaleGenitalHerpesOPTI': function (event) {
+    $('#MaleGenitalHerpesOPTI').css('background-color', 'red')
+    $('.choiceHoldMain').css('visibility', 'hidden')
+    $('#OptionsHolder').css('visibility', 'hidden')
+    $('.STIMainHoldGH').css('visibility', 'visible')
+    $('.STIMainHoldGH').css('height', '100vh')
+    $('.STIMainHoldGH').css('width', '100vw')
+    $('.STIMainHoldGH').css('left', '0vw')
+    $('.ChoiceholdBackSTI').css('visibility', 'visible')
+    // $('#closeSTIMale').css('visibility', 'visible')
+    $('body').css('overflow-y', 'hidden')
+    $('#closeSTIMaleGH').css('visibility', 'visible')
+    // var collectingTmplInstance = this.view.parentView.templateInstance()
+    // this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
+    console.log('GenderSel', hello.GenderToExport)
+    // var m = require('mymodule')
+    console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
   },
   'click #FemalChlamydiaOPTI': function (event) {
     $('#FemalChlamydiaOPTI').css('background-color', 'red')
@@ -82,13 +102,16 @@ Template.OptionsSelected.events({
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
     $('#closeSTIFemale').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
-    console.log('yummy ', hello.car, 'another', hello.cake)
+    console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
   }
 })
 
 Template.OptionsSelected.helpers({
     // This is what will be sent to Child1 and Child2.
-  gentest () {
-    return Template.instance().gentest.get()
+  GenderExportedVar () {
+    return Template.instance().GenderExportedVar.get()
+  },
+  SexualityExportedVar () {
+    return Template.instance().SexualityExportedVar.get()
   }
 })

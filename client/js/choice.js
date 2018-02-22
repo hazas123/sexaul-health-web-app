@@ -6,8 +6,8 @@ import '../templates/OptionsSelected.html'
 import '../templates/choice.html'
 
 var view
-var car
-var cake
+var GenderToExport
+var SexaulityToExport
 
 Template.choice.onCreated(function choiceOnCreated () {
   this.isTrue = new ReactiveVar(false)
@@ -60,11 +60,11 @@ Template.choice.events({
     instance.counter.set(age)
     instance.myReactiveVarGender.set(Gender)
     instance.myReactiveVarSexuality.set(Sexaulity)
-    car = Gender
-    cake = Sexaulity
-    module.exports.car = car
-    module.exports.cake = cake
-    // exports.car = instance.myReactiveVarSexuality
+    GenderToExport = Gender
+    SexaulityToExport = Sexaulity
+    module.exports.GenderToExport = GenderToExport
+    module.exports.SexaulityToExport = SexaulityToExport
+    // exports.GenderToExport = instance.myReactiveVarSexuality
     Session.set('GenderSession', Gender)
     instance.isTrue.set(true)
     this.train = new ReactiveVar(true)

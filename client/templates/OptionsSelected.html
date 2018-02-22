@@ -17,37 +17,34 @@
 <div id="AvaliableOptions" class="col">
 <div class="row">
 
-{{#if _equals gentest 'Man'}}
+{{#if _equals GenderExportedVar 'Man'}}
 
 
   <div class="col-3 itemOpt" id="MaleChlamydiaOPTI">
-<p>
-  {{cars}}
-  hi
-</p>
-    Male Chlamydia
-
-
+    <p>
+      Male Chlamydia
+    </p>
   </div>
 
   <div class="col-3 itemOpt" id="MaleGenitalWartsOPTI">
-<p>
-
-</p>
-    Male Genital Warts
-
-
+    <p>
+      Male Genital Warts
+    </p>
   </div>
-  {{/if}}
 
-  {{#if _equals gentest 'Woman'}}
+  <div class="col-3 itemOpt" id="MaleGenitalHerpesOPTI">
+    <p>
+      Male Genital Herpes
+    </p>
+  </div>
+{{/if}}
+
+{{#if _equals GenderExportedVar 'Woman'}}
   <div class="col-3 itemOpt" id="FemalChlamydiaOPTI">
     <p>
-      {{cars}}
+      Female Chlamydia
 
     </p>
-    Female Chlamydia
-
   </div>
   {{/if}}
 

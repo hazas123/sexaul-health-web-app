@@ -24,6 +24,23 @@ Template.ChlamydiaMaleT.events({
   }
 })
 
+Template.GenialHerpesMale.events({
+  'click #closeSTIMaleGH': function (event) {
+    $('#MaleGenitalHerpesOPTI').css('background-color', 'blue')
+    $('.choiceHoldMain').css('visibility', 'visible')
+    $('#OptionsHolder').css('visibility', 'visible')
+    $('.STIMainHoldGH').css('visibility', 'hidden')
+    $('.STIMainHoldGH').css('height', '0vh')
+    $('.STIMainHoldGH').css('width', '0vw')
+    $('.STIMainHoldGH').css('left', '100vw')
+    $('.ChoiceholdBackSTI').css('visibility', 'hidden')
+    $('body').css('overflow-y', 'hidden')
+    $('body').css('overflow-y', 'visible')
+    $('#closeSTIMaleGH').css('visibility', 'hidden')
+    console.log('MaleClose')
+  }
+})
+
 Template.ChlamydiaFemaleC.events({
   'click #closeSTIFemale': function (event) {
     $('#FemalChlamydiaOPTI').css('background-color', 'blue')
