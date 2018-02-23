@@ -57,7 +57,7 @@ Template.OptionsSelected.events({
     console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
   },
   'click #MaleGenitalWartsOPTI': function (event) {
-    $('#MaleChlamydiaOPTI').css('background-color', 'red')
+    $('#MaleGenitalWartsOPTI').css('background-color', 'red')
     $('.choiceHoldMain').css('visibility', 'hidden')
     $('#OptionsHolder').css('visibility', 'hidden')
     $('.STIMainHoldGW').css('visibility', 'visible')
@@ -65,7 +65,7 @@ Template.OptionsSelected.events({
     $('.STIMainHoldGW').css('width', '100vw')
     $('.STIMainHoldGW').css('left', '0vw')
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
-    $('#closeSTIMale').css('visibility', 'visible')
+    $('#closeSTIMaleGW').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
     // var collectingTmplInstance = this.view.parentView.templateInstance()
     // this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
@@ -85,6 +85,24 @@ Template.OptionsSelected.events({
     // $('#closeSTIMale').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
     $('#closeSTIMaleGH').css('visibility', 'visible')
+    // var collectingTmplInstance = this.view.parentView.templateInstance()
+    // this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
+    console.log('GenderSel', hello.GenderToExport)
+    // var m = require('mymodule')
+    console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
+  },
+  'click #MaleGonorrhoeaOPTI': function (event) {
+    $('#MaleGonorrhoeaOPTI').css('background-color', 'red')
+    $('.choiceHoldMain').css('visibility', 'hidden')
+    $('#OptionsHolder').css('visibility', 'hidden')
+    $('.STIMainHoldGon').css('visibility', 'visible')
+    $('.STIMainHoldGon').css('height', '100vh')
+    $('.STIMainHoldGon').css('width', '100vw')
+    $('.STIMainHoldGon').css('left', '0vw')
+    $('.ChoiceholdBackSTI').css('visibility', 'visible')
+    // $('#closeSTIMale').css('visibility', 'visible')
+    $('body').css('overflow-y', 'hidden')
+    $('#closeSTIMaleGon').css('visibility', 'visible')
     // var collectingTmplInstance = this.view.parentView.templateInstance()
     // this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
     console.log('GenderSel', hello.GenderToExport)
