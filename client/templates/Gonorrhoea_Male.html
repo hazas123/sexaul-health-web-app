@@ -22,6 +22,8 @@
                 <Viewpoint id="symptomAreaMANGonEyes" position="-0.00427 1.65329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
                 <Viewpoint id="symptomAreaMANGonThroat" position="-0.00427 1.45329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
 
+
+                <Viewpoint id="testing" position="-0.00427 0.45329 -2.9608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
               <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
                 <Transform><inline  nameSpaceName="GonorrhoeaModelMan" mapDEFToID="true" url="./Chlamydia_Models/Gonorrhoea_Man.x3d"  ></inline></Transform>
 
@@ -91,6 +93,14 @@
 
 
 <script type="text/javascript">
+
+
+function zoomLice() {
+  document.getElementById('testing').setAttribute('set_bind','true');
+  console.log("Clicked");
+}
+//onclick="zoomLice()" but on the banan shape test worked
+
 
 function symptomzoomMANGon(symptoms, texture1, texture2, texture3) {
 document.getElementById(symptoms).setAttribute('set_bind','true');
