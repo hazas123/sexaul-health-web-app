@@ -43,14 +43,14 @@
           <div class="colArt">
 
 
-<div class="ButtonStylingSTI STISmallHeading">Genital Warts</div>
+<div class="ButtonStylingSTI STISmallHeading">Gonorrhoea</div>
       <div class="ButtonStylingSTIHolder">
           <div class="row">
               <div class="ButtonStylingSTI " id="symptom1GonMAN" onclick="symptomzoomMANGon('symptomAreaMANGon', 'GonorrhoeaModelMan__MA_discharge_Gon1', 'GonorrhoeaModelMan__MA_discharge_Gon', 'GonorrhoeaModelMan__MA_Discharge_Gon1')">Symptom 1</div>
               <div class="ButtonStylingSTI " id="symptom2GonMAN" onclick="symptomzoom1MANGon('symptomAreaMANGon', 'GonorrhoeaModelMan__MA_Pee_Gon', 'GonorrhoeaModelMan__MA_Pain_When_Peeing_Gon')">Symptom 2</div>
-              <div class="ButtonStylingSTI " id="symptom3GonMAN" onclick="symptomzoom2MANGon('symptomAreaMANGon', 'GonorrhoeaModelMan__MA_Man_Skin_Texture', 'GonorrhoeaModelMan__MA_Cherry_Pain_Gon', 'GonorrhoeaModelMan__MA_Banana_texture_MANGW')">Symptom 3</div>
-              <div class="ButtonStylingSTI " id="symptom4GonMAN" onclick="symptomzoom3MANGon('symptomAreaMANGonEyes', 'GonorrhoeaModelMan__MA_Man_Skin_Texture', 'GonorrhoeaModelMan__MA_Eye_Gon_Texture')">Symptom 4</div>
-              <div class="ButtonStylingSTI " id="symptom5GonMAN" onclick="symptomzoom4MANGon('symptomAreaMANGonThroat', 'GonorrhoeaModelMan__MA_Man_Skin_Texture', 'GonorrhoeaModelMan__MA_Throat_Gon_Texture')">Symptom 5</div>
+              <div class="ButtonStylingSTI " id="symptom3GonMAN" onclick="symptomzoom2MANGon('symptomAreaMANGon', 'GonorrhoeaModelMan__MA_Man_Skin_TextureGon', 'GonorrhoeaModelMan__MA_Cherry_Pain_Gon', 'GonorrhoeaModelMan__MA_Banana_texture_MANGW')">Symptom 3</div>
+              <div class="ButtonStylingSTI " id="symptom4GonMAN" onclick="symptomzoom3MANGon('symptomAreaMANGonEyes', 'GonorrhoeaModelMan__MA_Man_Skin_TextureGon', 'GonorrhoeaModelMan__MA_Eye_Gon_Texture')">Symptom 4</div>
+              <div class="ButtonStylingSTI " id="symptom5GonMAN" onclick="symptomzoom4MANGon('symptomAreaMANGonThroat', 'GonorrhoeaModelMan__MA_Man_Skin_TextureGon', 'GonorrhoeaModelMan__MA_Throat_Gon_Texture')">Symptom 5</div>
               <div class="ButtonStylingSTI " onclick="cameraChangeMANGon('ResetMANGon')" >Reset</div>
 
             </div>
@@ -60,23 +60,23 @@
       <div class="row STIsymptomInfoBoxMove">
         <div class="STIsymptomInfoBox" id="symptom1InfoMANGon">
           <h1>Symptom 1</h1>
-          <p>Skin changes - may be painless however itching or redness may occur </p>
+          <p>A white, yellow or Green discharge may appear from the tip of the penis. </p>
         </div>
         <div class="STIsymptomInfoBox" id="symptom2InfoMANGon">
           <h1>Symptom 2</h1>
-          <p>Fleshy growths or bumps</p>
+          <p>A pain or burning sensation may occur while peeing</p>
         </div>
         <div class="STIsymptomInfoBox" id="symptom3InfoMANGon">
-          <h1>Symptom 2</h1>
-          <p>Fleshy growths or bumps</p>
+          <h1>Symptom 3</h1>
+          <p>Pain or tenderness in the testicles</p>
         </div>
         <div class="STIsymptomInfoBox" id="symptom4InfoMANGon">
-          <h1>Symptom 2</h1>
-          <p>Fleshy growths or bumps</p>
+          <h1>Symptom 4</h1>
+          <p>Gonorrhoea can affect the eyes </p>
         </div>
         <div class="STIsymptomInfoBox" id="symptom5InfoMANGon">
-          <h1>Symptom 2</h1>
-          <p>Fleshy growths or bumps</p>
+          <h1>Symptom 5</h1>
+          <p>Gonorrhoea can affect the throat</p>
         </div>
       </div>
 
@@ -178,7 +178,7 @@ $( "#symptom4GonMAN" ).addClass( "disableItemSelect" );
 
 function cameraChangeMANGon(Camera) {
 document.getElementById(Camera).setAttribute('set_bind','true');
-document.getElementById('GonorrhoeaModelMan__MA_Man_Skin_Texture').setAttribute('transparency', '0.0');
+document.getElementById('GonorrhoeaModelMan__MA_Man_Skin_TextureGon').setAttribute('transparency', '0.0');
 document.getElementById('GonorrhoeaModelMan__MA_discharge_Gon1').setAttribute('transparency', '1.0');
 document.getElementById('GonorrhoeaModelMan__MA_discharge_Gon').setAttribute('transparency', '1.0');
 document.getElementById('GonorrhoeaModelMan__MA_Discharge_Gon1').setAttribute('transparency', '1.0');

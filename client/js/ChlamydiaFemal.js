@@ -75,6 +75,23 @@ Template.GonorrhoeaMale.events({
   }
 })
 
+Template.GonorrhoeaMale.events({
+  'click #MaleSyphilisOPTI': function (event) {
+    $('#MaleGonorrhoeaOPTI').css('background-color', 'blue')
+    $('.choiceHoldMain').css('visibility', 'visible')
+    $('#OptionsHolder').css('visibility', 'visible')
+    $('.STIMainHoldSyph').css('visibility', 'hidden')
+    $('.STIMainHoldSyph').css('height', '0vh')
+    $('.STIMainHoldSyph').css('width', '0vw')
+    $('.STIMainHoldSyph').css('left', '100vw')
+    $('.ChoiceholdBackSTI').css('visibility', 'hidden')
+    $('body').css('overflow-y', 'hidden')
+    $('body').css('overflow-y', 'visible')
+    $('#closeSTIMaleSyph').css('visibility', 'hidden')
+    console.log('MaleClose warts')
+  }
+})
+
 Template.ChlamydiaFemaleC.events({
   'click #closeSTIFemale': function (event) {
     $('#FemalChlamydiaOPTI').css('background-color', 'blue')

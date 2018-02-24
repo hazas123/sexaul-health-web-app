@@ -109,6 +109,24 @@ Template.OptionsSelected.events({
     // var m = require('mymodule')
     console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
   },
+  'click #MaleSyphilisOPTI': function (event) {
+    $('#MaleSyphilisOPTI').css('background-color', 'red')
+    $('.choiceHoldMain').css('visibility', 'hidden')
+    $('#OptionsHolder').css('visibility', 'hidden')
+    $('.STIMainHoldSyph').css('visibility', 'visible')
+    $('.STIMainHoldSyph').css('height', '100vh')
+    $('.STIMainHoldSyph').css('width', '100vw')
+    $('.STIMainHoldSyph').css('left', '0vw')
+    $('.ChoiceholdBackSTI').css('visibility', 'visible')
+    // $('#closeSTIMale').css('visibility', 'visible')
+    $('body').css('overflow-y', 'hidden')
+    $('#closeSTIMaleSyph').css('visibility', 'visible')
+    // var collectingTmplInstance = this.view.parentView.templateInstance()
+    // this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
+    console.log('GenderSel', hello.GenderToExport)
+    // var m = require('mymodule')
+    console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
+  },
   'click #FemalChlamydiaOPTI': function (event) {
     $('#FemalChlamydiaOPTI').css('background-color', 'red')
     $('.choiceHoldMain').css('visibility', 'hidden')
