@@ -44,7 +44,7 @@
 <div class="ButtonStylingSTI STISmallHeading">Genital Warts</div>
       <div class="ButtonStylingSTIHolder">
           <div class="row">
-              <div class="ButtonStylingSTI " id="symptom1SyphMAN" onclick="symptomzoom1MANSyph('symptomAreaMANSyph', 'Syphilis_Model_Man__MA_Man_Skin_Texture_Syph', 'Syphilis_Model_Man__MA_Ulcers_texture_Syphilis' )">Symptom 1</div>
+              <div class="ButtonStylingSTI " id="symptom1SyphMAN" onclick="symptomzoom1MANSyph('symptomAreaMANSyph', 'Syphilis_Model_Man__MA_Man_Skin_Texture_Syph', 'Syphilis_Model_Man__MA_Ulcers_texture_Syphilis')">Symptom 1</div>
               <div class="ButtonStylingSTI " id="symptom2SyphMAN" onclick="symptomzoom2MANSyph('symptomAreaMANSyph', 'Syphilis_Model_Man__MA_Man_Skin_Texture_Syph', 'Syphilis_Model_Man__MA_Mouth_Ulcers_Sythilis')">Symptom 2</div>
               <div class="ButtonStylingSTI " id="symptom3SyphMAN" onclick="symptomzoom3MANSyph('symptomAreaMANSyph', 'Syphilis_Model_Man__MA_Man_Skin_Texture_Syph', 'Syphilis_Model_Man__MA_Ulcers_Anus_Syphilis')">Symptom 3</div>
 
@@ -107,8 +107,8 @@
 function symptomzoom1MANSyph(symptoms, texture1, texture2) {
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
-document.getElementById(texture1).setAttribute('transparency', '0.0');
-
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+console.log('hiu')
 document.getElementById('symptom1InfoMANSyph').style.height = '400px';
 document.getElementById('symptom1InfoMANSyph').style.opacity = '1.0';
 $( "#symptom2SyphMAN" ).addClass( "disableItemSelect" );
@@ -121,8 +121,8 @@ $( "#symptom7SyphMAN" ).addClass( "disableItemSelect" );
 
 function symptomzoom2MANSyph(symptoms, texture1, texture2) {
 document.getElementById(symptoms).setAttribute('set_bind','true');
-document.getElementById(texture1).setAttribute('transparency', '1.0');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
 
 document.getElementById('symptom2InfoMANSyph').style.height = '400px';
 document.getElementById('symptom2InfoMANSyph').style.opacity = '1.0';
@@ -136,8 +136,8 @@ $( "#symptom7SyphMAN" ).addClass( "disableItemSelect" );
 
 function symptomzoom3MANSyph(symptoms, texture1, texture2) {
 document.getElementById(symptoms).setAttribute('set_bind','true');
-document.getElementById(texture1).setAttribute('transparency', '1.0');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
 
 document.getElementById('symptom3InfoMANSyph').style.height = '400px';
 document.getElementById('symptom3InfoMANSyph').style.opacity = '1.0';
@@ -151,8 +151,8 @@ $( "#symptom7SyphMAN" ).addClass( "disableItemSelect" );
 
 function symptomzoom4MANSyph(symptoms, texture1, texture2) {
 document.getElementById(symptoms).setAttribute('set_bind','true');
-document.getElementById(texture1).setAttribute('transparency', '1.0');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
 
 document.getElementById('symptom4InfoMANSyph').style.height = '400px';
 document.getElementById('symptom4InfoMANSyph').style.opacity = '1.0';
@@ -167,7 +167,7 @@ $( "#symptom7SyphMAN" ).addClass( "disableItemSelect" );
 function symptomzoom5MANSyph(symptoms, texture1, texture2) {
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.7');
-document.getElementById(texture1).setAttribute('transparency', '0.0');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
 
 document.getElementById('symptom5InfoMANSyph').style.height = '400px';
 document.getElementById('symptom5InfoMANSyph').style.opacity = '1.0';
@@ -182,7 +182,7 @@ $( "#symptom7SyphMAN" ).addClass( "disableItemSelect" );
 function symptomzoom6MANSyph(symptoms, texture1, texture2) {
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.7');
-document.getElementById(texture1).setAttribute('transparency', '0.0');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
 
 document.getElementById('symptom6InfoMANSyph').style.height = '400px';
 document.getElementById('symptom6InfoMANSyph').style.opacity = '1.0';
