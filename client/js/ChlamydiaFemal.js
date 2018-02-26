@@ -75,9 +75,9 @@ Template.GonorrhoeaMale.events({
   }
 })
 
-Template.GonorrhoeaMale.events({
-  'click #MaleSyphilisOPTI': function (event) {
-    $('#MaleGonorrhoeaOPTI').css('background-color', 'blue')
+Template.SyphilisMale.events({
+  'click #closeSTIMaleSyph': function (event) {
+    $('#MaleSyphilisOPTI').css('background-color', 'blue')
     $('.choiceHoldMain').css('visibility', 'visible')
     $('#OptionsHolder').css('visibility', 'visible')
     $('.STIMainHoldSyph').css('visibility', 'hidden')
