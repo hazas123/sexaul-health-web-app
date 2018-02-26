@@ -18,10 +18,11 @@
                 <Viewpoint id="frontMANSyph" position="-0.07427 0.95329 -2.79608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera"></Viewpoint>
                 <Viewpoint id="rightMANSyph" position="-2.43383 1.07351 -1.28700" orientation="-0.00318 -0.99950 -0.03159 2.06609" description="camera"></Viewpoint>
 
+                <viewpoint id="symptomAreaMANSyphGlands" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
                 <Viewpoint id="symptomAreaMANSyph" position="-0.00427 0.85329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
                 <Viewpoint id="symptomAreaMANSyphFeet" position="-0.02427 -0.95329 -0.79608" orientation="-0.00707 0.87466 -0.48473 3.12040" description="camera" centerOfRotation='0,0,0' ></Viewpoint>
-                <Viewpoint id="symptomAreaMANSyphHands" position="-0.00427 0.85329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
-
+                <Viewpoint id="symptomAreaMANSyphHands" position="-0.25427 0.85329 -0.39608"  description="camera" orientation='-0.000 1.0 0.00219 -3.2' centerOfRotation="-0.25427 0.85329 -0.39608"></Viewpoint>
+                <Viewpoint id="symptomAreaMANGHAnal" position="-0.0000 0.85329 0.39608" orientation="-0.01451 0.99989 0.00319 0.0" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
               <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
                 <Transform><inline  nameSpaceName="Syphilis_Model_Man" mapDEFToID="true" url="./Chlamydia_Models/Syphilis_Man_03.x3d"  ></inline></Transform>
 
@@ -51,7 +52,7 @@
               <div class="ButtonStylingSTI " id="symptom4SyphMAN" onclick="symptomzoom4MANSyph('symptomAreaMANSyph', 'Syphilis_Model_Man__MA_Man_Skin_Texture_Syph', 'Syphilis_Model_Man__MA_headaches_Syphilis')">Symptom 4</div>
               <div class="ButtonStylingSTI " id="symptom5SyphMAN" onclick="symptomzoom5MANSyph('symptomAreaMANSyphFeet', 'Syphilis_Model_Man__MA_Man_Skin_Texture_Syph', 'Syphilis_Model_Man__MA_Foot_Rash_Siphilis', 'Syphilis_Model_Man__MA_Banana_texture_MANGW', 'Syphilis_Model_Man__MA_Banana_texture_MANGW1', 'Syphilis_Model_Man__MA_Cherry_Stem_texture_MAN_GW', 'Syphilis_Model_Man__MA_Cherry_texture_MANGW')">Symptom 5</div>
               <div class="ButtonStylingSTI " id="symptom6SyphMAN" onclick="symptomzoom6MANSyph('symptomAreaMANSyphHands', 'Syphilis_Model_Man__MA_Man_Skin_Texture_Syph', 'Syphilis_Model_Man__MA_Hand_Rash')">Symptom 6</div>
-              <div class="ButtonStylingSTI " id="symptom7SyphMAN" onclick="symptomzoom7MANSyph('symptomAreaMANSyph', 'Syphilis_Model_Man__MA_Man_Skin_Texture_Syph', 'Syphilis_Model_Man__MA_Neck_Glands_Syphilis', 'Syphilis_Model_Man__MA_Groin_Glands_syphilis', 'Syphilis_Model_Man__MA_Armpit_Glands_syphilis')">Symptom 7</div>
+              <div class="ButtonStylingSTI " id="symptom7SyphMAN" onclick="symptomzoom7MANSyph('symptomAreaMANSyphGlands', 'Syphilis_Model_Man__MA_Man_Skin_Texture_Syph', 'Syphilis_Model_Man__MA_Neck_Glands_Syphilis', 'Syphilis_Model_Man__MA_Groin_Glands_syphilis', 'Syphilis_Model_Man__MA_Armpit_Glands_syphilis', 'Syphilis_Model_Man__MA_Banana_texture_MANGW', 'Syphilis_Model_Man__MA_Banana_texture_MANGW1', 'Syphilis_Model_Man__MA_Cherry_Stem_texture_MAN_GW', 'Syphilis_Model_Man__MA_Cherry_texture_MANGW')">Symptom 7</div>
 
               <div class="ButtonStylingSTI " onclick="cameraChangeMANSyph('ResetMANSyph')" >Reset</div>
 
@@ -62,31 +63,31 @@
       <div class="row STIsymptomInfoBoxMove">
         <div class="STIsymptomInfoBox" id="symptom1InfoMANSyph">
           <h1>Symptom 1</h1>
-          <p>Skin changes - may be painless however itching or redness may occur </p>
+          <p>Painful sores may appear near the genitals</p>
         </div>
         <div class="STIsymptomInfoBox" id="symptom2InfoMANSyph">
           <h1>Symptom 2</h1>
-          <p>Fleshy growths or bumps</p>
+          <p>Painful sores may appear near the mouth</p>
         </div>
         <div class="STIsymptomInfoBox" id="symptom3InfoMANSyph">
           <h1>Symptom 3</h1>
-          <p>Skin changes - may be painless however itching or redness may occur </p>
+          <p>Painful sores may appear near the anus</p>
         </div>
         <div class="STIsymptomInfoBox" id="symptom4InfoMANSyph">
           <h1>Symptom 4</h1>
-          <p>Fleshy growths or bumps</p>
+          <p>Flu symptoms - such as a headache can occur</p>
         </div>
         <div class="STIsymptomInfoBox" id="symptom5InfoMANSyph">
           <h1>Symptom 5</h1>
-          <p>Skin changes - may be painless however itching or redness may occur </p>
+          <p>Skin changes - a painful rash may occur often on the soles of the feet</p>
         </div>
         <div class="STIsymptomInfoBox" id="symptom6InfoMANSyph">
           <h1>Symptom 6</h1>
-          <p>Fleshy growths or bumps</p>
+          <p>Skin changes - a painful rash may occur often on the palms of the hands</p>
         </div>
         <div class="STIsymptomInfoBox" id="symptom7InfoMANSyph">
           <h1>Symptom 7</h1>
-          <p>Skin changes - may be painless however itching or redness may occur </p>
+          <p>Flu symptoms - glands in the groin, neck and armpit may become swollen </p>
         </div>
 
       </div>
@@ -198,12 +199,16 @@ $( "#symptom4SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom5SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom7SyphMAN" ).addClass( "disableItemSelect" );
 }
-function symptomzoom7MANSyph(symptoms, texture1, texture2, texture3, texture4) {
+function symptomzoom7MANSyph(symptoms, texture1, texture2, texture3, texture4, texture5, texture6, texture7, texture8) {
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.7');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 document.getElementById(texture3).setAttribute('transparency', '0.0');
 document.getElementById(texture4).setAttribute('transparency', '0.0');
+document.getElementById(texture5).setAttribute('transparency', '1.0');
+document.getElementById(texture6).setAttribute('transparency', '1.0');
+document.getElementById(texture7).setAttribute('transparency', '1.0');
+document.getElementById(texture8).setAttribute('transparency', '1.0');
 
 document.getElementById('symptom7InfoMANSyph').style.height = '400px';
 document.getElementById('symptom7InfoMANSyph').style.opacity = '1.0';
