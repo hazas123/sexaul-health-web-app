@@ -92,6 +92,23 @@ Template.SyphilisMale.events({
   }
 })
 
+Template.PubicLiceMale.events({
+  'click #closeSTIMalePubLi': function (event) {
+    // $('#MaleSyphilisOPTI').css('background-color', 'blue')
+    $('.choiceHoldMain').css('visibility', 'visible')
+    $('#OptionsHolder').css('visibility', 'visible')
+    $('.STIMainHoldPubLi').css('visibility', 'hidden')
+    $('.STIMainHoldPubLi').css('height', '0vh')
+    $('.STIMainHoldPubLi').css('width', '0vw')
+    $('.STIMainHoldPubLi').css('left', '100vw')
+    $('.ChoiceholdBackSTI').css('visibility', 'hidden')
+    $('body').css('overflow-y', 'hidden')
+    $('body').css('overflow-y', 'visible')
+    $('#closeSTIMalePubLi').css('visibility', 'hidden')
+    console.log('MaleClose warts')
+  }
+})
+
 Template.ChlamydiaFemaleC.events({
   'click #closeSTIFemale': function (event) {
     $('#FemalChlamydiaOPTI').css('background-color', 'blue')

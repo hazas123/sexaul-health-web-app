@@ -36,6 +36,7 @@ Template.OptionsSelected.onRendered(function () {
 Template.choice.onRendered(function () {
   view = this.view
   console.log(view)
+  console.log(GenderSel, Woman, OtherGender, Sex)
 })
 
 Template.OptionsSelected.events({
@@ -85,11 +86,6 @@ Template.OptionsSelected.events({
     // $('#closeSTIMale').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
     $('#closeSTIMaleGH').css('visibility', 'visible')
-    // var collectingTmplInstance = this.view.parentView.templateInstance()
-    // this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
-    console.log('GenderSel', hello.GenderToExport)
-    // var m = require('mymodule')
-    console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
   },
   'click #MaleGonorrhoeaOPTI': function (event) {
     $('#MaleGonorrhoeaOPTI').css('background-color', 'red')
@@ -103,11 +99,6 @@ Template.OptionsSelected.events({
     // $('#closeSTIMale').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
     $('#closeSTIMaleGon').css('visibility', 'visible')
-    // var collectingTmplInstance = this.view.parentView.templateInstance()
-    // this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
-    console.log('GenderSel', hello.GenderToExport)
-    // var m = require('mymodule')
-    console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
   },
   'click #MaleSyphilisOPTI': function (event) {
     $('#MaleSyphilisOPTI').css('background-color', 'red')
@@ -121,11 +112,18 @@ Template.OptionsSelected.events({
     // $('#closeSTIMale').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
     $('#closeSTIMaleSyph').css('visibility', 'visible')
-    // var collectingTmplInstance = this.view.parentView.templateInstance()
-    // this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
-    console.log('GenderSel', hello.GenderToExport)
-    // var m = require('mymodule')
-    console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
+  },
+  'click #MalePubicLiceOPTI': function (event) {
+    $('#MalePubicLiceOPTI').css('background-color', 'red')
+    $('.choiceHoldMain').css('visibility', 'hidden')
+    $('#OptionsHolder').css('visibility', 'hidden')
+    $('.STIMainHoldPubLi').css('visibility', 'visible')
+    $('.STIMainHoldPubLi').css('height', '100vh')
+    $('.STIMainHoldPubLi').css('width', '100vw')
+    $('.STIMainHoldPubLi').css('left', '0vw')
+    $('.ChoiceholdBackSTI').css('visibility', 'visible')
+    $('body').css('overflow-y', 'hidden')
+    $('#closeSTIMalePubLi').css('visibility', 'visible')
   },
   'click #FemalChlamydiaOPTI': function (event) {
     $('#FemalChlamydiaOPTI').css('background-color', 'red')
