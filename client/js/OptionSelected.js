@@ -125,6 +125,18 @@ Template.OptionsSelected.events({
     $('body').css('overflow-y', 'hidden')
     $('#closeSTIMalePubLi').css('visibility', 'visible')
   },
+  'click #ScabiesOPTI': function (event) {
+    $('#ScabiesOPTI').css('background-color', 'red')
+    $('.choiceHoldMain').css('visibility', 'hidden')
+    $('#OptionsHolder').css('visibility', 'hidden')
+    $('.STIMainHoldScabies').css('visibility', 'visible')
+    $('.STIMainHoldScabies').css('height', '100vh')
+    $('.STIMainHoldScabies').css('width', '100vw')
+    $('.STIMainHoldScabies').css('left', '0vw')
+    $('.ChoiceholdBackSTI').css('visibility', 'visible')
+    $('body').css('overflow-y', 'hidden')
+    $('#closeSTIMaleScabies').css('visibility', 'visible')
+  },
   'click #FemalChlamydiaOPTI': function (event) {
     $('#FemalChlamydiaOPTI').css('background-color', 'red')
     $('.choiceHoldMain').css('visibility', 'hidden')
