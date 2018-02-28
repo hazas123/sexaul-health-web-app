@@ -1,8 +1,6 @@
 import { Template } from 'meteor/templating'
 import { ReactiveVar } from 'meteor/reactive-var'
 import { Session } from 'meteor/session'
-import { Blaze } from 'meteor/blaze'
-import { ReactiveVar } from 'meteor/reactive-var'
 
 import '../templates/OptionsSelected.html'
 import '../templates/choice.html'
@@ -32,11 +30,8 @@ Template.choice.events({
     $('#page-slide').toggleClass('slide')
     $('#toggle').toggleClass('slide-tog')
   },
-  'click #SelectOptionCol4': function (event, instance) {
-    $('#toggle').css('visibility', 'visible')
-    $('#OptionsHolder').css('visibility', 'visible')
-  },
   'click #closeDisclamer': function (event) {
+    event.preventDefault()
     $('#disclamer').css('visibility', 'hidden')
     console.log('disclamer visible')
   },
@@ -53,6 +48,7 @@ Template.choice.events({
   'click #SelectOptionCol4' (event, instance) {
     // clicked the .clickbtn class
     // increment the counter when button is clicked
+    $('#toggle').css('visibility', 'visible')
     $('#OptionsHolder').css('visibility', 'visible')
     console.log('visible')
     var day = $('#days').find(':selected').text()
@@ -62,7 +58,7 @@ Template.choice.events({
     var ageDifMs = Date.now() - birthDate.getTime()
     var ageDate = new Date(ageDifMs) // miliseconds from epoch
     var age = Math.abs(ageDate.getUTCFullYear() - 1970)
-    var Gender = $('input[name=GenderOption]:checked', '#col1Options').val()
+    var Gender = $('input[name=GenderOption]:checked').val()
     var Sexaulity = $('input[name=SexualityOption]:checked', '#col3Options').val()
     console.log(Sexaulity)
     console.log(Gender)
@@ -80,6 +76,7 @@ Template.choice.events({
     instance.isTrue.set(true)
     this.train = new ReactiveVar(true)
     console.log(this.train)
+    $('#toggle').css('visibility', 'visible')
   }
 })
 
