@@ -20,6 +20,7 @@ Template.loadingScreen.events({
     $('body').css('overflow-y', 'visible')
     setTimeout(() => Blaze.remove(view), 3400)
     setTimeout(function () { $('#disclamer').css('visibility', 'visible') }, 3500)
+    setTimeout(function () { $('#toggle').css('visibility', 'visible') }, 3500)
   }
 })
 

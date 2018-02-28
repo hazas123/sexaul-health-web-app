@@ -48,7 +48,6 @@ Template.choice.events({
   'click #SelectOptionCol4' (event, instance) {
     // clicked the .clickbtn class
     // increment the counter when button is clicked
-    $('#toggle').css('visibility', 'visible')
     $('#OptionsHolder').css('visibility', 'visible')
     console.log('visible')
     var day = $('#days').find(':selected').text()
