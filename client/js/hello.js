@@ -7,10 +7,13 @@ import { Promise } from 'meteor/promise'
 import '../templates/hello.html'
 import '../templates/choice.html'
 import '../templates/loadingScreen.html'
+import '../templates/OptionsSelected.html'
 
 Template.choice.onCreated(function choiceOnCreated () {
   // counter starts at 0
   this.counter = new ReactiveVar(0)
+  this.myReactiveVarGender = new ReactiveVar()
+  this.myReactiveVarSexuality = new ReactiveVar()
 
   $(function () {
     var i
@@ -55,23 +58,6 @@ Template.choice.result = function () {
   return Session.get('serverDataResponse') || ''
 }
 
-Template.choice.events({
-  'click #col6' (event, instance) {
-    // clicked the .clickbtn class
-    // increment the counter when button is clicked
-    var day = $('#days').find(':selected').text()
-    var month = $('#months').find(':selected').text()
-    var year = $('#years').find(':selected').text()
-    var birthDate = new Date(year + '-' + month + '-' + day)
-
-    var ageDifMs = Date.now() - birthDate.getTime()
-    var ageDate = new Date(ageDifMs) // miliseconds from epoch
-    var age = Math.abs(ageDate.getUTCFullYear() - 1970)
-
-    console.log(age)
-    instance.counter.set(age)
-  }
-
   // 'click .clickAPI' (event, instance) {
   //
   //   Meteor.call('asyncJob', message, function(err, result) {
@@ -99,4 +85,3 @@ Template.choice.events({
     //   })
     // }
   // }
-})

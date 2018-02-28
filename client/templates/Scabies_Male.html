@@ -1,0 +1,145 @@
+<template name="ScabiesMale">
+
+
+  <div class="STIMainHoldScabies row">
+
+      <div class="w-50 col ">
+
+        <div class="ReturnOptions">
+          <div id="closeSTIMaleScabies">Close STI</div>
+        </div>
+        <div  class="x3d_scene">
+
+        <x3d width='400px' height='600px'>
+          <scene>
+            <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
+                <viewpoint position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+                <viewpoint id="ResetMANScabies" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+
+
+                <viewpoint id="symptomAreaMANScabiesGroin"    position="-0.00427 0.90329 -0.50908" orientation="-0.000 1.0 0.00219 3.2" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></viewpoint>
+                <viewpoint id="symptomAreaMANScabiesHand"     position="-0.25427 0.85329 -0.39608"  description="camera" orientation='-0.000 1.0 0.00219 -3.2' centerOfRotation="-0.25427 0.85329 -0.39608"></viewpoint>
+                <viewpoint id="symptomAreaMANScabiesWrist"    position="-0.25427 0.95329 -0.39608"  description="camera" orientation='-0.000 1.0 0.00219 -3.2' centerOfRotation="-0.25427 0.85329 -0.39608"></viewpoint>
+                <viewpoint id="symptomAreaMANScabiesAnkle"    position="-0.02427 0.15329 -0.49608" orientation="-0.000 1.0 0.00219 -3.2" description="camera" centerOfRotation='0,0,0'></viewpoint>
+                <viewpoint id="symptomAreaMANScabiesUnderarm" position="-0.20227 1.35329 -0.39608"  description="camera" orientation='-0.000 1.0 0.00219 3.2' centerOfRotation="-0.25427 0.85329 -0.39608"></viewpoint>
+
+
+
+
+
+
+
+
+              <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
+                <Transform><inline  nameSpaceName="Scabies_ModelMan" mapDEFToID="true" url="./STI_Models_Male/Scabies_Man.x3d"  ></inline></Transform>
+
+
+
+
+
+
+            </scene>
+
+          </x3d>
+          </div>
+
+      </div>
+
+        <div class=" col ">
+          <div class="colArt">
+
+
+<div class="ButtonStylingSTI STISmallHeading">Scabies</div>
+      <div class="ButtonStylingSTIHolder">
+          <div class="row">
+              <div class="ButtonStylingSTI " id="symptom1ScabiesMAN" onclick="symptomzoom1MANScabies('symptomAreaMANScabiesGroin')">Groin</div>
+              <div class="ButtonStylingSTI " id="symptom2ScabiesMAN" onclick="symptomzoom2MANScabies('symptomAreaMANScabiesHand')">Hand</div>
+              <div class="ButtonStylingSTI " id="symptom3ScabiesMAN" onclick="symptomzoom3MANScabies('symptomAreaMANScabiesWrist')">Wrist</div>
+              <div class="ButtonStylingSTI " id="symptom4ScabiesMAN" onclick="symptomzoom4MANScabies('symptomAreaMANScabiesAnkle')">Ankle</div>
+              <div class="ButtonStylingSTI " id="symptom5ScabiesMAN" onclick="symptomzoom5MANScabies('symptomAreaMANScabiesUnderarm')">Underarm</div>
+              <div class="ButtonStylingSTI " onclick="cameraChangeMANScabies('ResetMANScabies')" >Reset</div>
+
+            </div>
+          </div>
+
+
+      <div class="row STIsymptomInfoBoxMove">
+        <div class="STIsymptomInfoBox" id="symptom1InfoMANScabiesNOHIDE">
+          <h1></h1>
+          <p>Scabies can appear all over the body including the Groin, wrists, ankles, fingers, and underarm</p>
+        </div>
+
+      </div>
+
+      </div>  </div>
+
+
+
+
+
+</div>
+<div class="ChoiceholdBackSTI">
+
+</div>
+
+
+<script type="text/javascript">
+
+function symptomzoom1MANScabies (symptoms) {
+  document.getElementById(symptoms).setAttribute('set_bind','true');
+}
+
+function symptomzoom2MANScabies (symptoms) {
+  document.getElementById(symptoms).setAttribute('set_bind','true');
+}
+
+function symptomzoom3MANScabies (symptoms) {
+  document.getElementById(symptoms).setAttribute('set_bind','true');
+}
+
+function symptomzoom4MANScabies (symptoms) {
+  document.getElementById(symptoms).setAttribute('set_bind','true');
+}
+
+function symptomzoom5MANScabies (symptoms) {
+  document.getElementById(symptoms).setAttribute('set_bind','true');
+}
+
+
+
+
+
+
+function cameraChangeMANScabies(Camera) {
+document.getElementById(Camera).setAttribute('set_bind','true');
+document.getElementById('Scabies_ModelMan__MA_Man_Skin_Texture_PubicLice').setAttribute('transparency', '0.0');
+document.getElementById('Scabies_ModelMan__MA_Eggs_Pubic_Lice').setAttribute('transparency', '1.0');
+document.getElementById('Scabies_ModelMan__MA_Pubic_Lice').setAttribute('transparency', '1.0');
+document.getElementById('Scabies_ModelMan__MA_Closer_Look_Texture_PL').setAttribute('transparency', '1.0');
+document.getElementById('Scabies_ModelMan__MA_Closer_Look_Block').setAttribute('transparency', '1.0');
+document.getElementById('Scabies_ModelMan__MA_Pubic_Lice_ArmPit_Area').setAttribute('transparency', '1.0');
+document.getElementById('Scabies_ModelMan__MA_Beard_PL_Texture').setAttribute('transparency', '1.0');
+
+$( "#symptom1ScabiesMAN" ).removeClass( "disableItemSelect" );
+$( "#symptom2ScabiesMAN" ).removeClass( "disableItemSelect" );
+$( "#symptom3ScabiesMAN" ).removeClass( "disableItemSelect" );
+document.getElementById('symptom1InfoMANScabies').style.height = '60px';
+document.getElementById('symptom2InfoMANScabies').style.height = '60px';
+document.getElementById('symptom3InfoMANScabies').style.height = '60px';
+document.getElementById('symptom1InfoMANScabies').style.opacity = '0.0';
+document.getElementById('symptom2InfoMANScabies').style.opacity = '0.0';
+document.getElementById('symptom3InfoMANScabies').style.opacity = '0.0';
+}
+
+//function ChlamydiaName(){
+//document.getElementById('Scabies_ModelMan__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
+//document.getElementById('Scabies_ModelMan__MA_typeBlinn1').setAttribute('transparency', '0.0');
+//}
+function symptom1MAN(){
+document.getElementById('Scabies_ModelMan__MA_Pain_when').setAttribute('transparency', '0.0');
+document.getElementById('Scabies_ModelMan__MA_Pain_when').setAttribute('diffuseColor', '1.000 1.000 1.000');
+document.getElementById('Scabies_ModelMan__MA_Red').setAttribute('diffuseColor', '1.000 0.000 0.022');
+}
+
+</script>
+</template>
