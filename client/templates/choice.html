@@ -1,45 +1,27 @@
 <template name="choice">
 
-
-<div id="disclamer">
-  <p id="disclamerText">
-  Salus - site disclaimer and Cookie information can be found here <a href="https://drive.google.com/open?id=1wAKIT1UL7C4R6TJmnXFaWrQOH9m9ylNgDW1DaZdBnxU">Link</a>
-  </p>
-  <div id="closeDisclamer">
-    X
-  </div>
-
+<div class="banner-wrapper">
+    <div id="disclamer" class="cookie-banner highlight top full show">
+      <p>Salus - site disclaimer and Cookie information can be found here <a href="https://drive.google.com/open?id=1wAKIT1UL7C4R6TJmnXFaWrQOH9m9ylNgDW1DaZdBnxU">Link</a></p>
+      <a id="closeDisclamer" class="button" href="#">OK</a>
+    </div>
 </div>
 
-<div class="OpenMenu">
-  <div class="OpenMenuLook"></div>
-  <div class="OpenMenuLook"></div>
-  <div class="OpenMenuLook"></div>
-</div>
-<div class="MenuOverride">
-
-
-
-  <div class="CloseMenu">
-  X
-  </div>
-  <div id="MenuLinks">
-
-    <div id="MenuLink1" class="menuLinkFormat">
-      About Salus
-    </div>
-    <div id="MenuLink2" class="menuLinkFormat">
-      Select content to display
-    </div>
-    <div id="MenuLink3" class="menuLinkFormat">
-      Holder
-    </div>
-
-  </div>
-</div>
-
+<section id="page-slide">
+  <button id="toggle">
+    <i class="fas fa-bars"></i>
+  </button>
+  <nav class="MenuOverride" role='navigation'>
+    <ul>
+      <li><a href="">About Salus</a></li>
+      <li><a href="">Select content to display</a></li>
+      <li><a href="">Holder</a></li>
+    </ul>
+  </nav>
+</section>
 
 <div class="choiceHoldMain">
+
 
 
   <div id="choiceHoldInfo">
@@ -78,11 +60,13 @@ Salus team
 
         <div class="col">
           <div id="SelectOptionCol0" class="CircleChoiceSize">
-            <div id="checkbox1"> Use object</div>
               <div id="col1Options">
-                <input type="radio" name="GenderOption" class="GenderOptionS" id="ManSelecter" value="Man"/>Man
-                <input type="radio" name="GenderOption" class="GenderOptionS" id="WomanSelecter" value="Woman"/>woman
-                <input type="radio" name="GenderOption" class="GenderOptionS" id="OtherSelecter" value="Other"/>Other
+                <div id="checkbox1"> Use object</div>
+                <ul>
+                <li><input type="checkbox" name="Man" id="ManSelecter"/><label for="ManSelecter">Man</label></li>
+                <li><input type="checkbox" name="Woman" id="WomanSelecter"/><label for="WomanSelecter">Woman</label></li>
+                <li><input type="checkbox" name="Other" id="OtherSelecter"/><label for="OtherSelecter">Other</label></li>
+                </ul>
               </div>
           </div>
         </div>
@@ -90,17 +74,17 @@ Salus team
 
 
         <div class="col">
-          <div id="SelectOptionCol1" class="CircleChoiceSize">
-            <select id="days"></select>
-            <select id="months"></select>
-            <select id="years"></select>
-            <button class="clickbtn">Click Me</button>
-            <p>You are {{counter}}.</p>
+          <div id="SelectOptionCol1" class="CircleChoiceSize choice">
+            <div id="col2Options">
+              <select id="days"></select>
+              <select id="months"></select>
+              <select id="years"></select>
+            </div>
           </div>
         </div>
 
         <div class="col">
-          <div id="SelectOptionCol2" class="CircleChoiceSize">
+          <div id="SelectOptionCol2" class="CircleChoiceSize choice">
               <div id="checkbox3"> Use object</div>
                 <div id="col3Options">
                   <input type="radio" name="SexualityOption" class="SexualityOptionS" id="HomosexualSelecter" value="Heterosexual"/>Heterosexual
@@ -111,7 +95,7 @@ Salus team
           </div>
         </div>
         <div class="col">
-          <div id="SelectOptionCol3" class="CircleChoiceSize">
+          <div id="SelectOptionCol3" class="CircleChoiceSize choice">
             <div id="checkbox4"> Use object</div>
             <div id="col4Options">
               Hello
@@ -121,18 +105,19 @@ Salus team
 
 
         <div class="col">
-          <div id="SelectOptionCol4" class="CircleChoiceSize">
-            click me
+          <div id="SelectOptionCol4" class="CircleChoiceSize proceed">
+            <a href="" onclick="return false;"><i class="far fa-arrow-alt-circle-right fa-5x"></i></a>
           </div>
         </div>
-
       </div>
 
 
 
 <div class="row h-50">
-  <div class="col aiOption">
-    AIHOLD AREA
+  <div class="col">
+    <div class="aiOption">
+      <button class="btn draw-border">Or ask us a question?</button>
+    </div>
   </div>
 </div>
 

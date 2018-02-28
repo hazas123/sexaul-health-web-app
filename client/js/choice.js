@@ -2,6 +2,8 @@ import { Template } from 'meteor/templating'
 import { ReactiveVar } from 'meteor/reactive-var'
 import { Session } from 'meteor/session'
 import { Blaze } from 'meteor/blaze'
+import { ReactiveVar } from 'meteor/reactive-var'
+
 import '../templates/OptionsSelected.html'
 import '../templates/choice.html'
 
@@ -10,7 +12,14 @@ var GenderToExport
 var SexaulityToExport
 
 Template.choice.onCreated(function choiceOnCreated () {
+  // counter starts at 0
   this.isTrue = new ReactiveVar(false)
+})
+
+Template.choice.helpers({
+  isTrue () {
+    return Template.instance().isTrue.get()
+  }
 })
 
 Template.choice.onRendered(function () {
@@ -19,11 +28,13 @@ Template.choice.onRendered(function () {
 })
 
 Template.choice.events({
-  'click .OpenMenu': function (event) {
-    $('.MenuOverride').css('width', '20vw')
+  'click #toggle': function (event) {
+    $('#page-slide').toggleClass('slide')
+    $('#toggle').toggleClass('slide-tog')
   },
-  'click .CloseMenu': function (event) {
-    $('.MenuOverride').css('width', '0vw')
+  'click #SelectOptionCol4': function (event, instance) {
+    $('#toggle').css('visibility', 'visible')
+    $('#OptionsHolder').css('visibility', 'visible')
   },
   'click #closeDisclamer': function (event) {
     $('#disclamer').css('visibility', 'hidden')
