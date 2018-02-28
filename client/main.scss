@@ -15,7 +15,9 @@ body, html {
     font-family: "Roboto Slab", sans-serif;
     font: 700 1.2rem 'Roboto Slab', sans-serif;
     letter-spacing: 0.05rem;
-    background-color: white;
+    //background-color: white;
+    background-image: url("./Background.png");
+    background-repeat: repeat;
 
 }
 
@@ -158,7 +160,7 @@ clip-path: polygon(50% 0%, 100% 0, 100% 16%, 70% 56%, 0 82%, 0% 0);
 }
 
 .choicehold {
-  position: absolute;
+
   margin-left: 10vw;
   margin-right: 10vw;
   padding-top: 20vh;
@@ -375,9 +377,13 @@ color: white;
 }
 
 
+#symptom1InfoMANScabiesNOHIDE {
+  visibility: visible;
+  height: 400px;
+  opacity: 1.0;
+}
 
-
-.STIMainHold, .STIMainHoldWoman{
+.STIMainHold, .STIMainHoldWoman, .STIMainHoldGW, .STIMainHoldGH, .STIMainHoldGon, .STIMainHoldSyph, .STIMainHoldPubLi, .STIMainHoldScabies{
 
 position: absolute;
 top: 100vh;
@@ -451,7 +457,7 @@ background-color: transparent;
 
 
 
-#closeSTIMale{
+#closeSTIMale, #closeSTIMaleGH, #closeSTIMaleGW, #closeSTIMaleGon, #closeSTIMaleSyph, #closeSTIMalePubLi, #closeSTIMaleScabies{
   height: 100px;
   width: 5vw;
   background-color: grey;

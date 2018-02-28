@@ -1,0 +1,222 @@
+<template name="GonorrhoeaMale">
+
+
+  <div class="STIMainHoldGon row">
+
+      <div class="w-50 col ">
+
+        <div class="ReturnOptions">
+          <div id="closeSTIMaleGon">Close STI</div>
+        </div>
+        <div  class="x3d_scene">
+
+        <x3d width='400px' height='600px'>
+          <scene>
+            <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
+                <viewpoint position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+                <viewpoint id="ResetMANGon" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+                <Viewpoint id="frontMANGon" position="-0.07427 0.95329 -2.79608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera"></Viewpoint>
+                <Viewpoint id="rightMANGon" position="-2.43383 1.07351 -1.28700" orientation="-0.00318 -0.99950 -0.03159 2.06609" description="camera"></Viewpoint>
+
+                <Viewpoint id="symptomAreaMANGon" position="-0.00427 0.85329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+                <Viewpoint id="symptomAreaMANGonEyes" position="-0.00427 1.65329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+                <Viewpoint id="symptomAreaMANGonThroat" position="-0.00427 1.45329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+
+
+                <Viewpoint id="testing" position="-0.00427 0.45329 -2.9608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+              <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
+                <Transform><inline  nameSpaceName="GonorrhoeaModelMan" mapDEFToID="true" url="./STI_Models_Male/Gonorrhoea_Man.x3d"  ></inline></Transform>
+
+
+
+
+
+
+            </scene>
+
+          </x3d>
+          </div>
+
+      </div>
+
+        <div class=" col ">
+          <div class="colArt">
+
+
+<div class="ButtonStylingSTI STISmallHeading">Gonorrhoea</div>
+      <div class="ButtonStylingSTIHolder">
+          <div class="row">
+              <div class="ButtonStylingSTI " id="symptom1GonMAN" onclick="symptomzoomMANGon('symptomAreaMANGon', 'GonorrhoeaModelMan__MA_discharge_Gon1', 'GonorrhoeaModelMan__MA_discharge_Gon', 'GonorrhoeaModelMan__MA_Discharge_Gon1')">Symptom 1</div>
+              <div class="ButtonStylingSTI " id="symptom2GonMAN" onclick="symptomzoom1MANGon('symptomAreaMANGon', 'GonorrhoeaModelMan__MA_Pee_Gon', 'GonorrhoeaModelMan__MA_Pain_When_Peeing_Gon')">Symptom 2</div>
+              <div class="ButtonStylingSTI " id="symptom3GonMAN" onclick="symptomzoom2MANGon('symptomAreaMANGon', 'GonorrhoeaModelMan__MA_Man_Skin_TextureGon', 'GonorrhoeaModelMan__MA_Cherry_Pain_Gon', 'GonorrhoeaModelMan__MA_Banana_texture_MANGW')">Symptom 3</div>
+              <div class="ButtonStylingSTI " id="symptom4GonMAN" onclick="symptomzoom3MANGon('symptomAreaMANGonEyes', 'GonorrhoeaModelMan__MA_Man_Skin_TextureGon', 'GonorrhoeaModelMan__MA_Eye_Gon_Texture')">Symptom 4</div>
+              <div class="ButtonStylingSTI " id="symptom5GonMAN" onclick="symptomzoom4MANGon('symptomAreaMANGonThroat', 'GonorrhoeaModelMan__MA_Man_Skin_TextureGon', 'GonorrhoeaModelMan__MA_Throat_Gon_Texture')">Symptom 5</div>
+              <div class="ButtonStylingSTI " onclick="cameraChangeMANGon('ResetMANGon')" >Reset</div>
+
+            </div>
+          </div>
+
+
+      <div class="row STIsymptomInfoBoxMove">
+        <div class="STIsymptomInfoBox" id="symptom1InfoMANGon">
+          <h1>Symptom 1</h1>
+          <p>A white, yellow or Green discharge may appear from the tip of the penis. </p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom2InfoMANGon">
+          <h1>Symptom 2</h1>
+          <p>A pain or burning sensation may occur while peeing</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom3InfoMANGon">
+          <h1>Symptom 3</h1>
+          <p>Pain or tenderness in the testicles</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom4InfoMANGon">
+          <h1>Symptom 4</h1>
+          <p>Gonorrhoea can affect the eyes </p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom5InfoMANGon">
+          <h1>Symptom 5</h1>
+          <p>Gonorrhoea can affect the throat</p>
+        </div>
+      </div>
+
+      </div>  </div>
+
+
+
+
+
+</div>
+<div class="ChoiceholdBackSTI">
+
+</div>
+
+
+<script type="text/javascript">
+
+
+function zoomLice() {
+  document.getElementById('testing').setAttribute('set_bind','true');
+  console.log("Clicked");
+}
+//onclick="zoomLice()" but on the banan shape test worked
+
+
+function symptomzoomMANGon(symptoms, texture1, texture2, texture3) {
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.0');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+document.getElementById(texture3).setAttribute('transparency', '0.0');
+
+document.getElementById('symptom1InfoMANGon').style.height = '400px';
+document.getElementById('symptom1InfoMANGon').style.opacity = '1.0';
+
+$( "#symptom2GonMAN" ).addClass( "disableItemSelect" );
+$( "#symptom3GonMAN" ).addClass( "disableItemSelect" );
+$( "#symptom4GonMAN" ).addClass( "disableItemSelect" );
+$( "#symptom5GonMAN" ).addClass( "disableItemSelect" );
+}
+
+function symptomzoom1MANGon(symptoms, texture1, texture2) {
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.0');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+
+document.getElementById('symptom2InfoMANGon').style.height = '400px';
+document.getElementById('symptom2InfoMANGon').style.opacity = '1.0';
+$( "#symptom1GonMAN" ).addClass( "disableItemSelect" );
+
+$( "#symptom3GonMAN" ).addClass( "disableItemSelect" );
+$( "#symptom4GonMAN" ).addClass( "disableItemSelect" );
+$( "#symptom5GonMAN" ).addClass( "disableItemSelect" );
+}
+
+function symptomzoom2MANGon(symptoms, texture1, texture2, texture3) {
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.0');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+document.getElementById(texture3).setAttribute('transparency', '1.0');
+
+document.getElementById('symptom3InfoMANGon').style.height = '400px';
+document.getElementById('symptom3InfoMANGon').style.opacity = '1.0';
+$( "#symptom1GonMAN" ).addClass( "disableItemSelect" );
+$( "#symptom2GonMAN" ).addClass( "disableItemSelect" );
+
+$( "#symptom4GonMAN" ).addClass( "disableItemSelect" );
+$( "#symptom5GonMAN" ).addClass( "disableItemSelect" );
+}
+
+function symptomzoom3MANGon(symptoms, texture1, texture2) {
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.7');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+
+
+document.getElementById('symptom4InfoMANGon').style.height = '400px';
+document.getElementById('symptom4InfoMANGon').style.opacity = '1.0';
+$( "#symptom1GonMAN" ).addClass( "disableItemSelect" );
+$( "#symptom2GonMAN" ).addClass( "disableItemSelect" );
+$( "#symptom3GonMAN" ).addClass( "disableItemSelect" );
+
+$( "#symptom5GonMAN" ).addClass( "disableItemSelect" );
+}
+
+function symptomzoom4MANGon(symptoms, texture1, texture2) {
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.7');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+
+
+document.getElementById('symptom5InfoMANGon').style.height = '400px';
+document.getElementById('symptom5InfoMANGon').style.opacity = '1.0';
+$( "#symptom1GonMAN" ).addClass( "disableItemSelect" );
+$( "#symptom2GonMAN" ).addClass( "disableItemSelect" );
+$( "#symptom3GonMAN" ).addClass( "disableItemSelect" );
+$( "#symptom4GonMAN" ).addClass( "disableItemSelect" );
+}
+
+
+function cameraChangeMANGon(Camera) {
+document.getElementById(Camera).setAttribute('set_bind','true');
+document.getElementById('GonorrhoeaModelMan__MA_Man_Skin_TextureGon').setAttribute('transparency', '0.0');
+document.getElementById('GonorrhoeaModelMan__MA_discharge_Gon1').setAttribute('transparency', '1.0');
+document.getElementById('GonorrhoeaModelMan__MA_discharge_Gon').setAttribute('transparency', '1.0');
+document.getElementById('GonorrhoeaModelMan__MA_Discharge_Gon1').setAttribute('transparency', '1.0');
+document.getElementById('GonorrhoeaModelMan__MA_Pee_Gon').setAttribute('transparency', '1.0');
+document.getElementById('GonorrhoeaModelMan__MA_Pain_When_Peeing_Gon').setAttribute('transparency', '1.0');
+document.getElementById('GonorrhoeaModelMan__MA_Cherry_Pain_Gon').setAttribute('transparency', '1.0');
+document.getElementById('GonorrhoeaModelMan__MA_Banana_texture_MANGW').setAttribute('transparency', '0.0');
+document.getElementById('GonorrhoeaModelMan__MA_Eye_Gon_Texture').setAttribute('transparency', '1.0');
+document.getElementById('GonorrhoeaModelMan__MA_Throat_Gon_Texture').setAttribute('transparency', '1.0');
+
+$( "#symptom1GonMAN" ).removeClass( "disableItemSelect" );
+$( "#symptom2GonMAN" ).removeClass( "disableItemSelect" );
+$( "#symptom3GonMAN" ).removeClass( "disableItemSelect" );
+$( "#symptom4GonMAN" ).removeClass( "disableItemSelect" );
+$( "#symptom5GonMAN" ).removeClass( "disableItemSelect" );
+document.getElementById('symptom1InfoMANGon').style.height = '60px';
+document.getElementById('symptom2InfoMANGon').style.height = '60px';
+document.getElementById('symptom3InfoMANGon').style.height = '60px';
+document.getElementById('symptom4InfoMANGon').style.height = '60px';
+document.getElementById('symptom5InfoMANGon').style.height = '60px';
+
+document.getElementById('symptom1InfoMANGon').style.opacity = '0.0';
+document.getElementById('symptom2InfoMANGon').style.opacity = '0.0';
+document.getElementById('symptom3InfoMANGon').style.opacity = '0.0';
+document.getElementById('symptom4InfoMANGon').style.opacity = '0.0';
+document.getElementById('symptom5InfoMANGon').style.opacity = '0.0';
+
+}
+
+//function ChlamydiaName(){
+//document.getElementById('Genital_WartsModelMan__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
+//document.getElementById('Genital_WartsModelMan__MA_typeBlinn1').setAttribute('transparency', '0.0');
+//}
+function symptom1MAN(){
+document.getElementById('Genital_WartsModelMan__MA_Pain_when').setAttribute('transparency', '0.0');
+document.getElementById('Genital_WartsModelMan__MA_Pain_when').setAttribute('diffuseColor', '1.000 1.000 1.000');
+document.getElementById('Genital_WartsModelMan__MA_Red').setAttribute('diffuseColor', '1.000 0.000 0.022');
+}
+
+</script>
+</template>
