@@ -28,17 +28,27 @@ Template.chatbox.events({
   'click .send' (event, instance) {
     var val = $.trim($('textarea').val())
     $('textarea').val('')
+    var errorset = $('#chat-input').hasClass('errorValidation')
+    if (errorset) {
+      $('#chat-input').toggleClass('errorValidation')
+    }
+    $('.validation').css('visibility', 'hidden')
     var uuid = Session.get('uniqueSessioID')
-    // var clientCheck = /^[a-z0-9 .-]+$/.test(val)
-    $('.chatlogs').append('<div class="chat self"><p class="chat-message">' + val + '</p></div>')
-    console.log(this)
-    Meteor.call('callAPI', val, uuid, function (error, result) {
-      if (error) {
-        console.log(error)
-      }
-      console.log(result)
-      $('.chatlogs').append('<div class="chat reply"><p class="chat-message">' + result + '</p></div>')
-    })
-    $('.chatlogs').animate({scrollTop: $('.chatlogs').prop('scrollHeight')}, 1000)
+    var clientCheck = /^[a-zA-Z0-9 .-?]+$/.test(val)
+    if (clientCheck) {
+      $('.chatlogs').append('<div class="chat self"><p class="chat-message">' + val + '</p></div>')
+      console.log(this)
+      Meteor.call('callAPI', val, uuid, function (error, result) {
+        if (error) {
+          console.log(error)
+        }
+        console.log(result)
+        $('.chatlogs').append('<div class="chat reply"><p class="chat-message">' + result + '</p></div>')
+      })
+      $('.chatlogs').animate({scrollTop: $('.chatlogs').prop('scrollHeight')}, 1000)
+    } else {
+      $('#chat-input').toggleClass('errorValidation')
+      $('.validation').css('visibility', 'visible')
+    }
   }
 })
