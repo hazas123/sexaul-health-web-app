@@ -2,10 +2,15 @@ import { Template } from 'meteor/templating'
 import { ReactiveVar } from 'meteor/reactive-var'
 
 import '../templates/hello.html'
+import '../templates/choice.html'
+import '../templates/loadingScreen.html'
+import '../templates/OptionsSelected.html'
 
-Template.hello.onCreated(function helloOnCreated () {
+Template.choice.onCreated(function choiceOnCreated () {
   // counter starts at 0
   this.counter = new ReactiveVar(0)
+  this.myReactiveVarGender = new ReactiveVar()
+  this.myReactiveVarSexuality = new ReactiveVar()
 
   $(function () {
     var i
@@ -40,7 +45,7 @@ Template.hello.onCreated(function helloOnCreated () {
   }
 })
 
-Template.hello.helpers({
+Template.choice.helpers({
   counter () {
     return Template.instance().counter.get()
   }

@@ -1,21 +1,205 @@
 <template name="choice">
-  <div class="wrapper">
-      <div id="row1">
-          <div id="col1">
-            <h1>Sex</h1>
-            <ul>
-              <li><i class="fas fa-mars"></i></li>
-              <li><i class="fas fa-venus"></i></li>
-              <li><i class="fas fa-genderless"></i></li>
-            </ul>
+
+<div class="banner-wrapper">
+    <div id="disclamer" class="cookie-banner highlight top full show">
+      <p>Salus - site disclaimer and Cookie information can be found here <a href="https://drive.google.com/open?id=1wAKIT1UL7C4R6TJmnXFaWrQOH9m9ylNgDW1DaZdBnxU">Link</a></p>
+      <a id="closeDisclamer" class="button" href="#">OK</a>
+    </div>
+</div>
+
+<section id="page-slide">
+  <button id="toggle">
+    <i class="fas fa-bars"></i>
+  </button>
+  <nav class="MenuOverride" role='navigation'>
+    <ul>
+      <li><a href="">About Salus</a></li>
+      <li><a href="">Select content to display</a></li>
+      <li><a href="">Holder</a></li>
+    </ul>
+  </nav>
+</section>
+
+<div class="choiceHoldMain">
+
+
+
+  <div id="choiceHoldInfo">
+<div id="StartInformation">
+
+
+<div id="siteInformation">
+  <h1>Salus - welfare and health</h1>
+
+<p>
+
+
+Sexual Health information and services
+</p>
+
+</div>
+</div>
+
+
+  </div>
+<!-- hi
+Need help on sexual health and welfare, talk to salus.
+Salus provides you with information regarding STI's, sexuality and gender.
+With this in mind we do request your age below to verify that you are of a sutiable age for the content.
+Many thanks
+Salus team
+
+
+-->
+
+
+
+  <div class="choicehold" id="MainMenuOption0">
+
+      <div class="row h-50">
+
+        <div class="col">
+          <div id="SelectOptionCol0" class="CircleChoiceSize">
+              <div id="col1Options">
+                <div id="checkbox1"> Use object</div>
+                <ul>
+                <li><input type="radio" name="GenderOption" id="ManSelecter" value="Man"/><label for="ManSelecter">Man</label></li>
+                <li><input type="radio" name="GenderOption" id="WomanSelecter" value="te"/><label for="WomanSelecter">Woman</label></li>
+                <li><input type="radio" name="GenderOption" id="OtherSelecter" value="se"/><label for="OtherSelecter">Other</label></li>
+                </ul>
+              </div>
           </div>
-          <div id="col2">col2</div>
-          <div id="col3">col3</div>
-          <div id="col4">col4</div>
+        </div>
+
+
+
+        <div class="col">
+          <div id="SelectOptionCol1" class="CircleChoiceSize choice">
+            <div id="col2Options">
+              <select id="days"></select>
+              <select id="months"></select>
+              <select id="years"></select>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div id="SelectOptionCol2" class="CircleChoiceSize choice">
+              <div id="checkbox3"> Use object</div>
+                <div id="col3Options">
+                  <input type="radio" name="SexualityOption" class="SexualityOptionS" id="HomosexualSelecter" value="Heterosexual"/>Heterosexual
+                  <input type="radio" name="SexualityOption" class="SexualityOptionS" id="WomanSelecter" value="Homosexual"/>Homosexual
+                  <input type="radio" name="SexualityOption" class="SexualityOptionS" id="OtherSelecter" value="Bisexual"/>Bisexual
+                  <input type="radio" name="SexualityOption" class="SexualityOptionS" id="OtherSelecter" value="PreferNotTo"/>Prefer Not To Say
+                </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="SelectOptionCol3" class="CircleChoiceSize choice">
+            <div id="checkbox4"> Use object</div>
+            <div id="col4Options">
+              Hello
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div id="SelectOptionCol4" class="CircleChoiceSize proceed">
+            <a href="" onclick="return false;"><i class="far fa-arrow-alt-circle-right fa-5x"></i></a>
+          </div>
+        </div>
       </div>
-      <div id="row2">
-        <div id="col5">col1</div>
-      </div>
+
+
+
+<div class="row h-50">
+  <div class="col">
+    <div class="aiOption">
+      <button class="btn draw-border">Or ask us a question?</button>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+<div class="choicehold"  id="MainMenuOption1">
+  <div id="closeMainMenuOption1" class="closeMainMenuOptionStyling">
+    X
+  </div>
+</div>
+
+<div class="choicehold"  id="MainMenuOption2">
+  <div id="closeMainMenuOption2" class="closeMainMenuOptionStyling">
+    X
+  </div>
+</div>
+
+
+
+<div class="ChoiceholdBack">
+  <div class="FooterHold">
+    HP237 JRS54
+  </div>
+</div>
   </div>
 
+
+
+<script type="text/javascript">
+
+//Functions to disable options selects
+var clickedCol1 = false;
+var clickedCol3 = false;
+var clickedCol4 = false;
+
+//option1
+$('#checkbox1').click(function(){
+
+  if (clickedCol1 == true){
+    $( "#col1Options" ).removeClass( "disableItemSelect" );
+    clickedCol1 = false;
+  } else {
+    $( "#col1Options" ).addClass( "disableItemSelect" );
+    clickedCol1 = true;
+  }
+});
+
+//option2
+$('#checkbox3').click(function(){
+
+console.log("clicked");
+
+  if (clickedCol3 == true){
+    $( "#col3Options" ).removeClass( "disableItemSelect" );
+    clickedCol3 = false;
+  } else {
+      $( "#col3Options" ).addClass( "disableItemSelect" );
+      clickedCol3 = true;
+    }
+});
+
+//option4
+$('#checkbox4').click(function(){
+
+  if (clickedCol4 == true){
+    $( "#col4Options" ).removeClass( "disableItemSelect" );
+    clickedCol4 = false;
+  } else {
+      $( "#col4Options" ).addClass( "disableItemSelect" );
+      clickedCol4 = true;
+    }
+});
+
+
+
+
+</script>
+{{#if isTrue }}
+
+{{> OptionsSelected }}
+
+{{/if}}
 </template>

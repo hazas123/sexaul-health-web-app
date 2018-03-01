@@ -1,0 +1,105 @@
+<template name="OptionsSelected">
+
+
+
+<div id="OptionsHolder">
+
+<div class="row">
+
+
+<div id="ReselectChoices" class="col-2">
+<img src="./Logo/Logo_Normal.png"  alt="Logo"/>
+
+
+</div>
+
+
+<div id="AvaliableOptions" class="col">
+<div class="row">
+
+{{#if _equals GenderExportedVar 'Man'}}
+
+
+  <div class="col-3 itemOpt" id="MaleChlamydiaOPTI">
+    <p>
+      Male Chlamydia
+    </p>
+  </div>
+
+  <div class="col-3 itemOpt" id="MaleGenitalWartsOPTI">
+    <p>
+      Male Genital Warts
+    </p>
+  </div>
+
+  <div class="col-3 itemOpt" id="MaleGenitalHerpesOPTI">
+    <p>
+      Male Genital Herpes
+    </p>
+  </div>
+
+  <div class="col-3 itemOpt" id="MaleGonorrhoeaOPTI">
+    <p>
+      Male Gonorrhoea
+    </p>
+  </div>
+
+  <div class="col-3 itemOpt" id="MaleSyphilisOPTI">
+    <p>
+      Male Syphilis
+    </p>
+  </div>
+  <div class="col-3 itemOpt" id="MalePubicLiceOPTI">
+    <p>
+      Male Pubic Lice
+    </p>
+  </div>
+  <div class="col-3 itemOpt" id="ScabiesOPTI">
+    <p>
+      Male Scabies
+    </p>
+  </div>
+{{/if}}
+
+
+
+
+
+
+{{#if _equals GenderExportedVar 'Woman'}}
+  <div class="col-3 itemOpt" id="FemalChlamydiaOPTI">
+    <p>
+      Female Chlamydia
+
+    </p>
+  </div>
+  {{/if}}
+
+  <div class="col-3 itemOpt">
+
+    Test
+
+  </div>
+
+</div>
+
+</div>
+</div>
+
+
+
+<div class="ChoiceholdBackOPI">
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</template>
