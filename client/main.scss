@@ -388,7 +388,7 @@ color: white;
 .STIMainHold, .STIMainHoldWoman, .STIMainHoldGW, .STIMainHoldGH, .STIMainHoldGon, .STIMainHoldSyph, .STIMainHoldPubLi, .STIMainHoldScabies{
 
 position: absolute;
-top: 100vh;
+top: 200vh;
 left: 100vw;
 overflow: hidden;
 
@@ -532,7 +532,7 @@ background-color: pink;
   height: 100vh;
   position: absolute;
   z-index: 1;
-  top: 100vh;
+  top: 200vh;
   visibility: hidden;
 
 }
@@ -679,7 +679,7 @@ color: white;
 
 #MainMenuOption1{
 background-color: white;
-visibility: hidden;
+
 border: solid 2px red;
 }
 
@@ -694,9 +694,8 @@ border: solid 2px red;
 }
 
 .closeMainMenuOptionStyling{
-  position: absolute;
-  top: 2vh;
-  right: 2vw;
+
+
   height: 4vh;
   width: 2vw;
   background-color: blue;
