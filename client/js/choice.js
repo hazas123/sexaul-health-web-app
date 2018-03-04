@@ -26,6 +26,9 @@ Template.choice.onRendered(function () {
 })
 
 Template.choice.events({
+  'click #body': function (event) {
+    console.log('body Click')
+  },
   'click #toggle': function (event) {
     $('#page-slide').toggleClass('slide')
     $('#toggle').toggleClass('slide-tog')
@@ -76,6 +79,8 @@ Template.choice.events({
     this.train = new ReactiveVar(true)
     console.log(this.train)
     $('#toggle').css('visibility', 'visible')
+  },
+  'click #choiceholdmain' (event, instance) {
   }
 })
 

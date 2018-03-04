@@ -1,0 +1,109 @@
+<template name="Myths">
+
+
+
+<div id="OptionsHoldeMyth">
+
+<div class="row">
+
+
+<div id="ReselectChoices" class="col-2">
+<img src="./Logo/Logo_Normal.png"  alt="Logo"/>
+
+
+</div>
+
+
+<div class="AvaliableOptions mythback col" >
+<div class="row">
+
+{{#if _equals GenderExportedVar 'Man'}}
+
+
+  <div class="col-3 itemOpt" id="">
+    <p>
+      Male Chlamydia
+    </p>
+  </div>
+
+  <div class="col-3 itemOpt" id="">
+
+  </div>
+
+  <div class="col-3 itemOpt" id="">
+    <p>
+      Male Genital Herpes
+    </p>
+  </div>
+
+  <div class="col-3 itemOpt" id="">
+    <p>
+      Male Gonorrhoea
+    </p>
+  </div>
+
+  <div class="col-3 itemOpt" id="">
+    <p>
+      Male Syphilis
+    </p>
+  </div>
+  <div class="col-3 itemOpt" id="">
+    <p>
+      Male Pubic Lice
+    </p>
+  </div>
+  <div class="col-3 itemOpt" id="">
+    <p>
+      Male Scabies
+    </p>
+  </div>
+{{/if}}
+
+
+
+
+
+
+{{#if _equals GenderExportedVar 'Woman'}}
+  <div class="col-3 itemOpt" id="FemalChlamydiaOPTI">
+    <p>
+      Female Chlamydia
+
+    </p>
+  </div>
+  {{/if}}
+
+  <div class="col-3 itemOptMyth">
+
+    <img class="Myth_Gifs" src="./Myth_Exports/Anal_STI.gif"  alt="myth"/>
+
+  </div>
+
+  <div class="col-3 itemOptMyth">
+
+    <img class="Myth_Gifs" src="./Myth_Exports/Bathing_After_Sex.gif"  alt="myth"/>
+
+  </div>
+
+</div>
+
+</div>
+</div>
+
+
+
+<div class="ChoiceholdBackOPI">
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</template>
