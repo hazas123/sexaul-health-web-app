@@ -8,21 +8,21 @@
 
 
 <div id="ReselectChoices" class="col-2">
-<img src="./Logo/Logo_Normal.png"  alt="Logo"/>
+<img src="./Logo/Logo_Normal.png"  alt="Logo" onload="BiggerSizeMain()"/>
 
 
 </div>
 
 
 <div class="AvaliableOptions col" >
-  <div id="options_Format">
+  <div id="options_Format" >
 
 
 <div class="row">
 
 {{#if _equals GenderExportedVar 'Man'}}
 
-  <div class="col-3 itemOpt" id="MythsOPTI">
+  <div class="col-3 itemOpt" id="MythsOPTI" >
     <p>
       Myths
     </p>
@@ -103,7 +103,17 @@
 </div>
 
 
+<script type="text/javascript">
 
+function BiggerSizeMain() {
+  var cakey = document.getElementById('options_Format').offsetHeight.value;
+  //$('#MainMenuOption0').css('height', cakey);
+  console.log(cakey, 'help');
+
+  document.getElementById('MainMenuOption0').style.height = '200vh';
+}
+
+</script>
 
 
 

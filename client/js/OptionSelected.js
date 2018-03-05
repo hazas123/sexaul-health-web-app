@@ -15,7 +15,7 @@ var OtherGender = 'Other'
 var Sex = hello.SexaulityToExport
 var cake
 // var m = require('mymodule')
-
+// BlazeLayout.render(template)
 Template.OptionsSelected.helpers({
   myValue: function () {
         // As usual, this will be reactive.

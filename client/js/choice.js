@@ -84,8 +84,8 @@ Template.choice.events({
     console.log(this.train)
     $('#toggle').css('visibility', 'visible')
     ChoicesSize = document.getElementById('MainMenuOption0').offsetHeight
+    // use to change size of the main document
     module.exports.ChoicesSize = ChoicesSize
-    $('#MainMenuOption0').css('height', '200vh')
   },
   'click #choiceholdmain' (event, instance) {
   }
