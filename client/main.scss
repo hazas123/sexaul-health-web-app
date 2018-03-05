@@ -174,11 +174,31 @@ clip-path: polygon(50% 0%, 100% 0, 100% 16%, 70% 56%, 0 82%, 0% 0);
 width: 100%;
 height: 50vh;
 background: #243854;
-font-size: 200%;
+font-size: 170%;
 border-radius: 25px;
 padding-top: 10vh;
 text-align: center;
+color: $secondaryColor;
+}
+
+#closeMainMenuOption1 h1 {
+font: 900 4.2rem 'Roboto Slab', sans-serif;
+
 color: white;
+
+}
+
+#closeMainMenuOption2{
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+height: 40vh;
+background: #243854;
+font-size: 170%;
+border-radius: 25px;
+padding-top: 0vh;
+text-align: center;
+color: $secondaryColor;
 }
 
 .ChoiceholdBack {
@@ -200,6 +220,7 @@ position: absolute;
 top: 0vh;
 height: 100vh;
 width: 100vw;
+visibility: hidden;
   //-webkit-clip-path: polygon(75% 80%, 100% 32%, 100% 100%, 70% 100%, 0 100%, 0 68%);
   //clip-path: polygon(75% 80%, 100% 32%, 100% 100%, 70% 100%, 0 100%, 0 68%);
   background-color: #243854;
@@ -418,8 +439,10 @@ STIMainHoldWoman
 }
 
 .Myth_Gifs{
-  height: 30vh;
-  width: auto;
+  height: auto;
+  width: 98%;
+   margin-left: 1%;
+
 }
 
 .STIButtons {
@@ -540,7 +563,7 @@ background-color: pink;
 }
 
 #OptionsHolder {
-  background-color: white;
+
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -552,7 +575,7 @@ background-color: pink;
 
 .AvaliableOptions{
   float: right;
-  background-color: white;
+
 }
 
 .mythback{
@@ -580,24 +603,25 @@ height: 100vh;
 }
 
 .itemOpt {
-background-color: #243854;
+background-color: $primaryColor;
 margin: 25px ;
 width: 10%;
 display: inline;
 height: 30vh;
 color: white;
 padding: 10%;
+border-radius: 25px;
 }
 
 .itemOptMyth{
-  background-color: #243854;
+  background-color: #4353a4;
   margin: 25px ;
-
+  border-radius: 25px;
   display: inline;
-  height: 30vh;
+
   width: 30vw;
   color: white;
-  padding: 1px;
+  padding: 2vh;
   }
 
 .ButtonStylingSTIHolder{
@@ -721,9 +745,12 @@ padding: 10%;
 }
 
 #MainMenuOption2{
-  background-color: yellow;
+
 
 }
+
+
+
 
 .menuLinkFormat{
 
