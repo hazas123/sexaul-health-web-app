@@ -21,7 +21,6 @@ Template.ChlamydiaMaleT.events({
     $('body').css('overflow-y', 'visible')
     $('#closeSTIMale').css('visibility', 'hidden')
     console.log('MaleClose Chlamydia')
-    $('#aiOption').css('visibility', 'visible')
   }
 })
 
@@ -39,7 +38,6 @@ Template.GenialHerpesMale.events({
     $('body').css('overflow-y', 'visible')
     $('#closeSTIMaleGH').css('visibility', 'hidden')
     console.log('MaleClose herpes')
-    $('#aiOption').css('visibility', 'visible')
   }
 })
 
@@ -57,7 +55,6 @@ Template.GenialWartsMaleT.events({
     $('body').css('overflow-y', 'visible')
     $('#closeSTIMaleGW').css('visibility', 'hidden')
     console.log('MaleClose warts')
-    $('#aiOption').css('visibility', 'visible')
   }
 })
 
@@ -74,8 +71,7 @@ Template.GonorrhoeaMale.events({
     $('body').css('overflow-y', 'hidden')
     $('body').css('overflow-y', 'visible')
     $('#closeSTIMaleGon').css('visibility', 'hidden')
-    console.log('MaleClose warts')
-    $('#aiOption').css('visibility', 'visible')
+    console.log('MaleClose gon')
   }
 })
 
@@ -92,8 +88,7 @@ Template.SyphilisMale.events({
     $('body').css('overflow-y', 'hidden')
     $('body').css('overflow-y', 'visible')
     $('#closeSTIMaleSyph').css('visibility', 'hidden')
-    console.log('MaleClose warts')
-    $('#aiOption').css('visibility', 'visible')
+    console.log('MaleClose Syphilis')
   }
 })
 
@@ -110,8 +105,7 @@ Template.PubicLiceMale.events({
     $('body').css('overflow-y', 'hidden')
     $('body').css('overflow-y', 'visible')
     $('#closeSTIMalePubLi').css('visibility', 'hidden')
-    console.log('MaleClose warts')
-    $('#aiOption').css('visibility', 'visible')
+    console.log('MaleClose lice')
   }
 })
 
@@ -128,8 +122,23 @@ Template.ScabiesMale.events({
     $('body').css('overflow-y', 'hidden')
     $('body').css('overflow-y', 'visible')
     $('#closeSTIMaleScabies').css('visibility', 'hidden')
-    console.log('MaleClose warts')
-    $('#aiOption').css('visibility', 'visible')
+    console.log('MaleClose scabies')
+  }
+})
+Template.Myths.events({
+  'click #closeMyths': function (event) {
+    // $('#MaleSyphilisOPTI').css('background-color', 'blue')
+    $('.choiceHoldMain').css('visibility', 'visible')
+    $('#OptionsHolder').css('visibility', 'visible')
+    $('#OptionsHoldeMyth').css('visibility', 'hidden')
+    $('#OptionsHoldeMyth').css('height', '0vh')
+    $('#OptionsHoldeMyth').css('width', '0vw')
+    $('#OptionsHoldeMyth').css('left', '100vw')
+    $('.ChoiceholdBackSTI').css('visibility', 'hidden')
+    $('body').css('overflow-y', 'hidden')
+    $('body').css('overflow-y', 'visible')
+    $('#closeMyths').css('visibility', 'hidden')
+    console.log('MaleClose myth')
   }
 })
 Template.ChlamydiaFemaleC.events({
@@ -147,7 +156,6 @@ Template.ChlamydiaFemaleC.events({
     $('.STIMainHold').css('left', '100vw')
     $('#closeSTIFemale').css('visibility', 'hidden')
     $('body').css('overflow-y', 'visible')
-    $('#aiOption').css('visibility', 'visible')
     console.log('FemaleClose')
   }
 })

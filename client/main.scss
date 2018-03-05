@@ -379,6 +379,10 @@ color: white;
   margin: 0 20% 0 20%;
 }
 
+.aiButton {
+
+}
+
 #row2 {
     background-color: red;
     display: flex;
@@ -495,7 +499,7 @@ background-color: transparent;
 
 
 
-#closeSTIMale, #closeSTIMaleGH, #closeSTIMaleGW, #closeSTIMaleGon, #closeSTIMaleSyph, #closeSTIMalePubLi, #closeSTIMaleScabies{
+#closeSTIMale, #closeSTIMaleGH, #closeSTIMaleGW, #closeSTIMaleGon, #closeSTIMaleSyph, #closeSTIMalePubLi, #closeSTIMaleScabies, #closeMyths{
   height: 100px;
   width: 5vw;
   background-color: grey;
@@ -597,9 +601,7 @@ height: 100vh;
 #options_Format{
 
   width: 80%;
-  height: 80%;
-  overflow-x:hidden;
-  overflow-y: scroll;
+  
 }
 
 .itemOpt {

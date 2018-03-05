@@ -13,7 +13,7 @@ var GenderSel = hello.GenderToExport
 var Woman = 'Woman'
 var OtherGender = 'Other'
 var Sex = hello.SexaulityToExport
-
+var cake
 // var m = require('mymodule')
 
 Template.OptionsSelected.helpers({
@@ -22,10 +22,16 @@ Template.OptionsSelected.helpers({
     return Template.instance().data.sharedVar1.get()
   }
 })
+
 Template.OptionsSelected.onCreated(function () {
   this.GenderExportedVar = new ReactiveVar(hello.GenderToExport)
   this.SexualityExportedVar = new ReactiveVar(hello.SexaulityToExport)
+  this.ChoicesSizevar = new ReactiveVar(hello.ChoicesSize)
   console.log(this.GenderExportedVar)
+  console.log(this.ChoicesSizevar, 'choices section size')
+  // cake = document.getElementById('options_Format').offsetHeight
+  // $('#MainMenuOption0').css('height', '200vh')
+  console.log('height', cake)
   console.log(this.SexualityExportedVar)
 })
 
@@ -155,7 +161,7 @@ Template.OptionsSelected.events({
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
     $('#aiOption').css('visibility', 'hidden')
-    $('#closeSTIMaleScabies').css('visibility', 'visible')
+    $('#closeMyths').css('visibility', 'visible')
   },
   'click #FemalChlamydiaOPTI': function (event) {
     $('#FemalChlamydiaOPTI').css('background-color', 'red')

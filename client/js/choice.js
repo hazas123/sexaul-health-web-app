@@ -9,6 +9,8 @@ var view
 var GenderToExport
 var SexaulityToExport
 
+var ChoicesSize
+
 Template.choice.onCreated(function choiceOnCreated () {
   // counter starts at 0
   this.isTrue = new ReactiveVar(false)
@@ -51,7 +53,7 @@ Template.choice.events({
   'click #SelectOptionCol4' (event, instance) {
     // clicked the .clickbtn class
     // increment the counter when button is clicked
-    $('.aiOption').css('visibility', 'hidden')
+    $('.aiButton').css('visibility', 'hidden')
     $('#MainMenuOption0').css('visibility', 'hidden')
     $('#OptionsHolder').css('visibility', 'visible')
     console.log('visible')
@@ -81,6 +83,9 @@ Template.choice.events({
     this.train = new ReactiveVar(true)
     console.log(this.train)
     $('#toggle').css('visibility', 'visible')
+    ChoicesSize = document.getElementById('MainMenuOption0').offsetHeight
+    module.exports.ChoicesSize = ChoicesSize
+    $('#MainMenuOption0').css('height', '200vh')
   },
   'click #choiceholdmain' (event, instance) {
   }
