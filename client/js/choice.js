@@ -9,6 +9,8 @@ var view
 var GenderToExport
 var SexaulityToExport
 
+var ChoicesSize
+
 Template.choice.onCreated(function choiceOnCreated () {
   // counter starts at 0
   this.isTrue = new ReactiveVar(false)
@@ -26,6 +28,9 @@ Template.choice.onRendered(function () {
 })
 
 Template.choice.events({
+  'click #body': function (event) {
+    console.log('body Click')
+  },
   'click #toggle': function (event) {
     $('#page-slide').toggleClass('slide')
     $('#toggle').toggleClass('slide-tog')
@@ -48,6 +53,8 @@ Template.choice.events({
   'click #SelectOptionCol4' (event, instance) {
     // clicked the .clickbtn class
     // increment the counter when button is clicked
+    $('.aiButton').css('visibility', 'hidden')
+    $('#MainMenuOption0').css('visibility', 'hidden')
     $('#OptionsHolder').css('visibility', 'visible')
     console.log('visible')
     var day = $('#days').find(':selected').text()
@@ -76,6 +83,11 @@ Template.choice.events({
     this.train = new ReactiveVar(true)
     console.log(this.train)
     $('#toggle').css('visibility', 'visible')
+    ChoicesSize = document.getElementById('MainMenuOption0').offsetHeight
+    // use to change size of the main document
+    module.exports.ChoicesSize = ChoicesSize
+  },
+  'click #choiceholdmain' (event, instance) {
   }
 })
 
