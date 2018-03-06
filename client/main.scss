@@ -53,6 +53,8 @@ table {
 }
 
 
+// end of css reset 
+
 $primaryColor: #4353a4;
 $secondaryColor: #f04d25;
 $secondaryColorLight: #FE7150;
@@ -453,15 +455,13 @@ color: white
 }
 
 .CircleChoiceSize{
-  height: 30vh;
-  width: 100%;
-
-  display: flex;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 25px;
-  justify-content: center;
-  flex-direction: column;
+	height: 30vh;
+	width: 100%;
+	display: flex;
+	text-align: center;
+	border-radius: 10px;
+	/* justify-content: center; */
+	flex-direction: column;
 
   ul {
    margin: 0;
@@ -475,10 +475,31 @@ color: white
  }
 }
 
+
+.OptionsHeaders {
+	/* background-color: red; */
+border-radius: 10px;
+padding-top: 10%;
+margin-bottom: 26%;
+color: white;
+}
+
+
 .choice {
   box-shadow: 5px 10px #D4D4D4;
 }
 
+
+#col1Options{
+
+		padding-left: 25%;
+			text-align: left;
+}
+
+#col3Options {
+
+
+}
 
 .aiOption {
   display: flex;
