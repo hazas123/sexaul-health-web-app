@@ -71,7 +71,7 @@ Template.GonorrhoeaMale.events({
     $('body').css('overflow-y', 'hidden')
     $('body').css('overflow-y', 'visible')
     $('#closeSTIMaleGon').css('visibility', 'hidden')
-    console.log('MaleClose gon')
+    console.log('MaleClose warts')
   }
 })
 
@@ -88,7 +88,21 @@ Template.SyphilisMale.events({
     $('body').css('overflow-y', 'hidden')
     $('body').css('overflow-y', 'visible')
     $('#closeSTIMaleSyph').css('visibility', 'hidden')
-    console.log('MaleClose Syphilis')
+    console.log('MaleClose warts')
+    document.getElementById('Syphilis_Model_Man__MA_Man_Skin_Texture_Syph').setAttribute('transparency', '0.0')
+    document.getElementById('Syphilis_Model_Man__MA_Ulcers_texture_Syphilis').setAttribute('transparency', '1.0')
+    document.getElementById('Syphilis_Model_Man__MA_Mouth_Ulcers_Sythilis').setAttribute('transparency', '1.0')
+    document.getElementById('Syphilis_Model_Man__MA_Ulcers_Anus_Syphilis').setAttribute('transparency', '1.0')
+    document.getElementById('Syphilis_Model_Man__MA_headaches_Syphilis').setAttribute('transparency', '1.0')
+    document.getElementById('Syphilis_Model_Man__MA_Foot_Rash_Siphilis').setAttribute('transparency', '1.0')
+    document.getElementById('Syphilis_Model_Man__MA_Hand_Rash').setAttribute('transparency', '1.0')
+    document.getElementById('Syphilis_Model_Man__MA_Neck_Glands_Syphilis').setAttribute('transparency', '1.0')
+    document.getElementById('Syphilis_Model_Man__MA_Groin_Glands_syphilis').setAttribute('transparency', '1.0')
+    document.getElementById('Syphilis_Model_Man__MA_Armpit_Glands_syphilis').setAttribute('transparency', '1.0')
+    document.getElementById('Syphilis_Model_Man__MA_Banana_texture_MANGW').setAttribute('transparency', '0.0')
+    document.getElementById('Syphilis_Model_Man__MA_Banana_texture_MANGW1').setAttribute('transparency', '0.0')
+    document.getElementById('Syphilis_Model_Man__MA_Cherry_Stem_texture_MAN_GW').setAttribute('transparency', '0.0')
+    document.getElementById('Syphilis_Model_Man__MA_Cherry_texture_MANGW').setAttribute('transparency', '0.0')
   }
 })
 
@@ -105,7 +119,7 @@ Template.PubicLiceMale.events({
     $('body').css('overflow-y', 'hidden')
     $('body').css('overflow-y', 'visible')
     $('#closeSTIMalePubLi').css('visibility', 'hidden')
-    console.log('MaleClose lice')
+    console.log('MaleClose warts')
   }
 })
 
@@ -122,23 +136,7 @@ Template.ScabiesMale.events({
     $('body').css('overflow-y', 'hidden')
     $('body').css('overflow-y', 'visible')
     $('#closeSTIMaleScabies').css('visibility', 'hidden')
-    console.log('MaleClose scabies')
-  }
-})
-Template.Myths.events({
-  'click #closeMyths': function (event) {
-    // $('#MaleSyphilisOPTI').css('background-color', 'blue')
-    $('.choiceHoldMain').css('visibility', 'visible')
-    $('#OptionsHolder').css('visibility', 'visible')
-    $('#OptionsHoldeMyth').css('visibility', 'hidden')
-    $('#OptionsHoldeMyth').css('height', '0vh')
-    $('#OptionsHoldeMyth').css('width', '0vw')
-    $('#OptionsHoldeMyth').css('left', '100vw')
-    $('.ChoiceholdBackSTI').css('visibility', 'hidden')
-    $('body').css('overflow-y', 'hidden')
-    $('body').css('overflow-y', 'visible')
-    $('#closeMyths').css('visibility', 'hidden')
-    console.log('MaleClose myth')
+    console.log('MaleClose warts')
   }
 })
 Template.ChlamydiaFemaleC.events({
