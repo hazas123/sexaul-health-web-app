@@ -76,6 +76,7 @@ Template.choice.events({
     this.train = new ReactiveVar(true)
     console.log(this.train)
     $('#toggle').css('visibility', 'visible')
+    window.location.href = '/choice' + Gender
   }
 })
 

@@ -1,5 +1,4 @@
 import { Template } from 'meteor/templating'
-import { Session } from 'meteor/session'
 import { Blaze } from 'meteor/blaze'
 import '../templates/loadingScreen.html'
 import '../templates/choice.html'
@@ -21,6 +20,7 @@ Template.loadingScreen.onRendered(function () {
 Template.loadingScreen.events({
 
   'click button': function (event) {
+    window.location.href = '/choice'
     $('#Hold').animate({
       'marginLeft': '-=100vw'}, 4000)
     setTimeout(function () { $('.OpenMenu').css('visibility', 'visible') }, 3500)
