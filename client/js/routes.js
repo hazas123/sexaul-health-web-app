@@ -11,3 +11,35 @@ Router.route('/choice', function () {
 Router.route('/choiceMan', function () {
   this.render('maleOptions')
 })
+
+Router.route('/chlamydiaMale', function () {
+  this.render('ChlamydiaMaleT')
+})
+
+Router.route('/chlamydiaFemale', function () {
+  this.render('ChlamydiaFemaleT')
+})
+
+Router.route('/genialHerpesMale', function () {
+  this.render('GenialHerpesMale')
+})
+
+Router.route('/genialWartsMale', function () {
+  this.render('GenialWartsMaleT')
+})
+
+Router.route('/gonorrhoeaMale', function () {
+  this.render('GonorrhoeaMale')
+})
+
+Router.route('/pubicLiceMale', function () {
+  this.render('PubicLiceMale')
+})
+
+Router.route('/scabiesMale', function () {
+  this.render('ScabiesMale')
+})
+
+Router.route('/syphilisMale', function () {
+  this.render('SyphilisMale')
+})
