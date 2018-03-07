@@ -7,6 +7,13 @@ var view
 
 Template.loadingScreen.onRendered(function () {
   view = this.view
+  $('body').css('overflow-y', 'visible')
+  $(document).ready(function () {
+    $(this).scrollTop(0)
+    $('html').animate({scrollTop: 0}, 1)
+    $('body').animate({scrollTop: 0}, 1)
+  })
+  $('body').css('overflow-y', 'hidden')
   setTimeout(function () { $('.btn').css('visibility', 'visible') }, 4000)
 })
 
