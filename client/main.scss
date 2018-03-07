@@ -313,7 +313,7 @@ position: fixed;
   clip-path: polygon(75% 80%, 100% 32%, 100% 100%, 70% 100%, 0 100%, 0 68%);
   background-color: #243854;
 z-index: -1;
-visibility: hidden;
+
 opacity: 1.0;
 }
 
@@ -548,22 +548,20 @@ color: white;
   height: 400px;
   opacity: 1.0;
 }
+// .STIMainHold, .STIMainHoldWoman, .STIMainHoldGW, .STIMainHoldGH, .STIMainHoldGon, .STIMainHoldSyph, .STIMainHoldPubLi, .STIMainHoldScabies, #OptionsHoldeMyth{
 
-.STIMainHold, .STIMainHoldWoman, .STIMainHoldGW, .STIMainHoldGH, .STIMainHoldGon, .STIMainHoldSyph, .STIMainHoldPubLi, .STIMainHoldScabies, #OptionsHoldeMyth{
+// position: fixed;
 
-position: fixed;
+// overflow: hidden;
 
-overflow: hidden;
+// width: 0vw;
+// height: 0vh;
+// margin: 0px;
+// padding: 0px;
 
-width: 0vw;
-height: 0vh;
-margin: 0px;
-padding: 0px;
+// }
 
-}
-
-STIMainHoldWoman
-
+// STIMainHoldWoman
 
 .StiX3d{
   height: 600px;
@@ -637,7 +635,7 @@ background-color: transparent;
   top: 14vh;
   left: 3vw;
   font-size: 90%;
-  visibility: hidden;
+
   z-index: 6;
 }
 
@@ -650,7 +648,7 @@ background-color: transparent;
   top: 14vh;
   left: 3vw;
   font-size: 90%;
-  visibility: hidden;
+
   z-index: 5;
 }
 
@@ -704,7 +702,6 @@ background-color: pink;
   z-index: 1;
   top: 200vh;
   visibility: hidden;
-
 }
 
 .AvaliableOptions{
@@ -779,7 +776,7 @@ height: 100vh;
   z-index: 3;
   top: 3vh;
   left: 3vw;
-  visibility: hidden;
+
 }
 
 .OpenMenuLook {
@@ -878,7 +875,6 @@ height: 100vh;
 
 #MainMenuOption2{
 
-
 }
 
 
@@ -910,7 +906,7 @@ color: white;
 }
 
 #disclamer{
-  visibility: hidden;
+
 }
 
 .cookie-banner{
