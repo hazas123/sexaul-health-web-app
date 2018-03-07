@@ -39,7 +39,7 @@ Template.choice.onRendered(function () {
   console.log(GenderSel, Woman, OtherGender, Sex)
 })
 
-Template.OptionsSelected.events({
+Template.maleOptions.events({
   'click #MaleChlamydiaOPTI': function (event) {
     $('#MaleChlamydiaOPTI').css('background-color', 'red')
     $('.choiceHoldMain').css('visibility', 'hidden')
