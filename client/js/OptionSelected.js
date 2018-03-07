@@ -13,25 +13,19 @@ var GenderSel = hello.GenderToExport
 var Woman = 'Woman'
 var OtherGender = 'Other'
 var Sex = hello.SexaulityToExport
-var cake
+
 // var m = require('mymodule')
-// BlazeLayout.render(template)
+
 Template.OptionsSelected.helpers({
   myValue: function () {
         // As usual, this will be reactive.
     return Template.instance().data.sharedVar1.get()
   }
 })
-
 Template.OptionsSelected.onCreated(function () {
   this.GenderExportedVar = new ReactiveVar(hello.GenderToExport)
   this.SexualityExportedVar = new ReactiveVar(hello.SexaulityToExport)
-  this.ChoicesSizevar = new ReactiveVar(hello.ChoicesSize)
   console.log(this.GenderExportedVar)
-  console.log(this.ChoicesSizevar, 'choices section size')
-  // cake = document.getElementById('options_Format').offsetHeight
-  // $('#MainMenuOption0').css('height', '200vh')
-  console.log('height', cake)
   console.log(this.SexualityExportedVar)
 })
 
@@ -45,7 +39,7 @@ Template.choice.onRendered(function () {
   console.log(GenderSel, Woman, OtherGender, Sex)
 })
 
-Template.OptionsSelected.events({
+Template.maleOptions.events({
   'click #MaleChlamydiaOPTI': function (event) {
     $('#MaleChlamydiaOPTI').css('background-color', 'red')
     $('.choiceHoldMain').css('visibility', 'hidden')
@@ -57,7 +51,6 @@ Template.OptionsSelected.events({
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
     $('#closeSTIMale').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
-    $('#aiOption').css('visibility', 'hidden')
     // var collectingTmplInstance = this.view.parentView.templateInstance()
     // this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
     console.log('GenderSel', hello.GenderToExport)
@@ -75,7 +68,6 @@ Template.OptionsSelected.events({
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
     $('#closeSTIMaleGW').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
-    $('#aiOption').css('visibility', 'hidden')
     // var collectingTmplInstance = this.view.parentView.templateInstance()
     // this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
     console.log('GenderSel', hello.GenderToExport)
@@ -93,7 +85,6 @@ Template.OptionsSelected.events({
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
     // $('#closeSTIMale').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
-    $('#aiOption').css('visibility', 'hidden')
     $('#closeSTIMaleGH').css('visibility', 'visible')
   },
   'click #MaleGonorrhoeaOPTI': function (event) {
@@ -104,7 +95,6 @@ Template.OptionsSelected.events({
     $('.STIMainHoldGon').css('height', '100vh')
     $('.STIMainHoldGon').css('width', '100vw')
     $('.STIMainHoldGon').css('left', '0vw')
-    $('#aiOption').css('visibility', 'hidden')
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
     // $('#closeSTIMale').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
@@ -118,7 +108,6 @@ Template.OptionsSelected.events({
     $('.STIMainHoldSyph').css('height', '100vh')
     $('.STIMainHoldSyph').css('width', '100vw')
     $('.STIMainHoldSyph').css('left', '0vw')
-    $('#aiOption').css('visibility', 'hidden')
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
     // $('#closeSTIMale').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
@@ -134,7 +123,6 @@ Template.OptionsSelected.events({
     $('.STIMainHoldPubLi').css('left', '0vw')
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
-    $('#aiOption').css('visibility', 'hidden')
     $('#closeSTIMalePubLi').css('visibility', 'visible')
   },
   'click #ScabiesOPTI': function (event) {
@@ -147,21 +135,7 @@ Template.OptionsSelected.events({
     $('.STIMainHoldScabies').css('left', '0vw')
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
-    $('#aiOption').css('visibility', 'hidden')
     $('#closeSTIMaleScabies').css('visibility', 'visible')
-  },
-  'click #MythsOPTI': function (event) {
-    $('#MythsOPTI').css('background-color', 'red')
-    $('.choiceHoldMain').css('visibility', 'hidden')
-    $('#OptionsHolder').css('visibility', 'hidden')
-    $('#OptionsHoldeMyth').css('visibility', 'visible')
-    $('#OptionsHoldeMyth').css('height', '100vh')
-    $('#OptionsHoldeMyth').css('width', '100vw')
-    $('#OptionsHoldeMyth').css('left', '0vw')
-    $('.ChoiceholdBackSTI').css('visibility', 'visible')
-    $('body').css('overflow-y', 'hidden')
-    $('#aiOption').css('visibility', 'hidden')
-    $('#closeMyths').css('visibility', 'visible')
   },
   'click #FemalChlamydiaOPTI': function (event) {
     $('#FemalChlamydiaOPTI').css('background-color', 'red')
@@ -174,7 +148,6 @@ Template.OptionsSelected.events({
     $('.ChoiceholdBackSTI').css('visibility', 'visible')
     $('#closeSTIFemale').css('visibility', 'visible')
     $('body').css('overflow-y', 'hidden')
-    $('#aiOption').css('visibility', 'hidden')
     console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
   }
 })
