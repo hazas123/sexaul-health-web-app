@@ -8,8 +8,12 @@ Router.route('/choice', function () {
   this.render('choice')
 })
 
-Router.route('/choiceMan', function () {
+Router.route('/choiceMale', function () {
   this.render('maleOptions')
+})
+
+Router.route('/choiceFemale', function () {
+  this.render('FemaleOptions')
 })
 
 Router.route('/chlamydiaMale', function () {

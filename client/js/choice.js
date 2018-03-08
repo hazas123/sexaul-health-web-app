@@ -26,10 +26,6 @@ Template.choice.onRendered(function () {
 })
 
 Template.choice.events({
-  'click #toggle': function (event) {
-    $('#page-slide').toggleClass('slide')
-    $('#toggle').toggleClass('slide-tog')
-  },
   'click #closeDisclamer': function (event) {
     event.preventDefault()
     $('#disclamer').css('visibility', 'hidden')
