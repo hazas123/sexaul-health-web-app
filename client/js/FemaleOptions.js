@@ -36,28 +36,31 @@ Template.choice.onRendered(function () {
   console.log(GenderSel, Woman, OtherGender, Sex)
 })
 
-Template.maleOptions.events({
+Template.FemaleOptions.events({
   'click #MaleChlamydiaOPTI': function (event) {
-    window.location.href = '/chlamydiaMale'
+    window.location.href = '/chlamydiaFemale'
     //  console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
   },
   'click #MaleGenitalWartsOPTI': function (event) {
-    window.location.href = '/genialWartsMale'
+    window.location.href = '/genialWartsFemale'
   },
   'click #MaleGenitalHerpesOPTI': function (event) {
-    window.location.href = '/genialHerpesMale'
+    window.location.href = '/genialHerpesFemale'
   },
   'click #MaleGonorrhoeaOPTI': function (event) {
-    window.location.href = '/gonorrhoeaMale'
+    window.location.href = '/gonorrhoeaFemale'
   },
   'click #MaleSyphilisOPTI': function (event) {
-    window.location.href = '/syphilisMale'
+    window.location.href = '/syphilisFemale'
   },
   'click #MalePubicLiceOPTI': function (event) {
-    window.location.href = '/pubicLiceMale'
+    window.location.href = '/pubicLiceFemale'
   },
   'click #ScabiesOPTI': function (event) {
-    window.location.href = '/scabiesMale'
+    window.location.href = '/scabiesFemale'
+  },
+  'click #FemaleChlamydiaOPTI': function (event) {
+    window.location.href = '/chlamydiaFemale'
   }
 })
 

@@ -21,7 +21,7 @@ Router.route('/chlamydiaMale', function () {
 })
 
 Router.route('/chlamydiaFemale', function () {
-  this.render('ChlamydiaFemaleT')
+  this.render('ChlamydiaFemaleC')
 })
 
 Router.route('/genialHerpesMale', function () {
