@@ -69,6 +69,9 @@ body, html {
     font: 700 1.2rem 'Roboto Slab', sans-serif;
     letter-spacing: 0.05rem;
     background-color: #f4f4f4;
+		background-image: url("./Background_New_Light_Grey.png");
+	  background-repeat: repeat;
+
 
 }
 
@@ -78,7 +81,7 @@ body, html {
   background-image: url("./Background_New_Light_Grey.png");
   background-repeat: repeat;
   width: 300px;
-  height: 400vh;
+  height: 100vh;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -444,6 +447,7 @@ color: white
 }
 
 #SelectOptionCol4{
+	padding-top: 50px;
 
 }
 
@@ -460,6 +464,7 @@ color: white
 	display: flex;
 	text-align: center;
 	border-radius: 10px;
+	color: white;
 	/* justify-content: center; */
 	flex-direction: column;
 
@@ -700,13 +705,16 @@ background-color: pink;
   height: 100vh;
   position: absolute;
   z-index: 1;
-  top: 200vh;
-  
+
+
 }
 
 .AvaliableOptions{
-  float: right;
-
+	/*float: right; */
+    padding-left: 22.4%;
+    width: 100%;
+    /* padding-right: 0%; */
+    border-left: 1px solid black;
 }
 
 .mythback{
@@ -714,14 +722,13 @@ background-color: pink;
 
 }
 
-
+.whiteB {
+	background-color: white;
+}
 
 
 #ReselectChoices{
-width: 300px;
-visibility: hidden;
 
-height: 100vh;
 }
 
 
@@ -733,13 +740,13 @@ height: 100vh;
 
 .itemOpt {
 	background-color: #4353a4;
-	margin: 1px;
-	width: 10%;
-	display: inline;
-	height: 30vh;
-	color: white;
-	padding: 10%;
-	border-radius: 5px;
+margin: 10px;
+width: 10%;
+display: inline;
+height: 30vh;
+color: white;
+padding: 10%;
+border-radius: 5px;
 }
 
 .itemOptMyth{
