@@ -69,8 +69,8 @@ body, html {
     font: 700 1.2rem 'Roboto Slab', sans-serif;
     letter-spacing: 0.05rem;
     background-color: #f4f4f4;
-		background-image: url("./Background_New_Light_Grey.png");
-	  background-repeat: repeat;
+		//background-image: url("./Background_New_Light_Grey.png");
+	  //background-repeat: repeat;
 
 
 }
@@ -81,7 +81,7 @@ body, html {
   background-image: url("./Background_New_Light_Grey.png");
   background-repeat: repeat;
   width: 300px;
-  height: 100vh;
+  height: 400vh;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -710,11 +710,11 @@ background-color: pink;
 }
 
 .AvaliableOptions{
-	/*float: right; */
-    padding-left: 22.4%;
-    width: 100%;
-    /* padding-right: 0%; */
-    border-left: 1px solid black;
+	/* float: right; */
+padding-left: 28.4%;
+width: 100%;
+/* padding-right: 0%; */
+border-left: 1px solid black;
 }
 
 .mythback{
@@ -726,6 +726,11 @@ background-color: pink;
 	background-color: white;
 }
 
+#maleOptionsSelected{
+		font-size: 254%;
+    margin-bottom: 5vh;
+    padding-left: 26%;
+}
 
 #ReselectChoices{
 
@@ -739,14 +744,23 @@ background-color: pink;
 }
 
 .itemOpt {
-	background-color: #4353a4;
-margin: 10px;
-width: 10%;
-display: inline;
-height: 30vh;
-color: white;
-padding: 10%;
-border-radius: 5px;
+		background-color: #4353a4;
+    margin: 10px;
+    width: 10%;
+    display: inline;
+    height: 11vh;
+    color: white;
+    /* padding: 10%; */
+    border-radius: 5px;
+    /* float: right; */
+    /* padding-left: 28.4%; */
+    width: 100%;
+    /* padding-right: 0%; */
+    /* border-left: 1px solid black; */
+}
+
+.STIStyling {
+  background-color: #243854;
 }
 
 .itemOptMyth{
