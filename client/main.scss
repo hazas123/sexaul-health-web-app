@@ -335,6 +335,13 @@ margin-left: 1vw;
 margin-top: 0vh;
 }
 
+.siteInformationSTIs {
+		font: 900 5.2rem 'Roboto Slab', sans-serif;
+    background-color: #243854;
+    color: white;
+    margin-left: 27%;
+}
+
 #siteInformation h1{
 font: 900 15.2rem 'Roboto Slab', sans-serif;
 background-color: #243854;
@@ -630,6 +637,7 @@ text-align: center;
 .ColBot {
 		width: 100%;
     height: 40%;
+		margin-top: 20%;
     //background-color: red;
 }
 
@@ -707,7 +715,7 @@ margin-top: 5%;
 background-color: pink;
 }
 
-#OptionsHolder {
+.OptionsHolder {
 
   width: 100vw;
   height: 100vh;
@@ -734,7 +742,13 @@ border-left: 1px solid black;
 	background-color: white;
 }
 
-#maleOptionsSelected{
+.FilterOptionsAvaliable {
+
+}
+
+.holdbtn {visibility: visible;}
+
+#maleOptionsSelected,#OtherOptionsSelected, #FemaleOptionsSelected{
 		font-size: 254%;
     margin-bottom: 5vh;
     padding-left: 26%;

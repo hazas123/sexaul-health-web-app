@@ -1,0 +1,153 @@
+<template name="OtherOptions">
+
+
+
+<div class="OptionsHolder">
+
+<div class="row">
+
+
+<!-- <div id="ReselectChoices" class="col-2">
+<img src="./Logo/Logo_Normal.png"  alt="Logo"/>
+
+
+</div> -->
+<div class="AvaliableOptions" >
+<div id="OtherOptionsSelected">
+  <h1>Salus - Other</h1>
+</div>
+
+<div class="FilterOptionsAvaliable">
+  <button id="STIStyling" class="btn holdbtn">STI</button>
+  <button id="MythStyling" class="btn holdbtn">Myths</button>
+</div>
+<div class="row whiteB" id="parent">
+
+  <button class="col-5 itemOpt STIStyling" id="MaleChlamydiaOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Male Chlamydia
+      <p>Male</p>
+  </button>
+
+  <button class="box col-5 itemOpt STIStyling" id='MaleGenitalWartsOPTI' onclick=" alert('Hello! I am an alert box!!'); ">
+      Genital Warts
+      <p>Male</p>
+  </button>
+
+  <button class="box col-5 itemOpt STIStyling" id="MaleGenitalHerpesOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Genital Herpes
+      <p>Male</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling" id="MaleGonorrhoeaOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Gonorrhoea
+      <p>Male</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling" id="MaleSyphilisOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+     Syphilis
+     <p>Male</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling" id="MalePubicLiceOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Pubic Lice
+      <p>Male</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling" id="ScabiesOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Scabies
+      <p>Male</p>
+  </button>
+
+  <button class="box col-5 itemOpt MythStyling" id="MythsOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Sexual Myths
+  </button>
+
+  <button class="col-5 itemOpt MythStyling" id="MythsOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Sexual Myths
+  </button>
+
+  <button class="col-5 itemOpt STIStyling" id="FemaleChlamydiaOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      F Chlamydia
+      <p>Female</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling" id='FemaleGenitalWartsOPTI' onclick=" alert('Hello! I am an alert box!!'); ">
+      Genital Warts
+      <p>Female</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling" id="FemaleGenitalHerpesOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Genital Herpes
+      <p>Female</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling" id="FemaleGonorrhoeaOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Gonorrhoea
+      <p>Female</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling" id="FemaleSyphilisOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+    Syphilis
+    <p>Female</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling" id="FemalePubicLiceOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Pubic Lice
+      <p>Female</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling" id="FemaleScabiesOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Scabies
+      <p>Female</p>
+  </button>
+
+  <button class="col-5 itemOpt MythStyling" id="MythsOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Sexual Myths
+  </button>
+
+
+
+
+
+</div>
+
+</div>
+</div>
+
+
+
+<div class="ChoiceholdBackOPI">
+
+</div>
+</div>
+
+
+
+<script >
+
+
+
+  var $btns = $('.btn').click(function() {
+    console.log('clicked');
+    console.log(this.id);
+    if (this.id == 'all') {
+      console.log('all');
+      $('#parent > button').fadeIn(450);
+    } else {
+      console.log('else');
+      var $el = $('.' + this.id).fadeIn(450);
+      $('#parent > button').not($el).hide();
+    }
+    $btns.removeClass('active');
+    $(this).addClass('active');
+  })
+
+
+</script>
+
+
+
+
+
+
+</template>
