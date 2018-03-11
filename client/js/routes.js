@@ -79,6 +79,10 @@ Router.route('/choiceFemale', function () {
 Router.route('/choiceOther', function () {
   this.render('OtherOptions')
 })
+
+Router.route('/Myths', function () {
+  this.render('SexualMyths')
+})
 /*    If just gender is selected  */
 /*
 Router.route('/choiceMale', function () {

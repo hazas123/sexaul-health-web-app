@@ -58,6 +58,9 @@ Template.maleOptions.events({
   },
   'click #ScabiesOPTI': function (event) {
     window.location.href = '/scabiesMale'
+  },
+  'click #MythsOPTI': function (event) {
+    window.location.href = '/Myths'
   }
 })
 

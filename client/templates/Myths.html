@@ -1,21 +1,23 @@
-<template name="Myths">
+<template name="SexualMyths">
 
 
 
-<div id="OptionsHoldeMyth">
-<div id="closeMyths">Close STI</div>
+<div class="OptionsHolder">
+
 <div class="row">
 
 
-<div id="ReselectChoices" class="col-2">
+<!-- <div id="ReselectChoices" class="col-2">
 <img src="./Logo/Logo_Normal.png"  alt="Logo"/>
 
 
+</div> -->
+<div class="AvaliableOptions" >
+<div id="OtherOptionsSelected">
+  <h1>Salus - Sexual Myths</h1>
 </div>
 
-
-<div class="AvaliableOptions mythback col" >
-<div class="row">
+<div class="row whiteB" id="parent">
 
   <div class="col-3 itemOptMyth">
     <img class="Myth_Gifs" src="./Myth_Exports/Anal_STI.gif"  alt="myth"/>
@@ -53,6 +55,11 @@
     <img class="Myth_Gifs" src="./Myth_Exports/STI's_disappear.gif"  alt="myth"/>
   </div>
 
+
+
+
+
+
 </div>
 
 </div>
@@ -67,7 +74,38 @@
 
 
 
+<script >
 
+
+
+  var $btns = $('.btn').click(function() {
+    console.log('clicked');
+    console.log(this.id);
+    if (this.id == 'all') {
+      console.log('all');
+      $('#parent > button').fadeIn(450);
+    } else {
+      console.log('else');
+      var $el = $('.' + this.id).fadeIn(450);
+      $('#parent > button').not($el).hide();
+    }
+    $btns.removeClass('active');
+    $(this).addClass('active');
+  })
+
+
+// ask james
+$('.holdbtn').click(function() {
+
+  $('.itemOpt').sort(function(a, b) {
+    if (a.textContent < b.textContent) {
+      return -1;
+    } else {
+      return 1;
+    }
+  }).appendTo('#parent');
+})
+</script>
 
 
 
