@@ -61,6 +61,9 @@ Template.FemaleOptions.events({
   },
   'click #FemaleChlamydiaOPTI': function (event) {
     window.location.href = '/chlamydiaFemale'
+  },
+  'click #MythsOPTI': function (event) {
+    window.location.href = '/Myths'
   }
 })
 

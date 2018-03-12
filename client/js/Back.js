@@ -57,3 +57,9 @@ Template.ChlamydiaFemaleC.events({
     window.history.back()
   }
 })
+
+Template.SexualMyths.events({
+  'click #closeMyths': function (event) {
+    window.history.back()
+  }
+})
