@@ -1,0 +1,22 @@
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+
+  .full-image{
+    // background-image: none !important;
+  }
+  .image-content{
+    left: 50% !important;
+    top: 60% !important;
+  }
+
+  .btn{
+    font-size: 54px !important;
+  }
+
+  .chat-widget-wrapper {
+    width: 100%;
+  }
+
+  .chat-box-container {
+    width: 100%;
+  }
+}
