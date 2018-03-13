@@ -1,5 +1,6 @@
 import { Template } from 'meteor/templating'
 import { ReactiveVar } from 'meteor/reactive-var'
+import { Meteor } from 'meteor/meteor'
 
 import '../templates/hello.html'
 import '../templates/choice.html'
@@ -65,5 +66,16 @@ Template.hello.events({
 
     console.log(age)
     instance.counter.set(age)
+  }
+})
+
+Template.buttonTest.events({
+  'click #testClick' (event) {
+    Meteor.call('getNhsInfo', function (error, result) {
+      if (error) {
+        console.log(error)
+      }
+      console.log(result)
+    })
   }
 })

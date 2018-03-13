@@ -25,3 +25,5 @@ acemtp:x3dom
 promise
 deanius:promise
 iron:router
+http
+aldeed:collection2@3.0.0

@@ -1,4 +1,5 @@
 import { Meteor } from 'meteor/meteor'
+import { HTTP } from 'meteor/http'
 
 Meteor.startup(() => {
 
@@ -25,10 +26,20 @@ Meteor.methods({
     })
   },
 
-  getLastClick: function () {
-    var lastClick
-    lastClick = 100 + 1
-    console.log('lastClick', lastClick)
-    return lastClick
+  getNhsInfo: function () {
+    var arg = 'chlamydia'
+    var options = {
+      'headers': {'subscription-key': '-------'}
+    }
+    try {
+      const result = HTTP.call('GET', 'https://api.nhs.uk/conditions/' + arg, options)
+
+      console.log('worked', result.content)
+      return true
+    } catch (e) {
+      // Got a network error, timeout, or HTTP error in the 400 or 500 range.
+      console.log('error', e)
+      return false
+    }
   }
 })
