@@ -26,10 +26,6 @@ Template.choice.onRendered(function () {
 })
 
 Template.choice.events({
-  'click #toggle': function (event) {
-    $('#page-slide').toggleClass('slide')
-    $('#toggle').toggleClass('slide-tog')
-  },
   'click #closeDisclamer': function (event) {
     event.preventDefault()
     $('#disclamer').css('visibility', 'hidden')
@@ -76,7 +72,17 @@ Template.choice.events({
     this.train = new ReactiveVar(true)
     console.log(this.train)
     $('#toggle').css('visibility', 'visible')
-    window.location.href = '/choice' + Gender
+
+    if (Gender === undefined) {
+      Gender = ''
+      console.log(Gender)
+    }
+
+    if (Sexaulity === undefined) {
+      Sexaulity = ''
+      console.log(Sexaulity)
+    }
+    window.location.href = '/choice' + Gender + Sexaulity
   }
 })
 

@@ -69,6 +69,9 @@ body, html {
     font: 700 1.2rem 'Roboto Slab', sans-serif;
     letter-spacing: 0.05rem;
     background-color: #f4f4f4;
+		//background-image: url("./Background_New_Light_Grey.png");
+	  //background-repeat: repeat;
+		overflow-x: hidden;
 
 }
 
@@ -198,8 +201,8 @@ body {
 height: 100vh;
 width: 100vw;
 -webkit-transition: left 2s;
-z-index: 1;
-
+z-index: 10;
+position: fixed;
 }
 
 
@@ -332,6 +335,13 @@ margin-left: 1vw;
 margin-top: 0vh;
 }
 
+.siteInformationSTIs {
+		font: 900 5.2rem 'Roboto Slab', sans-serif;
+    background-color: #243854;
+    color: white;
+    margin-left: 27%;
+}
+
 #siteInformation h1{
 font: 900 15.2rem 'Roboto Slab', sans-serif;
 background-color: #243854;
@@ -444,6 +454,7 @@ color: white
 }
 
 #SelectOptionCol4{
+	padding-top: 50px;
 
 }
 
@@ -460,6 +471,7 @@ color: white
 	display: flex;
 	text-align: center;
 	border-radius: 10px;
+	color: white;
 	/* justify-content: center; */
 	flex-direction: column;
 
@@ -548,18 +560,18 @@ color: white;
   height: 400px;
   opacity: 1.0;
 }
-// .STIMainHold, .STIMainHoldWoman, .STIMainHoldGW, .STIMainHoldGH, .STIMainHoldGon, .STIMainHoldSyph, .STIMainHoldPubLi, .STIMainHoldScabies, #OptionsHoldeMyth{
+ .STIMainHold, .STIMainHoldWoman, .STIMainHoldGW, .STIMainHoldGH, .STIMainHoldGon, .STIMainHoldSyph, .STIMainHoldPubLi, .STIMainHoldScabies, #OptionsHoldeMyth{
 
-// position: fixed;
+ position: fixed;
 
-// overflow: hidden;
 
-// width: 0vw;
-// height: 0vh;
-// margin: 0px;
-// padding: 0px;
+z-index: 2;
+ width: 100vw;
+ height: 100vh;
+ margin: 0px;
+ padding-left: 300px;
 
-// }
+ }
 
 // STIMainHoldWoman
 
@@ -602,6 +614,7 @@ text-align: center;
 }
 
 
+
 .ButtonStylingSTI:hover {
   background-color: blue;
 }
@@ -618,6 +631,14 @@ text-align: center;
 
 .colArt{
   margin-top: 10%;
+	height: 25%;
+}
+
+.ColBot {
+		width: 100%;
+    height: 40%;
+		margin-top: 20%;
+    //background-color: red;
 }
 
 .STISmallHeading:hover {
@@ -694,19 +715,22 @@ margin-top: 5%;
 background-color: pink;
 }
 
-#OptionsHolder {
+.OptionsHolder {
 
   width: 100vw;
   height: 100vh;
   position: absolute;
   z-index: 1;
-  top: 200vh;
-  
+
+
 }
 
 .AvaliableOptions{
-  float: right;
-
+	/* float: right; */
+padding-left: 28.4%;
+width: 100%;
+/* padding-right: 0%; */
+border-left: 1px solid black;
 }
 
 .mythback{
@@ -714,14 +738,24 @@ background-color: pink;
 
 }
 
+.whiteB {
+	background-color: white;
+}
 
+.FilterOptionsAvaliable {
 
+}
+
+.holdbtn {visibility: visible;}
+
+#maleOptionsSelected,#OtherOptionsSelected, #FemaleOptionsSelected{
+		font-size: 254%;
+    margin-bottom: 5vh;
+    padding-left: 26%;
+}
 
 #ReselectChoices{
-width: 300px;
-visibility: hidden;
 
-height: 100vh;
 }
 
 
@@ -732,20 +766,34 @@ height: 100vh;
 }
 
 .itemOpt {
-	background-color: #4353a4;
-	margin: 1px;
-	width: 10%;
-	display: inline;
-	height: 30vh;
-	color: white;
-	padding: 10%;
-	border-radius: 5px;
+		background-color: #4353a4;
+    margin: 10px;
+    width: 10%;
+    display: inline;
+    height: 11vh;
+    color: white;
+    /* padding: 10%; */
+    border-radius: 5px;
+    /* float: right; */
+    /* padding-left: 28.4%; */
+    width: 100%;
+    /* padding-right: 0%; */
+    /* border-left: 1px solid black; */
+}
+
+.STITitle {
+	width: 100%;
+	padding-left: 300px;
+}
+
+.STIStyling {
+  background-color: #243854;
 }
 
 .itemOptMyth{
   background-color: #4353a4;
   margin: 25px ;
-  border-radius: 25px;
+  border-radius: 10px;
   display: inline;
 
   width: 30vw;
@@ -754,9 +802,18 @@ height: 100vh;
   }
 
 .ButtonStylingSTIHolder{
-  margin-top: 10px;
+	margin-top: 8%;
+	width: 80%;
+	margin-left: 15px;
+}
 
-  width: 50%;
+
+.treatmentInfo {
+background-color: #243854;
+color: white;
+margin-top: 10%;
+width: 75%;
+
 }
 
 .circle
@@ -799,6 +856,11 @@ height: 100vh;
   height: 2rem;
 }
 
+.chat-widget-wrapper {
+	z-index: 5;
+}
+
+
 #page-slide{
   background: #060606;
   width: 300px;
@@ -808,6 +870,7 @@ height: 100vh;
   position: fixed;
   transition: left 0.2s linear;
   top: 0;
+	z-index: 5;
 }
 #toggle{
   color:white;
@@ -866,7 +929,7 @@ height: 100vh;
 
 
 #MainMenuOption0{
-
+padding-left: 26vw;
 }
 
 #MainMenuOption1{
@@ -906,6 +969,7 @@ color: white;
 }
 
 #disclamer{
+text-align: center;
 
 }
 
@@ -914,6 +978,7 @@ color: white;
   height: auto;
   position: fixed;
   padding:4px 3%;
+
   background-color: #eee;
   box-shadow: 0 1px 2px 3px rgba(0,0,0,0.6);
 
@@ -953,7 +1018,36 @@ color: white;
   text-decoration: none;
 }
 
+.MythOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #243854;
+	border-radius: 10px;
+}
 
+.MythOverlayText{
+
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.itemOptMyth:hover .MythOverlay {
+  opacity: 1;
+}
 /*
 ::-webkit-scrollbar {
 display: none;

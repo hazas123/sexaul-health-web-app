@@ -1,14 +1,19 @@
 <template name="GenialWartsMaleT">
 
 <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
+
+  <div class="STITitle">
+    Salus
+  </div>
+
   <div class="STIMainHoldGW row">
 
       <div class="w-50 col ">
 
         <div class="ReturnOptions">
-          <div id="closeSTIMaleGW">Close STI</div>
+          <div id="closeSTIMaleGW" onclick="goBack()">Close STI</div>
         </div>
-        <div  class="x3d_scene">
+        <div  class="x3d_scene" >
 
         <x3d width='400px' height='600px'>
           <scene>
@@ -61,7 +66,18 @@
         </div>
       </div>
 
-      </div>  </div>
+      </div>
+      <div class="ColBot">
+        <div class="ButtonStylingSTI STISmallHeading">Treatment</div>
+        <div class="treatmentInfo">
+          Genital Warts can be treated through the use of
+        </div>
+
+      </div>
+
+    </div>
+
+
 
 
 
@@ -119,6 +135,11 @@ document.getElementById('Genital_WartsModelMan__MA_Pain_when').setAttribute('tra
 document.getElementById('Genital_WartsModelMan__MA_Pain_when').setAttribute('diffuseColor', '1.000 1.000 1.000');
 document.getElementById('Genital_WartsModelMan__MA_Red').setAttribute('diffuseColor', '1.000 0.000 0.022');
 }
+
+
+
+
+
 
 </script>
 </template>
