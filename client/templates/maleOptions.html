@@ -2,63 +2,73 @@
 
 
 
-<div id="OptionsHolder">
+<div class="OptionsHolder">
 
 <div class="row">
 
 
-<div id="ReselectChoices" class="col-2">
+<!-- <div id="ReselectChoices" class="col-2">
 <img src="./Logo/Logo_Normal.png"  alt="Logo"/>
 
 
+</div> -->
+<div class="AvaliableOptions" >
+<div id="maleOptionsSelected">
+  <h1>Salus - Male</h1>
 </div>
-<div id="AvaliableOptions" class="col">
-<div class="row">
+<div class="FilterOptionsAvaliable">
+  <button id="Sort" class=" holdbtn">A - Z </button>
+  <button id="All_Show" class="btn holdbtn">All Options</button>
+  <button id="STIStyling" class="btn holdbtn">STI</button>
+  <button id="MythStyling" class="btn holdbtn">Myths</button>
 
-  <div class="col-3 itemOpt" id="MaleChlamydiaOPTI">
-    <p>
+</div>
+<div class="row whiteB" id="parent">
+
+  <button class="col-5 itemOpt STIStyling All_Show" id="MaleChlamydiaOPTI" onclick=" alert('Hello! I am an alert box!!');" >
       Male Chlamydia
-    </p>
-  </div>
+      <p>Male</p>
+  </button>
 
-  <div class="col-3 itemOpt" id="MaleGenitalWartsOPTI">
-    <p>
-      Male Genital Warts
-    </p>
-  </div>
+  <button class="col-5 itemOpt STIStyling All_Show" id='MaleGenitalWartsOPTI' onclick=" alert('Hello! I am an alert box!!'); ">
+      Genital Warts
+      <p>Male</p>
+  </button>
 
-  <div class="col-3 itemOpt" id="MaleGenitalHerpesOPTI">
-    <p>
-      Male Genital Herpes
-    </p>
-  </div>
+  <button class="col-5 itemOpt STIStyling All_Show" id="MaleGenitalHerpesOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Genital Herpes
+      <p>Male</p>
+  </button>
 
-  <div class="col-3 itemOpt" id="MaleGonorrhoeaOPTI">
-    <p>
-      Male Gonorrhoea
-    </p>
-  </div>
+  <button class="col-5 itemOpt STIStyling All_Show" id="MaleGonorrhoeaOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Gonorrhoea
+      <p>Male</p>
+  </button>
 
-  <div class="col-3 itemOpt" id="MaleSyphilisOPTI">
-    <p>
-      Male Syphilis
-    </p>
-  </div>
-  <div class="col-3 itemOpt" id="MalePubicLiceOPTI">
-    <p>
-      Male Pubic Lice
-    </p>
-  </div>
-  <div class="col-3 itemOpt" id="ScabiesOPTI">
-    <p>
-      Male Scabies
-    </p>
-  </div>
-  <div class="col-3 itemOpt">
+  <button class="col-5 itemOpt STIStyling All_Show" id="MaleSyphilisOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+     Syphilis
+     <p>Male</p>
+  </button>
 
-    Test
+  <button class="col-5 itemOpt STIStyling All_Show" id="MalePubicLiceOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Pubic Lice
+      <p>Male</p>
+  </button>
 
-  </div>
+  <button class="col-5 itemOpt STIStyling All_Show" id="ScabiesOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Scabies
+      <p>Male</p>
+  </button>
+
+  <button class="col-5 itemOpt MythStyling All_Show" id="MythsOPTI" onclick=" alert('Hello! I am an alert box!!');" >
+      Sexual Myths
+  </button>
+
+
+
+
+
+
 
 </div>
 
@@ -75,7 +85,38 @@
 
 
 
+<script >
 
+
+
+  var $btns = $('.btn').click(function() {
+    console.log('clicked');
+    console.log(this.id);
+    if (this.id == 'all') {
+      console.log('all');
+      $('#parent > button').fadeIn(450);
+    } else {
+      console.log('else');
+      var $el = $('.' + this.id).fadeIn(450);
+      $('#parent > button').not($el).hide();
+    }
+    $btns.removeClass('active');
+    $(this).addClass('active');
+  })
+
+
+// ask james
+$('.holdbtn').click(function() {
+
+  $('.itemOpt').sort(function(a, b) {
+    if (a.textContent < b.textContent) {
+      return -1;
+    } else {
+      return 1;
+    }
+  }).appendTo('#parent');
+})
+</script>
 
 
 

@@ -67,3 +67,10 @@ Template.hello.events({
     instance.counter.set(age)
   }
 })
+
+Template.MenuMain.events({
+  'click #toggle': function (event) {
+    $('#page-slide').toggleClass('slide')
+    $('#toggle').toggleClass('slide-tog')
+  }
+})
