@@ -40,8 +40,8 @@ Template.choice.events({
   },
   'click #closeMainMenuOption2': function (event) {
     $('#MainMenuOption2').css('visibility', 'hidden')
-  },
-  'click #SelectOptionCol4' (event, instance) {
+  }
+  /* 'click #SelectOptionCol4' (event, instance) {
     // clicked the .clickbtn class
     // increment the counter when button is clicked
     $('#OptionsHolder').css('visibility', 'visible')
@@ -83,7 +83,7 @@ Template.choice.events({
       console.log(Sexaulity)
     }
     window.location.href = '/choice' + Gender + Sexaulity
-  }
+  } */
 })
 
 Template.choice.helpers({
@@ -96,5 +96,17 @@ Template.choice.helpers({
   },
   isTrue () {
     return Template.instance().isTrue.get()
+  }
+})
+
+Template.choice.events({
+  'click #MainM1' () {
+    window.location.href = '/AboutSalus'
+  },
+  'click #MainM2' () {
+    window.location.href = '/SearchSalus'
+  },
+  'click #MainM3' () {
+    window.location.href = '/ContactSalus'
   }
 })

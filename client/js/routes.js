@@ -83,6 +83,19 @@ Router.route('/choiceOther', function () {
 Router.route('/Myths', function () {
   this.render('SexualMyths')
 })
+
+Router.route('/AboutSalus', function () {
+  this.render('About')
+})
+
+Router.route('/SearchSalus', function () {
+  this.render('SearchTemp')
+})
+
+Router.route('/ContactSalus', function () {
+  this.render('ContactTemp')
+})
+
 /*    If just gender is selected  */
 /*
 Router.route('/choiceMale', function () {

@@ -81,7 +81,7 @@ body, html {
   background-image: url("./Background_New_Light_Grey.png");
   background-repeat: repeat;
   width: 300px;
-  height: 400vh;
+  height: 300vh;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -237,20 +237,21 @@ position: fixed;
 }
 
 #closeMainMenuOption1{
-    width: 99%;
-    height: 50vh;
-    margin-left: 1vw;
-    padding-right: 4vw;
-    background: white;
-    font-size: 170%;
-    /* border-radius: 25px; */
-    padding-top: 10vh;
-    color: #f04d25;
+width: 99%;
+height: 50vh;
+margin-left: 1vw;
+/* padding-right: 4vw; */
+padding-left: 7vw;
+background: white;
+font-size: 170%;
+/* border-radius: 25px; */
+padding-top: 10vh;
+color: #f04d25;
 }
 
-#closeMainMenuOption1 h1 {
+#closeMainMenuOption1  {
   font: 900 2.2rem 'Roboto Slab', sans-serif;
-  color: #243854;
+  //color: #243854;
 
 }
 
@@ -331,9 +332,25 @@ opacity: 1.0;
 }
 
 #siteInformation{
-margin-left: 1vw;
-margin-top: 0vh;
+	margin-left: 1vw;
+	margin-top: 0vh;
+	height: 30%;
+	background-color: #243854;
 }
+
+#siteInformation3{
+	background-color: #f04d25;
+	width: 98%;
+	margin-left: 1vw;
+	margin-top: 10vh;
+	height: 15vh;
+	padding: 1vw;
+	padding-top: 3%;
+	color: white;
+	font: 900 2.2rem 'Roboto Slab', sans-serif;
+}
+
+
 
 .siteInformationSTIs {
 		font: 900 5.2rem 'Roboto Slab', sans-serif;
@@ -344,9 +361,14 @@ margin-top: 0vh;
 
 #siteInformation h1{
 font: 900 15.2rem 'Roboto Slab', sans-serif;
-background-color: #243854;
+
 color: white;
 //height: 10vh;
+}
+
+#siteInformation p {
+	font: 900 2.2rem 'Roboto Slab', sans-serif;
+
 }
 
 #siteInformationHold1{
@@ -368,7 +390,6 @@ color: white;
   text-align: center;
   vertical-align: middle;
   padding-top: 6vh;
-
   font: 900 2.2rem 'Roboto Slab', sans-serif;
 }
 
@@ -394,12 +415,26 @@ color: white;
 }
 
 #siteInformation2{
-  margin-top: 6vh;
-margin-left: 1vw;
+	margin-top: 0vh;
+margin-left: -1vw;
 font: 20 1.2rem 'Roboto Slab', sans-serif;
 width: 99%;
-color: white
+color: white;
+height: 30%;
+color: white;
 }
+
+#siteInformation2 h1{
+
+	font: 900 2rem 'Roboto Slab', sans-serif;
+}
+
+
+
+
+
+
+
 
 
 
@@ -492,7 +527,7 @@ color: white
 	/* background-color: red; */
 border-radius: 10px;
 padding-top: 10%;
-margin-bottom: 26%;
+margin-bottom: 1%;
 color: white;
 }
 
@@ -743,10 +778,30 @@ border-left: 1px solid black;
 
 .holdbtn {visibility: visible;}
 
-#maleOptionsSelected,#OtherOptionsSelected, #FemaleOptionsSelected{
-		font-size: 254%;
-    margin-bottom: 5vh;
-    padding-left: 26%;
+#maleOptionsSelected,#OtherOptionsSelected, #FemaleOptionsSelected, #AboutSelected, #ContactSelected{
+	font-size: 254%;
+	margin-bottom: 5vh;
+	margin-top: 6vh;
+	/* padding-left: 13%; */
+	padding-left: 19%;
+	color: white;
+	background-color: #243854;
+	font:900 4rem 'Roboto Slab', sans-serif;
+}
+
+
+#Aboutparent {
+	margin-left: 0px;
+	padding-left: 10%;
+	padding-top: 6vh;
+	height: 60vh;
+	background-color: white;
+	color: #f04d25;
+	font:900 2.2rem 'Roboto Slab', sans-serif;
+}
+
+#Aboutparent h1 {
+margin-bottom: 4%;
 }
 
 #ReselectChoices{
@@ -869,9 +924,9 @@ width: 75%;
 }
 #toggle{
   color:white;
-  font-size: 36px;
-  width: 50px;
-  height: 50px;
+  font-size: 68px;
+	width: 74px;
+  height: 74px;
   background: $primaryColor;
   position: fixed;
   top: 0;
