@@ -96,6 +96,7 @@ Router.route('/ContactSalus', function () {
   this.render('ContactTemp')
 })
 
+
 /*    If just gender is selected  */
 /*
 Router.route('/choiceMale', function () {
