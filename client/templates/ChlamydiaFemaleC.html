@@ -1,15 +1,21 @@
 <template name="ChlamydiaFemaleC">
 
   <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
+  <div class="siteInformationSTIs row">
+    <h1>Salus </h1>
 
-  <div class="STIMainHoldWoman row">
+  <!--<p>Sexual Health information and services</p> -->
+  </div>
+  <div class="STIMainHold row">
 
-    <div class="w-50 col ">
+      <div class="w-50 col ">
 
         <div class="ReturnOptions">
           <div id="closeSTIFemale">Close STI</div>
         </div>
         <div  class="x3d_scene">
+
+
           <x3d width='400px' height='600px'  >
             <scene>
               <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
@@ -20,15 +26,18 @@
 
                   <Viewpoint id="symptomArea" position="-0.00427 0.85329 -0.69608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
                 <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
-                  <Transform><inline  nameSpaceName="ChlamydiaModelWoman" mapDEFToID="true" url="./STI_Models_Female/Woman_With_Fruit_Chlamydia_03.x3d"  ></inline></Transform>
+                  <Transform><inline  nameSpaceName="ChlamydiaModelWoman" mapDEFToID="true" url="./STI_Models_Female/Female_Chlamydia.x3d"  ></inline></Transform>
               </scene>
             </x3d>
-          </div>
-      </div>
 
-        <div class="colArt col ">
+      </div>
+    </div>
+      <div class=" col ">
+        <div class="colArt">
+
+
 <div class="ButtonStylingSTI STISmallHeading">Chlamydia</div>
-      <div class="ButtonStylingSTIHolder">
+    <div class="ButtonStylingSTIHolder">
           <div class="row">
 
 
@@ -72,13 +81,24 @@
 
       </div>
 
+    <div class="ColBot">
+      <div class="ButtonStylingSTI STISmallHeading">Treatment</div>
+      <div class="treatmentInfo">
+        CHANGE ME
+      </div>
+
+    </div>
+    </div>
+</div>
 
 
 
 
 
 
+<div class="ChoiceholdBackSTI">
 
+</div>
 
 <script type="text/javascript">
 
@@ -201,5 +221,5 @@
       }
 
       </script>
-</div>
+
 </template>
