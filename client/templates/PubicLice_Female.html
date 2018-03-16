@@ -1,0 +1,148 @@
+<template name="PubicLiceFemale">
+
+<script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
+<div class="siteInformationSTIs row">
+  <h1>Female Pubic Lice </h1>
+
+<!--<p>Sexual Health information and services</p> -->
+</div>
+<div class="STIMainHold row">
+
+    <div class="w-50 col ">
+
+      <div class="ReturnOptions">
+        <div id="closeSTIFemale">Close STI</div>
+      </div>
+      <div  class="x3d_scene">
+
+
+        <x3d width='400px' height='600px'>
+          <scene>
+            <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
+                <viewpoint position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+                <viewpoint id="ResetFemalePubLi" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+                <Viewpoint id="symptomAreaFemalePubLiBeard" position="-0.00427 1.65329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+
+                <Viewpoint id="symptomAreaFemalePubLiArmpit" position="-0.00427 1.45329 -1.29608" orientation="-0.000 1.0 0.00219 3.2" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+
+                <Viewpoint id="symptomAreaFemalePubLi" position="-0.00427 0.90329 -0.19808" orientation="-0.000 1.0 0.00219 3.2" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+                <Viewpoint id="symptomAreaZoomFemalePubLi" position="-0.00427 0.85329 -0.39608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+
+              <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
+                <Transform><inline  nameSpaceName="PubicLice_ModelFemale" mapDEFToID="true" url="./STI_Models_Female/Female_Pubic_Lice.x3d"  ></inline></Transform>
+
+
+
+
+
+
+            </scene>
+
+          </x3d>
+          </div>
+
+      </div>
+
+      <div class=" col ">
+        <div class="colArt">
+
+
+<div class="ButtonStylingSTI STISmallHeading">Pubic Lice</div>
+      <div class="ButtonStylingSTIHolder">
+          <div class="row">
+              <div class="ButtonStylingSTI " id="symptom1PubLiFemale" onclick="symptomzoom1FemalePubLi('symptomAreaFemalePubLi', 'PubicLice_ModelFemale__Female_Eggs_Pubic_Lice', 'PubicLice_ModelFemale__Female_Lice_Pubic_Lice' )">Symptom 1</div>
+
+              <div class="ButtonStylingSTI " id="symptom2PubLiFemale" onclick="symptomzoom2FemalePubLi('symptomAreaFemalePubLiArmpit', 'PubicLice_ModelFemale__MA_Female_skin', 'PubicLice_ModelFemale__MA_Pubic_Lice_ArmPit_Area_Woman')">Symptom 2</div>
+
+
+              <div class="ButtonStylingSTI " onclick="cameraChangeFemalePubLi('ResetFemalePubLi')" >Reset</div>
+
+            </div>
+          </div>
+
+
+      <div class="row STIsymptomInfoBoxMove">
+        <div class="STIsymptomInfoBox" id="symptom1InfoFemalePubLi">
+          <h1>Symptom 1</h1>
+          <p>Pubic lice are offten visible along with their eggs. They may appear as small brown or white dots.</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom2InfoFemalePubLi">
+          <h1>Symptom 2</h1>
+          <p>Pubic lice can live in armpit hair</p>
+        </div>
+      </div>
+
+      </div>
+      <div class="ColBot">
+        <div class="ButtonStylingSTI STISmallHeading">Treatment</div>
+        <div class="treatmentInfo">
+          CHANGE ME
+        </div>
+
+      </div>
+    </div>
+    <div class="ColBot">
+      <div class="ButtonStylingSTI STISmallHeading">Treatment</div>
+      <div class="treatmentInfo">
+        CHANGE ME
+      </div>
+
+    </div>
+
+    </div>
+<script type="text/javascript">
+
+
+function CloserZoomFemalePubLi (){
+document.getElementById('symptomAreaZoomFemalePubLi').setAttribute('set_bind','true');
+}
+
+function symptomzoom1FemalePubLi(symptoms, texture1, texture2) {
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.0');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+
+document.getElementById('symptom1InfoFemalePubLi').style.height = '400px';
+document.getElementById('symptom1InfoFemalePubLi').style.opacity = '1.0';
+$( "#symptom2PubLiFemale" ).addClass( "disableItemSelect" );
+}
+
+function symptomzoom2FemalePubLi(symptoms, texture1, texture2) {
+
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.7');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+
+document.getElementById('symptom2InfoFemalePubLi').style.height = '400px';
+document.getElementById('symptom2InfoFemalePubLi').style.opacity = '1.0';
+$( "#symptom1PubLiFemale" ).addClass( "disableItemSelect" );
+
+}
+
+function cameraChangeFemalePubLi(Camera) {
+document.getElementById(Camera).setAttribute('set_bind','true');
+document.getElementById('PubicLice_ModelFemale__Female_Eggs_Pubic_Lice').setAttribute('transparency', '1.0');
+document.getElementById('PubicLice_ModelFemale__Female_Lice_Pubic_Lice').setAttribute('transparency', '1.0');
+document.getElementById('PubicLice_ModelFemale__MA_Female_skin').setAttribute('transparency', '0.0');
+
+document.getElementById('PubicLice_ModelFemale__MA_Pubic_Lice_ArmPit_Area_Woman').setAttribute('transparency', '1.0');
+
+
+
+
+
+$( "#symptom1PubLiFemale" ).removeClass( "disableItemSelect" );
+$( "#symptom2PubLiFemale" ).removeClass( "disableItemSelect" );
+
+document.getElementById('symptom1InfoFemalePubLi').style.height = '60px';
+document.getElementById('symptom2InfoFemalePubLi').style.height = '60px';
+
+document.getElementById('symptom1InfoFemalePubLi').style.opacity = '0.0';
+document.getElementById('symptom2InfoFemalePubLi').style.opacity = '0.0';
+
+}
+
+
+
+</script>
+</template>
