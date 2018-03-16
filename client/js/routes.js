@@ -47,7 +47,7 @@ Router.route('/genialHerpesFemale', function () {
   this.render('GenialHerpesFemale')
 })
 
-Router.route('/genialWartsFemale', function () {
+Router.route('/GenialWartsFemale', function () {
   this.render('GenialWartsFemale')
 })
 
