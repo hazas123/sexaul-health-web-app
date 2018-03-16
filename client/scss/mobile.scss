@@ -1,22 +1,96 @@
-@media screen and (max-device-width: 480px) and (orientation: portrait){
+@media screen and (max-width: 480px) {
 
   .full-image{
-    // background-image: none !important;
+    background-image: url('./Logo/Logo_Normal.png') !important;
+    background-color: white;
+    background-size: 90% auto !important;
+    background-position-y: 20% !important;
   }
   .image-content{
     left: 50% !important;
     top: 60% !important;
   }
 
-  .btn{
-    font-size: 54px !important;
-  }
+  // .btn{
+  //   font-size: 54px !important;
+  // }
 
   .chat-widget-wrapper {
-    width: 100%;
+    width: 100% !important;
   }
 
   .chat-box-container {
-    width: 100%;
+    width: 100% !important;
+  }
+
+  .chat-box-container.show {
+    height: 20em !important;
+  }
+
+  .chatlogs {
+    height: 16em !important;
+  }
+
+  .chat-form textarea {
+    height: 1em !important;
+    // font-size: 140px !important;
+  }
+
+  .chat-form button {
+    // font-size: 5em !important;
+  }
+
+  .chat .chat-message {
+    // font-size: 2em !important;
+  }
+
+  .chat-widget-wrapper {
+    // height: 5em !important;
+  }
+
+  .chat-widget-text{
+    // font-size: 2em !important;
+  }
+
+  //cookie banner
+
+  .cookie-banner{
+    font-size: 2em !important;
+    height: 8% !important;
+  }
+
+  .cookie-banner .button {
+    width: 2em !important;
+    height: 1em !important;
+  }
+
+  #mainBackground{
+    width: 0px !important;
+    border: none !important;
+  }
+
+  .validation {
+    bottom: 5em;
+    font-size: 1.5em;
+  }
+
+  #StartInformation {
+    padding-left: 0px !important;
+  }
+
+  #siteInformation {
+    margin-left: 0vw !important;
+  }
+
+  #choiceHoldInfo {
+    height: 60vh !important;
+  }
+
+  .choicehold {
+    padding-left: 0px !important;
+  }
+
+  #siteInformation3 {
+    margin-left: 0vw !important;
   }
 }
