@@ -11,10 +11,6 @@
     top: 60% !important;
   }
 
-  // .btn{
-  //   font-size: 54px !important;
-  // }
-
   .chat-widget-wrapper {
     width: 100% !important;
   }
@@ -28,20 +24,20 @@
   }
 
   .chatlogs {
-    height: 16em !important;
+    height: 15em !important;
   }
 
   .chat-form textarea {
-    height: 1em !important;
-    // font-size: 140px !important;
+    height: 2.5em !important;
+    font-size: 20px !important;
   }
 
   .chat-form button {
-    // font-size: 5em !important;
+    font-size: 1.5em !important;
   }
 
   .chat .chat-message {
-    // font-size: 2em !important;
+    font-size: 1em !important;
   }
 
   .chat-widget-wrapper {
@@ -53,15 +49,15 @@
   }
 
   //cookie banner
-
   .cookie-banner{
-    font-size: 2em !important;
-    height: 8% !important;
+    p{
+      width: 75% !important;
+    }
   }
 
   .cookie-banner .button {
     width: 2em !important;
-    height: 1em !important;
+    height: 2em !important;
   }
 
   #mainBackground{
@@ -76,10 +72,16 @@
 
   #StartInformation {
     padding-left: 0px !important;
+    margin-top: 2vh !important;
   }
 
   #siteInformation {
     margin-left: 0vw !important;
+    //font-size: 4em !important;
+
+    h1 {
+      font: 900 4em 'Roboto Slab', sans-serif !important;
+    }
   }
 
   #choiceHoldInfo {
@@ -91,6 +93,13 @@
   }
 
   #siteInformation3 {
+    width: 100% !important;
     margin-left: 0vw !important;
+    font: 900 1em 'Roboto Slab', sans-serif !important;
+  }
+
+  #closeMainMenuOption1 {
+    height: auto !important;
+    margin-bottom: 2em !important;
   }
 }
