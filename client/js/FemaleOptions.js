@@ -71,7 +71,7 @@ Template.FemaleOptions.events({
     window.location.href = '/AnalDouche'
   },
   'click #TamponOPTI': function (event) {
-    window.location.href = '/HIVFemale'
+    window.location.href = '/Tampon'
   },
   // Contraception
   'click #CondomOPTI': function (event) {

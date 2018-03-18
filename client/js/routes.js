@@ -106,6 +106,9 @@ Router.route('/AnalDouche', function () {
   this.render('AnalDouche')
 })
 
+Router.route('/Tampon', function () {
+  this.render('Tampon')
+})
 //  Contraception
 
 Router.route('/Condoms', function () {

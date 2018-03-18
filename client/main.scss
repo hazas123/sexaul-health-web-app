@@ -53,6 +53,7 @@ table {
 }
 
 
+
 // end of css reset
 
 $primaryColor: #4353a4;
@@ -75,7 +76,13 @@ body, html {
 
 }
 
-
+.MenuLogo {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 14%;
+    padding-bottom: 0%;
+}
 
 #mainBackground{
   background-image: url("./Background_New_Light_Grey.png");
