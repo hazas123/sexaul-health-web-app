@@ -1,6 +1,4 @@
 import { Template } from 'meteor/templating'
-import { Session } from 'meteor/session'
-import { Blaze } from 'meteor/blaze'
 import '../templates/ChlamydiaMale.html'
 import '../templates/OptionsSelected.html'
 import '../templates/ChlamydiaFemaleC.html'
@@ -52,14 +50,63 @@ Template.ScabiesMale.events({
     window.history.back()
   }
 })
+
 Template.ChlamydiaFemaleC.events({
-  'click #closeSTIFemale': function (event) {
+  'click .closeSTIFemale': function (event) {
+    window.history.back()
+  }
+})
+
+Template.GenialHerpesFemale.events({
+  'click .closeSTIFemale': function (event) {
+    window.history.back()
+  }
+})
+
+Template.GenialWartsFemale.events({
+  'click .closeSTIFemale': function (event) {
+    window.history.back()
+  }
+})
+
+Template.GonorrhoeaFemale.events({
+  'click .closeSTIFemale': function (event) {
+    window.history.back()
+  }
+})
+
+Template.PubicLiceFemale.events({
+  'click .closeSTIFemale': function (event) {
+    window.history.back()
+  }
+})
+
+Template.ScabiesFemale.events({
+  'click .closeSTIFemale': function (event) {
+    window.history.back()
+  }
+})
+
+Template.SyphilisFemale.events({
+  'click .closeSTIFemale': function (event) {
+    window.history.back()
+  }
+})
+
+Template.HIVFemale.events({
+  'click .closeSTIFemale': function (event) {
     window.history.back()
   }
 })
 
 Template.SexualMyths.events({
   'click #closeMyths': function (event) {
+    window.history.back()
+  }
+})
+
+Template.Condom.events({
+  'click .closeContaception': function (event) {
     window.history.back()
   }
 })

@@ -37,35 +37,48 @@ Template.choice.onRendered(function () {
 })
 
 Template.FemaleOptions.events({
-  'click #MaleChlamydiaOPTI': function (event) {
+  // sti's
+  'click #FemaleChlamydiaOPTI': function (event) {
     window.location.href = '/chlamydiaFemale'
     //  console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
   },
-  'click #MaleGenitalWartsOPTI': function (event) {
+  'click #FemaleGenitalWartsOPTI': function (event) {
     window.location.href = '/genialWartsFemale'
   },
-  'click #MaleGenitalHerpesOPTI': function (event) {
+  'click #FemaleGenitalHerpesOPTI': function (event) {
     window.location.href = '/genialHerpesFemale'
   },
-  'click #MaleGonorrhoeaOPTI': function (event) {
+  'click #FemaleGonorrhoeaOPTI': function (event) {
     window.location.href = '/gonorrhoeaFemale'
   },
-  'click #MaleSyphilisOPTI': function (event) {
+  'click #FemaleSyphilisOPTI': function (event) {
     window.location.href = '/syphilisFemale'
   },
-  'click #MalePubicLiceOPTI': function (event) {
+  'click #FemalePubicLiceOPTI': function (event) {
     window.location.href = '/pubicLiceFemale'
   },
-  'click #ScabiesOPTI': function (event) {
+  'click #FemaleScabiesOPTI': function (event) {
     window.location.href = '/scabiesFemale'
-  },
-  'click #FemaleChlamydiaOPTI': function (event) {
-    window.location.href = '/chlamydiaFemale'
   },
   'click #MythsOPTI': function (event) {
     window.location.href = '/Myths'
+  },
+  'click #FemaleHIVOPTI': function (event) {
+    window.location.href = '/HIVFemale'
+  },
+  // Hygine
+  'click #DoucheOPTI': function (event) {
+    window.location.href = '/AnalDouche'
+  },
+  'click #TamponOPTI': function (event) {
+    window.location.href = '/HIVFemale'
+  },
+  // Contraception
+  'click #CondomOPTI': function (event) {
+    window.location.href = '/Condoms'
   }
 })
+
 
 Template.OptionsSelected.helpers({
     // This is what will be sent to Child1 and Child2.

@@ -67,6 +67,10 @@ Router.route('/syphilisFemale', function () {
   this.render('SyphilisFemale')
 })
 
+Router.route('/HIVFemale', function () {
+  this.render('HIVFemale')
+})
+
 /* Gender Selected */
 Router.route('/choiceMale', function () {
   this.render('maleOptions')
@@ -96,6 +100,17 @@ Router.route('/ContactSalus', function () {
   this.render('ContactTemp')
 })
 
+//  hygiene
+
+Router.route('/AnalDouche', function () {
+  this.render('AnalDouche')
+})
+
+//  Contraception
+
+Router.route('/Condoms', function () {
+  this.render('Condom')
+})
 
 /*    If just gender is selected  */
 /*

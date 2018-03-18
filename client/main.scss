@@ -356,6 +356,7 @@ opacity: 1.0;
 		font: 900 5.2rem 'Roboto Slab', sans-serif;
     background-color: #243854;
     color: white;
+    margin-top: 3%;
     margin-left: 27%;
 }
 
@@ -608,6 +609,19 @@ z-index: 2;
 
  }
 
+ .HygieneHold {
+  position: fixed;
+
+
+ z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding-left: 300px;
+
+  }
+
+
 // STIMainHoldWoman
 
 .StiX3d{
@@ -634,7 +648,25 @@ float: left;
 }
 
 
+.ButtonStylingHygine{
+	display: inline;
+	background-color: #243854;
+	font: 700 1rem 'Roboto Slab', sans-serif;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	color: white;
+	width: 100px;
+	text-align: center;
+}
 
+.HygineSmallHeading{
+	margin-bottom:  10%;
+  background-color: transparent;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+
+  font-size: 200%;
+  color: #243854;
+}
 
 .ButtonStylingSTI {
 
@@ -654,6 +686,7 @@ text-align: center;
   background-color: blue;
 }
 
+
 .STISmallHeading{
 
   margin-bottom:  10%;
@@ -667,6 +700,12 @@ text-align: center;
 .colArt{
   margin-top: 10%;
 	height: 25%;
+}
+
+.colArtHygine{
+		margin-top: 10%;
+	    height: 25%;
+	    margin-left: 25%;
 }
 
 .ColBot {
@@ -696,7 +735,7 @@ background-color: transparent;
 }
 
 
-#closeSTIFemale, #closeSTIFemaleGW{
+.closeSTIFemale, #closeSTIFemaleGW, .closeHygine, .closeContaception{
   height: 100px;
   width: 5vw;
   background-color: grey;
@@ -718,6 +757,18 @@ background-color: transparent;
   margin-left: auto;
   margin-right: auto;
 }
+
+.x3d_sceneHygine{
+	margin-top: 5vh;
+background-color: red;
+height: 300px;
+width: 600px;
+margin-left: 13%;
+margin-right: auto;
+}
+
+
+
 
 .STIInfo{
 
@@ -840,6 +891,8 @@ margin-bottom: 4%;
   background-color: #243854;
 }
 
+.Contraception {background: red;}
+
 .itemOptMyth{
   background-color: #4353a4;
   margin: 25px ;
@@ -857,6 +910,16 @@ margin-bottom: 4%;
 	margin-left: 15px;
 }
 
+.ButtonStylingHygineHolder{
+	margin-top: 8%;
+	width: 80%;
+	margin-left: 15px;
+}
+
+.HygineButtonHolder {
+	margin-left: 12%;
+	padding-top: 5%;
+}
 
 .treatmentInfo {
 background-color: #243854;
