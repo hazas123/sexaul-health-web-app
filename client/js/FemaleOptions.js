@@ -76,6 +76,9 @@ Template.FemaleOptions.events({
   // Contraception
   'click #CondomOPTI': function (event) {
     window.location.href = '/Condoms'
+  },
+  'click #implantOPTI': function (event) {
+    window.location.href = '/Implant'
   }
 })
 

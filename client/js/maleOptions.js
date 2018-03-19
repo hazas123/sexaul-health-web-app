@@ -59,8 +59,16 @@ Template.maleOptions.events({
   'click #ScabiesOPTI': function (event) {
     window.location.href = '/scabiesMale'
   },
-  'click #MythsOPTI': function (event) {
-    window.location.href = '/Myths'
+  'click #MaleHIVOPTI': function (event) {
+    window.location.href = '/HIVFemale'
+  },
+  // Hygine
+  'click #DoucheOPTI': function (event) {
+    window.location.href = '/AnalDouche'
+  },
+  // Contraception
+  'click #CondomOPTI': function (event) {
+    window.location.href = '/Condoms'
   }
 })
 

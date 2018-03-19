@@ -37,6 +37,9 @@ Router.route('/syphilisMale', function () {
   this.render('SyphilisMale')
 })
 
+Router.route('/HIVMale', function () {
+  this.render('HIVMale')
+})
 /*      Female sti's routes start here    */
 
 Router.route('/chlamydiaFemale', function () {
@@ -113,6 +116,10 @@ Router.route('/Tampon', function () {
 
 Router.route('/Condoms', function () {
   this.render('Condom')
+})
+
+Router.route('/Implant', function () {
+  this.render('Implant')
 })
 
 /*    If just gender is selected  */

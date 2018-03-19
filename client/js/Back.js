@@ -51,6 +51,13 @@ Template.ScabiesMale.events({
   }
 })
 
+Template.HIVMale.events({
+  'click .closeSTIMale': function (event) {
+    // $('#MaleSyphilisOPTI').css('background-color', 'blue')
+    window.history.back()
+  }
+})
+
 Template.ChlamydiaFemaleC.events({
   'click .closeSTIFemale': function (event) {
     window.history.back()
