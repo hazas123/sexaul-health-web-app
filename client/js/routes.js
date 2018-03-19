@@ -37,6 +37,9 @@ Router.route('/syphilisMale', function () {
   this.render('SyphilisMale')
 })
 
+Router.route('/HIVMale', function () {
+  this.render('HIVMale')
+})
 /*      Female sti's routes start here    */
 
 Router.route('/chlamydiaFemale', function () {
@@ -47,7 +50,7 @@ Router.route('/genialHerpesFemale', function () {
   this.render('GenialHerpesFemale')
 })
 
-Router.route('/genialWartsFemale', function () {
+Router.route('/GenialWartsFemale', function () {
   this.render('GenialWartsFemale')
 })
 
@@ -65,6 +68,10 @@ Router.route('/scabiesFemale', function () {
 
 Router.route('/syphilisFemale', function () {
   this.render('SyphilisFemale')
+})
+
+Router.route('/HIVFemale', function () {
+  this.render('HIVFemale')
 })
 
 /* Gender Selected */
@@ -96,6 +103,24 @@ Router.route('/ContactSalus', function () {
   this.render('ContactTemp')
 })
 
+//  hygiene
+
+Router.route('/AnalDouche', function () {
+  this.render('AnalDouche')
+})
+
+Router.route('/Tampon', function () {
+  this.render('Tampon')
+})
+//  Contraception
+
+Router.route('/Condoms', function () {
+  this.render('Condom')
+})
+
+Router.route('/Implant', function () {
+  this.render('Implant')
+})
 
 /*    If just gender is selected  */
 /*
