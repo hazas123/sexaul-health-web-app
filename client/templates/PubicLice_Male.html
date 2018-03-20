@@ -98,41 +98,75 @@ document.getElementById('symptomAreaZoomMANPubLi').setAttribute('set_bind','true
 }
 
 function symptomzoom1MANPubLi(symptoms, texture1, texture2, texture3, texture4) {
+  // reset
+  document.getElementById('PubicLice_ModelMan__MA_Man_Skin_Texture_PubicLice').setAttribute('transparency', '0.0');
+  document.getElementById('PubicLice_ModelMan__MA_Eggs_Pubic_Lice').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Texture_PL').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Block').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice_ArmPit_Area').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Beard_PL_Texture').setAttribute('transparency', '1.0');
+
+  document.getElementById('symptom1InfoMANPubLi').style.opacity = '0.0';
+  document.getElementById('symptom2InfoMANPubLi').style.opacity = '0.0';
+  document.getElementById('symptom3InfoMANPubLi').style.opacity = '0.0';
+  // Selected symptom
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 document.getElementById(texture3).setAttribute('transparency', '1.0');
 document.getElementById(texture4).setAttribute('transparency', '1.0');
 
-document.getElementById('symptom1InfoMANPubLi').style.height = '400px';
+
 document.getElementById('symptom1InfoMANPubLi').style.opacity = '1.0';
-$( "#symptom2PubLiMAN" ).addClass( "disableItemSelect" );
-$( "#symptom3PubLiMAN" ).addClass( "disableItemSelect" );
+
 }
 
 function symptomzoom2MANPubLi(symptoms, texture1, texture2) {
+  // reset
+  document.getElementById('PubicLice_ModelMan__MA_Man_Skin_Texture_PubicLice').setAttribute('transparency', '0.0');
+  document.getElementById('PubicLice_ModelMan__MA_Eggs_Pubic_Lice').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Texture_PL').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Block').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice_ArmPit_Area').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Beard_PL_Texture').setAttribute('transparency', '1.0');
 
+  document.getElementById('symptom1InfoMANPubLi').style.opacity = '0.0';
+  document.getElementById('symptom2InfoMANPubLi').style.opacity = '0.0';
+  document.getElementById('symptom3InfoMANPubLi').style.opacity = '0.0';
+  // Selected symptom
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.7');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 
-document.getElementById('symptom2InfoMANPubLi').style.height = '400px';
+
 document.getElementById('symptom2InfoMANPubLi').style.opacity = '1.0';
-$( "#symptom1PubLiMAN" ).addClass( "disableItemSelect" );
-$( "#symptom3PubLiMAN" ).addClass( "disableItemSelect" );
+
 }
 
 function symptomzoom3MANPubLi(symptoms, texture1, texture2) {
+// reset
+document.getElementById('PubicLice_ModelMan__MA_Man_Skin_Texture_PubicLice').setAttribute('transparency', '0.0');
+document.getElementById('PubicLice_ModelMan__MA_Eggs_Pubic_Lice').setAttribute('transparency', '1.0');
+document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice').setAttribute('transparency', '1.0');
+document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Texture_PL').setAttribute('transparency', '1.0');
+document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Block').setAttribute('transparency', '1.0');
+document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice_ArmPit_Area').setAttribute('transparency', '1.0');
+document.getElementById('PubicLice_ModelMan__MA_Beard_PL_Texture').setAttribute('transparency', '1.0');
 
+document.getElementById('symptom1InfoMANPubLi').style.opacity = '0.0';
+document.getElementById('symptom2InfoMANPubLi').style.opacity = '0.0';
+document.getElementById('symptom3InfoMANPubLi').style.opacity = '0.0';
+// Selected symptom
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.7');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 
 
-document.getElementById('symptom2InfoMANPubLi').style.height = '400px';
-document.getElementById('symptom2InfoMANPubLi').style.opacity = '1.0';
-$( "#symptom1PubLiMAN" ).addClass( "disableItemSelect" );
-$( "#symptom2PubLiMAN" ).addClass( "disableItemSelect" );
+
+document.getElementById('symptom3InfoMANPubLi').style.opacity = '1.0';
+
 }
 
 
@@ -149,23 +183,12 @@ document.getElementById('PubicLice_ModelMan__MA_Beard_PL_Texture').setAttribute(
 $( "#symptom1PubLiMAN" ).removeClass( "disableItemSelect" );
 $( "#symptom2PubLiMAN" ).removeClass( "disableItemSelect" );
 $( "#symptom3PubLiMAN" ).removeClass( "disableItemSelect" );
-document.getElementById('symptom1InfoMANPubLi').style.height = '60px';
-document.getElementById('symptom2InfoMANPubLi').style.height = '60px';
-document.getElementById('symptom3InfoMANPubLi').style.height = '60px';
+
 document.getElementById('symptom1InfoMANPubLi').style.opacity = '0.0';
 document.getElementById('symptom2InfoMANPubLi').style.opacity = '0.0';
 document.getElementById('symptom3InfoMANPubLi').style.opacity = '0.0';
 }
 
-//function ChlamydiaName(){
-//document.getElementById('PubicLice_ModelMan__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
-//document.getElementById('PubicLice_ModelMan__MA_typeBlinn1').setAttribute('transparency', '0.0');
-//}
-function symptom1MAN(){
-document.getElementById('PubicLice_ModelMan__MA_Pain_when').setAttribute('transparency', '0.0');
-document.getElementById('PubicLice_ModelMan__MA_Pain_when').setAttribute('diffuseColor', '1.000 1.000 1.000');
-document.getElementById('PubicLice_ModelMan__MA_Red').setAttribute('diffuseColor', '1.000 0.000 0.022');
-}
 
 </script>
 </template>

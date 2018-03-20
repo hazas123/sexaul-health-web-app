@@ -98,24 +98,41 @@ document.getElementById('symptomAreaZoomFemalePubLi').setAttribute('set_bind','t
 }
 
 function symptomzoom1FemalePubLi(symptoms, texture1, texture2) {
+  // Reset
+  document.getElementById('PubicLice_ModelFemale__Female_Eggs_Pubic_Lice').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelFemale__Female_Lice_Pubic_Lice').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelFemale__MA_Female_skin').setAttribute('transparency', '0.0');
+  document.getElementById('PubicLice_ModelFemale__MA_Pubic_Lice_ArmPit_Area_Woman').setAttribute('transparency', '1.0');
+
+  document.getElementById('symptom1InfoFemalePubLi').style.opacity = '0.0';
+  document.getElementById('symptom2InfoFemalePubLi').style.opacity = '0.0';
+  // Selected Objects
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 
 document.getElementById('symptom1InfoFemalePubLi').style.height = '400px';
 document.getElementById('symptom1InfoFemalePubLi').style.opacity = '1.0';
-$( "#symptom2PubLiFemale" ).addClass( "disableItemSelect" );
+
 }
 
 function symptomzoom2FemalePubLi(symptoms, texture1, texture2) {
+// Reset
+document.getElementById('PubicLice_ModelFemale__Female_Eggs_Pubic_Lice').setAttribute('transparency', '1.0');
+document.getElementById('PubicLice_ModelFemale__Female_Lice_Pubic_Lice').setAttribute('transparency', '1.0');
+document.getElementById('PubicLice_ModelFemale__MA_Female_skin').setAttribute('transparency', '0.0');
+document.getElementById('PubicLice_ModelFemale__MA_Pubic_Lice_ArmPit_Area_Woman').setAttribute('transparency', '1.0');
 
+document.getElementById('symptom1InfoFemalePubLi').style.opacity = '0.0';
+document.getElementById('symptom2InfoFemalePubLi').style.opacity = '0.0';
+// Selected Objects
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.7');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 
 document.getElementById('symptom2InfoFemalePubLi').style.height = '400px';
 document.getElementById('symptom2InfoFemalePubLi').style.opacity = '1.0';
-$( "#symptom1PubLiFemale" ).addClass( "disableItemSelect" );
+
 
 }
 
@@ -124,21 +141,16 @@ document.getElementById(Camera).setAttribute('set_bind','true');
 document.getElementById('PubicLice_ModelFemale__Female_Eggs_Pubic_Lice').setAttribute('transparency', '1.0');
 document.getElementById('PubicLice_ModelFemale__Female_Lice_Pubic_Lice').setAttribute('transparency', '1.0');
 document.getElementById('PubicLice_ModelFemale__MA_Female_skin').setAttribute('transparency', '0.0');
-
 document.getElementById('PubicLice_ModelFemale__MA_Pubic_Lice_ArmPit_Area_Woman').setAttribute('transparency', '1.0');
 
-
-
-
+document.getElementById('symptom1InfoFemalePubLi').style.opacity = '0.0';
+document.getElementById('symptom2InfoFemalePubLi').style.opacity = '0.0';
 
 $( "#symptom1PubLiFemale" ).removeClass( "disableItemSelect" );
 $( "#symptom2PubLiFemale" ).removeClass( "disableItemSelect" );
 
-document.getElementById('symptom1InfoFemalePubLi').style.height = '60px';
-document.getElementById('symptom2InfoFemalePubLi').style.height = '60px';
 
-document.getElementById('symptom1InfoFemalePubLi').style.opacity = '0.0';
-document.getElementById('symptom2InfoFemalePubLi').style.opacity = '0.0';
+
 
 }
 
