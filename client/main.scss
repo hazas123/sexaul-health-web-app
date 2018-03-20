@@ -262,6 +262,13 @@ color: #f04d25;
 
 }
 
+#closeMainMenuOption1 p {
+	padding-right: 10vw;
+  font: 900 1.0rem 'Roboto Slab', sans-serif;
+  //color: #243854;
+
+}
+
 #closeMainMenuOption2{
 width: 50%;
 margin-left: auto;
@@ -1167,6 +1174,14 @@ text-align: center;
 
 .itemOptMyth:hover .MythOverlay {
   opacity: 1;
+}
+
+#FooterArea {
+	position: fixed;
+	bottom: 0px;
+	width: 100vw;
+	height: 5vh;
+	z-index: -2;
 }
 /*
 ::-webkit-scrollbar {

@@ -30,7 +30,7 @@ Template.choice.events({
     event.preventDefault()
     $('#disclamer').css('visibility', 'hidden')
     console.log('disclamer visible')
-  },
+  }/*,
   'click #MenuLink1': function (event) {
     $('#MainMenuOption1').css('visibility', 'visible')
     console.log('area visible')
@@ -41,7 +41,7 @@ Template.choice.events({
   'click #closeMainMenuOption2': function (event) {
     $('#MainMenuOption2').css('visibility', 'hidden')
   }
-  /* 'click #SelectOptionCol4' (event, instance) {
+   'click #SelectOptionCol4' (event, instance) {
     // clicked the .clickbtn class
     // increment the counter when button is clicked
     $('#OptionsHolder').css('visibility', 'visible')
