@@ -82,13 +82,21 @@ body, html {
 	margin-right: auto;
 	padding: 14%;
     padding-bottom: 0%;
+
+}
+
+.MenuLogoExtra {
+	height: 10px;
+	background-color: white;
+	background-image: url("./Background_New_Light_Grey.png");
+	background-repeat: repeat;
 }
 
 #mainBackground{
   background-image: url("./Background_New_Light_Grey.png");
   background-repeat: repeat;
   width: 300px;
-  height: 300vh;
+  //height: 300vh;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -221,7 +229,7 @@ position: fixed;
 }
 
 #choiceHoldInfo {
-  height: 100vh;
+  height: 45vh;
   width: 95vw;
   z-index: -1;
   padding-top: 10vh;
@@ -239,7 +247,7 @@ position: fixed;
     margin-right: 10vw;
     /* padding-top: 25vh; */
     padding-left: 300px;
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
 }
 
@@ -346,31 +354,30 @@ opacity: 1.0;
 }
 
 #siteInformation3{
-	background-color: #f04d25;
-	width: 98%;
-	margin-left: 1vw;
-	margin-top: 10vh;
-	height: 15vh;
-	padding: 1vw;
-	padding-top: 3%;
-	color: white;
-	font: 900 2.2rem 'Roboto Slab', sans-serif;
+	background-color: #fe7150;
+width: 98%;
+margin-left: 1vw;
+margin-top: 6vh;
+height: 10vh;
+padding: 1vw;
+padding-top: 2%;
+color: white;
+font: 900 2.2rem 'Roboto Slab', sans-serif;
 }
 
 
 
 .siteInformationSTIs {
-		font: 900 5.2rem 'Roboto Slab', sans-serif;
-    background-color: #243854;
-    color: white;
-    margin-top: 3%;
-    margin-left: 27%;
+	font: 900 3.5rem 'Roboto Slab', sans-serif;
+background-color: #243854;
+color: white;
+margin-top: 3%;
+margin-left: 24%;
 }
 
 #siteInformation h1{
-font: 900 15.2rem 'Roboto Slab', sans-serif;
-
-color: white;
+	font: 900 4.0rem 'Roboto Slab', sans-serif;
+	color: white;
 //height: 10vh;
 }
 
@@ -391,7 +398,7 @@ color: white;
 }
 
 .mainM {
-
+	cursor: pointer;
   color: white;
   margin: 25px;
   height: 20vh;
@@ -409,12 +416,12 @@ color: white;
 
 #MainM2{
   color: white;
-  background-color: #4353a4;
+  background-color: #629cba;
 }
 
 #MainM3{
   color: white;
-  background-color: #f04d25;
+  background-color: #fe7150;
 }
 
 #MainM4{
@@ -612,7 +619,7 @@ z-index: 2;
  width: 100vw;
  height: 100vh;
  margin: 0px;
- padding-left: 300px;
+ padding-left: 17%;
 
  }
 
@@ -676,7 +683,7 @@ float: left;
 }
 
 .ButtonStylingSTI {
-
+cursor: pointer;
 display: inline;
 background-color: #243854;
 font: 700 1rem 'Roboto Slab', sans-serif;
@@ -696,12 +703,17 @@ text-align: center;
 
 .STISmallHeading{
 
-  margin-bottom:  10%;
+  /* margin-bottom:  10%;
   background-color: transparent;
   font: 700 1.2rem 'Roboto Slab', sans-serif;
 
   font-size: 200%;
-  color: #243854;
+  color: #243854; */
+	margin-bottom: 8%;
+background-color: transparent;
+font: 700 2.5rem 'Roboto Slab', sans-serif;
+/* font-size: 200%; */
+color: #243854;
 }
 
 .colArt{
@@ -730,28 +742,26 @@ background-color: transparent;
 
 
 #closeSTIMale, .closeSTIMale, #closeSTIMaleGH, #closeSTIMaleGW, #closeSTIMaleGon, #closeSTIMaleSyph, #closeSTIMalePubLi, #closeSTIMaleScabies, #closeMyths{
-  height: 100px;
-  width: 5vw;
-  background-color: grey;
-  position: fixed;
-  top: 14vh;
-  left: 3vw;
-  font-size: 90%;
-
-  z-index: 6;
+	height: 70px;
+	width: 8vw;
+	background-color: white;
+	position: fixed;
+	top: 5vh;
+	left: 67.2vw;
+	font-size: 90%;
+	z-index: 20;
 }
 
 
 .closeSTIFemale, #closeSTIFemaleGW, .closeHygine, .closeContaception{
-  height: 100px;
-  width: 5vw;
-  background-color: grey;
-  position: fixed;
-  top: 14vh;
-  left: 3vw;
-  font-size: 90%;
-
-  z-index: 5;
+	height: 70px;
+	width: 8vw;
+	background-color: white;
+	position: fixed;
+	top: 5vh;
+	left: 67.2vw;
+	font-size: 90%;
+	z-index: 20;
 }
 
 
@@ -834,7 +844,11 @@ border-left: 1px solid black;
 
 }
 
-.holdbtn {visibility: visible;}
+.holdbtn {
+visibility: visible;
+color: white;
+margin-right: 15px;
+margin-bottom: 16px;}
 
 #maleOptionsSelected,#OtherOptionsSelected, #FemaleOptionsSelected, #AboutSelected, #ContactSelected{
 	font-size: 254%;
@@ -873,6 +887,23 @@ margin-bottom: 4%;
 
 }
 
+#STIStyling{
+	    background-color: #243854;
+}
+
+#MythStyling{
+	background-color: #4353a4;
+}
+
+#hygiene{
+	    background-color: #629cba;
+}
+
+#Contraception{
+	background-color: #f04d25;
+}
+
+
 .itemOpt {
 		background-color: #4353a4;
     margin: 10px;
@@ -880,6 +911,7 @@ margin-bottom: 4%;
     display: inline;
     height: 11vh;
     color: white;
+		cursor: pointer;
     /* padding: 10%; */
     border-radius: 5px;
     /* float: right; */
@@ -986,7 +1018,7 @@ width: 75%;
   width: 300px;
   display: block;
   height: 100%;
-  left:-300px;
+  left:0px;
   position: fixed;
   transition: left 0.2s linear;
   top: 0;
@@ -1012,12 +1044,17 @@ width: 75%;
   box-shadow: 0 1px 2px 3px rgba(0,0,0,0.6);
 }
 .slide-tog{
-  left:300px !important;
+  left:0px !important;
 }
 .MenuOverride {
-    height: 100vw;
+    /* height: 100vw;
     background-color: $primaryColor;
-    overflow-x: hidden;
+    overflow-x: hidden; */
+
+		height: 100vw;
+	background-color: #243854;
+	overflow-x: hidden;
+	border-right: 18px solid white;
 
     ul{
     list-style: none;
@@ -1027,11 +1064,22 @@ width: 75%;
     ul li{
     }
     ul li a{
-    color: #cdcdcd;
+    /* color: #cdcdcd;
     text-decoration: none;
     display: block;
     padding: 15px 25px;
-    border-bottom: 1px solid #2f2f2f;
+    border: 1px solid #2f2f2f;
+
+    -webkit-transition: background 0.3s linear;
+    -moz-transition: background 0.3s linear;
+    -ms-transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+    transition: background 0.3s linear; */
+		color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+    /* border: 1px solid #2f2f2f; */
     -webkit-transition: background 0.3s linear;
     -moz-transition: background 0.3s linear;
     -ms-transition: background 0.3s linear;

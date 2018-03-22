@@ -6,7 +6,7 @@ $lightergray : #f1f1f1;
 
 .chat-widget-wrapper {
   display: block;
-  width: 300px;
+  width: 30vw;
   height: 62px;
   position: fixed;
   bottom: 20px;
@@ -54,7 +54,7 @@ $lightergray : #f1f1f1;
 
 .chat-box-container {
   position: absolute;
-  width: 300px;
+  width: 30vw;
   height: 0;
   background-color: $lightergray;
   bottom: 10px;
