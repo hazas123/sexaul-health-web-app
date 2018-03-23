@@ -195,16 +195,20 @@ body {
 
 //=== Button styling, semi-ignore
 .btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  line-height: 1.5;
-  font: 700 1.2rem 'Roboto Slab', sans-serif;
-  padding: 1em 2em;
-  letter-spacing: 0.05rem;
-  visibility: hidden;
-
+	background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    padding: 1em;
+    /* letter-spacing: 0.05rem; */
+    visibility: hidden;
    &:focus { outline: 0; }
+}
+
+#All_Show{
+	background-color: #939393;
+
 }
 
 /* The hero image */
@@ -513,7 +517,9 @@ color: white;
 
 
 
-
+#cars{
+	visibility: hidden;
+}
 
 
 
@@ -530,7 +536,7 @@ color: white;
 }
 
 .GenderBackColours{
-  
+
 	background-color: #629cba;}
 
 #SelectOptionCol0{
@@ -966,21 +972,21 @@ margin-bottom: 4%;
 	    background-color: #243854;
 }
 
-#MythStyling{
+#MythStyling,.MythStyling{
 	background-color: #4353a4;
 }
 
-#hygiene{
-	    background-color: #629cba;
+.hygiene, #hygiene {
+	background-color: #629cba;
 }
 
 #Contraception{
-	background-color: #f04d25;
+	background-color: #fe7150;
 }
 
 
 .itemOpt {
-		background-color: #4353a4;
+		//background-color: #4353a4;
     margin: 10px;
     width: 10%;
     display: inline;
@@ -1005,7 +1011,7 @@ margin-bottom: 4%;
   background-color: #243854;
 }
 
-.Contraception {background: red;}
+.Contraception {background: #fe7150;}
 
 .itemOptMyth{
   background-color: #4353a4;
@@ -1042,6 +1048,8 @@ margin-top: 10%;
 width: 75%;
 
 }
+
+
 
 .circle
   {

@@ -69,9 +69,9 @@ Template.hello.events({
 })
 
 Template.MenuMain.events({
-  /*
+    /*
   'click #toggle': function (event) {
     $('#page-slide').toggleClass('slide')
     $('#toggle').toggleClass('slide-tog')
-  }*/
+  } */
 })
