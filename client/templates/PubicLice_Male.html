@@ -1,19 +1,20 @@
 <template name="PubicLiceMale">
 
 <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
+<div class="row compatabilityStyling">
 <div class="siteInformationSTIs row">
-  <h1>Pubic Lice</h1>
+  <h1>Pubic Lice  </h1>
 
 <!--<p>Sexual Health information and services</p> -->
 </div>
 <div class="STIMainHold row">
 
-    <div class="w-50 col ">
+    <div class="col ">
 
       <div class="ReturnOptions">
         <div id="closeSTIMale">Close STI</div>
       </div>
-        <div  class="x3d_scene">
+      <div  class="x3d_scene">
 
         <x3d width='400px' height='600px'>
           <scene>
@@ -86,6 +87,7 @@
       </div>
 
 </div>
+</div>
 
 <script type="text/javascript">
 
@@ -96,17 +98,7 @@ document.getElementById('symptomAreaZoomMANPubLi').setAttribute('set_bind','true
 
 function symptomzoom1MANPubLi(symptoms, texture1, texture2, texture3, texture4) {
   // reset
-  document.getElementById('PubicLice_ModelMan__MA_Man_Skin_Texture_PubicLice').setAttribute('transparency', '0.0');
-  document.getElementById('PubicLice_ModelMan__MA_Eggs_Pubic_Lice').setAttribute('transparency', '1.0');
-  document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice').setAttribute('transparency', '1.0');
-  document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Texture_PL').setAttribute('transparency', '1.0');
-  document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Block').setAttribute('transparency', '1.0');
-  document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice_ArmPit_Area').setAttribute('transparency', '1.0');
-  document.getElementById('PubicLice_ModelMan__MA_Beard_PL_Texture').setAttribute('transparency', '1.0');
-
-  document.getElementById('symptom1InfoMANPubLi').style.opacity = '0.0';
-  document.getElementById('symptom2InfoMANPubLi').style.opacity = '0.0';
-  document.getElementById('symptom3InfoMANPubLi').style.opacity = '0.0';
+  PLReset();
   // Selected symptom
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
@@ -121,17 +113,7 @@ document.getElementById('symptom1InfoMANPubLi').style.opacity = '1.0';
 
 function symptomzoom2MANPubLi(symptoms, texture1, texture2) {
   // reset
-  document.getElementById('PubicLice_ModelMan__MA_Man_Skin_Texture_PubicLice').setAttribute('transparency', '0.0');
-  document.getElementById('PubicLice_ModelMan__MA_Eggs_Pubic_Lice').setAttribute('transparency', '1.0');
-  document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice').setAttribute('transparency', '1.0');
-  document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Texture_PL').setAttribute('transparency', '1.0');
-  document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Block').setAttribute('transparency', '1.0');
-  document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice_ArmPit_Area').setAttribute('transparency', '1.0');
-  document.getElementById('PubicLice_ModelMan__MA_Beard_PL_Texture').setAttribute('transparency', '1.0');
-
-  document.getElementById('symptom1InfoMANPubLi').style.opacity = '0.0';
-  document.getElementById('symptom2InfoMANPubLi').style.opacity = '0.0';
-  document.getElementById('symptom3InfoMANPubLi').style.opacity = '0.0';
+PLReset();
   // Selected symptom
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.7');
@@ -144,17 +126,7 @@ document.getElementById('symptom2InfoMANPubLi').style.opacity = '1.0';
 
 function symptomzoom3MANPubLi(symptoms, texture1, texture2) {
 // reset
-document.getElementById('PubicLice_ModelMan__MA_Man_Skin_Texture_PubicLice').setAttribute('transparency', '0.0');
-document.getElementById('PubicLice_ModelMan__MA_Eggs_Pubic_Lice').setAttribute('transparency', '1.0');
-document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice').setAttribute('transparency', '1.0');
-document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Texture_PL').setAttribute('transparency', '1.0');
-document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Block').setAttribute('transparency', '1.0');
-document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice_ArmPit_Area').setAttribute('transparency', '1.0');
-document.getElementById('PubicLice_ModelMan__MA_Beard_PL_Texture').setAttribute('transparency', '1.0');
-
-document.getElementById('symptom1InfoMANPubLi').style.opacity = '0.0';
-document.getElementById('symptom2InfoMANPubLi').style.opacity = '0.0';
-document.getElementById('symptom3InfoMANPubLi').style.opacity = '0.0';
+PLReset();
 // Selected symptom
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.7');
@@ -169,21 +141,25 @@ document.getElementById('symptom3InfoMANPubLi').style.opacity = '1.0';
 
 function cameraChangeMANPubLi(Camera) {
 document.getElementById(Camera).setAttribute('set_bind','true');
-document.getElementById('PubicLice_ModelMan__MA_Man_Skin_Texture_PubicLice').setAttribute('transparency', '0.0');
-document.getElementById('PubicLice_ModelMan__MA_Eggs_Pubic_Lice').setAttribute('transparency', '1.0');
-document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice').setAttribute('transparency', '1.0');
-document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Texture_PL').setAttribute('transparency', '1.0');
-document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Block').setAttribute('transparency', '1.0');
-document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice_ArmPit_Area').setAttribute('transparency', '1.0');
-document.getElementById('PubicLice_ModelMan__MA_Beard_PL_Texture').setAttribute('transparency', '1.0');
+PLReset();
+}
 
-$( "#symptom1PubLiMAN" ).removeClass( "disableItemSelect" );
-$( "#symptom2PubLiMAN" ).removeClass( "disableItemSelect" );
-$( "#symptom3PubLiMAN" ).removeClass( "disableItemSelect" );
+function PLReset(){
+  document.getElementById('PubicLice_ModelMan__MA_Man_Skin_Texture_PubicLice').setAttribute('transparency', '0.0');
+  document.getElementById('PubicLice_ModelMan__MA_Eggs_Pubic_Lice').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Texture_PL').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Block').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice_ArmPit_Area').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Beard_PL_Texture').setAttribute('transparency', '1.0');
 
-document.getElementById('symptom1InfoMANPubLi').style.opacity = '0.0';
-document.getElementById('symptom2InfoMANPubLi').style.opacity = '0.0';
-document.getElementById('symptom3InfoMANPubLi').style.opacity = '0.0';
+  $( "#symptom1PubLiMAN" ).removeClass( "disableItemSelect" );
+  $( "#symptom2PubLiMAN" ).removeClass( "disableItemSelect" );
+  $( "#symptom3PubLiMAN" ).removeClass( "disableItemSelect" );
+
+  document.getElementById('symptom1InfoMANPubLi').style.opacity = '0.0';
+  document.getElementById('symptom2InfoMANPubLi').style.opacity = '0.0';
+  document.getElementById('symptom3InfoMANPubLi').style.opacity = '0.0';
 }
 
 

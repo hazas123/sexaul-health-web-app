@@ -1,20 +1,20 @@
 <template name="HIVMale">
 
   <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
+  <div class="row compatabilityStyling">
   <div class="siteInformationSTIs row">
-    <h1>Male HIV </h1>
+    <h1>HIV  </h1>
 
   <!--<p>Sexual Health information and services</p> -->
   </div>
   <div class="STIMainHold row">
 
-      <div class="w-50 col ">
+      <div class="col ">
 
         <div class="ReturnOptions">
-          <div class="closeSTIMale">Close STI</div>
+          <div id="closeSTIMale">Close STI</div>
         </div>
         <div  class="x3d_scene">
-
 
           <x3d width='400px' height='600px'  >
             <scene>
@@ -93,69 +93,55 @@
 
     </div>
     </div>
-</div>
 
-
-
-
-
-
-<div class="ChoiceholdBackSTI">
-
-</div>
+  </div>
+  </div>
 
 <script type="text/javascript">
 
 
       function symptomzoom1(symptoms, texture1, texture2) {
+        HIVResetM();
+
       document.getElementById(symptoms).setAttribute('set_bind','true');
       document.getElementById(texture1).setAttribute('transparency', '0.7');
       document.getElementById(texture2).setAttribute('transparency', '0.0');
 
-
-      document.getElementById('symptom1HIVInfo').style.height = '400px';
       document.getElementById('symptom1HIVInfo').style.opacity = '1.0';
-      $( "#symptom2HIV" ).addClass( "disableItemSelect" );
-      $( "#symptom3HIV" ).addClass( "disableItemSelect" );
-      $( "#symptom4HIV" ).addClass( "disableItemSelect" );
       }
 
       function symptomzoom2(symptoms, texture1, texture2) {
+      HIVResetM();
 
       document.getElementById(symptoms).setAttribute('set_bind','true');
       document.getElementById(texture1).setAttribute('transparency', '0.7');
       document.getElementById(texture2).setAttribute('transparency', '0.0');
 
-      document.getElementById('symptom2HIVInfo').style.height = '400px';
+
       document.getElementById('symptom2HIVInfo').style.opacity = '1.0';
-      $( "#symptom1HIV" ).addClass( "disableItemSelect" );
-      $( "#symptom3HIV" ).addClass( "disableItemSelect" );
-      $( "#symptom4HIV" ).addClass( "disableItemSelect" );
+
       }
 
       function symptomzoom3 (symptoms, texture1, texture2){
+        HIVResetM();
+
         document.getElementById(symptoms).setAttribute('set_bind','true');
         document.getElementById(texture1).setAttribute('transparency', '0.7');
         document.getElementById(texture2).setAttribute('transparency', '0.0');
 
-        document.getElementById('symptom3HIVInfo').style.height = '400px';
-        document.getElementById('symptom3HIVInfo').style.opacity = '1.0';
-        $( "#symptom2HIV" ).addClass( "disableItemSelect" );
-        $( "#symptom1HIV" ).addClass( "disableItemSelect" );
-        $( "#symptom4HIV" ).addClass( "disableItemSelect" );
 
+        document.getElementById('symptom3HIVInfo').style.opacity = '1.0';
       }
 
       function symptomzoom4 (symptoms, texture1, texture2){
+        HIVResetM();
         document.getElementById(symptoms).setAttribute('set_bind','true');
         document.getElementById(texture1).setAttribute('transparency', '0.5');
         document.getElementById(texture2).setAttribute('transparency', '0.0');
 
-        document.getElementById('symptom4HIVInfo').style.height = '400px';
+
         document.getElementById('symptom4HIVInfo').style.opacity = '1.0';
-        $( "#symptom3HIV" ).addClass( "disableItemSelect" );
-        $( "#symptom2HIV" ).addClass( "disableItemSelect" );
-        $( "#symptom1HIV" ).addClass( "disableItemSelect" );
+
       }
 
 
@@ -164,34 +150,27 @@
 
       function cameraChange(Camera) {
       document.getElementById(Camera).setAttribute('set_bind','true');
-      document.getElementById('MaleModelHIV__MA_Man_Skin_Texture').setAttribute('transparency', '0.0');
-      document.getElementById('MaleModelHIV__MA_HIV_Glands').setAttribute('transparency', '1.0');
-      document.getElementById('MaleModelHIV__MA_fever_Texture').setAttribute('transparency', '1.0');
-      document.getElementById('MaleModelHIV__MA_HIV_Throat_Texture').setAttribute('transparency', '1.0');
-      document.getElementById('MaleModelHIV__MA_HIV_body_Rash_Male').setAttribute('transparency', '1.0');
-
-
-
-
-
-
-
-      $( "#symptom1HIV" ).removeClass( "disableItemSelect" );
-      $( "#symptom2HIV" ).removeClass( "disableItemSelect" );
-      $( "#symptom3HIV" ).removeClass( "disableItemSelect" );
-      $( "#symptom4HIV" ).removeClass( "disableItemSelect" );
-
-      document.getElementById('symptom1HIVInfo').style.height = '60px';
-      document.getElementById('symptom2HIVInfo').style.height = '60px';
-      document.getElementById('symptom3HIVInfo').style.height = '60px';
-      document.getElementById('symptom4HIVInfo').style.height = '60px';
-      document.getElementById('symptom1HIVInfo').style.opacity = '0.0';
-      document.getElementById('symptom2HIVInfo').style.opacity = '0.0';
-      document.getElementById('symptom3HIVInfo').style.opacity = '0.0';
-      document.getElementById('symptom4HIVInfo').style.opacity = '0.0';
+      HIVResetM();
 
       }
 
+      function HIVResetM() {
+        document.getElementById('MaleModelHIV__MA_Man_Skin_Texture').setAttribute('transparency', '0.0');
+        document.getElementById('MaleModelHIV__MA_HIV_Glands').setAttribute('transparency', '1.0');
+        document.getElementById('MaleModelHIV__MA_fever_Texture').setAttribute('transparency', '1.0');
+        document.getElementById('MaleModelHIV__MA_HIV_Throat_Texture').setAttribute('transparency', '1.0');
+        document.getElementById('MaleModelHIV__MA_HIV_body_Rash_Male').setAttribute('transparency', '1.0');
+
+        $( "#symptom1HIV" ).removeClass( "disableItemSelect" );
+        $( "#symptom2HIV" ).removeClass( "disableItemSelect" );
+        $( "#symptom3HIV" ).removeClass( "disableItemSelect" );
+        $( "#symptom4HIV" ).removeClass( "disableItemSelect" );
+
+        document.getElementById('symptom1HIVInfo').style.opacity = '0.0';
+        document.getElementById('symptom2HIVInfo').style.opacity = '0.0';
+        document.getElementById('symptom3HIVInfo').style.opacity = '0.0';
+        document.getElementById('symptom4HIVInfo').style.opacity = '0.0';
+      }
 
       </script>
 
