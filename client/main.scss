@@ -240,16 +240,18 @@ position: fixed;
 
 
 .choiceHoldMain {
-  position: absolute;
-  z-index: -1;
-  left: 0px;
-  right: 0px;
-	width: 100vw;
+	position: absolute;
+	    z-index: -1;
+	    left: 0px;
+	    right: 0px;
+	    width: 100vw;
+	    padding-left: 28vw;
+	    overflow-x: hidden;
 }
 
 #choiceHoldInfo {
 	/* height: 45vh; */
-width: 100vw;
+/* width: 100vw; */
 z-index: -1;
 padding-top: 10vh;
   //background-color: #243854;
@@ -264,18 +266,19 @@ padding-top: 10vh;
 	/* margin-left: 300px; */
 	/* margin-right: 10vw; */
 	padding-top: 11vh;
-	padding-left: 300px;
+	/* padding-left: 300px; */
 	/* height: 50vh; */
-	width: 100vw;
+	/* width: 100vw; */
 }
 
 .SearchOptions{
-	height: 100vh;
-width: 100vw;
-padding: 1vw;
-    padding-left: 21vw;
-padding-top: 7vh;
-padding-right: 0vw;
+		height: 100vh;
+		width: 100vw;
+		padding: 1vw;
+		padding-left: 24vw;
+		padding-top: 7vh;
+		padding-right: 0vw;
+		overflow-x: hidden;
 }
 
 .radioClasses{    /* width: 100%; */
@@ -297,47 +300,44 @@ padding-right: 0vw;
 
 
 #SearchTitle {
-	margin-left: 0vw;
-    margin-top: 0vh;
-    padding-left: 1vw;
-    /* height: 30%; */
-    background-color: #243854;
-    font: 900 4.0rem 'Roboto Slab', sans-serif;
-    color: white;
-    width: 100%;
+margin-left: 0vw;
+margin-top: 0vh;
+padding-left: 1vw;
+/* height: 30%; */
+background-color: #243854;
+font: 900 4.0rem 'Roboto Slab', sans-serif;
+color: white;
+width: 100%;
 }
 
 #searchH {
-	background-color: #fe7150;
-    width: 100%;
-    /* margin-left: 1vw; */
-    margin-top: 6vh;
-    height: 9vh;
-    margin-bottom: 5vh;
-    padding: 1vw;
-    padding-right: 0vw;
-    padding-top: 2%;
-    color: white;
-    font: 900 1.8rem 'Roboto Slab', sans-serif;}
+		background-color: #fe7150;
+		width: 100%;
+		/* margin-left: 1vw; */
+		margin-top: 6vh;
+		/* height: 9vh; */
+		margin-bottom: 5vh;
+		padding: 1vw;
+		padding-right: 0vw;
+		padding-top: 2%;
+		color: white;
+		font: 900 1.3rem 'Roboto Slab', sans-serif;
+	}
 
 #closeMainMenuOption1{
-	width: 99%;
-	height: 50vh;
-	/* margin-left: 1vw; */
-	/* padding-right: 4vw; */
-	padding-left: 7vw;
-	background: white;
-	font-size: 170%;
-	/* border-radius: 25px; */
-	padding-top: 10vh;
-	color: #f04d25;
+	/*width: 99%; */
+    height: 50vh;
+    /* margin-left: 1vw; */
+    /* padding-right: 4vw; */
+    padding-left: 3vw;
+    background: white;
+    font: 900 2.2rem 'Roboto Slab', sans-serif;
+    /* border-radius: 25px; */
+    padding-top: 10vh;
+    color: #f04d25;
 }
 
-#closeMainMenuOption1  {
-  font: 900 2.2rem 'Roboto Slab', sans-serif;
-  //color: #243854;
 
-}
 
 #closeMainMenuOption2{
 width: 50%;
@@ -408,14 +408,14 @@ opacity: 1.0;
 
 #StartInformation{
 	/* height: 80vh; */
-width: 100vw;
-padding-left: 300px;
-margin-right: auto;
+width: 72vw;
+/* padding-left: 31vw; */
+/* padding-right: 12vw; */
 }
 
 
 #siteInformationHold1{
-	//width: 100vw;
+	    width: 100%;
 }
 
 #siteInformation{
@@ -424,18 +424,19 @@ margin-right: auto;
 	padding-left: 3vw;
 	height: 30%;
 	background-color: #243854;
+	/* padding-right: 0vw; */
 }
 
 #siteInformation3{
-			background-color: #fe7150;
-	    width: 100%;
-	    /* margin-left: 1vw; */
-	    margin-top: 6vh;
-	    height: 10vh;
-	    padding: 4vw;
-	    padding-top: 2%;
-	    color: white;
-	    font: 900 1.5em 'Roboto Slab', sans-serif;
+	background-color: #fe7150;
+/* width: 100%; */
+/* margin-left: 1vw; */
+margin-top: 6vh;
+height: 10vh;
+padding: 4vw;
+padding-top: 2%;
+color: white;
+font: 900 1.5em 'Roboto Slab', sans-serif;
 }
 
 
@@ -451,9 +452,8 @@ margin-right: auto;
 }
 
 #siteInformation h1{
-	font: 900 3em 'Roboto Slab', sans-serif;
-color: white;
-//height: 10vh;
+	font: 900 1.7em 'Roboto Slab', sans-serif;
+	color: white;
 }
 
 #siteInformation p {
@@ -505,13 +505,13 @@ color: white;
 }
 
 #siteInformation2{
-	margin-top: 0vh;
-margin-left: -1vw;
-font: 20 1.2rem 'Roboto Slab', sans-serif;
-width: 99%;
-color: white;
-height: 30%;
-color: white;
+	/* margin-top: 0vh; */
+    margin-left: -1vw;
+    font: 20 1.2rem 'Roboto Slab', sans-serif;
+    /* width: 99%; */
+    color: white;
+    height: 30%;
+    color: white;
 }
 
 #siteInformation2 h1{
@@ -631,8 +631,9 @@ color: white;
 }
 
 .GenderHolders{
-padding-left: 2vw;
-margin-top: 14vh;
+	padding-left: 2vw;
+	margin-top: 14vh;
+	padding-right: 2vw;
 }
 
 .col1Options{
@@ -1108,16 +1109,17 @@ padding-right: 0vw;
 }
 
 #page-slide{
-  background: #060606;
-  width: 300px;
-  display: block;
-  height: 100vh;
-  left:0px;
-  position: fixed;
-  transition: left 0.2s linear;
-  top: 0;
-	z-index: 5;
+	background: #060606;
+width: 24vw;
+display: block;
+height: 100vh;
+left: 0px;
+position: fixed;
+transition: left 0.2s linear;
+top: 0;
+z-index: 5;
 }
+
 #toggle{
   color:white;
   font-size: 68px;
