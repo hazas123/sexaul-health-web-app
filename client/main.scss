@@ -712,18 +712,18 @@ width: 70vw;
  }
 
  .HygieneHold {
-  position: fixed;
+    /* position: fixed; */
+    z-index: 2;
+    width: 74vw;
+    height: 50vh;
+    margin: 0px;
+    padding-top: 5vh;
+    /* padding-left: 300px; */ }
 
 
- z-index: 2;
-  width: 100vw;
-  height: 100vh;
-  margin: 0px;
-  padding-left: 300px;
+.HygineInfoShift{
 
-  }
-
-
+}
 // STIMainHoldWoman
 
 .StiX3d{
@@ -752,13 +752,17 @@ float: left;
 
 .ButtonStylingHygine{
 	display: inline;
-	background-color: #243854;
-	font: 700 1rem 'Roboto Slab', sans-serif;
-	margin-right: 2%;
-	margin-bottom: 2%;
-	color: white;
-	width: 100px;
-	text-align: center;
+position: relative;
+    top: 3vh;
+background-color: #243854;
+font: 700 1.5rem 'Roboto Slab', sans-serif;
+margin-right: 2%;
+margin-bottom: 0%;
+color: white;
+width: 100px;
+margin-top: 0vh;
+text-align: center;
+height: 10vh;
 }
 
 .HygineSmallHeading{
@@ -864,12 +868,12 @@ width: 400px;
 }
 
 .x3d_sceneHygine{
-	margin-top: 5vh;
-background-color: red;
-height: 300px;
-width: 600px;
-margin-left: 13%;
-margin-right: auto;
+	/* margin-top: 5vh; */
+	background-color: red;
+	height: 300px;
+	width: 570px;
+	margin-left: 1vw;
+	/* margin-right: auto; */
 }
 
 
@@ -1037,10 +1041,17 @@ margin-bottom: 4%;
 	margin-left: 15px;
 }
 
+
+.x3d_sceneHygine_Margin {
+	margin-bottom: 8vh;
+}
+
 .ButtonStylingHygineHolder{
 	margin-top: 8%;
 	width: 80%;
 	margin-left: 15px;
+	height: 54vh;
+	overflow: scroll;
 }
 
 .HygineButtonHolder {

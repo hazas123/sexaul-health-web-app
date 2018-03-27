@@ -56,11 +56,11 @@ Template.maleOptions.events({
   'click #MalePubicLiceOPTI': function (event) {
     window.location.href = '/pubicLiceMale'
   },
-  'click #ScabiesOPTI': function (event) {
+  'click #MaleScabiesOPTI': function (event) {
     window.location.href = '/scabiesMale'
   },
   'click #MaleHIVOPTI': function (event) {
-    window.location.href = '/HIVFemale'
+    window.location.href = '/HIVMale'
   },
   // Hygine
   'click #DoucheOPTI': function (event) {
@@ -69,6 +69,10 @@ Template.maleOptions.events({
   // Contraception
   'click #CondomOPTI': function (event) {
     window.location.href = '/Condoms'
+  },
+  // Myths
+  'click #MythsOPTI': function (event) {
+    window.location.href = '/Myths'
   }
 })
 
