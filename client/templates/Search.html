@@ -2,9 +2,7 @@
 
 
 
-<div class="OptionsHolder">
 
-<div class="row">
 
 
 <!-- <div id="ReselectChoices" class="col-2">
@@ -12,18 +10,20 @@
 
 
 </div> -->
-<div class="AvaliableOptions" >
-<div id="AboutSelected">
+<div class="SearchOptions" >
+<div id="SearchTitle">
   <h1>Search Salus</h1>
 </div>
 
-<div class=" " id="Aboutparent">
+<div class=" " id="SearchParent">
 
-<h1>To search for content please enter your information below </h1>
+<div id="searchH">
 
-<div >
+<h1>To search for content please enter your information below </h1></div>
 
-    <div class="row h-50">
+
+<!--
+    <div class="row h-">
 
       <div class="col">
         <div id="SelectOptionCol0" class="CircleChoiceSize">
@@ -32,7 +32,7 @@
             <h1>Gender</h1>
           </div>
             <div id="col1Options">
-              <!-- <div id="checkbox1"> Use object</div> -->
+
               <ul>
 
               <li><input type="radio" name="GenderOption" id="ManSelecter" value="Male"/><label for="ManSelecter">Man</label></li>
@@ -50,7 +50,7 @@
         <div id="SelectOptionCol4" class="CircleChoiceSize proceed">
           <a href="" onclick="return false;"><i class="far fa-arrow-alt-circle-right fa-5x"></i></a>
         </div>
-      </div>
+
     </div>
 
 </div>
@@ -63,10 +63,71 @@
 
 </div>
 
+-->
+
+
+<div class="row GenderHolders">
 
 
 
+<div class="col">
+        <div  class="CircleChoiceSize GenderBackColours">
+          <div  class="OptionsHeaders">
+            <h1>Male</h1>
+          </div>
+            <div class="col1Options">
+              <!-- <div id="checkbox1"> Use object</div> -->
 
+
+            <p>
+              &#9794;
+            </p>
+            </div>
+            <div class="optionSelectorHolder">
+            <input type="radio" name="GenderOption" id="ManSelecter" value="Male" class="radioClasses">
+            </div>
+        </div>
+      </div>
+
+<div class="col">
+        <div  class="CircleChoiceSize GenderBackColours">
+          <div  class="OptionsHeaders">
+
+            <h1>Female</h1>
+          </div>
+            <div class="col1Options">
+              <p>
+                &#9792;
+              </p>
+            </div>
+            <div class="optionSelectorHolder">
+              <input type="radio" name="GenderOption" id="WomanSelecter" value="Female" class="radioClasses">
+            </div>
+        </div>
+      </div><div class="col">
+        <div  class="CircleChoiceSize GenderBackColours">
+          <div  class="OptionsHeaders">
+
+            <h1>Other</h1>
+          </div>
+            <div class="col1Options">
+              <p>
+              &#9900;
+              </p>
+            </div>
+            <div class="optionSelectorHolder">
+              <input type="radio" name="GenderOption" id="OtherSelecter" value="Other" class="radioClasses">
+            </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div id="SelectOptionCol4" class="CircleChoiceSize proceed">
+          <a href="" onclick="return false;"><i class="far fa-arrow-alt-circle-right fa-5x"></i></a>
+        </div>
+
+      </div>
+</div></div></div>
 
 
 

@@ -11,7 +11,7 @@ Template.ChlamydiaMaleT.events({
 })
 
 Template.GenialHerpesMale.events({
-  'click #closeSTIMaleGH': function (event) {
+  'click #closeSTIMale': function (event) {
     window.history.back()
     console.log('MaleClose herpes')
   }

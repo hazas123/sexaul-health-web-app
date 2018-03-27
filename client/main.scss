@@ -82,13 +82,21 @@ body, html {
 	margin-right: auto;
 	padding: 14%;
     padding-bottom: 0%;
+
+}
+
+.MenuLogoExtra {
+	height: 10px;
+	background-color: white;
+	background-image: url("./Background_New_Light_Grey.png");
+	background-repeat: repeat;
 }
 
 #mainBackground{
   background-image: url("./Background_New_Light_Grey.png");
   background-repeat: repeat;
   width: 300px;
-  height: 300vh;
+  //height: 300vh;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -96,6 +104,20 @@ body, html {
   border-right: 3px solid $primaryColor ;
 }
 
+#MenuFooter{
+			color: white;
+	    padding: 10%;
+	    z-index: 10;
+	    /* background-image: url(Background_New_Light_Grey.png); */
+	    /* background-repeat: repeat; */
+	    background-color: #fe7150;
+	    height: 10%;
+	    width: 100%;
+	    position: absolute;
+	    bottom: 0%;
+	    border-right: 18px solid white;
+	    padding-left: 10%;
+}
 
 body {
 //  overflow: hidden;
@@ -173,16 +195,20 @@ body {
 
 //=== Button styling, semi-ignore
 .btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  line-height: 1.5;
-  font: 700 1.2rem 'Roboto Slab', sans-serif;
-  padding: 1em 2em;
-  letter-spacing: 0.05rem;
-  visibility: hidden;
-
+	background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    padding: 1em;
+    /* letter-spacing: 0.05rem; */
+    visibility: hidden;
    &:focus { outline: 0; }
+}
+
+#All_Show{
+	background-color: #939393;
+
 }
 
 /* The hero image */
@@ -214,17 +240,20 @@ position: fixed;
 
 
 .choiceHoldMain {
-  position: absolute;
-  z-index: -1;
-  left: 0px;
-  right: 0px;
+	position: absolute;
+	    z-index: -1;
+	    left: 0px;
+	    right: 0px;
+	    width: 100vw;
+	    padding-left: 28vw;
+	    overflow-x: hidden;
 }
 
 #choiceHoldInfo {
-  height: 100vh;
-  width: 95vw;
-  z-index: -1;
-  padding-top: 10vh;
+	/* height: 45vh; */
+/* width: 100vw; */
+z-index: -1;
+padding-top: 10vh;
   //background-color: #243854;
   //-webkit-clip-path: ellipse(100% 60% at 26% 36%);
 //clip-path: ellipse(100% 60% at 26% 36%);
@@ -234,33 +263,81 @@ position: fixed;
 }
 
 .choicehold {
-
-  /* margin-left: 300px; */
-    margin-right: 10vw;
-    /* padding-top: 25vh; */
-    padding-left: 300px;
-    height: 100vh;
-    width: 100vw;
+	/* margin-left: 300px; */
+	/* margin-right: 10vw; */
+	padding-top: 11vh;
+	/* padding-left: 300px; */
+	/* height: 50vh; */
+	/* width: 100vw; */
 }
 
+.SearchOptions{
+		height: 100vh;
+		width: 100vw;
+		padding: 1vw;
+		padding-left: 24vw;
+		padding-top: 7vh;
+		padding-right: 0vw;
+		overflow-x: hidden;
+}
+
+.radioClasses{    /* width: 100%; */
+    /* height: 100%; */
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    border: 4px solid #ccc;
+    border-top-color: #bbb;
+    border-left-color: #bbb;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;}
+
+.radioClasses:checked {
+	background-color: red;
+}
+
+
+#SearchTitle {
+margin-left: 0vw;
+margin-top: 0vh;
+padding-left: 1vw;
+/* height: 30%; */
+background-color: #243854;
+font: 900 4.0rem 'Roboto Slab', sans-serif;
+color: white;
+width: 100%;
+}
+
+#searchH {
+		background-color: #fe7150;
+		width: 100%;
+		/* margin-left: 1vw; */
+		margin-top: 6vh;
+		/* height: 9vh; */
+		margin-bottom: 5vh;
+		padding: 1vw;
+		padding-right: 0vw;
+		padding-top: 2%;
+		color: white;
+		font: 900 1.3rem 'Roboto Slab', sans-serif;
+	}
+
 #closeMainMenuOption1{
-width: 99%;
-height: 50vh;
-margin-left: 1vw;
+	/* width: 99%; */
+/* height: 50vh; */
+/* margin-left: 1vw; */
 /* padding-right: 4vw; */
-padding-left: 7vw;
+padding: 3vw;
 background: white;
-font-size: 170%;
+font: 900 2.2rem 'Roboto Slab', sans-serif;
 /* border-radius: 25px; */
-padding-top: 10vh;
+/* padding-top: 10vh; */
 color: #f04d25;
 }
 
-#closeMainMenuOption1  {
-  font: 900 2.2rem 'Roboto Slab', sans-serif;
-  //color: #243854;
 
-}
 
 #closeMainMenuOption2{
 width: 50%;
@@ -330,48 +407,53 @@ opacity: 1.0;
 
 
 #StartInformation{
-  height: 80vh;
-  width: 100vw;
-  padding-left: 300px;
-  margin-right: auto;
+	/* height: 80vh; */
+width: 72vw;
+/* padding-left: 31vw; */
+/* padding-right: 12vw; */
+}
 
 
+#siteInformationHold1{
+	    width: 100%;
 }
 
 #siteInformation{
-	margin-left: 1vw;
+	margin-left: 0vw;
 	margin-top: 0vh;
+	padding-left: 3vw;
 	height: 30%;
 	background-color: #243854;
+	/* padding-right: 0vw; */
 }
 
 #siteInformation3{
-	background-color: #f04d25;
-	width: 98%;
-	margin-left: 1vw;
-	margin-top: 10vh;
-	height: 15vh;
-	padding: 1vw;
-	padding-top: 3%;
-	color: white;
-	font: 900 2.2rem 'Roboto Slab', sans-serif;
+	background-color: #fe7150;
+/* width: 100%; */
+/* margin-left: 1vw; */
+margin-top: 6vh;
+height: 10vh;
+padding: 4vw;
+padding-top: 2%;
+color: white;
+font: 900 1.5em 'Roboto Slab', sans-serif;
 }
 
 
 
 .siteInformationSTIs {
-		font: 900 5.2rem 'Roboto Slab', sans-serif;
-    background-color: #243854;
-    color: white;
-    margin-top: 3%;
-    margin-left: 27%;
+	font: 900 3.5rem 'Roboto Slab', sans-serif;
+	background-color: #243854;
+	color: white;
+	margin-top: 3%;
+	/* margin-left: 24%; */
+	width: 100%;
+	padding-left: 10vw;
 }
 
 #siteInformation h1{
-font: 900 15.2rem 'Roboto Slab', sans-serif;
-
-color: white;
-//height: 10vh;
+	font: 900 1.7em 'Roboto Slab', sans-serif;
+	color: white;
 }
 
 #siteInformation p {
@@ -391,14 +473,14 @@ color: white;
 }
 
 .mainM {
-
-  color: white;
-  margin: 25px;
-  height: 20vh;
-  text-align: center;
-  vertical-align: middle;
-  padding-top: 6vh;
-  font: 900 2.2rem 'Roboto Slab', sans-serif;
+	cursor: pointer;
+color: white;
+margin: 25px;
+// height: 20vh;
+text-align: center;
+vertical-align: middle;
+/* padding-top: 6vh; */
+font: 900 2.2rem 'Roboto Slab', sans-serif;
 }
 
 
@@ -409,12 +491,12 @@ color: white;
 
 #MainM2{
   color: white;
-  background-color: #4353a4;
+  background-color: #629cba;
 }
 
 #MainM3{
   color: white;
-  background-color: #f04d25;
+  background-color: #fe7150;
 }
 
 #MainM4{
@@ -423,24 +505,27 @@ color: white;
 }
 
 #siteInformation2{
-	margin-top: 0vh;
-margin-left: -1vw;
-font: 20 1.2rem 'Roboto Slab', sans-serif;
-width: 99%;
-color: white;
-height: 30%;
-color: white;
+	/* margin-top: 0vh; */
+    margin-left: -1vw;
+    font: 20 1.2rem 'Roboto Slab', sans-serif;
+    /* width: 99%; */
+    color: white;
+    height: 30%;
+    color: white;
 }
 
 #siteInformation2 h1{
-
-	font: 900 2rem 'Roboto Slab', sans-serif;
+	// padding: 12%;
+	font: 900 2.0rem 'Roboto Slab', sans-serif;
+	// padding-top: 25%;
 }
 
 
 
 
-
+#cars{
+	visibility: hidden;
+}
 
 
 
@@ -456,7 +541,9 @@ color: white;
     color: white;
 }
 
+.GenderBackColours{
 
+	background-color: #629cba;}
 
 #SelectOptionCol0{
   background-color: $primaryColor;
@@ -544,12 +631,20 @@ color: white;
   box-shadow: 5px 10px #D4D4D4;
 }
 
-
-#col1Options{
-
-		padding-left: 25%;
-			text-align: left;
+.GenderHolders{
+	padding-left: 2vw;
+	margin-top: 14vh;
+	padding-right: 2vw;
 }
+
+.col1Options{
+	height: 14vh;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	    margin-bottom: 2vh;
+}
+
+.col1Options p {font-size: 10vh;}
 
 #col3Options {
 
@@ -605,30 +700,30 @@ color: white;
 }
  .STIMainHold, .STIMainHoldWoman, .STIMainHoldGW, .STIMainHoldGH, .STIMainHoldGon, .STIMainHoldSyph, .STIMainHoldPubLi, .STIMainHoldScabies, #OptionsHoldeMyth{
 
- position: fixed;
-
-
-z-index: 2;
- width: 100vw;
- height: 100vh;
- margin: 0px;
- padding-left: 300px;
-
+	 /* position: fixed; */
+	 	z-index: 2;
+width: 70vw;
+		height: 100vh;
+		margin: 0px;
+/* padding-top: 34vw; */
+/* padding: 8vw; */
+		padding-left: 5vw;
+/* padding-left: 5vw; */
  }
 
  .HygieneHold {
-  position: fixed;
+    /* position: fixed; */
+    z-index: 2;
+    width: 74vw;
+    height: 50vh;
+    margin: 0px;
+    padding-top: 5vh;
+    /* padding-left: 300px; */ }
 
 
- z-index: 2;
-  width: 100vw;
-  height: 100vh;
-  margin: 0px;
-  padding-left: 300px;
+.HygineInfoShift{
 
-  }
-
-
+}
 // STIMainHoldWoman
 
 .StiX3d{
@@ -657,13 +752,17 @@ float: left;
 
 .ButtonStylingHygine{
 	display: inline;
-	background-color: #243854;
-	font: 700 1rem 'Roboto Slab', sans-serif;
-	margin-right: 2%;
-	margin-bottom: 2%;
-	color: white;
-	width: 100px;
-	text-align: center;
+position: relative;
+    top: 3vh;
+background-color: #243854;
+font: 700 1.5rem 'Roboto Slab', sans-serif;
+margin-right: 2%;
+margin-bottom: 0%;
+color: white;
+width: 100px;
+margin-top: 0vh;
+text-align: center;
+height: 10vh;
 }
 
 .HygineSmallHeading{
@@ -676,7 +775,7 @@ float: left;
 }
 
 .ButtonStylingSTI {
-
+cursor: pointer;
 display: inline;
 background-color: #243854;
 font: 700 1rem 'Roboto Slab', sans-serif;
@@ -696,12 +795,17 @@ text-align: center;
 
 .STISmallHeading{
 
-  margin-bottom:  10%;
+  /* margin-bottom:  10%;
   background-color: transparent;
   font: 700 1.2rem 'Roboto Slab', sans-serif;
 
   font-size: 200%;
-  color: #243854;
+  color: #243854; */
+	margin-bottom: 8%;
+background-color: transparent;
+font: 700 2.5rem 'Roboto Slab', sans-serif;
+/* font-size: 200%; */
+color: #243854;
 }
 
 .colArt{
@@ -718,7 +822,7 @@ text-align: center;
 .ColBot {
 		width: 100%;
     height: 40%;
-		margin-top: 20%;
+		margin-top: 40%;
     //background-color: red;
 }
 
@@ -730,48 +834,46 @@ background-color: transparent;
 
 
 #closeSTIMale, .closeSTIMale, #closeSTIMaleGH, #closeSTIMaleGW, #closeSTIMaleGon, #closeSTIMaleSyph, #closeSTIMalePubLi, #closeSTIMaleScabies, #closeMyths{
-  height: 100px;
-  width: 5vw;
-  background-color: grey;
-  position: fixed;
-  top: 14vh;
-  left: 3vw;
-  font-size: 90%;
-
-  z-index: 6;
+	height: 70px;
+	width: 8vw;
+	background-color: white;
+	position: fixed;
+	top: 5vh;
+	left: 67.2vw;
+	font-size: 90%;
+	z-index: 20;
 }
 
 
 .closeSTIFemale, #closeSTIFemaleGW, .closeHygine, .closeContaception{
-  height: 100px;
-  width: 5vw;
-  background-color: grey;
-  position: fixed;
-  top: 14vh;
-  left: 3vw;
-  font-size: 90%;
-
-  z-index: 5;
+	height: 70px;
+	width: 8vw;
+	background-color: white;
+	position: fixed;
+	top: 5vh;
+	left: 67.2vw;
+	font-size: 90%;
+	z-index: 20;
 }
 
 
 
 .x3d_scene{
-  margin-top: 5vh;
-  background-color: red;
-  height: 10px;
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+	margin-top: 5vh;
+background-color: red;
+height: 10px;
+width: 400px;
+/* margin-left: auto; */
+/* margin-right: auto; */
 }
 
 .x3d_sceneHygine{
-	margin-top: 5vh;
-background-color: red;
-height: 300px;
-width: 600px;
-margin-left: 13%;
-margin-right: auto;
+	/* margin-top: 5vh; */
+	background-color: red;
+	height: 300px;
+	width: 570px;
+	margin-left: 1vw;
+	/* margin-right: auto; */
 }
 
 
@@ -834,7 +936,11 @@ border-left: 1px solid black;
 
 }
 
-.holdbtn {visibility: visible;}
+.holdbtn {
+visibility: visible;
+color: white;
+margin-right: 15px;
+margin-bottom: 16px;}
 
 #maleOptionsSelected,#OtherOptionsSelected, #FemaleOptionsSelected, #AboutSelected, #ContactSelected{
 	font-size: 254%;
@@ -873,13 +979,31 @@ margin-bottom: 4%;
 
 }
 
+#STIStyling{
+	    background-color: #243854;
+}
+
+#MythStyling,.MythStyling{
+	background-color: #4353a4;
+}
+
+.hygiene, #hygiene {
+	background-color: #629cba;
+}
+
+#Contraception{
+	background-color: #fe7150;
+}
+
+
 .itemOpt {
-		background-color: #4353a4;
+		//background-color: #4353a4;
     margin: 10px;
     width: 10%;
     display: inline;
     height: 11vh;
     color: white;
+		cursor: pointer;
     /* padding: 10%; */
     border-radius: 5px;
     /* float: right; */
@@ -898,7 +1022,7 @@ margin-bottom: 4%;
   background-color: #243854;
 }
 
-.Contraception {background: red;}
+.Contraception {background: #fe7150;}
 
 .itemOptMyth{
   background-color: #4353a4;
@@ -917,10 +1041,17 @@ margin-bottom: 4%;
 	margin-left: 15px;
 }
 
+
+.x3d_sceneHygine_Margin {
+	margin-bottom: 8vh;
+}
+
 .ButtonStylingHygineHolder{
 	margin-top: 8%;
 	width: 80%;
 	margin-left: 15px;
+	height: 54vh;
+	overflow: scroll;
 }
 
 .HygineButtonHolder {
@@ -935,6 +1066,8 @@ margin-top: 10%;
 width: 75%;
 
 }
+
+
 
 .circle
   {
@@ -981,17 +1114,24 @@ width: 75%;
 }
 
 
-#page-slide{
-  background: #060606;
-  width: 300px;
-  display: block;
-  height: 100%;
-  left:-300px;
-  position: fixed;
-  transition: left 0.2s linear;
-  top: 0;
-	z-index: 5;
+
+.compatabilityStyling{
+	padding-left: 24vw;
+    padding-right: 0vw;
 }
+
+#page-slide{
+	background: #060606;
+width: 24vw;
+display: block;
+height: 100vh;
+left: 0px;
+position: fixed;
+transition: left 0.2s linear;
+top: 0;
+z-index: 5;
+}
+
 #toggle{
   color:white;
   font-size: 68px;
@@ -1012,12 +1152,17 @@ width: 75%;
   box-shadow: 0 1px 2px 3px rgba(0,0,0,0.6);
 }
 .slide-tog{
-  left:300px !important;
+  left:0px !important;
 }
 .MenuOverride {
-    height: 100vw;
+    /* height: 100vw;
     background-color: $primaryColor;
-    overflow-x: hidden;
+    overflow-x: hidden; */
+
+		height: 100%;
+	background-color: #243854;
+	overflow-x: hidden;
+	border-right: 18px solid white;
 
     ul{
     list-style: none;
@@ -1027,11 +1172,22 @@ width: 75%;
     ul li{
     }
     ul li a{
-    color: #cdcdcd;
+    /* color: #cdcdcd;
     text-decoration: none;
     display: block;
     padding: 15px 25px;
-    border-bottom: 1px solid #2f2f2f;
+    border: 1px solid #2f2f2f;
+
+    -webkit-transition: background 0.3s linear;
+    -moz-transition: background 0.3s linear;
+    -ms-transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+    transition: background 0.3s linear; */
+		color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+    /* border: 1px solid #2f2f2f; */
     -webkit-transition: background 0.3s linear;
     -moz-transition: background 0.3s linear;
     -ms-transition: background 0.3s linear;
@@ -1120,6 +1276,7 @@ text-align: center;
 .cookie-banner p{
   float: left;
   width: 80%;
+	padding-top: 1.5%;
   display: inline-block;
 }
 
