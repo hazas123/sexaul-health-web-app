@@ -75,6 +75,7 @@ Template.buttonTest.events({
       if (error) {
         console.log(error)
       }
+      $('.putitinme').append('<div><p>' + result + '</p></div>')
       console.log(result)
     })
   }
