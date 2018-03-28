@@ -75,8 +75,12 @@ Template.buttonTest.events({
       if (error) {
         console.log(error)
       }
-      $('.putitinme').append('<div><p>' + result + '</p></div>')
+      $('.putitinme').append('<div>' + result + '</div>')
       console.log(result)
     })
+  },
+  'click .mainentityofpagebutton' (event) {
+    console.log(event.target.id)
+    $('.' + event.target.id).toggleClass('mainentityofpage')
   }
 })

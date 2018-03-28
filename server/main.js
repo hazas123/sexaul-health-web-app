@@ -31,17 +31,20 @@ Meteor.methods({
 
   getNhsInfo: function () {
     return new Promise((resolve, reject) => {
-      var arg = 'chlamydia'
+      var arg = 'gonorrhoea'
       var query = 'https://api.nhs.uk/conditions/' + arg
 
       client.get(query, Meteor.bindEnvironment(function (error, res) {
         if (error) { reject(new Error('ERROR: ' + error)) }
         if (res) {
-          console.log('REDIS WORKED', res)
           res = unidecode(res)
           var responce = JSON.parse(JSON.parse(res))
-          console.log('Parsed', responce.mainEntityOfPage)
-          resolve(responce.mainEntityOfPage)
+          Meteor.call('getMarkdown', responce.mainEntityOfPage, function (error, result) {
+            if (error) {
+              if (error) { throw error }
+            }
+            resolve(result)
+          })
         } else {
           var options = {
             'headers': {'subscription-key': 'cbc7eaba65544f048e7d2ce0d93d1977'}
@@ -51,8 +54,14 @@ Meteor.methods({
             client.set(query, result.content, function (error) {
               if (error) { throw error }
             })
-            console.log('API CALL', result.content)
-            resolve(result.content)
+            res = unidecode(result.content)
+            responce = JSON.parse(res)
+            Meteor.call('getMarkdown', responce.mainEntityOfPage, function (error, result) {
+              if (error) {
+                if (error) { throw error }
+              }
+              resolve(result)
+            })
           } catch (e) {
             // Got a network error, timeout, or HTTP error in the 400 or 500 range.
             console.log('error', e)
@@ -60,6 +69,21 @@ Meteor.methods({
           }
         }
       }))
+    })
+  },
+
+  getMarkdown: function (mainEntityOfPage) {
+    return new Promise((resolve, reject) => {
+      var createdHTML
+      var arrayLength = mainEntityOfPage.length
+      for (var i = 0; i < arrayLength; i++) {
+        if (i === 0) {
+          createdHTML = mainEntityOfPage[i].mainEntityOfPage[0].text
+        } else {
+          createdHTML += '<button class="mainentityofpagebutton" id="mainEntityOfPage' + i + '">' + mainEntityOfPage[i].text + '</button><div class="mainentityofpage mainEntityOfPage' + i + '" >' + mainEntityOfPage[i].mainEntityOfPage[0].text + '</div>'
+        }
+      }
+      resolve(createdHTML)
     })
   }
 })
