@@ -50,12 +50,28 @@ Template.SearchTemp.events({
     if (Gender === undefined) {
       Gender = ''
       console.log(Gender)
+      window.location.href = '/SearchSalus'
+    }
+
+    if (Gender === 'Female') {
+      console.log('Female')
+      window.location.href = '/choice' + Gender
+    }
+
+    if (Gender === 'Male') {
+      console.log('Male')
+      window.location.href = '/choice' + Gender
+    }
+
+    if (Gender === 'Other') {
+      console.log('Male')
+      window.location.href = '/choice' + Gender
     }
 
   /* if (Sexaulity === undefined) {
       Sexaulity = ''
       console.log(Sexaulity)
     } */
-    window.location.href = '/choice' + Gender
+  //  window.location.href = '/choice' + Gender
   }
 })
