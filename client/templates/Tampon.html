@@ -1,14 +1,15 @@
-<template name="Tamponrrrr">
+<template name="Tampon">
 
   <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
+<div class="row compatabilityStyling">
   <div class="siteInformationSTIs row">
-    <h1>Tampon</h1>
+    <h1>Tampon </h1>
 
   <!--<p>Sexual Health information and services</p> -->
   </div>
   <div class="HygieneHold row">
 
-      <div class="w-50 col ">
+      <div class="x3d_sceneHygine_Margin col ">
 
         <div class="ReturnOptions">
           <div class="closeHygine">Return</div>
@@ -16,79 +17,42 @@
         <div  class="x3d_sceneHygine">
 
 
-          <x3d width='600px' height='300px'  >
+          <x3d width='570px' height='300px'  >
             <scene>
               <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
-                  <viewpoint position="-0.2005 1.0000 -2.59068"  orientation='-0.000 1.0 0.00219 3.2' centerOfRotation="-0.2005 1.0000 -0.29608"></viewpoint>
-                  <viewpoint id="Reset" position="-0.2005 1.0000 -2.59068" orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
-                  <Viewpoint id="front" position="-0.07427 0.95329 -2.79608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera"></Viewpoint>
-                  <Viewpoint id="right" position="-2.43383 1.07351 -1.28700" orientation="-0.00318 -0.99950 -0.03159 2.06609" description="camera"></Viewpoint>
-
-                  <viewpoint id="SymptomUnmove" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
-
-                  <Viewpoint id="symptomAreaFemaleHIV" position="-0.00427 0.85329 -0.69608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
-                  <Viewpoint id="symptomAreaFemaleHIVFever" position="-0.00427 1.65329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
-                  <Viewpoint id="symptomAreaFemaleHIVThroat" position="-0.00427 1.52329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
-                  <Viewpoint id="symptomAreaFemaleHIVChest" position="-0.00427 1.45329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+                  <viewpoint position="-0.2005 1.0000 -2.69068"  orientation='-0.000 1.0 0.00219 3.2' centerOfRotation="-0.2005 1.0000 -0.29608"></viewpoint>
+                  <viewpoint id="Reset" position="-0.2005 1.0000 -2.69068"  orientation='-0.000 1.0 0.00219 3.2' centerOfRotation="-0.2005 1.0000 -0.29608"></viewpoint>
 
 
                 <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
                   <Transform><inline  nameSpaceName="FemaleModelWoman" mapDEFToID="true" url="./Hygiene/Tampon.x3d"  ></inline></Transform>
               </scene>
             </x3d>
-
+            <div class="ButtonStylingHygine" onclick="cameraChange('Reset')" >Reset</div>
       </div>
-      <div class="HygineButtonHolder">
+      </div>
+
+      <div class="col HygineInfoShift">
+        <div class=" HygineSmallHeading">Tampon</div>
+            <div class="ButtonStylingHygineHolder">
+        <div class="longer">
+
+          <p>
+            Tampons are small tubes of cotton wool that you insert into your vagina to absorb the blood before it comes out of your body. There's a string at one end of the tampon, which you pull to remove it.
+            <br/><br/>
+            Tampons come with instructions that explain how to use them. If the tampon is inserted correctly, you shouldn't be able to feel it. If you can feel it or it hurts, it might not be in properly.
+            <br/><br/>
+            It isn't possible for a tampon to get stuck or lost inside you. Your vagina holds it firmly in place and it expands inside you as it soaks up the blood.
 
 
-      <div class="ButtonStylingHygine HygineSmallHeading">Options</div>
-          <div class="ButtonStylingHygineHolder">
-                <div class="row">
-
-
-                  <!-- <div class="ButtonStylingSTI " id="symptom1HIV" onclick="symptomzoom1('SymptomUnmove', 'FemaleModelWoman__MA_Female_skin', 'FemaleModelWoman__MA_HIV_Glands')">Symptom 1</div>
-                  <div class="ButtonStylingSTI " id="symptom2HIV" onclick="symptomzoom2('symptomAreaFemaleHIVFever', 'FemaleModelWoman__MA_Female_skin', 'FemaleModelWoman__MA_Fever_HIV_Female')">Symptom 2</div>
-                  <div class="ButtonStylingSTI " id="symptom3HIV" onclick="symptomzoom3('symptomAreaFemaleHIVThroat', 'FemaleModelWoman__MA_Female_skin', 'FemaleModelWoman__MA_Throat_HIV')">Symptom 3</div>
-                  <div class="ButtonStylingSTI " id="symptom4HIV" onclick="symptomzoom4('symptomAreaFemaleHIVChest', 'FemaleModelWoman__MA_Female_skin', 'FemaleModelWoman__MA_HIV_body_Rash_female')">Symptom 4</div>
-
-                  <div class="ButtonStylingSTI" onclick="cameraChange('Reset')" >Reset</div> -->
-                  <div class="ButtonStylingHygine" onclick="cameraChange('Reset')" >Reset</div>
-                  </div>
-                </div>
-    </div></div>
-      <div class="col">
-        <div class="colArtHygine">
-
-
-          <div class="ButtonStylingHygine HygineSmallHeading">Tampon</div>
-              <div class="ButtonStylingHygineHolder">
-          <div class="row">
-
-            <p>
-              Tampons are small tubes of cotton wool that you insert into your vagina to absorb the blood before it comes out of your body. There's a string at one end of the tampon, which you pull to remove it.
-              <br/>
-              Tampons come with instructions that explain how to use them. If the tampon is inserted correctly, you shouldn't be able to feel it. If you can feel it or it hurts, it might not be in properly.
-              <br/>
-              It isn't possible for a tampon to get stuck or lost inside you. Your vagina holds it firmly in place and it expands inside you as it soaks up the blood.
-
-
-            </p>
-            </div>
+          </p>
           </div>
+        </div>
 
-
-
-
-      </div>
-
-    <!-- <div class="ColBot">
-      <div class="ButtonStylingSTI STISmallHeading">Treatment</div>
-      <div class="treatmentInfo">
-        CHANGE ME
-      </div>
-
-    </div> -->
     </div>
+</div>
+
+
 </div>
 
 <script type="text/javascript">
