@@ -1,0 +1,147 @@
+<template name="ScabiesFemale">
+
+<script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
+<div class="row compatabilityStyling">
+<div class="siteInformationSTIs row">
+  <h1>Female Genital Herpes </h1>
+
+<!--<p>Sexual Health information and services</p> -->
+</div>
+<div class="STIMainHold row">
+
+    <div class="w-50 col ">
+
+      <div class="ReturnOptions">
+        <div class="closeSTIFemale">Close STI</div>
+      </div>
+      <div  class="x3d_scene">
+
+
+        <x3d width='400px' height='600px'>
+          <scene>
+            <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
+                <viewpoint position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+                <viewpoint id="ResetFemaleScabies" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+
+
+                <viewpoint id="symptomAreaFemaleScabiesGroin"    position="-0.00427 0.90329 -0.50908" orientation="-0.000 1.0 0.00219 3.2" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></viewpoint>
+                <viewpoint id="symptomAreaFemaleScabiesHand"     position="-0.25427 0.85329 -0.39608"  description="camera" orientation='-0.000 1.0 0.00219 -3.2' centerOfRotation="-0.25427 0.85329 -0.39608"></viewpoint>
+                <viewpoint id="symptomAreaFemaleScabiesWrist"    position="-0.25427 0.95329 -0.39608"  description="camera" orientation='-0.000 1.0 0.00219 -3.2' centerOfRotation="-0.25427 0.85329 -0.39608"></viewpoint>
+                <viewpoint id="symptomAreaFemaleScabiesAnkle"    position="-0.02427 0.15329 -0.49608" orientation="-0.000 1.0 0.00219 -3.2" description="camera" centerOfRotation='0,0,0'></viewpoint>
+                <viewpoint id="symptomAreaFemaleScabiesUnderarm" position="-0.20227 1.35329 -0.39608"  description="camera" orientation='-0.000 1.0 0.00219 3.2' centerOfRotation="-0.25427 0.85329 -0.39608"></viewpoint>
+
+
+
+
+
+
+
+
+              <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
+                <Transform><inline  nameSpaceName="Scabies_ModelFemale" mapDEFToID="true" url="./STI_Models_Female/Female_Scabies.x3d"  ></inline></Transform>
+
+
+
+
+
+
+            </scene>
+
+          </x3d>
+
+                          </div>
+                        </div>
+                          <div class=" col ">
+                            <div class="colArt">
+
+
+<div class="ButtonStylingSTI STISmallHeading">Scabies</div>
+      <div class="ButtonStylingSTIHolder">
+          <div class="row">
+              <div class="ButtonStylingSTI " id="symptom1ScabiesFemale" onclick="symptomzoom1FemaleScabies('symptomAreaFemaleScabiesGroin')">Groin</div>
+              <div class="ButtonStylingSTI " id="symptom2ScabiesFemale" onclick="symptomzoom2FemaleScabies('symptomAreaFemaleScabiesHand')">Hand</div>
+              <div class="ButtonStylingSTI " id="symptom3ScabiesFemale" onclick="symptomzoom3FemaleScabies('symptomAreaFemaleScabiesWrist')">Wrist</div>
+              <div class="ButtonStylingSTI " id="symptom4ScabiesFemale" onclick="symptomzoom4FemaleScabies('symptomAreaFemaleScabiesAnkle')">Ankle</div>
+              <div class="ButtonStylingSTI " id="symptom5ScabiesFemale" onclick="symptomzoom5FemaleScabies('symptomAreaFemaleScabiesUnderarm')">Underarm</div>
+              <div class="ButtonStylingSTI " onclick="cameraChangeFemaleScabies('ResetFemaleScabies')" >Reset</div>
+
+            </div>
+          </div>
+
+
+      <div class="row STIsymptomInfoBoxMove">
+        <div class="STIsymptomInfoBox" id="symptom1InfoFemaleScabiesNOHIDE">
+          <h1></h1>
+          <p>Scabies can appear all over the body including the Groin, wrists, ankles, fingers, and underarm</p>
+        </div>
+
+      </div>
+
+      </div>
+      <div class="ColBot">
+        <div class="ButtonStylingSTI STISmallHeading">Treatment</div>
+        <div class="treatmentInfo">
+          CHANGE ME
+        </div>
+
+      </div>
+        </div>
+        <div class="ColBot">
+          <div class="ButtonStylingSTI STISmallHeading">Treatment</div>
+          <div class="treatmentInfo">
+            CHANGE ME
+          </div>
+
+        </div>
+
+
+
+
+</div>
+
+</div>
+
+
+<script type="text/javascript">
+
+function symptomzoom1FemaleScabies (symptoms) {
+  document.getElementById(symptoms).setAttribute('set_bind','true');
+}
+
+function symptomzoom2FemaleScabies (symptoms) {
+  document.getElementById(symptoms).setAttribute('set_bind','true');
+}
+
+function symptomzoom3FemaleScabies (symptoms) {
+  document.getElementById(symptoms).setAttribute('set_bind','true');
+}
+
+function symptomzoom4FemaleScabies (symptoms) {
+  document.getElementById(symptoms).setAttribute('set_bind','true');
+}
+
+function symptomzoom5FemaleScabies (symptoms) {
+  document.getElementById(symptoms).setAttribute('set_bind','true');
+}
+
+
+
+
+
+
+function cameraChangeFemaleScabies(Camera) {
+document.getElementById(Camera).setAttribute('set_bind','true');
+}
+
+//function ChlamydiaName(){
+//document.getElementById('Scabies_ModelFemale__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
+//document.getElementById('Scabies_ModelFemale__MA_typeBlinn1').setAttribute('transparency', '0.0');
+//}
+function symptom1Female(){
+document.getElementById('Scabies_ModelFemale__MA_Pain_when').setAttribute('transparency', '0.0');
+document.getElementById('Scabies_ModelFemale__MA_Pain_when').setAttribute('diffuseColor', '1.000 1.000 1.000');
+document.getElementById('Scabies_ModelFemale__MA_Red').setAttribute('diffuseColor', '1.000 0.000 0.022');
+}
+
+</script>
+</template>

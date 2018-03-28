@@ -1,0 +1,144 @@
+<template name="SexualMyths">
+
+<div class="row compatabilityStyling">
+
+<div class="MythsStyleHolder">
+
+<div class="row">
+
+
+<!-- <div id="ReselectChoices" class="col-2">
+<img src="./Logo/Logo_Normal.png"  alt="Logo"/>
+
+
+</div> -->
+
+<div id="closeMyths">Close STI</div>
+<div class="AvaliableOptions" >
+<div id="OtherOptionsSelected">
+  <h1>Salus - Sexual Myths</h1>
+</div>
+
+<div class="row whiteB" id="parent">
+
+  <div class="col-3 itemOptMyth">
+    <img class="Myth_Gifs" src="./Myth_Exports/Anal_STI.gif"  alt="myth"/>
+    <div class="MythOverlay">
+    <div class="MythOverlayText">Having anal sex can still cause you to recieve an STI</div>
+  </div>
+  </div>
+
+  <div class="col-3 itemOptMyth">
+    <img class="Myth_Gifs" src="./Myth_Exports/Bathing_After_Sex.gif"  alt="myth"/>
+    <div class="MythOverlay">
+    <div class="MythOverlayText">Having a bath after sex will not stop you from getting pregnant</div>
+  </div>
+  </div>
+
+  <div class="col-3 itemOptMyth">
+    <img class="Myth_Gifs" src="./Myth_Exports/Condoms_100.gif"  alt="myth"/>
+    <div class="MythOverlay">
+    <div class="MythOverlayText">All though condoms are good at stopping STI's they are not 100% affective</div>
+  </div>
+  </div>
+
+  <div class="col-3 itemOptMyth">
+    <img class="Myth_Gifs" src="./Myth_Exports/No_Time_To_Get_Checked.gif"  alt="myth"/>
+    <div class="MythOverlay">
+    <div class="MythOverlayText">Someone who says there is no time to get checked is wrong, sti kits can be ordered at home in many counties. And most for free.</div>
+  </div>
+  </div>
+
+  <div class="col-3 itemOptMyth">
+    <img class="Myth_Gifs" src="./Myth_Exports/Oral_No_Sti.gif"  alt="myth"/>
+    <div class="MythOverlay">
+    <div class="MythOverlayText">You can still catch STI's when having oral sex</div>
+  </div>
+  </div>
+
+  <div class="col-3 itemOptMyth">
+    <img class="Myth_Gifs" src="./Myth_Exports/Pulling_Out_Myth.gif"  alt="myth"/>
+    <div class="MythOverlay">
+    <div class="MythOverlayText">A pulling out your penis, while having sex will not stop a girl from getting pregnant</div>
+  </div>
+  </div>
+
+  <div class="col-3 itemOptMyth">
+    <img class="Myth_Gifs" src="./Myth_Exports/Sex_Lots_Of_People.gif"  alt="myth"/>
+    <div class="MythOverlay">
+    <div class="MythOverlayText">You can catch STI's with anyone whether you have sex with one or many people</div>
+  </div>
+  </div>
+
+  <div class="col-3 itemOptMyth">
+    <img class="Myth_Gifs" src="./Myth_Exports/STI_Painless.gif"  alt="myth"/>
+    <div class="MythOverlay">
+    <div class="MythOverlayText">Not all STI's have symptoms, some STI's go unnoticed or have no symptoms</div>
+  </div>
+  </div>
+
+  <div class="col-3 itemOptMyth">
+    <img class="Myth_Gifs" src="./Myth_Exports/STI's_disappear.gif"  alt="myth"/>
+    <div class="MythOverlay">
+    <div class="MythOverlayText">Most STI's will not dissapear on their own without treatment</div>
+  </div>
+  </div>
+
+
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+<div class="ChoiceholdBackOPI">
+
+</div>
+</div>
+
+
+
+<script >
+
+
+
+  var $btns = $('.btn').click(function() {
+    console.log('clicked');
+    console.log(this.id);
+    if (this.id == 'all') {
+      console.log('all');
+      $('#parent > button').fadeIn(450);
+    } else {
+      console.log('else');
+      var $el = $('.' + this.id).fadeIn(450);
+      $('#parent > button').not($el).hide();
+    }
+    $btns.removeClass('active');
+    $(this).addClass('active');
+  })
+
+
+// ask james
+$('.holdbtn').click(function() {
+
+  $('.itemOpt').sort(function(a, b) {
+    if (a.textContent < b.textContent) {
+      return -1;
+    } else {
+      return 1;
+    }
+  }).appendTo('#parent');
+})
+</script>
+
+
+
+
+
+
+</template>

@@ -1,14 +1,20 @@
 <template name="SyphilisMale">
 
 <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
-  <div class="STIMainHoldSyph row">
+<div class="row compatabilityStyling">
+<div class="siteInformationSTIs row">
+  <h1>Syphilis  </h1>
 
-      <div class="w-50 col ">
+<!--<p>Sexual Health information and services</p> -->
+</div>
+<div class="STIMainHold row">
 
-        <div class="ReturnOptions">
-          <div id="closeSTIMaleSyph">Close STI</div>
-        </div>
-        <div  class="x3d_scene">
+    <div class="col ">
+
+      <div class="ReturnOptions">
+        <div id="closeSTIMale">Close STI</div>
+      </div>
+      <div  class="x3d_scene">
 
         <x3d width='400px' height='600px'>
           <scene>
@@ -28,7 +34,7 @@
                 <Viewpoint id="symptomAreaMANSyphHands" position="-0.25427 0.85329 -0.39608"  description="camera" orientation='-0.000 1.0 0.00219 -3.2' centerOfRotation="-0.25427 0.85329 -0.39608"></Viewpoint>
                 <Viewpoint id="symptomAreaMANSyphAnus" position="-0.0000 0.85329 0.39608" orientation="-0.01451 0.99989 0.00319 0.0" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
               <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
-                <Transform><inline  nameSpaceName="Syphilis_Model_Man" mapDEFToID="true" url="./STI_Models_Male/Syphilis_Man_03.x3d"  ></inline></Transform>
+                <Transform><inline  nameSpaceName="Syphilis_Model_Man" mapDEFToID="true" url="./STI_Models_Male/Syphilis_Male.x3d"  ></inline></Transform>
 
 
 
@@ -38,12 +44,11 @@
             </scene>
 
           </x3d>
-          </div>
-
+        </div>
       </div>
-
         <div class=" col ">
           <div class="colArt">
+
 
 
 <div class="ButtonStylingSTI STISmallHeading">Syphilis</div>
@@ -96,80 +101,103 @@
 
       </div>
 
-      </div>  </div>
+      </div>
+      <div class="ColBot">
+        <div class="ButtonStylingSTI STISmallHeading">Treatment</div>
+        <div class="treatmentInfo">
+          CHANGE ME
+        </div>
 
-
-
-
+      </div>
+      </div>
 
 </div>
-<div class="ChoiceholdBackSTI">
 
 </div>
-
 
 <script type="text/javascript">
+
+
+
+
 function symptomzoom1MANSyph(symptoms, texture1, texture2) {
+// reset all before
+ResetModel();
+
+
+
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
-console.log('hiu')
-document.getElementById('symptom1InfoMANSyph').style.height = '400px';
+
+// document.getElementById('symptom1InfoMANSyph').style.height = '400px';
 document.getElementById('symptom1InfoMANSyph').style.opacity = '1.0';
-$( "#symptom2SyphMAN" ).addClass( "disableItemSelect" );
+/*$( "#symptom2SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom3SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom4SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom5SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom6SyphMAN" ).addClass( "disableItemSelect" );
-$( "#symptom7SyphMAN" ).addClass( "disableItemSelect" );
+$( "#symptom7SyphMAN" ).addClass( "disableItemSelect" );*/
 }
 
 function symptomzoom2MANSyph(symptoms, texture1, texture2) {
+  // reset all before
+  ResetModel();
+
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 
-document.getElementById('symptom2InfoMANSyph').style.height = '400px';
+//document.getElementById('symptom2InfoMANSyph').style.height = '400px';
 document.getElementById('symptom2InfoMANSyph').style.opacity = '1.0';
-$( "#symptom1SyphMAN" ).addClass( "disableItemSelect" );
+/*$( "#symptom1SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom3SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom4SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom5SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom6SyphMAN" ).addClass( "disableItemSelect" );
-$( "#symptom7SyphMAN" ).addClass( "disableItemSelect" );
+$( "#symptom7SyphMAN" ).addClass( "disableItemSelect" );*/
 }
 
 function symptomzoom3MANSyph(symptoms, texture1, texture2) {
+  // reset all before
+  ResetModel();
+
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 
-document.getElementById('symptom3InfoMANSyph').style.height = '400px';
+//  document.getElementById('symptom3InfoMANSyph').style.height = '400px';
 document.getElementById('symptom3InfoMANSyph').style.opacity = '1.0';
-$( "#symptom1SyphMAN" ).addClass( "disableItemSelect" );
+/*$( "#symptom1SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom2SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom4SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom5SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom6SyphMAN" ).addClass( "disableItemSelect" );
-$( "#symptom7SyphMAN" ).addClass( "disableItemSelect" );
+$( "#symptom7SyphMAN" ).addClass( "disableItemSelect" );*/
 }
 
 function symptomzoom4MANSyph(symptoms, texture1, texture2) {
+  // reset all before
+  ResetModel();
+
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 
-document.getElementById('symptom4InfoMANSyph').style.height = '400px';
+// document.getElementById('symptom4InfoMANSyph').style.height = '400px';
 document.getElementById('symptom4InfoMANSyph').style.opacity = '1.0';
-$( "#symptom1SyphMAN" ).addClass( "disableItemSelect" );
+/* $( "#symptom1SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom2SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom3SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom5SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom6SyphMAN" ).addClass( "disableItemSelect" );
-$( "#symptom7SyphMAN" ).addClass( "disableItemSelect" );
+$( "#symptom7SyphMAN" ).addClass( "disableItemSelect" ); */
 }
 
 function symptomzoom5MANSyph(symptoms, texture1, texture2, texture3, texture4, texture5, texture6) {
+  // reset all before
+  ResetModel();
+
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.7');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
@@ -178,32 +206,39 @@ document.getElementById(texture4).setAttribute('transparency', '1.0');
 document.getElementById(texture5).setAttribute('transparency', '1.0');
 document.getElementById(texture6).setAttribute('transparency', '1.0');
 
-document.getElementById('symptom5InfoMANSyph').style.height = '400px';
+// document.getElementById('symptom5InfoMANSyph').style.height = '400px';
 document.getElementById('symptom5InfoMANSyph').style.opacity = '1.0';
-$( "#symptom1SyphMAN" ).addClass( "disableItemSelect" );
+/*$( "#symptom1SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom2SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom3SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom4SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom6SyphMAN" ).addClass( "disableItemSelect" );
-$( "#symptom7SyphMAN" ).addClass( "disableItemSelect" );
+$( "#symptom7SyphMAN" ).addClass( "disableItemSelect" );*/
 
 }
 
 function symptomzoom6MANSyph(symptoms, texture1, texture2) {
+  // reset all before
+  ResetModel();
+
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.7');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 
-document.getElementById('symptom6InfoMANSyph').style.height = '400px';
+// document.getElementById('symptom6InfoMANSyph').style.height = '400px';
 document.getElementById('symptom6InfoMANSyph').style.opacity = '1.0';
-$( "#symptom1SyphMAN" ).addClass( "disableItemSelect" );
+/*$( "#symptom1SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom2SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom3SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom4SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom5SyphMAN" ).addClass( "disableItemSelect" );
-$( "#symptom7SyphMAN" ).addClass( "disableItemSelect" );
+$( "#symptom7SyphMAN" ).addClass( "disableItemSelect" ); */
 }
 function symptomzoom7MANSyph(symptoms, texture1, texture2, texture3, texture4, texture5, texture6, texture7, texture8) {
+  // reset all before
+ResetModel();
+
+
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.7');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
@@ -214,36 +249,49 @@ document.getElementById(texture6).setAttribute('transparency', '1.0');
 document.getElementById(texture7).setAttribute('transparency', '1.0');
 document.getElementById(texture8).setAttribute('transparency', '1.0');
 
-document.getElementById('symptom7InfoMANSyph').style.height = '400px';
+// document.getElementById('symptom7InfoMANSyph').style.height = '400px';
+
 document.getElementById('symptom7InfoMANSyph').style.opacity = '1.0';
-$( "#symptom1SyphMAN" ).addClass( "disableItemSelect" );
+/*$( "#symptom1SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom2SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom3SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom4SyphMAN" ).addClass( "disableItemSelect" );
 $( "#symptom5SyphMAN" ).addClass( "disableItemSelect" );
-$( "#symptom6SyphMAN" ).addClass( "disableItemSelect" );
+$( "#symptom6SyphMAN" ).addClass( "disableItemSelect" );*/
+}
+
+
+function ResetModel() {
+  document.getElementById('Syphilis_Model_Man__MA_Man_Skin_Texture_Syph').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Man__MA_Ulcers_texture_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Man__MA_Mouth_Ulcers_Sythilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Man__MA_Ulcers_Anus_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Man__MA_headaches_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Man__MA_Foot_Rash_Siphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Man__MA_Hand_Rash').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Man__MA_Neck_Glands_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Man__MA_Groin_Glands_syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Man__MA_Armpit_Glands_syphilis').setAttribute('transparency', '1.0');
+
+  document.getElementById('Syphilis_Model_Man__MA_Banana_texture_MANGW').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Man__MA_Banana_texture_MANGW1').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Man__MA_Cherry_Stem_texture_MAN_GW').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Man__MA_Cherry_texture_MANGW').setAttribute('transparency', '0.0');
+
+  document.getElementById('symptom1InfoMANSyph').style.opacity = '0.0';
+  document.getElementById('symptom2InfoMANSyph').style.opacity = '0.0';
+  document.getElementById('symptom3InfoMANSyph').style.opacity = '0.0';
+  document.getElementById('symptom4InfoMANSyph').style.opacity = '0.0';
+  document.getElementById('symptom5InfoMANSyph').style.opacity = '0.0';
+  document.getElementById('symptom6InfoMANSyph').style.opacity = '0.0';
+  document.getElementById('symptom7InfoMANSyph').style.opacity = '0.0';
 }
 
 function cameraChangeMANSyph(Camera) {
+  ResetModel();
 document.getElementById(Camera).setAttribute('set_bind','true');
-document.getElementById('Syphilis_Model_Man__MA_Man_Skin_Texture_Syph').setAttribute('transparency', '0.0');
-document.getElementById('Syphilis_Model_Man__MA_Ulcers_texture_Syphilis').setAttribute('transparency', '1.0');
-document.getElementById('Syphilis_Model_Man__MA_Mouth_Ulcers_Sythilis').setAttribute('transparency', '1.0');
-document.getElementById('Syphilis_Model_Man__MA_Ulcers_Anus_Syphilis').setAttribute('transparency', '1.0');
-document.getElementById('Syphilis_Model_Man__MA_headaches_Syphilis').setAttribute('transparency', '1.0');
-document.getElementById('Syphilis_Model_Man__MA_Foot_Rash_Siphilis').setAttribute('transparency', '1.0');
-document.getElementById('Syphilis_Model_Man__MA_Hand_Rash').setAttribute('transparency', '1.0');
-document.getElementById('Syphilis_Model_Man__MA_Neck_Glands_Syphilis').setAttribute('transparency', '1.0');
-document.getElementById('Syphilis_Model_Man__MA_Groin_Glands_syphilis').setAttribute('transparency', '1.0');
-document.getElementById('Syphilis_Model_Man__MA_Armpit_Glands_syphilis').setAttribute('transparency', '1.0');
 
-document.getElementById('Syphilis_Model_Man__MA_Banana_texture_MANGW').setAttribute('transparency', '0.0');
-document.getElementById('Syphilis_Model_Man__MA_Banana_texture_MANGW1').setAttribute('transparency', '0.0');
-document.getElementById('Syphilis_Model_Man__MA_Cherry_Stem_texture_MAN_GW').setAttribute('transparency', '0.0');
-document.getElementById('Syphilis_Model_Man__MA_Cherry_texture_MANGW').setAttribute('transparency', '0.0');
-
-
-$( "#symptom1SyphMAN" ).removeClass( "disableItemSelect" );
+/*$( "#symptom1SyphMAN" ).removeClass( "disableItemSelect" );
 $( "#symptom2SyphMAN" ).removeClass( "disableItemSelect" );
 $( "#symptom3SyphMAN" ).removeClass( "disableItemSelect" );
 $( "#symptom4SyphMAN" ).removeClass( "disableItemSelect" );
@@ -256,15 +304,9 @@ document.getElementById('symptom3InfoMANSyph').style.height = '60px';
 document.getElementById('symptom4InfoMANSyph').style.height = '60px';
 document.getElementById('symptom5InfoMANSyph').style.height = '60px';
 document.getElementById('symptom6InfoMANSyph').style.height = '60px';
-document.getElementById('symptom7InfoMANSyph').style.height = '60px';
+document.getElementById('symptom7InfoMANSyph').style.height = '60px'; */
 
-document.getElementById('symptom1InfoMANSyph').style.opacity = '0.0';
-document.getElementById('symptom2InfoMANSyph').style.opacity = '0.0';
-document.getElementById('symptom3InfoMANSyph').style.opacity = '0.0';
-document.getElementById('symptom4InfoMANSyph').style.opacity = '0.0';
-document.getElementById('symptom5InfoMANSyph').style.opacity = '0.0';
-document.getElementById('symptom6InfoMANSyph').style.opacity = '0.0';
-document.getElementById('symptom7InfoMANSyph').style.opacity = '0.0';
+
 
 }
 

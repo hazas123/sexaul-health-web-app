@@ -1,0 +1,431 @@
+<template name="SyphilisFemale">
+
+<script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
+<div class="row compatabilityStyling">
+<div class="siteInformationSTIs row">
+  <h1>Female Genital Herpes </h1>
+
+<!--<p>Sexual Health information and services</p> -->
+</div>
+<div class="STIMainHold row">
+
+    <div class="w-50 col ">
+
+      <div class="ReturnOptions">
+        <div class="closeSTIFemale">Close STI</div>
+      </div>
+      <div  class="x3d_scene">
+        <x3d width='400px' height='600px'>
+          <scene>
+            <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
+                <viewpoint position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+                <viewpoint id="ResetFemaleSyph" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+                <Viewpoint id="frontFemaleSyph" position="-0.07427 0.95329 -2.79608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera"></Viewpoint>
+                <Viewpoint id="rightFemaleSyph" position="-2.43383 1.07351 -1.28700" orientation="-0.00318 -0.99950 -0.03159 2.06609" description="camera"></Viewpoint>
+
+                <viewpoint id="symptomAreaFemaleSyphGlands" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+                <Viewpoint id="symptomAreaFemaleSyph" position="-0.00427 0.85329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+                <Viewpoint id="symptomAreaFemaleSyphMouth" position="-0.00427 1.65329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+
+                <Viewpoint id="symptomAreaFemaleSyphHeadAche" position="-0.00427 1.75329 -0.69608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+
+                <Viewpoint id="symptomAreaFemaleSyphFeet" position="-0.02427 -0.95329 -0.79608" orientation="-0.00707 0.87466 -0.48473 3.12040" description="camera" centerOfRotation='0,0,0' ></Viewpoint>
+                <Viewpoint id="symptomAreaFemaleSyphHands" position="-0.25427 0.85329 -0.39608"  description="camera" orientation='-0.000 1.0 0.00219 -3.2' centerOfRotation="-0.25427 0.85329 -0.39608"></Viewpoint>
+                <Viewpoint id="symptomAreaFemaleSyphAnus" position="-0.0000 0.85329 0.39608" orientation="-0.01451 0.99989 0.00319 0.0" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+              <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
+                <Transform><inline  nameSpaceName="Syphilis_Model_Female" mapDEFToID="true" url="./STI_Models_Female/Female_Syphilis.x3d"  ></inline></Transform>
+
+            </scene>
+
+          </x3d>
+        </div>
+      </div>
+        <div class=" col ">
+          <div class="colArt">
+
+
+<div class="ButtonStylingSTI STISmallHeading">Syphilis</div>
+      <div class="ButtonStylingSTIHolder">
+          <div class="row">
+
+              <div class="ButtonStylingSTI" id="symptom1SyphMAN" onclick="symptomzoom1FemaleSyph('symptomAreaFemaleSyph', 'Syphilis_Model_Female__MA_Female_skin', 'Syphilis_Model_Female__Female_Ulcers_texture_Syphilis')">Symptom 1</div>
+              <div class="ButtonStylingSTI" id="symptom2SyphMAN" onclick="symptomzoom2FemaleSyph('symptomAreaFemaleSyphMouth', 'Syphilis_Model_Female__MA_Female_skin', 'Syphilis_Model_Female__MA_Mouth_Ulcers_Sythilis')">Symptom 2</div>
+              <div class="ButtonStylingSTI" id="symptom3SyphMAN" onclick="symptomzoom3FemaleSyph('symptomAreaFemaleSyphAnus', 'Syphilis_Model_Female__MA_Female_skin', 'Syphilis_Model_Female__Female_Ulcers_Anus_Syphilis')">Symptom 3</div>
+
+              <div class="ButtonStylingSTI" id="symptom4SyphMAN" onclick="symptomzoom4FemaleSyph('symptomAreaFemaleSyphHeadAche', 'Syphilis_Model_Female__MA_Female_skin', 'Syphilis_Model_Female__MA_Female_headaches_Syphilis')">Symptom 4</div>
+              <div class="ButtonStylingSTI" id="symptom5SyphMAN" onclick="symptomzoom5FemaleSyph('symptomAreaFemaleSyphFeet', 'Syphilis_Model_Female__MA_Female_skin', 'Syphilis_Model_Female__MA_Foot_Rash_Syphilis_Famale', 'Syphilis_Model_Female__MA_Grapefruit_04:Main_colour', 'Syphilis_Model_Female__MA_Grapefruit_04:Inner', 'Syphilis_Model_Female__MA_Grapefruit_04:Lighter_Inner1', 'Syphilis_Model_Female__MA_Grapefruit_04:Main_Darker', 'Syphilis_Model_Female__MA_Grapefruit_slices')">Symptom 5</div>
+              <div class="ButtonStylingSTI" id="symptom6SyphMAN" onclick="symptomzoom6FemaleSyph('symptomAreaFemaleSyphHands', 'Syphilis_Model_Female__MA_Female_skin', 'Syphilis_Model_Female__MA_Palm_Syphilis')">Symptom 6</div>
+              <div class="ButtonStylingSTI" id="symptom7SyphMAN" onclick="symptomzoom7FemaleSyph('symptomAreaFemaleSyphGlands', 'Syphilis_Model_Female__MA_Female_skin', 'Syphilis_Model_Female__MA_Neck_Glands_Syphilis', 'Syphilis_Model_Female__Female_Groin_Glands_syphilis', 'Syphilis_Model_Female__MA_Armpit_Glands_syphilis', 'Syphilis_Model_Female__MA_Grapefruit_04:Main_colour', 'Syphilis_Model_Female__MA_Grapefruit_04:Inner', 'Syphilis_Model_Female__MA_Grapefruit_04:Lighter_Inner1', 'Syphilis_Model_Female__MA_Grapefruit_04:Main_Darker', 'Syphilis_Model_Female__MA_Grapefruit_slices')">Symptom 7</div>
+
+              <div class="ButtonStylingSTI" onclick="cameraChangeFemaleSyph('ResetFemaleSyph')" >Reset</div>
+
+            </div>
+          </div>
+
+
+      <div class="row STIsymptomInfoBoxMove">
+        <div class="STIsymptomInfoBox" id="symptom1InfoFemaleSyph">
+          <h1>Symptom 1</h1>
+          <p>Painful sores may appear near the genitals</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom2InfoFemaleSyph">
+          <h1>Symptom 2</h1>
+          <p>Painful sores may appear near the mouth</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom3InfoFemaleSyph">
+          <h1>Symptom 3</h1>
+          <p>Painful sores may appear near the anus</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom4InfoFemaleSyph">
+          <h1>Symptom 4</h1>
+          <p>Flu symptoms - such as a headache can occur</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom5InfoFemaleSyph">
+          <h1>Symptom 5</h1>
+          <p>Skin changes - a painful rash may occur often on the soles of the feet</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom6InfoFemaleSyph">
+          <h1>Symptom 6</h1>
+          <p>Skin changes - a painful rash may occur often on the palms of the hands</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom7InfoFemaleSyph">
+          <h1>Symptom 7</h1>
+          <p>Flu symptoms - glands in the groin, neck and armpit may become swollen </p>
+        </div>
+
+      </div>
+
+      </div>
+      <div class="ColBot">
+        <div class="ButtonStylingSTI STISmallHeading">Treatment</div>
+        <div class="treatmentInfo">
+          CHANGE ME
+        </div>
+
+      </div>
+
+</div></div></div>
+
+
+
+
+
+
+<script type="text/javascript">
+function symptomzoom1FemaleSyph(symptoms, texture1, texture2) {
+  // hide all
+  document.getElementById('Syphilis_Model_Female__MA_Female_skin').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__Female_Ulcers_texture_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Mouth_Ulcers_Sythilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__Female_Ulcers_Anus_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Female_headaches_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Foot_Rash_Syphilis_Famale').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Palm_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Neck_Glands_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__Female_Groin_Glands_syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Armpit_Glands_syphilis').setAttribute('transparency', '1.0');
+
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Main_colour').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Inner').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Lighter_Inner1').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Main_Darker').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_slices').setAttribute('transparency', '0.0');
+
+  document.getElementById('symptom1InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom2InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom3InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom4InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom5InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom6InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom7InfoFemaleSyph').style.opacity = '0.0';
+
+  // selected objects visable
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.0');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+
+
+document.getElementById('symptom1InfoFemaleSyph').style.opacity = '1.0';
+
+}
+
+function symptomzoom2FemaleSyph(symptoms, texture1, texture2) {
+  // hide all
+  document.getElementById('Syphilis_Model_Female__MA_Female_skin').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__Female_Ulcers_texture_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Mouth_Ulcers_Sythilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__Female_Ulcers_Anus_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Female_headaches_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Foot_Rash_Syphilis_Famale').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Palm_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Neck_Glands_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__Female_Groin_Glands_syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Armpit_Glands_syphilis').setAttribute('transparency', '1.0');
+
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Main_colour').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Inner').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Lighter_Inner1').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Main_Darker').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_slices').setAttribute('transparency', '0.0');
+
+  document.getElementById('symptom1InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom2InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom3InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom4InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom5InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom6InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom7InfoFemaleSyph').style.opacity = '0.0';
+
+  // selected objects visable
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.0');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+
+
+document.getElementById('symptom2InfoFemaleSyph').style.opacity = '1.0';
+
+}
+
+function symptomzoom3FemaleSyph(symptoms, texture1, texture2) {
+  // hide all
+  document.getElementById('Syphilis_Model_Female__MA_Female_skin').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__Female_Ulcers_texture_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Mouth_Ulcers_Sythilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__Female_Ulcers_Anus_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Female_headaches_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Foot_Rash_Syphilis_Famale').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Palm_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Neck_Glands_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__Female_Groin_Glands_syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Armpit_Glands_syphilis').setAttribute('transparency', '1.0');
+
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Main_colour').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Inner').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Lighter_Inner1').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Main_Darker').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_slices').setAttribute('transparency', '0.0');
+
+  document.getElementById('symptom1InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom2InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom3InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom4InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom5InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom6InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom7InfoFemaleSyph').style.opacity = '0.0';
+
+  // selected objects visable
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.0');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+
+document.getElementById('symptom3InfoFemaleSyph').style.opacity = '1.0';
+
+}
+
+function symptomzoom4FemaleSyph(symptoms, texture1, texture2) {
+  // hide all
+  document.getElementById('Syphilis_Model_Female__MA_Female_skin').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__Female_Ulcers_texture_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Mouth_Ulcers_Sythilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__Female_Ulcers_Anus_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Female_headaches_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Foot_Rash_Syphilis_Famale').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Palm_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Neck_Glands_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__Female_Groin_Glands_syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Armpit_Glands_syphilis').setAttribute('transparency', '1.0');
+
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Main_colour').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Inner').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Lighter_Inner1').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Main_Darker').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_slices').setAttribute('transparency', '0.0');
+
+  document.getElementById('symptom1InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom2InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom3InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom4InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom5InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom6InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom7InfoFemaleSyph').style.opacity = '0.0';
+
+  // selected objects visable
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.0');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+
+
+document.getElementById('symptom4InfoFemaleSyph').style.opacity = '1.0';
+
+}
+
+function symptomzoom5FemaleSyph(symptoms, texture1, texture2 , texture3, texture4, texture5, texture6, texture7) {
+  // hide all
+  document.getElementById('Syphilis_Model_Female__MA_Female_skin').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__Female_Ulcers_texture_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Mouth_Ulcers_Sythilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__Female_Ulcers_Anus_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Female_headaches_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Foot_Rash_Syphilis_Famale').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Palm_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Neck_Glands_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__Female_Groin_Glands_syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Armpit_Glands_syphilis').setAttribute('transparency', '1.0');
+
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Main_colour').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Inner').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Lighter_Inner1').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Main_Darker').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_slices').setAttribute('transparency', '0.0');
+
+  document.getElementById('symptom1InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom2InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom3InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom4InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom5InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom6InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom7InfoFemaleSyph').style.opacity = '0.0';
+
+  // selected objects visable
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.7');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+
+document.getElementById(texture3).setAttribute('transparency', '0.7');
+document.getElementById(texture4).setAttribute('transparency', '0.7');
+document.getElementById(texture5).setAttribute('transparency', '0.7');
+document.getElementById(texture6).setAttribute('transparency', '0.7');
+document.getElementById(texture7).setAttribute('transparency', '0.7');
+
+
+document.getElementById('symptom5InfoFemaleSyph').style.opacity = '1.0';
+
+
+}
+
+function symptomzoom6FemaleSyph(symptoms, texture1, texture2) {
+  // hide al
+  document.getElementById('Syphilis_Model_Female__MA_Female_skin').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__Female_Ulcers_texture_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Mouth_Ulcers_Sythilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__Female_Ulcers_Anus_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Female_headaches_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Foot_Rash_Syphilis_Famale').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Palm_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Neck_Glands_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__Female_Groin_Glands_syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Armpit_Glands_syphilis').setAttribute('transparency', '1.0');
+
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Main_colour').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Inner').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Lighter_Inner1').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Main_Darker').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_slices').setAttribute('transparency', '0.0');
+
+  document.getElementById('symptom1InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom2InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom3InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom4InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom5InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom6InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom7InfoFemaleSyph').style.opacity = '0.0';
+
+  // selected objects visable
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.7');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+
+
+document.getElementById('symptom6InfoFemaleSyph').style.opacity = '1.0';
+
+}
+
+function symptomzoom7FemaleSyph(symptoms, texture1, texture2, texture3, texture4, texture5, texture6, texture7, texture8, texture9) {
+  // hide al
+  document.getElementById('Syphilis_Model_Female__MA_Female_skin').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__Female_Ulcers_texture_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Mouth_Ulcers_Sythilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__Female_Ulcers_Anus_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Female_headaches_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Foot_Rash_Syphilis_Famale').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Palm_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Neck_Glands_Syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__Female_Groin_Glands_syphilis').setAttribute('transparency', '1.0');
+  document.getElementById('Syphilis_Model_Female__MA_Armpit_Glands_syphilis').setAttribute('transparency', '1.0');
+
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Main_colour').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Inner').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Lighter_Inner1').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Main_Darker').setAttribute('transparency', '0.0');
+  document.getElementById('Syphilis_Model_Female__MA_Grapefruit_slices').setAttribute('transparency', '0.0');
+
+  document.getElementById('symptom1InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom2InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom3InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom4InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom5InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom6InfoFemaleSyph').style.opacity = '0.0';
+  document.getElementById('symptom7InfoFemaleSyph').style.opacity = '0.0';
+
+  // selected objects visable
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.7');
+document.getElementById(texture2).setAttribute('transparency', '0.0');
+document.getElementById(texture3).setAttribute('transparency', '0.0');
+document.getElementById(texture4).setAttribute('transparency', '0.0');
+document.getElementById(texture5).setAttribute('transparency', '0.7');
+document.getElementById(texture6).setAttribute('transparency', '0.7');
+document.getElementById(texture7).setAttribute('transparency', '0.7');
+document.getElementById(texture8).setAttribute('transparency', '0.7');
+document.getElementById(texture9).setAttribute('transparency', '0.7');
+
+
+
+document.getElementById('symptom7InfoFemaleSyph').style.opacity = '1.0';
+
+}
+
+function cameraChangeFemaleSyph(Camera) {
+document.getElementById(Camera).setAttribute('set_bind','true');
+document.getElementById('Syphilis_Model_Female__MA_Female_skin').setAttribute('transparency', '0.0');
+document.getElementById('Syphilis_Model_Female__Female_Ulcers_texture_Syphilis').setAttribute('transparency', '1.0');
+document.getElementById('Syphilis_Model_Female__MA_Mouth_Ulcers_Sythilis').setAttribute('transparency', '1.0');
+document.getElementById('Syphilis_Model_Female__Female_Ulcers_Anus_Syphilis').setAttribute('transparency', '1.0');
+document.getElementById('Syphilis_Model_Female__MA_Female_headaches_Syphilis').setAttribute('transparency', '1.0');
+document.getElementById('Syphilis_Model_Female__MA_Foot_Rash_Syphilis_Famale').setAttribute('transparency', '1.0');
+document.getElementById('Syphilis_Model_Female__MA_Palm_Syphilis').setAttribute('transparency', '1.0');
+document.getElementById('Syphilis_Model_Female__MA_Neck_Glands_Syphilis').setAttribute('transparency', '1.0');
+document.getElementById('Syphilis_Model_Female__Female_Groin_Glands_syphilis').setAttribute('transparency', '1.0');
+document.getElementById('Syphilis_Model_Female__MA_Armpit_Glands_syphilis').setAttribute('transparency', '1.0');
+
+document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Main_colour').setAttribute('transparency', '0.0');
+document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Inner').setAttribute('transparency', '0.0');
+document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Lighter_Inner1').setAttribute('transparency', '0.0');
+document.getElementById('Syphilis_Model_Female__MA_Grapefruit_04:Main_Darker').setAttribute('transparency', '0.0');
+document.getElementById('Syphilis_Model_Female__MA_Grapefruit_slices').setAttribute('transparency', '0.0');
+
+document.getElementById('symptom1InfoFemaleSyph').style.opacity = '0.0';
+document.getElementById('symptom2InfoFemaleSyph').style.opacity = '0.0';
+document.getElementById('symptom3InfoFemaleSyph').style.opacity = '0.0';
+document.getElementById('symptom4InfoFemaleSyph').style.opacity = '0.0';
+document.getElementById('symptom5InfoFemaleSyph').style.opacity = '0.0';
+document.getElementById('symptom6InfoFemaleSyph').style.opacity = '0.0';
+document.getElementById('symptom7InfoFemaleSyph').style.opacity = '0.0';
+
+$( "#symptom1SyphMAN" ).removeClass( "disableItemSelect" );
+$( "#symptom2SyphMAN" ).removeClass( "disableItemSelect" );
+$( "#symptom3SyphMAN" ).removeClass( "disableItemSelect" );
+$( "#symptom4SyphMAN" ).removeClass( "disableItemSelect" );
+$( "#symptom5SyphMAN" ).removeClass( "disableItemSelect" );
+$( "#symptom6SyphMAN" ).removeClass( "disableItemSelect" );
+$( "#symptom7SyphMAN" ).removeClass( "disableItemSelect" );
+
+}
+
+//function ChlamydiaName(){
+//document.getElementById('Syphilis_Model_Female__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
+//document.getElementById('Syphilis_Model_Female__MA_typeBlinn1').setAttribute('transparency', '0.0');
+//}
+
+</script>
+</template>

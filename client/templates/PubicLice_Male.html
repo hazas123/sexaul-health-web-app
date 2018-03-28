@@ -1,14 +1,20 @@
 <template name="PubicLiceMale">
 
 <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
-  <div class="STIMainHoldPubLi row">
+<div class="row compatabilityStyling">
+<div class="siteInformationSTIs row">
+  <h1>Pubic Lice  </h1>
 
-      <div class="w-50 col ">
+<!--<p>Sexual Health information and services</p> -->
+</div>
+<div class="STIMainHold row">
 
-        <div class="ReturnOptions">
-          <div id="closeSTIMalePubLi">Close STI</div>
-        </div>
-        <div  class="x3d_scene">
+    <div class="col ">
+
+      <div class="ReturnOptions">
+        <div id="closeSTIMale">Close STI</div>
+      </div>
+      <div  class="x3d_scene">
 
         <x3d width='400px' height='600px'>
           <scene>
@@ -23,7 +29,7 @@
                 <Viewpoint id="symptomAreaZoomMANPubLi" position="-0.00427 0.85329 -0.39608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
 
               <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
-                <Transform><inline  nameSpaceName="PubicLice_ModelMan" mapDEFToID="true" url="./STI_Models_Male/Pubic_Lice_Male_Man_03.x3d"  ></inline></Transform>
+                <Transform><inline  nameSpaceName="PubicLice_ModelMan" mapDEFToID="true" url="./STI_Models_Male/Pubic_Lice_Male.x3d"  ></inline></Transform>
 
 
 
@@ -41,7 +47,7 @@
           <div class="colArt">
 
 
-<div class="ButtonStylingSTI STISmallHeading">Genital Warts</div>
+<div class="ButtonStylingSTI STISmallHeading">Pubic Lice</div>
       <div class="ButtonStylingSTIHolder">
           <div class="row">
               <div class="ButtonStylingSTI " id="symptom1PubLiMAN" onclick="symptomzoom1MANPubLi('symptomAreaMANPubLi', 'PubicLice_ModelMan__MA_Eggs_Pubic_Lice', 'PubicLice_ModelMan__MA_Pubic_Lice', 'PubicLice_ModelMan__MA_Closer_Look_Texture_PL', 'PubicLice_ModelMan__MA_Closer_Look_Block' )">Symptom 1</div>
@@ -70,17 +76,18 @@
         </div>
       </div>
 
-      </div>  </div>
+      </div>
+      <div class="ColBot">
+        <div class="ButtonStylingSTI STISmallHeading">Treatment</div>
+        <div class="treatmentInfo">
+          CHANGE ME
+        </div>
 
-
-
-
+      </div>
+      </div>
 
 </div>
-<div class="ChoiceholdBackSTI">
-
 </div>
-
 
 <script type="text/javascript">
 
@@ -90,74 +97,71 @@ document.getElementById('symptomAreaZoomMANPubLi').setAttribute('set_bind','true
 }
 
 function symptomzoom1MANPubLi(symptoms, texture1, texture2, texture3, texture4) {
+  // reset
+  PLReset();
+  // Selected symptom
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 document.getElementById(texture3).setAttribute('transparency', '1.0');
 document.getElementById(texture4).setAttribute('transparency', '1.0');
 
-document.getElementById('symptom1InfoMANPubLi').style.height = '400px';
+
 document.getElementById('symptom1InfoMANPubLi').style.opacity = '1.0';
-$( "#symptom2PubLiMAN" ).addClass( "disableItemSelect" );
-$( "#symptom3PubLiMAN" ).addClass( "disableItemSelect" );
+
 }
 
 function symptomzoom2MANPubLi(symptoms, texture1, texture2) {
-
+  // reset
+PLReset();
+  // Selected symptom
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.7');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 
-document.getElementById('symptom2InfoMANPubLi').style.height = '400px';
+
 document.getElementById('symptom2InfoMANPubLi').style.opacity = '1.0';
-$( "#symptom1PubLiMAN" ).addClass( "disableItemSelect" );
-$( "#symptom3PubLiMAN" ).addClass( "disableItemSelect" );
+
 }
 
 function symptomzoom3MANPubLi(symptoms, texture1, texture2) {
-
+// reset
+PLReset();
+// Selected symptom
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.7');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 
 
-document.getElementById('symptom2InfoMANPubLi').style.height = '400px';
-document.getElementById('symptom2InfoMANPubLi').style.opacity = '1.0';
-$( "#symptom1PubLiMAN" ).addClass( "disableItemSelect" );
-$( "#symptom2PubLiMAN" ).addClass( "disableItemSelect" );
+
+document.getElementById('symptom3InfoMANPubLi').style.opacity = '1.0';
+
 }
 
 
 function cameraChangeMANPubLi(Camera) {
 document.getElementById(Camera).setAttribute('set_bind','true');
-document.getElementById('PubicLice_ModelMan__MA_Man_Skin_Texture_PubicLice').setAttribute('transparency', '0.0');
-document.getElementById('PubicLice_ModelMan__MA_Eggs_Pubic_Lice').setAttribute('transparency', '1.0');
-document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice').setAttribute('transparency', '1.0');
-document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Texture_PL').setAttribute('transparency', '1.0');
-document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Block').setAttribute('transparency', '1.0');
-document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice_ArmPit_Area').setAttribute('transparency', '1.0');
-document.getElementById('PubicLice_ModelMan__MA_Beard_PL_Texture').setAttribute('transparency', '1.0');
-
-$( "#symptom1PubLiMAN" ).removeClass( "disableItemSelect" );
-$( "#symptom2PubLiMAN" ).removeClass( "disableItemSelect" );
-$( "#symptom3PubLiMAN" ).removeClass( "disableItemSelect" );
-document.getElementById('symptom1InfoMANPubLi').style.height = '60px';
-document.getElementById('symptom2InfoMANPubLi').style.height = '60px';
-document.getElementById('symptom3InfoMANPubLi').style.height = '60px';
-document.getElementById('symptom1InfoMANPubLi').style.opacity = '0.0';
-document.getElementById('symptom2InfoMANPubLi').style.opacity = '0.0';
-document.getElementById('symptom3InfoMANPubLi').style.opacity = '0.0';
+PLReset();
 }
 
-//function ChlamydiaName(){
-//document.getElementById('PubicLice_ModelMan__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
-//document.getElementById('PubicLice_ModelMan__MA_typeBlinn1').setAttribute('transparency', '0.0');
-//}
-function symptom1MAN(){
-document.getElementById('PubicLice_ModelMan__MA_Pain_when').setAttribute('transparency', '0.0');
-document.getElementById('PubicLice_ModelMan__MA_Pain_when').setAttribute('diffuseColor', '1.000 1.000 1.000');
-document.getElementById('PubicLice_ModelMan__MA_Red').setAttribute('diffuseColor', '1.000 0.000 0.022');
+function PLReset(){
+  document.getElementById('PubicLice_ModelMan__MA_Man_Skin_Texture_PubicLice').setAttribute('transparency', '0.0');
+  document.getElementById('PubicLice_ModelMan__MA_Eggs_Pubic_Lice').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Texture_PL').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Closer_Look_Block').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Pubic_Lice_ArmPit_Area').setAttribute('transparency', '1.0');
+  document.getElementById('PubicLice_ModelMan__MA_Beard_PL_Texture').setAttribute('transparency', '1.0');
+
+  $( "#symptom1PubLiMAN" ).removeClass( "disableItemSelect" );
+  $( "#symptom2PubLiMAN" ).removeClass( "disableItemSelect" );
+  $( "#symptom3PubLiMAN" ).removeClass( "disableItemSelect" );
+
+  document.getElementById('symptom1InfoMANPubLi').style.opacity = '0.0';
+  document.getElementById('symptom2InfoMANPubLi').style.opacity = '0.0';
+  document.getElementById('symptom3InfoMANPubLi').style.opacity = '0.0';
 }
+
 
 </script>
 </template>

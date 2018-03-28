@@ -29,7 +29,7 @@
     background: #1ddced;
     border-radius: 5px;
     color: #fff;
-    font-size: 9px;
+    font-size: 20px;
 }
 
 .reply .chat-message {
@@ -83,14 +83,48 @@
  border-radius: 3px;
  box-shadow: 0 3px 0 #f04d25;
  cursor: pointer;
-
-
+ 
  -webkit-transition: background .2s ease;
  -moz-transition: background .2s ease;
  -o-transition: background .2s ease;
-
 }
 
 chat-form button:hover {
   background: #13c8d9;
 }
+
+.validation{
+  position: absolute;
+  bottom: 40px;
+  left:0px;
+  color:#aa2323;
+  font-size:1em;
+  visibility: hidden;
+}
+
+.errorValidation{
+  $borderColor: lighten(#aa2323, 40%);
+  border: solid 3px $borderColor !important;
+}
+
+// wrapper2 {
+//   $color:#aa2323;
+//   $borderColor:lighten($color, 40%);
+//
+//   border:solid 3px $borderColor;
+//   @include border-radius(3px);
+//
+//   .input{
+//     border:solid 1px darken($borderColor, 10%);
+//     height:30px;
+//     line-height:30px;
+//     @include box-shadow(inset 0 3px 6px rgba(150,150,150,.2));
+//   }
+//   .validation{
+//     position: absolute;
+//     top: 35px;
+//     left:0px;
+//     color:$color;
+//     font-size:12px;
+//   }
+// }

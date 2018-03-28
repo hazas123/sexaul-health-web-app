@@ -1,0 +1,184 @@
+<template name="OtherOptions">
+<div class="row compatabilityStyling">
+
+
+
+
+<div class="row">
+
+
+<!-- <div id="ReselectChoices" class="col-2">
+<img src="./Logo/Logo_Normal.png"  alt="Logo"/>
+
+
+</div> -->
+<div class="AvaliableOptions" >
+<div id="OtherOptionsSelected">
+  <h1>Salus - Other</h1>
+</div>
+
+<div class="FilterOptionsAvaliable">
+
+  <button id="All_Show" class="btn holdbtn">All Options</button>
+  <button id="STIStyling" class="btn holdbtn">STI</button>
+  <button id="MythStyling" class="btn holdbtn">Myths</button>
+  <button id="hygiene" class="btn holdbtn">hygiene</button>
+  <button id="Contraception" class="btn holdbtn">Contraception</button>
+
+</div>
+<div class="row whiteB" id="parent">
+  <button class="col-5 itemOpt STIStyling All_Show" id="FemaleChlamydiaOPTI" >
+    Chlamydia
+    <p><!-- Female --> &#9792;</p>
+</button>
+
+<button class="col-5 itemOpt STIStyling All_Show" id='FemaleGenitalWartsOPTI'>
+    Genital Warts
+    <p><!-- Female --> &#9792;</p>
+</button>
+
+<button class="col-5 itemOpt STIStyling All_Show" id="FemaleGenitalHerpesOPTI" >
+    Genital Herpes
+    <p><!-- Female --> &#9792;</p>
+</button>
+
+<button class="col-5 itemOpt STIStyling All_Show" id="FemaleGonorrhoeaOPTI" >
+    Gonorrhoea
+    <p><!-- Female --> &#9792;</p>
+</button>
+
+<button class="col-5 itemOpt STIStyling All_Show" id="FemaleSyphilisOPTI" >
+  Syphilis
+  <p><!-- Female --> &#9792;</p>
+</button>
+
+<button class="col-5 itemOpt STIStyling All_Show" id="FemalePubicLiceOPTI" >
+    Pubic Lice
+    <p><!-- Female --> &#9792;</p>
+</button>
+
+<button class="col-5 itemOpt STIStyling All_Show" id="FemaleScabiesOPTI" >
+    Scabies
+    <p><!-- Female --> &#9792;</p>
+</button>
+
+<button class="col-5 itemOpt STIStyling All_Show" id="FemaleHIVOPTI" >
+    HIV
+    <p><!-- Female --> &#9792;</p>
+</button>
+
+<button class="col-5 itemOpt MythStyling All_Show" id="MythsOPTI" >
+    Sexual Myths
+</button>
+
+<button class="col-5 itemOpt hygiene All_Show" id="DoucheOPTI" >
+    Douche
+</button>
+
+<button class="col-5 itemOpt hygiene All_Show" id="TamponOPTI" >
+    Tampon
+</button>
+
+<button class="col-5 itemOpt Contraception All_Show" id="CondomOPTI" >
+    Condom
+</button>
+
+<button class="col-5 itemOpt Contraception All_Show" id="implantOPTI" >
+    implant
+</button>
+
+
+  <button class="col-5 itemOpt STIStyling All_Show" id="MaleChlamydiaOPTI"  >
+       Chlamydia
+      <p><!--Male-->  &#9794;</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling All_Show" id='MaleGenitalWartsOPTI'>
+      Genital Warts
+      <p><!--Male-->  &#9794;</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling All_Show" id="MaleGenitalHerpesOPTI"  >
+      Genital Herpes
+      <p><!--Male-->  &#9794;</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling All_Show" id="MaleGonorrhoeaOPTI"  >
+      Gonorrhoea
+      <p><!--Male-->  &#9794;</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling All_Show" id="MaleSyphilisOPTI"  >
+     Syphilis
+     <p><!--Male-->  &#9794;</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling All_Show" id="MalePubicLiceOPTI"  >
+      Pubic Lice
+      <p><!--Male-->  &#9794;</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling All_Show" id="MaleScabiesOPTI"  >
+      Scabies
+      <p><!--Male-->  &#9794;</p>
+  </button>
+
+  <button class="col-5 itemOpt STIStyling All_Show" id="MaleHIVOPTI"  >
+      HIV
+      <p><!--Male-->  &#9794;</p>
+  </button>
+
+
+
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+</div>
+
+
+<script >
+
+
+
+  var $btns = $('.btn').click(function() {
+    console.log('clicked');
+    console.log(this.id);
+    if (this.id == 'all') {
+      console.log('all');
+      $('#parent > button').fadeIn(450);
+    } else {
+      console.log('else');
+      var $el = $('.' + this.id).fadeIn(450);
+      $('#parent > button').not($el).hide();
+    }
+    $btns.removeClass('active');
+    $(this).addClass('active');
+  })
+
+
+// ask james
+$('.holdbtn').click(function() {
+
+  $('.itemOpt').sort(function(a, b) {
+    if (a.textContent < b.textContent) {
+      return -1;
+    } else {
+      return 1;
+    }
+  }).appendTo('#parent');
+})
+</script>
+
+
+
+
+
+
+</template>

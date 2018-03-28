@@ -84,3 +84,10 @@ Template.buttonTest.events({
     $('.' + event.target.id).toggleClass('mainentityofpage')
   }
 })
+
+Template.MenuMain.events({
+    /*
+  'click #toggle': function (event) {
+    $('#page-slide').toggleClass('slide')
+    $('#toggle').toggleClass('slide-tog')
+  } */

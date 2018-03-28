@@ -1,0 +1,186 @@
+<template name="HIVFemale">
+
+  <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
+<div class="row compatabilityStyling">
+  <div class="siteInformationSTIs row">
+    <h1>Female HIV </h1>
+
+  <!--<p>Sexual Health information and services</p> -->
+  </div>
+  <div class="STIMainHold row">
+
+      <div class="w-50 col ">
+
+        <div class="ReturnOptions">
+          <div class="closeSTIFemale">Close STI</div>
+        </div>
+        <div  class="x3d_scene">
+
+
+          <x3d width='400px' height='600px'  >
+            <scene>
+              <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
+                  <viewpoint position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+                  <viewpoint id="Reset" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+                  <Viewpoint id="front" position="-0.07427 0.95329 -2.79608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera"></Viewpoint>
+                  <Viewpoint id="right" position="-2.43383 1.07351 -1.28700" orientation="-0.00318 -0.99950 -0.03159 2.06609" description="camera"></Viewpoint>
+
+                  <viewpoint id="SymptomUnmove" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+
+                  <Viewpoint id="symptomAreaFemaleHIV" position="-0.00427 0.85329 -0.69608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+                  <Viewpoint id="symptomAreaFemaleHIVFever" position="-0.00427 1.65329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+                  <Viewpoint id="symptomAreaFemaleHIVThroat" position="-0.00427 1.52329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+                  <Viewpoint id="symptomAreaFemaleHIVChest" position="-0.00427 1.45329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+
+
+                <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
+                  <Transform><inline  nameSpaceName="FemaleModelWoman" mapDEFToID="true" url="./STI_Models_Female/Female_HIV.x3d"  ></inline></Transform>
+              </scene>
+            </x3d>
+
+      </div>
+    </div>
+      <div class=" col ">
+        <div class="colArt">
+
+
+<div class="ButtonStylingSTI STISmallHeading">HIV</div>
+    <div class="ButtonStylingSTIHolder">
+          <div class="row">
+
+
+            <div class="ButtonStylingSTI " id="symptom1HIV" onclick="symptomzoom1('SymptomUnmove', 'FemaleModelWoman__MA_Female_skin', 'FemaleModelWoman__MA_HIV_Glands')">Symptom 1</div>
+            <div class="ButtonStylingSTI " id="symptom2HIV" onclick="symptomzoom2('symptomAreaFemaleHIVFever', 'FemaleModelWoman__MA_Female_skin', 'FemaleModelWoman__MA_Fever_HIV_Female')">Symptom 2</div>
+            <div class="ButtonStylingSTI " id="symptom3HIV" onclick="symptomzoom3('symptomAreaFemaleHIVThroat', 'FemaleModelWoman__MA_Female_skin', 'FemaleModelWoman__MA_Throat_HIV')">Symptom 3</div>
+            <div class="ButtonStylingSTI " id="symptom4HIV" onclick="symptomzoom4('symptomAreaFemaleHIVChest', 'FemaleModelWoman__MA_Female_skin', 'FemaleModelWoman__MA_HIV_body_Rash_female')">Symptom 4</div>
+
+            <div class="ButtonStylingSTI" onclick="cameraChange('Reset')" >Reset</div>
+
+            </div>
+          </div>
+
+
+
+
+
+      <div class="row STIsymptomInfoBoxMove">
+        <div class="STIsymptomInfoBox" id="symptom1HIVInfo">
+          <h1>Symptom 1</h1>
+          <p>Swelling of the glands</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom2HIVInfo">
+          <h1>Symptom 2</h1>
+          <p>Flu-like sympotms such as a fever</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom3HIVInfo">
+          <h1>Symptom 3</h1>
+          <p>A sore throat</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom4HIVInfo">
+          <h1>Symptom 4</h1>
+          <p>A rash that can appear across the whole body</p>
+        </div>
+
+
+      </div>
+
+      </div>
+
+    <div class="ColBot">
+      <div class="ButtonStylingSTI STISmallHeading">Treatment</div>
+      <div class="treatmentInfo">
+        CHANGE ME
+      </div>
+
+    </div>
+    </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+
+
+      function symptomzoom1(symptoms, texture1, texture2) {
+      document.getElementById(symptoms).setAttribute('set_bind','true');
+      document.getElementById(texture1).setAttribute('transparency', '0.7');
+      document.getElementById(texture2).setAttribute('transparency', '0.0');
+
+
+      document.getElementById('symptom1HIVInfo').style.height = '400px';
+      document.getElementById('symptom1HIVInfo').style.opacity = '1.0';
+      $( "#symptom2HIV" ).addClass( "disableItemSelect" );
+      $( "#symptom3HIV" ).addClass( "disableItemSelect" );
+      $( "#symptom4HIV" ).addClass( "disableItemSelect" );
+      }
+
+      function symptomzoom2(symptoms, texture1, texture2) {
+
+      document.getElementById(symptoms).setAttribute('set_bind','true');
+      document.getElementById(texture1).setAttribute('transparency', '0.7');
+      document.getElementById(texture2).setAttribute('transparency', '0.0');
+
+      document.getElementById('symptom2HIVInfo').style.height = '400px';
+      document.getElementById('symptom2HIVInfo').style.opacity = '1.0';
+      $( "#symptom1HIV" ).addClass( "disableItemSelect" );
+      $( "#symptom3HIV" ).addClass( "disableItemSelect" );
+      $( "#symptom4HIV" ).addClass( "disableItemSelect" );
+      }
+
+      function symptomzoom3 (symptoms, texture1, texture2){
+        document.getElementById(symptoms).setAttribute('set_bind','true');
+        document.getElementById(texture1).setAttribute('transparency', '0.7');
+        document.getElementById(texture2).setAttribute('transparency', '0.0');
+
+        document.getElementById('symptom3HIVInfo').style.height = '400px';
+        document.getElementById('symptom3HIVInfo').style.opacity = '1.0';
+        $( "#symptom2HIV" ).addClass( "disableItemSelect" );
+        $( "#symptom1HIV" ).addClass( "disableItemSelect" );
+        $( "#symptom4HIV" ).addClass( "disableItemSelect" );
+
+      }
+
+      function symptomzoom4 (symptoms, texture1, texture2){
+        document.getElementById(symptoms).setAttribute('set_bind','true');
+        document.getElementById(texture1).setAttribute('transparency', '0.5');
+        document.getElementById(texture2).setAttribute('transparency', '0.0');
+
+        document.getElementById('symptom4HIVInfo').style.height = '400px';
+        document.getElementById('symptom4HIVInfo').style.opacity = '1.0';
+        $( "#symptom3HIV" ).addClass( "disableItemSelect" );
+        $( "#symptom2HIV" ).addClass( "disableItemSelect" );
+        $( "#symptom1HIV" ).addClass( "disableItemSelect" );
+      }
+
+
+
+
+
+      function cameraChange(Camera) {
+      document.getElementById(Camera).setAttribute('set_bind','true');
+      document.getElementById('FemaleModelWoman__MA_Female_skin').setAttribute('transparency', '0.0');
+      document.getElementById('FemaleModelWoman__MA_HIV_Glands').setAttribute('transparency', '1.0');
+      document.getElementById('FemaleModelWoman__MA_Fever_HIV_Female').setAttribute('transparency', '1.0');
+      document.getElementById('FemaleModelWoman__MA_Throat_HIV').setAttribute('transparency', '1.0');
+      document.getElementById('FemaleModelWoman__MA_HIV_body_Rash_female').setAttribute('transparency', '1.0');
+
+      $( "#symptom1HIV" ).removeClass( "disableItemSelect" );
+      $( "#symptom2HIV" ).removeClass( "disableItemSelect" );
+      $( "#symptom3HIV" ).removeClass( "disableItemSelect" );
+      $( "#symptom4HIV" ).removeClass( "disableItemSelect" );
+
+      document.getElementById('symptom1HIVInfo').style.height = '60px';
+      document.getElementById('symptom2HIVInfo').style.height = '60px';
+      document.getElementById('symptom3HIVInfo').style.height = '60px';
+      document.getElementById('symptom4HIVInfo').style.height = '60px';
+      document.getElementById('symptom1HIVInfo').style.opacity = '0.0';
+      document.getElementById('symptom2HIVInfo').style.opacity = '0.0';
+      document.getElementById('symptom3HIVInfo').style.opacity = '0.0';
+      document.getElementById('symptom4HIVInfo').style.opacity = '0.0';
+
+      }
+
+
+      </script>
+
+</template>

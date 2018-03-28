@@ -1,0 +1,173 @@
+<template name="GenialWartsFemale">
+
+<script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
+<div class="row compatabilityStyling">
+<div class="siteInformationSTIs row">
+  <h1>Female Genital Warts </h1>
+
+<!--<p>Sexual Health information and services</p> -->
+</div>
+<div class="STIMainHold row">
+
+    <div class="w-50 col ">
+
+      <div class="ReturnOptions">
+        <div class="closeSTIFemale">Close STI</div>
+      </div>
+      <div  class="x3d_scene">
+
+
+        <x3d width='400px' height='600px'>
+          <scene>
+            <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
+                <viewpoint position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+                <viewpoint id="ResetFemaleGW" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+                <Viewpoint id="frontFemaleGW" position="-0.07427 0.95329 -2.79608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera"></Viewpoint>
+                <Viewpoint id="rightFemaleGW" position="-2.43383 1.07351 -1.28700" orientation="-0.00318 -0.99950 -0.03159 2.06609" description="camera"></Viewpoint>
+
+                <Viewpoint id="symptomAreaFemaleGW" position="-0.00427 0.85329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+                <Viewpoint id="symptomAreaFemaleGWAnal" position="-0.0000 0.85329 0.39608" orientation="-0.01451 0.99989 0.00319 0.0" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+              <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
+                <Transform><inline  nameSpaceName="Genital_WartsModelMan" mapDEFToID="true" url="./STI_Models_Female/Female_Genital_Warts.x3d"  ></inline></Transform>
+
+
+
+
+
+
+            </scene>
+
+          </x3d>
+
+                          </div>
+                        </div>
+                          <div class=" col ">
+                            <div class="colArt">
+
+
+<div class="ButtonStylingSTI STISmallHeading">Genital Warts</div>
+      <div class="ButtonStylingSTIHolder">
+          <div class="row">
+              <div class="ButtonStylingSTI " id="symptom1GWMAN" onclick="symptomzoom1FemaleGW('symptomAreaFemaleGW', 'Genital_WartsModelMan__MA_GW_Skin_Change_Texture_Woman' )">Symptom 1</div>
+              <div class="ButtonStylingSTI " id="symptom2GWMAN" onclick="symptomzoom2FemaleGW('symptomAreaFemaleGW', 'Genital_WartsModelMan__GW_Lumps_Bumps_Texture_Female')">Symptom 2</div>
+              <div class="ButtonStylingSTI " id="symptom2GWMAN" onclick="symptomzoom3FemaleGW('symptomAreaFemaleGWAnal', 'Genital_WartsModelMan__MA_Genital_Warts_F_Anal_GW')">Symptom 3</div>
+
+              <div class="ButtonStylingSTI " onclick="cameraChangeFemaleGW('ResetFemaleGW')" >Reset</div>
+
+            </div>
+          </div>
+
+
+      <div class="row STIsymptomInfoBoxMove">
+        <div class="STIsymptomInfoBox" id="symptom1InfoFemaleGW">
+          <h1>Symptom 1</h1>
+          <p>Skin changes - may be painless however itching or redness may occur </p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom2InfoFemaleGW">
+          <h1>Symptom 2</h1>
+          <p>Fleshy growths or bumps</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom3InfoFemaleGW">
+          <h1>Symptom 3</h1>
+          <p>bumps</p>
+        </div>
+      </div>
+
+      </div>
+      <div class="ColBot">
+        <div class="ButtonStylingSTI STISmallHeading">Treatment</div>
+        <div class="treatmentInfo">
+          Genital Warts can be treated through the use of
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+</div></div>
+
+
+
+<script type="text/javascript">
+
+function symptomzoom1FemaleGW(symptoms, texture1) {
+  document.getElementById('Genital_WartsModelMan__MA_GW_Skin_Change_Texture_Woman').setAttribute('transparency', '1.0');
+  document.getElementById('Genital_WartsModelMan__GW_Lumps_Bumps_Texture_Female').setAttribute('transparency', '1.0');
+  document.getElementById('Genital_WartsModelMan__MA_Genital_Warts_F_Anal_GW').setAttribute('transparency', '1.0');
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.0');
+
+
+document.getElementById('symptom2InfoFemaleGW').style.opacity = '0.0';
+document.getElementById('symptom3InfoFemaleGW').style.opacity = '0.0';
+
+document.getElementById('symptom1InfoFemaleGW').style.height = '400px';
+document.getElementById('symptom1InfoFemaleGW').style.opacity = '1.0';
+//$( "#symptom2GWMAN" ).addClass( "disableItemSelect" );
+}
+
+function symptomzoom2FemaleGW(symptoms, texture1) {
+  document.getElementById('Genital_WartsModelMan__MA_GW_Skin_Change_Texture_Woman').setAttribute('transparency', '1.0');
+  document.getElementById('Genital_WartsModelMan__GW_Lumps_Bumps_Texture_Female').setAttribute('transparency', '1.0');
+  document.getElementById('Genital_WartsModelMan__MA_Genital_Warts_F_Anal_GW').setAttribute('transparency', '1.0');
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.0');
+
+document.getElementById('symptom1InfoFemaleGW').style.opacity = '0.0';
+
+document.getElementById('symptom3InfoFemaleGW').style.opacity = '0.0';
+
+document.getElementById('symptom2InfoFemaleGW').style.height = '400px';
+document.getElementById('symptom2InfoFemaleGW').style.opacity = '1.0';
+//$( "#symptom1GWMAN" ).addClass( "disableItemSelect" );
+}
+
+function symptomzoom3FemaleGW(symptoms, texture1) {
+  document.getElementById('Genital_WartsModelMan__MA_GW_Skin_Change_Texture_Woman').setAttribute('transparency', '1.0');
+  document.getElementById('Genital_WartsModelMan__GW_Lumps_Bumps_Texture_Female').setAttribute('transparency', '1.0');
+  document.getElementById('Genital_WartsModelMan__MA_Genital_Warts_F_Anal_GW').setAttribute('transparency', '1.0');
+document.getElementById(symptoms).setAttribute('set_bind','true');
+document.getElementById(texture1).setAttribute('transparency', '0.0');
+
+
+document.getElementById('symptom1InfoFemaleGW').style.opacity = '0.0';
+
+document.getElementById('symptom2InfoFemaleGW').style.opacity = '0.0';
+
+document.getElementById('symptom3InfoFemaleGW').style.height = '400px';
+document.getElementById('symptom3InfoFemaleGW').style.opacity = '1.0';
+//$( "#symptom1GWMAN" ).addClass( "disableItemSelect" );
+}
+
+
+function cameraChangeFemaleGW(Camera) {
+document.getElementById(Camera).setAttribute('set_bind','true');
+document.getElementById('Genital_WartsModelMan__MA_GW_Skin_Change_Texture_Woman').setAttribute('transparency', '1.0');
+document.getElementById('Genital_WartsModelMan__GW_Lumps_Bumps_Texture_Female').setAttribute('transparency', '1.0');
+document.getElementById('Genital_WartsModelMan__MA_Genital_Warts_F_Anal_GW').setAttribute('transparency', '1.0');
+
+
+
+
+
+$( "#symptom1GWMAN" ).removeClass( "disableItemSelect" );
+$( "#symptom2GWMAN" ).removeClass( "disableItemSelect" );
+document.getElementById('symptom1InfoFemaleGW').style.height = '60px';
+document.getElementById('symptom2InfoFemaleGW').style.height = '60px';
+
+document.getElementById('symptom3InfoFemaleGW').style.height = '60px';
+
+
+document.getElementById('symptom1InfoFemaleGW').style.opacity = '0.0';
+document.getElementById('symptom2InfoFemaleGW').style.opacity = '0.0';
+document.getElementById('symptom3InfoFemaleGW').style.opacity = '0.0';
+}
+
+</script>
+</template>

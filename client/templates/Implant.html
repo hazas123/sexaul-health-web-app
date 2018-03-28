@@ -1,0 +1,146 @@
+<template name="Implant">
+
+  <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
+<div class="row compatabilityStyling">
+  <div class="siteInformationSTIs row">
+    <h1>Implant</h1>
+
+  <!--<p>Sexual Health information and services</p> -->
+  </div>
+  <div class="HygieneHold row">
+
+      <div class="w-50 col ">
+
+        <div class="ReturnOptions">
+          <div class="closeContaception">Return</div>
+        </div>
+        <div  class="x3d_sceneHygine">
+
+
+          <x3d width='600px' height='300px'  >
+            <scene>
+              <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
+                 <viewpoint position="-0.2005 1.2000 -1.59608"  orientation='-0.000 1.0 0.00219 3.2' centerOfRotation="-0.2005 1.0000 -0.29608"></viewpoint>
+                <!--  <viewpoint position="-0.1305 1.2500 -0.0443"  orientation='0.00318 3.99950 0.03159 2.06609' centerOfRotation="-0.2005 1.2200 -0.0023"></viewpoint> -->
+
+                  <viewpoint id="Reset" position="-0.2005 1.2000 -1.59608"  orientation='-0.000 1.0 0.00219 3.2' centerOfRotation="-0.2005 1.0000 -0.29608"></viewpoint>
+                  <Viewpoint id="front" position="-0.07427 0.95329 -2.79608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera"></Viewpoint>
+                  <Viewpoint id="right" position="-2.43383 1.07351 -1.28700" orientation="-0.00318 -0.99950 -0.03159 2.06609" description="camera"></Viewpoint>
+
+                  <viewpoint id="Implant_Area" position="-0.1305 1.2500 -0.0443"  orientation='0.00318 3.99950 0.03159 2.06609' centerOfRotation="-0.2005 1.2200 -0.0023"></viewpoint>
+
+                  <Viewpoint id="symptomAreaFemaleHIV" position="-0.00427 0.85329 -0.69608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+                  <Viewpoint id="symptomAreaFemaleHIVFever" position="-0.00427 1.65329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+                  <Viewpoint id="symptomAreaFemaleHIVThroat" position="-0.00427 1.52329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+                  <Viewpoint id="symptomAreaFemaleHIVChest" position="-0.00427 1.45329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
+
+
+                <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
+                  <Transform DEF='Cba'><inline  nameSpaceName="Implant" mapDEFToID="true" url="./Contraception/Implant_New.x3d"  ></inline></Transform>
+                  <!-- <Transform><inline  nameSpaceName="no" mapDEFToID="true" url="./Contraception/Implant/Implant_Secondary_01.x3d"  ></inline></Transform>
+                  <timeSensor DEF="time" cycleInterval="2" loop="true"></timeSensor>
+                  <PositionInterpolator DEF="move" key="0 0.5 1" keyValue="0 0 0  0 3 0  0 0 0"></PositionInterpolator>
+                  <Route fromNode="time" fromField ="fraction_changed" toNode="move" toField="set_fraction"></Route>
+                  <Route fromNode="move" fromField ="value_changed" toNode="Cba__model8_TRANSFORM" toField="translation"></Route> -->
+              </scene>
+            </x3d>
+
+      </div>
+      <div class="HygineButtonHolder">
+
+
+      <div class="ButtonStylingHygine HygineSmallHeading">Options</div>
+          <div class="ButtonStylingHygineHolder">
+                <div class="row">
+
+
+                  <!-- <div class="ButtonStylingSTI " id="symptom1HIV" onclick="symptomzoom1('SymptomUnmove', 'Implant__MA_Female_skin', 'Implant__MA_HIV_Glands')">Symptom 1</div>
+                  <div class="ButtonStylingSTI " id="symptom2HIV" onclick="symptomzoom2('symptomAreaFemaleHIVFever', 'Implant__MA_Female_skin', 'Implant__MA_Fever_HIV_Female')">Symptom 2</div>
+                  <div class="ButtonStylingSTI " id="symptom3HIV" onclick="symptomzoom3('symptomAreaFemaleHIVThroat', 'Implant__MA_Female_skin', 'Implant__MA_Throat_HIV')">Symptom 3</div>
+                  <div class="ButtonStylingSTI " id="symptom4HIV" onclick="symptomzoom4('symptomAreaFemaleHIVChest', 'Implant__MA_Female_skin', 'Implant__MA_HIV_body_Rash_female')">Symptom 4</div>
+
+                  <div class="ButtonStylingSTI" onclick="cameraChange('Reset')" >Reset</div> -->
+                  <div class="ButtonStylingSTI " id="symptom4HIV" onclick="ImplantAction('Implant_Area', 'Implant__MA_Female_skin', 'Implant__MA_Implant_Device', 'Implant__MA_Female_skin_Implant_arm')">Implant Area</div>
+
+                  <div class="ButtonStylingHygine" onclick="cameraChange('Reset')" >Reset</div>
+                  </div>
+                </div>
+    </div></div>
+      <div class="col">
+        <div class="colArtHygine">
+
+
+          <div class="ButtonStylingHygine HygineSmallHeading">Implant</div>
+              <div class="ButtonStylingHygineHolder">
+          <div class="row">
+
+            <p>
+              A Condom is...
+            </p>
+            </div>
+          </div>
+
+
+
+
+
+      <div class="row STIsymptomInfoBoxMove">
+        <div class="STIsymptomInfoBox" id="symptom1HIVInfo">
+          <h1>Symptom 1</h1>
+          <p>Swelling of the glands</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom2HIVInfo">
+          <h1>Symptom 2</h1>
+          <p>Flu-like sympotms such as a fever</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom3HIVInfo">
+          <h1>Symptom 3</h1>
+          <p>A sore throat</p>
+        </div>
+        <div class="STIsymptomInfoBox" id="symptom4HIVInfo">
+          <h1>Symptom 4</h1>
+          <p>A rash that can appear across the whole body</p>
+        </div>
+
+
+      </div>
+
+      </div>
+
+    <!-- <div class="ColBot">
+      <div class="ButtonStylingSTI STISmallHeading">Treatment</div>
+      <div class="treatmentInfo">
+        CHANGE ME
+      </div>
+
+    </div> -->
+    </div>
+</div></div>
+
+<script type="text/javascript">
+
+
+
+      function ImplantAction (Camera, texture1, texture2, texture3){
+      document.getElementById(Camera).setAttribute('set_bind','true');
+      document.getElementById(texture1).setAttribute('transparency', '0.6');
+      document.getElementById(texture2).setAttribute('transparency', '0.0');
+      document.getElementById(texture2).setAttribute('transparency', '0.0');
+      }
+
+
+
+
+      function cameraChange(Camera) {
+      document.getElementById(Camera).setAttribute('set_bind','true');
+
+      document.getElementById('Implant__MA_Female_skin').setAttribute('transparency', '0.0');
+      document.getElementById('Implant__MA_Implant_Device').setAttribute('transparency', '1.0');
+      document.getElementById('Implant__MA_Female_skin_Implant_arm').setAttribute('transparency', '0.0');
+
+      }
+
+
+      </script>
+
+</template>
