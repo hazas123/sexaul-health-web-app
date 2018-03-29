@@ -1,4 +1,4 @@
-<template name="GenialHerpesMale">
+<template name="GenitalHerpesMale">
 
 <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
 <div class="row compatabilityStyling">
@@ -89,48 +89,43 @@
 <script type="text/javascript">
 
 function symptomzoomMANGH(symptoms, texture1) {
+  ResetGHM();
+
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 
-document.getElementById('symptom1InfoMANGH').style.height = '400px';
+
 document.getElementById('symptom1InfoMANGH').style.opacity = '1.0';
-$( "#symptom2GHMAN" ).addClass( "disableItemSelect" );
+
 }
 
 function symptomzoom1MANGH(symptoms, texture1) {
+ResetGHM();
 
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 
-
-document.getElementById('symptom2InfoMANGH').style.height = '400px';
 document.getElementById('symptom2InfoMANGH').style.opacity = '1.0';
-$( "#symptom1GHMAN" ).addClass( "disableItemSelect" );
 }
 
 
 function cameraChangeMANGH(Camera) {
+  ResetGHM();
 document.getElementById(Camera).setAttribute('set_bind','true');
-document.getElementById('Genital_Herpes_Model_Man__MA_Man_Skin_TextureGH').setAttribute('transparency', '0.0');
-document.getElementById('Genital_Herpes_Model_Man__MA_Blister_Texture_GH').setAttribute('transparency', '1.0');
-document.getElementById('Genital_Herpes_Model_Man__MA_Anal_Blister_Texture_GH').setAttribute('transparency', '1.0');
 
-$( "#symptom1GHMAN" ).removeClass( "disableItemSelect" );
-$( "#symptom2GHMAN" ).removeClass( "disableItemSelect" );
-document.getElementById('symptom1InfoMANGH').style.height = '60px';
-document.getElementById('symptom2InfoMANGH').style.height = '60px';
-document.getElementById('symptom1InfoMANGH').style.opacity = '0.0';
-document.getElementById('symptom2InfoMANGH').style.opacity = '0.0';
 }
 
 //function ChlamydiaName(){
 //document.getElementById('Genital_Herpes_Model_Man__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
 //document.getElementById('Genital_Herpes_Model_Man__MA_typeBlinn1').setAttribute('transparency', '0.0');
 //}
-function symptom1MAN(){
-document.getElementById('Genital_Herpes_Model_Man__MA_Pain_when').setAttribute('transparency', '0.0');
-document.getElementById('Genital_Herpes_Model_Man__MA_Pain_when').setAttribute('diffuseColor', '1.000 1.000 1.000');
-document.getElementById('Genital_Herpes_Model_Man__MA_Red').setAttribute('diffuseColor', '1.000 0.000 0.022');
+function ResetGHM(){
+  document.getElementById('Genital_Herpes_Model_Man__MA_Man_Skin_TextureGH').setAttribute('transparency', '0.0');
+  document.getElementById('Genital_Herpes_Model_Man__MA_Blister_Texture_GH').setAttribute('transparency', '1.0');
+  document.getElementById('Genital_Herpes_Model_Man__MA_Anal_Blister_Texture_GH').setAttribute('transparency', '1.0');
+
+  document.getElementById('symptom1InfoMANGH').style.opacity = '0.0';
+  document.getElementById('symptom2InfoMANGH').style.opacity = '0.0';
 }
 
 </script>

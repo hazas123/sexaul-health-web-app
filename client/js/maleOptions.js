@@ -45,7 +45,7 @@ Template.maleOptions.events({
     window.location.href = '/genialWartsMale'
   },
   'click #MaleGenitalHerpesOPTI': function (event) {
-    window.location.href = '/genialHerpesMale'
+    window.location.href = '/genitalHerpesMale'
   },
   'click #MaleGonorrhoeaOPTI': function (event) {
     window.location.href = '/gonorrhoeaMale'

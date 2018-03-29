@@ -28,7 +28,7 @@ Template.OtherOptions.events({
     window.location.href = '/genialWartsMale'
   },
   'click #MaleGenitalHerpesOPTI': function (event) {
-    window.location.href = '/genialHerpesMale'
+    window.location.href = '/genitalHerpesMale'
   },
   'click #MaleGonorrhoeaOPTI': function (event) {
     window.location.href = '/gonorrhoeaMale'
@@ -53,7 +53,7 @@ Template.OtherOptions.events({
     window.location.href = '/genialWartsFemale'
   },
   'click #FemaleGenitalHerpesOPTI': function (event) {
-    window.location.href = '/genialHerpesFemale'
+    window.location.href = '/genitalHerpesFemale'
   },
   'click #FemaleGonorrhoeaOPTI': function (event) {
     window.location.href = '/gonorrhoeaFemale'

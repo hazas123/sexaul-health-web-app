@@ -13,8 +13,8 @@ Router.route('/chlamydiaMale', function () {
   this.render('ChlamydiaMaleT')
 })
 
-Router.route('/genialHerpesMale', function () {
-  this.render('GenialHerpesMale')
+Router.route('/genitalHerpesMale', function () {
+  this.render('GenitalHerpesMale')
 })
 
 Router.route('/genialWartsMale', function () {
@@ -46,8 +46,8 @@ Router.route('/chlamydiaFemale', function () {
   this.render('ChlamydiaFemaleC')
 })
 
-Router.route('/genialHerpesFemale', function () {
-  this.render('GenialHerpesFemale')
+Router.route('/genitalHerpesFemale', function () {
+  this.render('GenitalHerpesFemale')
 })
 
 Router.route('/GenialWartsFemale', function () {

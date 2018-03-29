@@ -1,4 +1,4 @@
-<template name="GenialHerpesFemale">
+<template name="GenitalHerpesFemale">
 
 <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
 <div class="row compatabilityStyling">
@@ -81,41 +81,33 @@
 <script type="text/javascript">
 
 function symptomzoomFemaleGH(symptoms, texture1) {
+ResetHF();
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 
-document.getElementById('symptom1InfoFemaleGH').style.height = '400px';
 document.getElementById('symptom1InfoFemaleGH').style.opacity = '1.0';
-$( "#symptom2FemaleGH" ).addClass( "disableItemSelect" );
 }
 
 function symptomzoom1FemaleGH(symptoms, texture1) {
-
+ResetHF();
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 
-
-document.getElementById('symptom2InfoFemaleGH').style.height = '400px';
 document.getElementById('symptom2InfoFemaleGH').style.opacity = '1.0';
-$( "#symptom1FemaleGH" ).addClass( "disableItemSelect" );
 }
 
 
 function cameraChangeFemaleGH(Camera) {
+ResetHF();
 document.getElementById(Camera).setAttribute('set_bind','true');
-
-document.getElementById('Genital_Herpes_Model_Man__MA_Woman_Thigh_genital_Blister_Texture_GH').setAttribute('transparency', '1.0');
-document.getElementById('Genital_Herpes_Model_Man__MA_Woman_Anal_Blister_Texture_GH').setAttribute('transparency', '1.0');
-
-$( "#symptom1FemaleGH" ).removeClass( "disableItemSelect" );
-$( "#symptom2FemaleGH" ).removeClass( "disableItemSelect" );
-document.getElementById('symptom1InfoFemaleGH').style.height = '60px';
-document.getElementById('symptom2InfoFemaleGH').style.height = '60px';
-document.getElementById('symptom1InfoFemaleGH').style.opacity = '0.0';
-document.getElementById('symptom2InfoFemaleGH').style.opacity = '0.0';
 }
 
-
+function ResetHM(){
+  document.getElementById('Genital_Herpes_Model_Man__MA_Woman_Thigh_genital_Blister_Texture_GH').setAttribute('transparency', '1.0');
+  document.getElementById('Genital_Herpes_Model_Man__MA_Woman_Anal_Blister_Texture_GH').setAttribute('transparency', '1.0');
+  document.getElementById('symptom1InfoFemaleGH').style.opacity = '0.0';
+  document.getElementById('symptom2InfoFemaleGH').style.opacity = '0.0';
+}
 
 </script>
 </template>

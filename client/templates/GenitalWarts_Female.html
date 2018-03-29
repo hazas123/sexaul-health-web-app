@@ -97,71 +97,45 @@
 <script type="text/javascript">
 
 function symptomzoom1FemaleGW(symptoms, texture1) {
-  document.getElementById('Genital_WartsModelMan__MA_GW_Skin_Change_Texture_Woman').setAttribute('transparency', '1.0');
-  document.getElementById('Genital_WartsModelMan__GW_Lumps_Bumps_Texture_Female').setAttribute('transparency', '1.0');
-  document.getElementById('Genital_WartsModelMan__MA_Genital_Warts_F_Anal_GW').setAttribute('transparency', '1.0');
+  ResetGWF();
+
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 
-
-document.getElementById('symptom2InfoFemaleGW').style.opacity = '0.0';
-document.getElementById('symptom3InfoFemaleGW').style.opacity = '0.0';
-
-document.getElementById('symptom1InfoFemaleGW').style.height = '400px';
 document.getElementById('symptom1InfoFemaleGW').style.opacity = '1.0';
 //$( "#symptom2GWMAN" ).addClass( "disableItemSelect" );
 }
 
 function symptomzoom2FemaleGW(symptoms, texture1) {
-  document.getElementById('Genital_WartsModelMan__MA_GW_Skin_Change_Texture_Woman').setAttribute('transparency', '1.0');
-  document.getElementById('Genital_WartsModelMan__GW_Lumps_Bumps_Texture_Female').setAttribute('transparency', '1.0');
-  document.getElementById('Genital_WartsModelMan__MA_Genital_Warts_F_Anal_GW').setAttribute('transparency', '1.0');
+  ResetGWF();
+
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 
-document.getElementById('symptom1InfoFemaleGW').style.opacity = '0.0';
-
-document.getElementById('symptom3InfoFemaleGW').style.opacity = '0.0';
-
-document.getElementById('symptom2InfoFemaleGW').style.height = '400px';
 document.getElementById('symptom2InfoFemaleGW').style.opacity = '1.0';
 //$( "#symptom1GWMAN" ).addClass( "disableItemSelect" );
 }
 
 function symptomzoom3FemaleGW(symptoms, texture1) {
-  document.getElementById('Genital_WartsModelMan__MA_GW_Skin_Change_Texture_Woman').setAttribute('transparency', '1.0');
-  document.getElementById('Genital_WartsModelMan__GW_Lumps_Bumps_Texture_Female').setAttribute('transparency', '1.0');
-  document.getElementById('Genital_WartsModelMan__MA_Genital_Warts_F_Anal_GW').setAttribute('transparency', '1.0');
+  ResetGWF();
+
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 
-
-document.getElementById('symptom1InfoFemaleGW').style.opacity = '0.0';
-
-document.getElementById('symptom2InfoFemaleGW').style.opacity = '0.0';
-
-document.getElementById('symptom3InfoFemaleGW').style.height = '400px';
 document.getElementById('symptom3InfoFemaleGW').style.opacity = '1.0';
 //$( "#symptom1GWMAN" ).addClass( "disableItemSelect" );
 }
 
 
 function cameraChangeFemaleGW(Camera) {
+ResetGWF();
 document.getElementById(Camera).setAttribute('set_bind','true');
-document.getElementById('Genital_WartsModelMan__MA_GW_Skin_Change_Texture_Woman').setAttribute('transparency', '1.0');
-document.getElementById('Genital_WartsModelMan__GW_Lumps_Bumps_Texture_Female').setAttribute('transparency', '1.0');
-document.getElementById('Genital_WartsModelMan__MA_Genital_Warts_F_Anal_GW').setAttribute('transparency', '1.0');
+}
 
-
-
-
-
-$( "#symptom1GWMAN" ).removeClass( "disableItemSelect" );
-$( "#symptom2GWMAN" ).removeClass( "disableItemSelect" );
-document.getElementById('symptom1InfoFemaleGW').style.height = '60px';
-document.getElementById('symptom2InfoFemaleGW').style.height = '60px';
-
-document.getElementById('symptom3InfoFemaleGW').style.height = '60px';
+function ResetGWF() {
+  document.getElementById('Genital_WartsModelMan__MA_GW_Skin_Change_Texture_Woman').setAttribute('transparency', '1.0');
+  document.getElementById('Genital_WartsModelMan__GW_Lumps_Bumps_Texture_Female').setAttribute('transparency', '1.0');
+  document.getElementById('Genital_WartsModelMan__MA_Genital_Warts_F_Anal_GW').setAttribute('transparency', '1.0');
 
 
 document.getElementById('symptom1InfoFemaleGW').style.opacity = '0.0';
