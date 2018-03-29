@@ -101,128 +101,86 @@
 
 <script type="text/javascript">
 
-
-function zoomLice() {
-  document.getElementById('testing').setAttribute('set_bind','true');
-  console.log("Clicked");
-}
-//onclick="zoomLice()" but on the banan shape test worked
-
-
 function symptomzoomMANGon(symptoms, texture1, texture2, texture3) {
+ResetGonM();
+
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 document.getElementById(texture3).setAttribute('transparency', '0.0');
 
-document.getElementById('symptom1InfoMANGon').style.height = '400px';
 document.getElementById('symptom1InfoMANGon').style.opacity = '1.0';
-
-$( "#symptom2GonMAN" ).addClass( "disableItemSelect" );
-$( "#symptom3GonMAN" ).addClass( "disableItemSelect" );
-$( "#symptom4GonMAN" ).addClass( "disableItemSelect" );
-$( "#symptom5GonMAN" ).addClass( "disableItemSelect" );
 }
 
 function symptomzoom1MANGon(symptoms, texture1, texture2) {
+ResetGonM();
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 
-document.getElementById('symptom2InfoMANGon').style.height = '400px';
-document.getElementById('symptom2InfoMANGon').style.opacity = '1.0';
-$( "#symptom1GonMAN" ).addClass( "disableItemSelect" );
 
-$( "#symptom3GonMAN" ).addClass( "disableItemSelect" );
-$( "#symptom4GonMAN" ).addClass( "disableItemSelect" );
-$( "#symptom5GonMAN" ).addClass( "disableItemSelect" );
+document.getElementById('symptom2InfoMANGon').style.opacity = '1.0';
 }
 
 function symptomzoom2MANGon(symptoms, texture1, texture2, texture3) {
+ResetGonM();
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 document.getElementById(texture3).setAttribute('transparency', '1.0');
 
-document.getElementById('symptom3InfoMANGon').style.height = '400px';
-document.getElementById('symptom3InfoMANGon').style.opacity = '1.0';
-$( "#symptom1GonMAN" ).addClass( "disableItemSelect" );
-$( "#symptom2GonMAN" ).addClass( "disableItemSelect" );
 
-$( "#symptom4GonMAN" ).addClass( "disableItemSelect" );
-$( "#symptom5GonMAN" ).addClass( "disableItemSelect" );
+document.getElementById('symptom3InfoMANGon').style.opacity = '1.0';
 }
 
 function symptomzoom3MANGon(symptoms, texture1, texture2) {
+ResetGonM();
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.7');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 
-
-document.getElementById('symptom4InfoMANGon').style.height = '400px';
 document.getElementById('symptom4InfoMANGon').style.opacity = '1.0';
-$( "#symptom1GonMAN" ).addClass( "disableItemSelect" );
-$( "#symptom2GonMAN" ).addClass( "disableItemSelect" );
-$( "#symptom3GonMAN" ).addClass( "disableItemSelect" );
-
-$( "#symptom5GonMAN" ).addClass( "disableItemSelect" );
 }
 
 function symptomzoom4MANGon(symptoms, texture1, texture2) {
+ResetGonM();
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.7');
 document.getElementById(texture2).setAttribute('transparency', '0.0');
 
 
-document.getElementById('symptom5InfoMANGon').style.height = '400px';
+
 document.getElementById('symptom5InfoMANGon').style.opacity = '1.0';
-$( "#symptom1GonMAN" ).addClass( "disableItemSelect" );
-$( "#symptom2GonMAN" ).addClass( "disableItemSelect" );
-$( "#symptom3GonMAN" ).addClass( "disableItemSelect" );
-$( "#symptom4GonMAN" ).addClass( "disableItemSelect" );
+
 }
 
 
 function cameraChangeMANGon(Camera) {
+ResetGonM();
 document.getElementById(Camera).setAttribute('set_bind','true');
-document.getElementById('GonorrhoeaModelMan__MA_Man_Skin_TextureGon').setAttribute('transparency', '0.0');
-document.getElementById('GonorrhoeaModelMan__MA_discharge_Gon1').setAttribute('transparency', '1.0');
-document.getElementById('GonorrhoeaModelMan__MA_discharge_Gon').setAttribute('transparency', '1.0');
-document.getElementById('GonorrhoeaModelMan__MA_Discharge_Gon1').setAttribute('transparency', '1.0');
-document.getElementById('GonorrhoeaModelMan__MA_Pee_Gon').setAttribute('transparency', '1.0');
-document.getElementById('GonorrhoeaModelMan__MA_Pain_When_Peeing_Gon').setAttribute('transparency', '1.0');
-document.getElementById('GonorrhoeaModelMan__MA_Cherry_Pain_Gon').setAttribute('transparency', '1.0');
-document.getElementById('GonorrhoeaModelMan__MA_Banana_texture_MANGW').setAttribute('transparency', '0.0');
-document.getElementById('GonorrhoeaModelMan__MA_Eye_Gon_Texture').setAttribute('transparency', '1.0');
-document.getElementById('GonorrhoeaModelMan__MA_Throat_Gon_Texture').setAttribute('transparency', '1.0');
-
-$( "#symptom1GonMAN" ).removeClass( "disableItemSelect" );
-$( "#symptom2GonMAN" ).removeClass( "disableItemSelect" );
-$( "#symptom3GonMAN" ).removeClass( "disableItemSelect" );
-$( "#symptom4GonMAN" ).removeClass( "disableItemSelect" );
-$( "#symptom5GonMAN" ).removeClass( "disableItemSelect" );
-document.getElementById('symptom1InfoMANGon').style.height = '60px';
-document.getElementById('symptom2InfoMANGon').style.height = '60px';
-document.getElementById('symptom3InfoMANGon').style.height = '60px';
-document.getElementById('symptom4InfoMANGon').style.height = '60px';
-document.getElementById('symptom5InfoMANGon').style.height = '60px';
-
-document.getElementById('symptom1InfoMANGon').style.opacity = '0.0';
-document.getElementById('symptom2InfoMANGon').style.opacity = '0.0';
-document.getElementById('symptom3InfoMANGon').style.opacity = '0.0';
-document.getElementById('symptom4InfoMANGon').style.opacity = '0.0';
-document.getElementById('symptom5InfoMANGon').style.opacity = '0.0';
-
 }
 
 //function ChlamydiaName(){
 //document.getElementById('Genital_WartsModelMan__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
 //document.getElementById('Genital_WartsModelMan__MA_typeBlinn1').setAttribute('transparency', '0.0');
 //}
-function symptom1MAN(){
-document.getElementById('Genital_WartsModelMan__MA_Pain_when').setAttribute('transparency', '0.0');
-document.getElementById('Genital_WartsModelMan__MA_Pain_when').setAttribute('diffuseColor', '1.000 1.000 1.000');
-document.getElementById('Genital_WartsModelMan__MA_Red').setAttribute('diffuseColor', '1.000 0.000 0.022');
+function ResetGonM(){
+  document.getElementById('GonorrhoeaModelMan__MA_Man_Skin_TextureGon').setAttribute('transparency', '0.0');
+  document.getElementById('GonorrhoeaModelMan__MA_discharge_Gon1').setAttribute('transparency', '1.0');
+  document.getElementById('GonorrhoeaModelMan__MA_discharge_Gon').setAttribute('transparency', '1.0');
+  document.getElementById('GonorrhoeaModelMan__MA_Discharge_Gon1').setAttribute('transparency', '1.0');
+  document.getElementById('GonorrhoeaModelMan__MA_Pee_Gon').setAttribute('transparency', '1.0');
+  document.getElementById('GonorrhoeaModelMan__MA_Pain_When_Peeing_Gon').setAttribute('transparency', '1.0');
+  document.getElementById('GonorrhoeaModelMan__MA_Cherry_Pain_Gon').setAttribute('transparency', '1.0');
+  document.getElementById('GonorrhoeaModelMan__MA_Banana_texture_MANGW').setAttribute('transparency', '0.0');
+  document.getElementById('GonorrhoeaModelMan__MA_Eye_Gon_Texture').setAttribute('transparency', '1.0');
+  document.getElementById('GonorrhoeaModelMan__MA_Throat_Gon_Texture').setAttribute('transparency', '1.0');
+
+  document.getElementById('symptom1InfoMANGon').style.opacity = '0.0';
+  document.getElementById('symptom2InfoMANGon').style.opacity = '0.0';
+  document.getElementById('symptom3InfoMANGon').style.opacity = '0.0';
+  document.getElementById('symptom4InfoMANGon').style.opacity = '0.0';
+  document.getElementById('symptom5InfoMANGon').style.opacity = '0.0';
 }
 
 </script>
