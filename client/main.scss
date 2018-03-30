@@ -1420,7 +1420,7 @@ background-color: #f4f4f4;
 }
 
 .helpTitle {
-	font: 900 3.5rem 'Roboto Slab', sans-serif;
+	font: 900 4.0rem 'Roboto Slab', sans-serif;
 background-color: #243854;
 color: white;
 margin-top: 3vh;
@@ -1428,6 +1428,57 @@ margin-bottom: 3vh;
 padding-left: 10vw;
 }
 
+
+.ThreeDHelp{
+
+}
+
+.SearchHelp{
+
+}
+
+.Content{
+
+}
+
+#ThreeDHelp{
+background: #243854;
+}
+
+#SearchHelp{
+background: #629cba;
+}
+
+#Content{
+background: #fe7150;
+}
+
+
+
+
+.helpHoldInfo{
+	background-color: #939393;
+	height: 50vh;
+	width: 100px;
+	color: white;
+	margin-top: 3vh;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	text-decoration: none;
+	/* display: block; */
+	padding: 29px 43px;
+	/* border: 1px solid #2f2f2f; */
+	-webkit-transition: background 0.3s linear;
+	-moz-transition: background 0.3s linear;
+	-ms-transition: background 0.3s linear;
+	-o-transition: background 0.3s linear;
+	transition: background 0.3s linear;
+	cursor: pointer;
+}
+
+.helpShow{
+	display: none;
+}
 /*
 ::-webkit-scrollbar {
 display: none;
