@@ -114,7 +114,7 @@ body, html {
 	    height: 10%;
 	    width: 100%;
 	    position: absolute;
-	    bottom: 0%;
+	        bottom: 0%;
 	    border-right: 18px solid white;
 	    padding-left: 10%;
 }
@@ -734,7 +734,7 @@ width: 70vw;
 
 
 .HygineInfoShift{
-
+width: 100%;
 }
 // STIMainHoldWoman
 
@@ -1194,7 +1194,7 @@ z-index: 5;
     background-color: $primaryColor;
     overflow-x: hidden; */
 
-		height: 100%;
+		height: 101%;
 	background-color: #243854;
 	overflow-x: hidden;
 	border-right: 18px solid white;
@@ -1429,29 +1429,7 @@ padding-left: 10vw;
 }
 
 
-.ThreeDHelp{
 
-}
-
-.SearchHelp{
-
-}
-
-.Content{
-
-}
-
-#ThreeDHelp{
-background: #243854;
-}
-
-#SearchHelp{
-background: #629cba;
-}
-
-#Content{
-background: #fe7150;
-}
 
 
 
@@ -1476,8 +1454,46 @@ background: #fe7150;
 	cursor: pointer;
 }
 
+.ThreeDHelp{
+background: #243854;
+}
+
+.SearchHelp{
+background: #629cba;
+}
+
+.Content{
+background: #fe7150;
+}
+
+#ThreeDHelp{
+background: #243854;
+}
+
+#SearchHelp{
+background: #629cba;
+}
+
+#Content{
+background: #fe7150;
+}
+
 .helpShow{
 	display: none;
+}
+
+#CloseHelp {
+		position: absolute;
+    right: 2vw;
+		cursor: pointer;
+}
+
+.SearchImageHeight{
+	height: 25vh;
+}
+
+.TypesOfSexHold {
+
 }
 /*
 ::-webkit-scrollbar {

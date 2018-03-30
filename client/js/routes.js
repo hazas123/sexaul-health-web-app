@@ -122,6 +122,15 @@ Router.route('/Implant', function () {
   this.render('Implant')
 })
 
+Router.route('/CombinedPill', function () {
+  this.render('CombinedPill')
+})
+
+// TypesOfSex
+
+Router.route('/TypesOfSex', function () {
+  this.render('TypesOfSex')
+})
 /*    If just gender is selected  */
 /*
 Router.route('/choiceMale', function () {

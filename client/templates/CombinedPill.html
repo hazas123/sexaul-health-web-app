@@ -1,0 +1,63 @@
+<template name="CombinedPill">
+
+  <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
+<div class="row compatabilityStyling">
+  <div class="siteInformationSTIs row">
+    <h1>Combined Pill </h1>
+
+  <!--<p>Sexual Health information and services</p> -->
+  </div>
+  <div class="HygieneHold row">
+
+      <div class="x3d_sceneHygine_Margin col ">
+
+        <div class="ReturnOptions">
+          <div class="closeHygine">Return</div>
+        </div>
+        <div  class="x3d_sceneHygine">
+
+
+          <x3d width='570px' height='300px'  >
+            <scene>
+              <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
+              <viewpoint position="-0.2005 0.8000 -1.59608"  orientation='-0.000 1.0 0.00219 3.2' centerOfRotation="-0.2005 1.0000 -0.29608"></viewpoint>
+              <viewpoint id="Reset" position="-0.2005 0.8000 -1.59608"  orientation='-0.000 1.0 0.00219 3.2' centerOfRotation="-0.2005 1.0000 -0.29608"></viewpoint>
+
+
+                <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
+                  <Transform><inline  nameSpaceName="FemaleModelWoman" mapDEFToID="true" url="./Contraception/Condom_02.x3d"  ></inline></Transform>
+              </scene>
+            </x3d>
+            <div class="ButtonStylingHygine" onclick="cameraChange('Reset')" >Reset</div>
+      </div>
+      </div>
+
+      <div class="col HygineInfoShift">
+<div class=" HygineSmallHeading">Combined Pill</div>
+
+          <p>
+            Tampons are small tubes of cotton wool that you insert into your vagina to absorb the blood before it comes out of your body. There's a string at one end of the tampon, which you pull to remove it.
+            <br/><br/>
+
+            It isn't possible for a tampon to get stuck or lost inside you. Your vagina holds it firmly in place and it expands inside you as it soaks up the blood.
+
+        </p>
+        <!-- https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/ -->
+
+</div>
+
+
+</div></div>
+
+<script type="text/javascript">
+
+      function cameraChange(Camera) {
+      document.getElementById(Camera).setAttribute('set_bind','true');
+
+
+      }
+
+
+      </script>
+
+</template>

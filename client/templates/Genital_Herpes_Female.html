@@ -81,7 +81,7 @@
 <script type="text/javascript">
 
 function symptomzoomFemaleGH(symptoms, texture1) {
-ResetHF();
+ResetGHF();
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 
@@ -89,7 +89,7 @@ document.getElementById('symptom1InfoFemaleGH').style.opacity = '1.0';
 }
 
 function symptomzoom1FemaleGH(symptoms, texture1) {
-ResetHF();
+ResetGHF();
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 
@@ -98,11 +98,11 @@ document.getElementById('symptom2InfoFemaleGH').style.opacity = '1.0';
 
 
 function cameraChangeFemaleGH(Camera) {
-ResetHF();
+ResetGHF();
 document.getElementById(Camera).setAttribute('set_bind','true');
 }
 
-function ResetHM(){
+function ResetGHF(){
   document.getElementById('Genital_Herpes_Model_Man__MA_Woman_Thigh_genital_Blister_Texture_GH').setAttribute('transparency', '1.0');
   document.getElementById('Genital_Herpes_Model_Man__MA_Woman_Anal_Blister_Texture_GH').setAttribute('transparency', '1.0');
   document.getElementById('symptom1InfoFemaleGH').style.opacity = '0.0';

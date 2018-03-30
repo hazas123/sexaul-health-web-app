@@ -26,6 +26,9 @@ Template.HelpGuide.events({
       $('.Content').addClass('helpShow')
       $('.' + HelpID).toggleClass('helpShow')
     }
+  },
+  'click #CloseHelp': function (event) {
+    $('.helpMain').toggleClass('HelpHide')
   }
 })
 /*
