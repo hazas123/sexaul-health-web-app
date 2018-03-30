@@ -1151,7 +1151,7 @@ width: 75%;
 
 
 .compatabilityStyling{
-	padding-left: 24vw;
+	padding-left: 25vw;
     padding-right: 0vw;
 }
 
@@ -1364,16 +1364,68 @@ text-align: center;
 
 
 .HelpHolder{
-	width: 100vw;
-    height: 100vh;
-    z-index: 20;
-    position: fixed;
-    background-color: red;
-
+	width: 76vw;
+height: 100vh;
+z-index: 20;
+position: fixed;
+background-color: #f4f4f4;
 }
 
 .HelpHide {
 	display: none;
+}
+
+#HelpLink{
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 15px 25px;
+	/* border: 1px solid #2f2f2f; */
+	-webkit-transition: background 0.3s linear;
+	-moz-transition: background 0.3s linear;
+	-ms-transition: background 0.3s linear;
+	-o-transition: background 0.3s linear;
+	transition: background 0.3s linear;
+	cursor: pointer;
+}
+
+#HelpLink:hover {
+	color: #fff;
+	background: $secondaryColorLight;
+	-webkit-box-shadow: inset -150px 0px 100px 5px $secondaryColor;
+	box-shadow: inset -150px 0px 100px 5px $secondaryColor;
+}
+
+.helpHoldBack{
+			background-color: #939393;
+	    height: 100px;
+	    width: 100px;
+	    color: white;
+	    margin-left: 1vw;
+	    margin-right: 1vw;
+	    text-decoration: none;
+	    display: block;
+	    padding: 29px 43px;
+	    /* border: 1px solid #2f2f2f; */
+	    -webkit-transition: background 0.3s linear;
+	    -moz-transition: background 0.3s linear;
+	    -ms-transition: background 0.3s linear;
+	    -o-transition: background 0.3s linear;
+	    transition: background 0.3s linear;
+	    cursor: pointer;
+}
+
+.HelpRow{
+// width: 100%;
+}
+
+.helpTitle {
+	font: 900 3.5rem 'Roboto Slab', sans-serif;
+background-color: #243854;
+color: white;
+margin-top: 3vh;
+margin-bottom: 3vh;
+padding-left: 10vw;
 }
 
 /*
