@@ -114,7 +114,7 @@ body, html {
 	    height: 10%;
 	    width: 100%;
 	    position: absolute;
-	    bottom: 0%;
+	        bottom: 0%;
 	    border-right: 18px solid white;
 	    padding-left: 10%;
 }
@@ -734,7 +734,7 @@ width: 70vw;
 
 
 .HygineInfoShift{
-
+width: 100%;
 }
 // STIMainHoldWoman
 
@@ -1151,7 +1151,7 @@ width: 75%;
 
 
 .compatabilityStyling{
-	padding-left: 24vw;
+	padding-left: 25vw;
     padding-right: 0vw;
 }
 
@@ -1194,7 +1194,7 @@ z-index: 5;
     background-color: $primaryColor;
     overflow-x: hidden; */
 
-		height: 100%;
+		height: 101%;
 	background-color: #243854;
 	overflow-x: hidden;
 	border-right: 18px solid white;
@@ -1360,6 +1360,140 @@ text-align: center;
 
 .itemOptMyth:hover .MythOverlay {
   opacity: 1;
+}
+
+
+.HelpHolder{
+	width: 76vw;
+height: 100vh;
+z-index: 4;
+position: fixed;
+background-color: #f4f4f4;
+}
+
+.HelpHide {
+	display: none;
+}
+
+#HelpLink{
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 15px 25px;
+	/* border: 1px solid #2f2f2f; */
+	-webkit-transition: background 0.3s linear;
+	-moz-transition: background 0.3s linear;
+	-ms-transition: background 0.3s linear;
+	-o-transition: background 0.3s linear;
+	transition: background 0.3s linear;
+	cursor: pointer;
+}
+
+#HelpLink:hover {
+	color: #fff;
+	background: $secondaryColorLight;
+	-webkit-box-shadow: inset -150px 0px 100px 5px $secondaryColor;
+	box-shadow: inset -150px 0px 100px 5px $secondaryColor;
+}
+
+.helpHoldBack{
+			background-color: #939393;
+	    height: 100px;
+	    width: 100px;
+	    color: white;
+	    margin-left: 1vw;
+	    margin-right: 1vw;
+	    text-decoration: none;
+	    display: block;
+	    padding: 29px 43px;
+	    /* border: 1px solid #2f2f2f; */
+	    -webkit-transition: background 0.3s linear;
+	    -moz-transition: background 0.3s linear;
+	    -ms-transition: background 0.3s linear;
+	    -o-transition: background 0.3s linear;
+	    transition: background 0.3s linear;
+	    cursor: pointer;
+}
+
+.HelpRow{
+// width: 100%;
+}
+
+.helpTitle {
+	font: 900 4.0rem 'Roboto Slab', sans-serif;
+background-color: #243854;
+color: white;
+margin-top: 3vh;
+margin-bottom: 3vh;
+padding-left: 10vw;
+}
+
+
+
+
+
+
+
+.helpHoldInfo{
+	background-color: #939393;
+	height: 50vh;
+	width: 100px;
+	color: white;
+	margin-top: 3vh;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	text-decoration: none;
+	/* display: block; */
+	padding: 29px 43px;
+	/* border: 1px solid #2f2f2f; */
+	-webkit-transition: background 0.3s linear;
+	-moz-transition: background 0.3s linear;
+	-ms-transition: background 0.3s linear;
+	-o-transition: background 0.3s linear;
+	transition: background 0.3s linear;
+	cursor: pointer;
+}
+
+.ThreeDHelp{
+background: #243854;
+}
+
+.SearchHelp{
+background: #629cba;
+}
+
+.Content{
+background: #fe7150;
+}
+
+#ThreeDHelp{
+background: #243854;
+}
+
+#SearchHelp{
+background: #629cba;
+}
+
+#Content{
+background: #fe7150;
+}
+
+.helpShow{
+	display: none;
+}
+
+#CloseHelp {
+		position: absolute;
+    right: 2vw;
+		cursor: pointer;
+}
+
+.SearchImageHeight{
+	height: 25vh;
+}
+
+.TypesOfSexHold {
+
 }
 /*
 ::-webkit-scrollbar {

@@ -85,48 +85,42 @@
 <script type="text/javascript">
 
 function symptomzoomMANGW(symptoms, texture1) {
+  ResetGWM();
+  
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 
-document.getElementById('symptom1InfoMANGW').style.height = '400px';
 document.getElementById('symptom1InfoMANGW').style.opacity = '1.0';
-$( "#symptom2GWMAN" ).addClass( "disableItemSelect" );
 }
 
 function symptomzoom1MANGW(symptoms, texture1) {
+ResetGWM();
 
 document.getElementById(symptoms).setAttribute('set_bind','true');
 document.getElementById(texture1).setAttribute('transparency', '0.0');
 
-
-document.getElementById('symptom2InfoMANGW').style.height = '400px';
 document.getElementById('symptom2InfoMANGW').style.opacity = '1.0';
-$( "#symptom1GWMAN" ).addClass( "disableItemSelect" );
+
 }
 
 
 function cameraChangeMANGW(Camera) {
+  ResetGWM();
 document.getElementById(Camera).setAttribute('set_bind','true');
-document.getElementById('Genital_WartsModelMan__MA_Man_Skin_TextureGW').setAttribute('transparency', '0.0');
-document.getElementById('Genital_WartsModelMan__MA_GW_Skin_Change_Texture_MAN_001').setAttribute('transparency', '1.0');
-document.getElementById('Genital_WartsModelMan__MA_GW_Lumps_Bumps_Texture_Man').setAttribute('transparency', '1.0');
 
-$( "#symptom1GWMAN" ).removeClass( "disableItemSelect" );
-$( "#symptom2GWMAN" ).removeClass( "disableItemSelect" );
-document.getElementById('symptom1InfoMANGW').style.height = '60px';
-document.getElementById('symptom2InfoMANGW').style.height = '60px';
-document.getElementById('symptom1InfoMANGW').style.opacity = '0.0';
-document.getElementById('symptom2InfoMANGW').style.opacity = '0.0';
 }
 
 //function ChlamydiaName(){
 //document.getElementById('Genital_WartsModelMan__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
 //document.getElementById('Genital_WartsModelMan__MA_typeBlinn1').setAttribute('transparency', '0.0');
 //}
-function symptom1MAN(){
-document.getElementById('Genital_WartsModelMan__MA_Pain_when').setAttribute('transparency', '0.0');
-document.getElementById('Genital_WartsModelMan__MA_Pain_when').setAttribute('diffuseColor', '1.000 1.000 1.000');
-document.getElementById('Genital_WartsModelMan__MA_Red').setAttribute('diffuseColor', '1.000 0.000 0.022');
+function ResetGWM(){
+  document.getElementById('Genital_WartsModelMan__MA_Man_Skin_TextureGW').setAttribute('transparency', '0.0');
+  document.getElementById('Genital_WartsModelMan__MA_GW_Skin_Change_Texture_MAN_001').setAttribute('transparency', '1.0');
+  document.getElementById('Genital_WartsModelMan__MA_GW_Lumps_Bumps_Texture_Man').setAttribute('transparency', '1.0');
+
+  document.getElementById('symptom1InfoMANGW').style.opacity = '0.0';
+  document.getElementById('symptom2InfoMANGW').style.opacity = '0.0';
 }
 
 

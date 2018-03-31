@@ -102,54 +102,50 @@
 
 
       function symptomzoom1(symptoms, texture1, texture2) {
+      ResetHIVm();  
       document.getElementById(symptoms).setAttribute('set_bind','true');
       document.getElementById(texture1).setAttribute('transparency', '0.7');
       document.getElementById(texture2).setAttribute('transparency', '0.0');
 
 
-      document.getElementById('symptom1HIVInfo').style.height = '400px';
+
       document.getElementById('symptom1HIVInfo').style.opacity = '1.0';
-      $( "#symptom2HIV" ).addClass( "disableItemSelect" );
-      $( "#symptom3HIV" ).addClass( "disableItemSelect" );
-      $( "#symptom4HIV" ).addClass( "disableItemSelect" );
+
       }
 
       function symptomzoom2(symptoms, texture1, texture2) {
+      ResetHIVm();
 
       document.getElementById(symptoms).setAttribute('set_bind','true');
       document.getElementById(texture1).setAttribute('transparency', '0.7');
       document.getElementById(texture2).setAttribute('transparency', '0.0');
 
-      document.getElementById('symptom2HIVInfo').style.height = '400px';
+
       document.getElementById('symptom2HIVInfo').style.opacity = '1.0';
-      $( "#symptom1HIV" ).addClass( "disableItemSelect" );
-      $( "#symptom3HIV" ).addClass( "disableItemSelect" );
-      $( "#symptom4HIV" ).addClass( "disableItemSelect" );
+
       }
 
       function symptomzoom3 (symptoms, texture1, texture2){
+        ResetHIVm();
         document.getElementById(symptoms).setAttribute('set_bind','true');
         document.getElementById(texture1).setAttribute('transparency', '0.7');
         document.getElementById(texture2).setAttribute('transparency', '0.0');
 
-        document.getElementById('symptom3HIVInfo').style.height = '400px';
+
         document.getElementById('symptom3HIVInfo').style.opacity = '1.0';
-        $( "#symptom2HIV" ).addClass( "disableItemSelect" );
-        $( "#symptom1HIV" ).addClass( "disableItemSelect" );
-        $( "#symptom4HIV" ).addClass( "disableItemSelect" );
+
 
       }
 
       function symptomzoom4 (symptoms, texture1, texture2){
+        ResetHIVm();
         document.getElementById(symptoms).setAttribute('set_bind','true');
         document.getElementById(texture1).setAttribute('transparency', '0.5');
         document.getElementById(texture2).setAttribute('transparency', '0.0');
 
-        document.getElementById('symptom4HIVInfo').style.height = '400px';
+
         document.getElementById('symptom4HIVInfo').style.opacity = '1.0';
-        $( "#symptom3HIV" ).addClass( "disableItemSelect" );
-        $( "#symptom2HIV" ).addClass( "disableItemSelect" );
-        $( "#symptom1HIV" ).addClass( "disableItemSelect" );
+
       }
 
 
@@ -157,29 +153,23 @@
 
 
       function cameraChange(Camera) {
+      ResetHIVm();
       document.getElementById(Camera).setAttribute('set_bind','true');
-      document.getElementById('FemaleModelWoman__MA_Female_skin').setAttribute('transparency', '0.0');
-      document.getElementById('FemaleModelWoman__MA_HIV_Glands').setAttribute('transparency', '1.0');
-      document.getElementById('FemaleModelWoman__MA_Fever_HIV_Female').setAttribute('transparency', '1.0');
-      document.getElementById('FemaleModelWoman__MA_Throat_HIV').setAttribute('transparency', '1.0');
-      document.getElementById('FemaleModelWoman__MA_HIV_body_Rash_female').setAttribute('transparency', '1.0');
-
-      $( "#symptom1HIV" ).removeClass( "disableItemSelect" );
-      $( "#symptom2HIV" ).removeClass( "disableItemSelect" );
-      $( "#symptom3HIV" ).removeClass( "disableItemSelect" );
-      $( "#symptom4HIV" ).removeClass( "disableItemSelect" );
-
-      document.getElementById('symptom1HIVInfo').style.height = '60px';
-      document.getElementById('symptom2HIVInfo').style.height = '60px';
-      document.getElementById('symptom3HIVInfo').style.height = '60px';
-      document.getElementById('symptom4HIVInfo').style.height = '60px';
-      document.getElementById('symptom1HIVInfo').style.opacity = '0.0';
-      document.getElementById('symptom2HIVInfo').style.opacity = '0.0';
-      document.getElementById('symptom3HIVInfo').style.opacity = '0.0';
-      document.getElementById('symptom4HIVInfo').style.opacity = '0.0';
 
       }
 
+      function ResetHIVm() {
+        document.getElementById('FemaleModelWoman__MA_Female_skin').setAttribute('transparency', '0.0');
+        document.getElementById('FemaleModelWoman__MA_HIV_Glands').setAttribute('transparency', '1.0');
+        document.getElementById('FemaleModelWoman__MA_Fever_HIV_Female').setAttribute('transparency', '1.0');
+        document.getElementById('FemaleModelWoman__MA_Throat_HIV').setAttribute('transparency', '1.0');
+        document.getElementById('FemaleModelWoman__MA_HIV_body_Rash_female').setAttribute('transparency', '1.0');
+
+        document.getElementById('symptom1HIVInfo').style.opacity = '0.0';
+        document.getElementById('symptom2HIVInfo').style.opacity = '0.0';
+        document.getElementById('symptom3HIVInfo').style.opacity = '0.0';
+        document.getElementById('symptom4HIVInfo').style.opacity = '0.0';
+      }
 
       </script>
 
