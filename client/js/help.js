@@ -12,18 +12,28 @@ Template.HelpGuide.events({
       $('.ThreeDHelp').addClass('helpShow')
       $('.SearchHelp').addClass('helpShow')
       $('.Content').addClass('helpShow')
+      $('.AI').addClass('helpShow')
       $('.' + HelpID).toggleClass('helpShow')
     }
     if (HelpID === 'SearchHelp') {
       $('.ThreeDHelp').addClass('helpShow')
       $('.SearchHelp').addClass('helpShow')
       $('.Content').addClass('helpShow')
+      $('.AI').addClass('helpShow')
       $('.' + HelpID).toggleClass('helpShow')
     }
     if (HelpID === 'Content') {
       $('.ThreeDHelp').addClass('helpShow')
       $('.SearchHelp').addClass('helpShow')
       $('.Content').addClass('helpShow')
+      $('.AI').addClass('helpShow')
+      $('.' + HelpID).toggleClass('helpShow')
+    }
+    if (HelpID === 'AI') {
+      $('.ThreeDHelp').addClass('helpShow')
+      $('.SearchHelp').addClass('helpShow')
+      $('.Content').addClass('helpShow')
+      $('.AI').addClass('helpShow')
       $('.' + HelpID).toggleClass('helpShow')
     }
   },
