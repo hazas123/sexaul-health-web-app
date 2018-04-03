@@ -923,21 +923,13 @@ background-color: pink;
 }
 
 
-<<<<<<< HEAD
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  z-index: 1;
-  top: 200vh;
-
-=======
 .AboutContact{
 
 
     width: 100vw;
     padding-left: 25vw;
     padding-right: 1vw;
->>>>>>> ee325aa1d177eaba532a6e62bbdbd7baceff05af
+
 }
 
 .OptionsHolder {
@@ -1356,14 +1348,6 @@ text-align: center;
 
 .MythOverlayText{
 
-<<<<<<< HEAD
-.mainentityofpage {
-	display: none;
-}
-
-
-
-=======
   color: white;
   font-size: 20px;
   position: absolute;
@@ -1378,7 +1362,10 @@ text-align: center;
 .itemOptMyth:hover .MythOverlay {
   opacity: 1;
 }
->>>>>>> ee325aa1d177eaba532a6e62bbdbd7baceff05af
+
+.mainentityofpage {
+	display: none;
+}
 /*
 ::-webkit-scrollbar {
 display: none;
