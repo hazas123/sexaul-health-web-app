@@ -29,20 +29,22 @@ Meteor.methods({
     })
   },
 
-  getNhsInfo: function () {
+  getNhsInfo: function (STIName) {
     return new Promise((resolve, reject) => {
-      var arg = 'gonorrhoea'
+      var arg = STIName
       var query = 'https://api.nhs.uk/conditions/' + arg
-
+      console.log('HERE', STIName)
       client.get(query, Meteor.bindEnvironment(function (error, res) {
         if (error) { reject(new Error('ERROR: ' + error)) }
         if (res) {
           res = unidecode(res)
-          var responce = JSON.parse(JSON.parse(res))
+          res = res.replace(/href=\\"/g, 'target=\\"_blank\\" href=\\"https://www.nhs.uk')
+          var responce = JSON.parse(res)
           Meteor.call('getMarkdown', responce.mainEntityOfPage, function (error, result) {
             if (error) {
               if (error) { throw error }
             }
+
             resolve(result)
           })
         } else {
@@ -55,6 +57,7 @@ Meteor.methods({
               if (error) { throw error }
             })
             res = unidecode(result.content)
+            res = res.replace(/href=\\"/g, 'target=\\"_blank\\" href=\\"https://www.nhs.uk')
             responce = JSON.parse(res)
             Meteor.call('getMarkdown', responce.mainEntityOfPage, function (error, result) {
               if (error) {

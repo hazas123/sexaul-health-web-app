@@ -69,21 +69,21 @@ Template.hello.events({
   }
 })
 
-Template.buttonTest.events({
-  'click #testClick' (event) {
-    Meteor.call('getNhsInfo', function (error, result) {
-      if (error) {
-        console.log(error)
-      }
-      $('.putitinme').append('<div>' + result + '</div>')
-      console.log(result)
-    })
-  },
-  'click .mainentityofpagebutton' (event) {
-    console.log(event.target.id)
-    $('.' + event.target.id).toggleClass('mainentityofpage')
-  }
-})
+// Template.buttonTest.events({
+//   'click #testClick' (event) {
+//     Meteor.call('getNhsInfo', function (error, result) {
+//       if (error) {
+//         console.log(error)
+//       }
+//       $('.conditionInfo').append('<div>' + result + '</div>')
+//       console.log(result)
+//     })
+//   },
+//   'click .mainentityofpagebutton' (event) {
+//     console.log(event.target.id)
+//     $('.' + event.target.id).toggleClass('mainentityofpage')
+//   }
+// })
 
 // Template.MenuMain.events({
 //     /*
