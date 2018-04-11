@@ -69,6 +69,7 @@ Template.hello.events({
   }
 })
 
+
 // Template.buttonTest.events({
 //   'click #testClick' (event) {
 //     Meteor.call('getNhsInfo', function (error, result) {
@@ -92,3 +93,10 @@ Template.hello.events({
 //     $('#toggle').toggleClass('slide-tog')
 //   } */
 // })
+
+Template.MenuMain.events({
+
+  'click #HelpLink': function (event) {
+    $('.helpMain').toggleClass('HelpHide')
+  }
+})

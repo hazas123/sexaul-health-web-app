@@ -10,7 +10,7 @@ Template.ChlamydiaMaleT.events({
   }
 })
 
-Template.GenialHerpesMale.events({
+Template.GenitalHerpesMale.events({
   'click #closeSTIMale': function (event) {
     window.history.back()
     console.log('MaleClose herpes')
@@ -64,7 +64,7 @@ Template.ChlamydiaFemaleC.events({
   }
 })
 
-Template.GenialHerpesFemale.events({
+Template.GenitalHerpesFemale.events({
   'click .closeSTIFemale': function (event) {
     window.history.back()
   }

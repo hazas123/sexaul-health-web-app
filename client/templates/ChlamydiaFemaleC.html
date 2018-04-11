@@ -92,42 +92,33 @@
 
 <script type="text/javascript">
 
-      function ResetCamera(cameraReset) {
-        document.getElementById(cameraReset).setAttribute('set_bind','true');
-        document.getElementById('ChlamydiaModelWoman__MA_Material_001').setAttribute('transparency', '1.0');
-      }
-
       function symptomzoom(symptoms, texture1, texture2, texture3, texture4) {
+          ResetCF();
+
       document.getElementById(symptoms).setAttribute('set_bind','true');
       document.getElementById(texture1).setAttribute('transparency', '0.7');
       document.getElementById(texture2).setAttribute('transparency', '0.0');
       document.getElementById(texture3).setAttribute('transparency', '0.0');
       document.getElementById(texture4).setAttribute('transparency', '1.0');
 
-      document.getElementById('symptom1ChlInfo').style.height = '400px';
       document.getElementById('symptom1ChlInfo').style.opacity = '1.0';
-      $( "#symptom2Chl" ).addClass( "disableItemSelect" );
-      $( "#symptom3Chl" ).addClass( "disableItemSelect" );
-      $( "#symptom4Chl" ).addClass( "disableItemSelect" );
-      $( "#symptom5Chl" ).addClass( "disableItemSelect" );
+
       }
 
       function symptomzoom1(symptoms, texture1, texture2) {
+      ResetCF();
 
       document.getElementById(symptoms).setAttribute('set_bind','true');
       document.getElementById(texture1).setAttribute('transparency', '0.7');
       document.getElementById(texture2).setAttribute('transparency', '0.0');
 
-
-      document.getElementById('symptom2ChlInfo').style.height = '400px';
       document.getElementById('symptom2ChlInfo').style.opacity = '1.0';
-      $( "#symptom1Chl" ).addClass( "disableItemSelect" );
-      $( "#symptom3Chl" ).addClass( "disableItemSelect" );
-      $( "#symptom4Chl" ).addClass( "disableItemSelect" );
-      $( "#symptom5Chl" ).addClass( "disableItemSelect" );
+
       }
 
       function symptomzoom2 (symptoms, texture1, texture2, texture3, texture4, texture5){
+          ResetCF();
+
         document.getElementById(symptoms).setAttribute('set_bind','true');
         document.getElementById(texture1).setAttribute('transparency', '0.7');
         document.getElementById(texture2).setAttribute('transparency', '0.0');
@@ -135,79 +126,62 @@
         document.getElementById(texture4).setAttribute('transparency', '0.0');
         document.getElementById(texture5).setAttribute('transparency', '1.0');
 
-        document.getElementById('symptom3ChlInfo').style.height = '400px';
         document.getElementById('symptom3ChlInfo').style.opacity = '1.0';
-        $( "#symptom2Chl" ).addClass( "disableItemSelect" );
-        $( "#symptom1Chl" ).addClass( "disableItemSelect" );
-        $( "#symptom4Chl" ).addClass( "disableItemSelect" );
-        $( "#symptom5Chl" ).addClass( "disableItemSelect" );
+
       }
 
       function symptomzoom3 (symptoms, texture1, texture2, texture3){
+          ResetCF();
+
         document.getElementById(symptoms).setAttribute('set_bind','true');
         document.getElementById(texture1).setAttribute('transparency', '0.7');
         document.getElementById(texture2).setAttribute('transparency', '0.0');
         document.getElementById(texture3).setAttribute('transparency', '1.0');
 
 
-        document.getElementById('symptom4ChlInfo').style.height = '400px';
         document.getElementById('symptom4ChlInfo').style.opacity = '1.0';
-        $( "#symptom3Chl" ).addClass( "disableItemSelect" );
-        $( "#symptom2Chl" ).addClass( "disableItemSelect" );
-        $( "#symptom1Chl" ).addClass( "disableItemSelect" );
-        $( "#symptom5Chl" ).addClass( "disableItemSelect" );
       }
 
       function symptomzoom4 (symptoms, texture1, texture2){
+          ResetCF();
+
         document.getElementById(symptoms).setAttribute('set_bind','true');
         document.getElementById(texture1).setAttribute('transparency', '0.7');
         document.getElementById(texture2).setAttribute('transparency', '1.0');
 
-        document.getElementById('symptom5ChlInfo').style.height = '400px';
         document.getElementById('symptom5ChlInfo').style.opacity = '1.0';
-        $( "#symptom4Chl" ).addClass( "disableItemSelect" );
-        $( "#symptom3Chl" ).addClass( "disableItemSelect" );
-        $( "#symptom2Chl" ).addClass( "disableItemSelect" );
-        $( "#symptom1Chl" ).addClass( "disableItemSelect" );
+
       }
 
       function cameraChange(Camera) {
+      ResetCF();
       document.getElementById(Camera).setAttribute('set_bind','true');
-      document.getElementById('ChlamydiaModelWoman__MA_Woman_skin').setAttribute('transparency', '0.0');
-      document.getElementById('ChlamydiaModelWoman__MA_Pain1').setAttribute('transparency', '1.0');
-      document.getElementById('ChlamydiaModelWoman__MA_Pee_texture').setAttribute('transparency', '1.0');
-      document.getElementById('ChlamydiaModelWoman__MA_Pain_in_the_tummy').setAttribute('transparency', '0.0');
 
-      document.getElementById('ChlamydiaModelWoman__MA_Discharge1').setAttribute('transparency', '1.0');
-      document.getElementById('ChlamydiaModelWoman__MA_Discharge2').setAttribute('transparency', '1.0');
-      document.getElementById('ChlamydiaModelWoman__MA_Discharge3').setAttribute('transparency', '1.0');
-      document.getElementById('ChlamydiaModelWoman__MA_Blood').setAttribute('transparency', '1.0');
-
-      $( "#symptom1Chl" ).removeClass( "disableItemSelect" );
-      $( "#symptom2Chl" ).removeClass( "disableItemSelect" );
-      $( "#symptom3Chl" ).removeClass( "disableItemSelect" );
-      $( "#symptom4Chl" ).removeClass( "disableItemSelect" );
-      $( "#symptom5Chl" ).removeClass( "disableItemSelect" );
-      document.getElementById('symptom1ChlInfo').style.height = '60px';
-      document.getElementById('symptom2ChlInfo').style.height = '60px';
-      document.getElementById('symptom3ChlInfo').style.height = '60px';
-      document.getElementById('symptom4ChlInfo').style.height = '60px';
-      document.getElementById('symptom5ChlInfo').style.height = '60px';
-      document.getElementById('symptom1ChlInfo').style.opacity = '0.0';
-      document.getElementById('symptom2ChlInfo').style.opacity = '0.0';
-      document.getElementById('symptom3ChlInfo').style.opacity = '0.0';
-      document.getElementById('symptom4ChlInfo').style.opacity = '0.0';
-      document.getElementById('symptom5ChlInfo').style.opacity = '0.0';
       }
 
-      //function ChlamydiaName(){
-      //document.getElementById('ChlamydiaModelWoman__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
-      //document.getElementById('ChlamydiaModelWoman__MA_typeBlinn1').setAttribute('transparency', '0.0');
-      //}
-      function symptom1(){
-      document.getElementById('ChlamydiaModelWoman__MA_Pain_when').setAttribute('transparency', '0.0');
-      document.getElementById('ChlamydiaModelWoman__MA_Pain_when').setAttribute('diffuseColor', '1.000 1.000 1.000');
-      document.getElementById('ChlamydiaModelWoman__MA_Red').setAttribute('diffuseColor', '1.000 0.000 0.022');
+
+      function ResetCF(){
+        document.getElementById('ChlamydiaModelWoman__MA_Woman_skin').setAttribute('transparency', '0.0');
+        document.getElementById('ChlamydiaModelWoman__MA_Pain1').setAttribute('transparency', '1.0');
+        document.getElementById('ChlamydiaModelWoman__MA_Pee_texture').setAttribute('transparency', '1.0');
+        document.getElementById('ChlamydiaModelWoman__MA_Pain_in_the_tummy').setAttribute('transparency', '0.0');
+
+        document.getElementById('ChlamydiaModelWoman__MA_Discharge1').setAttribute('transparency', '1.0');
+        document.getElementById('ChlamydiaModelWoman__MA_Discharge2').setAttribute('transparency', '1.0');
+        document.getElementById('ChlamydiaModelWoman__MA_Discharge3').setAttribute('transparency', '1.0');
+        document.getElementById('ChlamydiaModelWoman__MA_Blood').setAttribute('transparency', '1.0');
+
+        $( "#symptom1Chl" ).removeClass( "disableItemSelect" );
+        $( "#symptom2Chl" ).removeClass( "disableItemSelect" );
+        $( "#symptom3Chl" ).removeClass( "disableItemSelect" );
+        $( "#symptom4Chl" ).removeClass( "disableItemSelect" );
+        $( "#symptom5Chl" ).removeClass( "disableItemSelect" );
+
+        document.getElementById('symptom1ChlInfo').style.opacity = '0.0';
+        document.getElementById('symptom2ChlInfo').style.opacity = '0.0';
+        document.getElementById('symptom3ChlInfo').style.opacity = '0.0';
+        document.getElementById('symptom4ChlInfo').style.opacity = '0.0';
+        document.getElementById('symptom5ChlInfo').style.opacity = '0.0';
       }
 
       </script>

@@ -46,7 +46,7 @@ Template.FemaleOptions.events({
     window.location.href = '/genialWartsFemale'
   },
   'click #FemaleGenitalHerpesOPTI': function (event) {
-    window.location.href = '/genialHerpesFemale'
+    window.location.href = '/genitalHerpesFemale'
   },
   'click #FemaleGonorrhoeaOPTI': function (event) {
     window.location.href = '/gonorrhoeaFemale'
