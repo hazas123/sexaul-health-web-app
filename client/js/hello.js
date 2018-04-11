@@ -1,5 +1,6 @@
 import { Template } from 'meteor/templating'
 import { ReactiveVar } from 'meteor/reactive-var'
+import { Meteor } from 'meteor/meteor'
 
 import '../templates/hello.html'
 import '../templates/choice.html'
@@ -67,6 +68,31 @@ Template.hello.events({
     instance.counter.set(age)
   }
 })
+
+
+// Template.buttonTest.events({
+//   'click #testClick' (event) {
+//     Meteor.call('getNhsInfo', function (error, result) {
+//       if (error) {
+//         console.log(error)
+//       }
+//       $('.conditionInfo').append('<div>' + result + '</div>')
+//       console.log(result)
+//     })
+//   },
+//   'click .mainentityofpagebutton' (event) {
+//     console.log(event.target.id)
+//     $('.' + event.target.id).toggleClass('mainentityofpage')
+//   }
+// })
+
+// Template.MenuMain.events({
+//     /*
+//   'click #toggle': function (event) {
+//     $('#page-slide').toggleClass('slide')
+//     $('#toggle').toggleClass('slide-tog')
+//   } */
+// })
 
 Template.MenuMain.events({
 

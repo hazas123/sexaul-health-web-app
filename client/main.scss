@@ -929,6 +929,7 @@ background-color: pink;
     width: 100vw;
     padding-left: 25vw;
     padding-right: 1vw;
+
 }
 
 .OptionsHolder {
@@ -1362,6 +1363,10 @@ text-align: center;
   opacity: 1;
 }
 
+.mainentityofpage {
+	display: none;
+}
+
 
 .HelpHolder{
 	width: 76vw;
@@ -1495,6 +1500,7 @@ background: #fe7150;
 .TypesOfSexHold {
 
 }
+
 /*
 ::-webkit-scrollbar {
 display: none;
