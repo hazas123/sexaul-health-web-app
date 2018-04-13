@@ -79,9 +79,14 @@ Template.FemaleOptions.events({
   },
   'click #implantOPTI': function (event) {
     window.location.href = '/Implant'
+  },
+  'click .FilterButton': function (event) {
+    $('.FilterOptionsMobile').toggleClass('FilterHide')
+  },
+  'click #closeFilter': function (event) {
+    $('.FilterOptionsMobile').toggleClass('FilterHide')
   }
 })
-
 
 Template.OptionsSelected.helpers({
     // This is what will be sent to Child1 and Child2.

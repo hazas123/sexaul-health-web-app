@@ -227,15 +227,16 @@ body {
     left: 0px;*/
 
 
-		background-image: url(Brand_Intro_02.gif);
+		background-image: url(./Logo/IntroGIF.gif);
 	height: 100%;
 	background-repeat: no-repeat;
 	/* background-size: 66vw; */
 	/* position: relative; */
 	left: 0px;
-	background-position-x: 9vw;
+	background-position-x: 24vw;
 	width: 100vw;
 	padding-left: 24vw;
+	background-size: 100%;
 
 }
 
@@ -752,6 +753,11 @@ width: 100%;
 
 }
 
+.NormalWH {
+	width: 400px ;
+	height: 600px;
+}
+
 .STIButtons {
 width: 30%;
 height: 100%;
@@ -872,9 +878,9 @@ background-color: transparent;
 
 .x3d_scene{
 	margin-top: 5vh;
-background-color: red;
+
 height: 10px;
-width: 400px;
+// width: 400px;
 /* margin-left: auto; */
 /* margin-right: auto; */
 }
@@ -994,7 +1000,7 @@ margin-bottom: 16px;}
 	margin-left: 0px;
 	/* padding-left: 10%; */
 	padding: 6vh;
-	height: 60vh;
+
 	background-color: white;
 	color: #f04d25;
 	font: 900 1.6rem 'Roboto Slab', sans-serif;
@@ -1169,27 +1175,20 @@ z-index: 5;
 }
 
 #toggle{
-  color:white;
-  font-size: 68px;
-	width: 74px;
-  height: 74px;
-  background: $primaryColor;
-  position: fixed;
-  top: 0;
-  left: 0;
-  border: none;
-  cursor: pointer;
-  transition: left 0.2s linear;
+	color: white;
+font-size: 52px;
+width: 60px;
+height: 60px;
+background: #4353a4;
+position: fixed;
+top: 0;
+left: 0;
+border: none;
+cursor: pointer;
+transition: left 0.2s linear;
+z-index: 2;
+}
 
-  z-index: 2;
-}
-.slide{
-  left: 0 !important;
-  box-shadow: 0 1px 2px 3px rgba(0,0,0,0.6);
-}
-.slide-tog{
-  left:0px !important;
-}
 .MenuOverride {
     /* height: 100vw;
     background-color: $primaryColor;
@@ -1500,6 +1499,322 @@ background: #fe7150;
 .TypesOfSexHold {
 
 }
+
+.FilterButton{
+	display: none;
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .full-image{
+    background-image: url('./Logo/Logo_Normal.png') !important;
+    background-color: white;
+    background-size: 90% auto !important;
+    background-position-y: 20% !important;
+  }
+  .image-content{
+    left: 50% !important;
+    top: 60% !important;
+  }
+
+  .chat-widget-wrapper {
+    width: 100% !important;
+  }
+
+  .chat-box-container {
+    width: 100% !important;
+  }
+
+  .chat-box-container.show {
+    height: 20em !important;
+  }
+
+  .chatlogs {
+    height: 15em !important;
+  }
+
+  .chat-form textarea {
+    height: 2.5em !important;
+    font-size: 20px !important;
+  }
+
+  .chat-form button {
+    font-size: 1.5em !important;
+  }
+
+  .chat .chat-message {
+    font-size: 1em !important;
+  }
+
+  .chat-widget-wrapper {
+    // height: 5em !important;
+  }
+
+  .chat-widget-text{
+    // font-size: 2em !important;
+  }
+
+  //cookie banner
+  .cookie-banner{
+    p{
+      width: 75% !important;
+    }
+  }
+
+  .cookie-banner .button {
+    width: 2em !important;
+    height: 2em !important;
+  }
+
+  #mainBackground{
+    width: 0px !important;
+    border: none !important;
+  }
+
+  .validation {
+    bottom: 5em;
+    font-size: 1.5em;
+  }
+
+  #StartInformation {
+    padding-left: 0px !important;
+    margin-top: 2vh !important;
+  }
+
+  #siteInformation {
+    margin-left: 0vw !important;
+    //font-size: 4em !important;
+
+    h1 {
+      font: 900 4em 'Roboto Slab', sans-serif !important;
+    }
+  }
+
+  #choiceHoldInfo {
+    height: 60vh !important;
+  }
+
+  .choicehold {
+    padding-left: 0px !important;
+  }
+
+  #siteInformation3 {
+    width: 100% !important;
+    margin-left: 0vw !important;
+    font: 900 1em 'Roboto Slab', sans-serif !important;
+  }
+
+  #closeMainMenuOption1 {
+    height: auto !important;
+    margin-bottom: 2em !important;
+  }
+
+  .whiteB {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+		padding-bottom: 10vh !important;
+  }
+
+  #maleOptionsSelected {
+    font-size: 2em !important;
+  }
+  .AvaliableOptions {
+		padding-left: 7% !important;
+padding-top: 8vh;
+width: 100vw;
+  }
+
+// Page sizing for mobile
+
+#page-slide {
+    background: #060606 !important;
+    /* width: 24vw; */
+    /* display: none; */
+    height: 100vh !important;
+    left: -100vw ;
+    position: fixed !important;
+    transition: left 0.2s linear;
+    top: 0 !important;
+    z-index: 5 !important;
+}
+
+.slide{
+  left: 0vw !important;
+	    width: 100vw !important;
+			transition: left 0.2s linear;
+  box-shadow: 0 1px 2px 3px rgba(0,0,0,0.6);
+}
+.slide-tog{
+  left: 0vw !important;
+}
+
+.choiceHoldMain{
+  padding-left: 0vw !important;
+}
+
+.SearchOptions{
+	padding-left: 4vw !important;
+    padding-right: 4vw;
+    margin-top: 4vh;
+}
+
+.AboutContact {
+    width: 91vw;
+    padding-left: 9vw;
+    padding-right: 0vw;
+}
+
+#Aboutparent {
+    margin-left: 0px;
+    /* padding-left: 10%; */
+    padding: 6vh;
+    /* height: 60vh; */
+    padding-bottom: 1vh;
+    margin-bottom: 14vh;
+    background-color: white;
+    color: #f04d25;
+    font: 900 1.6rem 'Roboto Slab', sans-serif;
+}
+
+.GenderHolders {
+    padding-left: 7vw !important;
+    margin-top: 14vh !important;
+    padding-right: 6vw !important;
+    padding-bottom: 20vh !important; }
+
+.chat-widget-container{
+	width: 99vw;
+}
+
+.HelpRow{
+	width: 80vw !important;
+    margin-left: 10vw !important;
+}
+
+.HelpHolder {
+    width: 101vw !important;
+    /* height: 200vh; */
+    z-index: 4 !important;
+    padding-bottom: 10vh !important;
+    position: absolute !important;
+    background-color: #f4f4f4 !important;
+}
+
+.helpHoldInfo	{
+	height: 100%;
+}
+.helpHoldBack{
+margin-bottom: 1vh;
+}
+
+.compatabilityStyling {
+     padding-left: 0vw !important;
+     padding-right: 0vw !important;
+		 margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+
+.OptionsHolder {
+    width: 91vw;
+    /* padding-left: 2vw; */
+    /* padding-right: 1vw; */
+}
+
+#maleOptionsSelected, #OtherOptionsSelected, #FemaleOptionsSelected, #AboutSelected, #ContactSelected {
+margin-bottom: 5vh;
+    margin-top: 6vh;
+    /* padding-left: 13%; */
+    padding-left: 1%;
+    color: white;
+    background-color: #243854;
+    font: 900 3rem 'Roboto Slab', sans-serif;
+}
+
+.FilterOptionsMobile{
+	position: fixed;
+    z-index: 10;
+    bottom: 2vh;
+    left: 16vw;
+    background-color: white;
+    padding: 2vw;
+    width: 62vw;
+}
+
+.FilterButton {
+    display: inherit;
+    height: 9vh;
+    background-color: #939393;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5%;
+		color: white;
+		    width: 100%;
+}
+
+.holdbtn {
+	visibility: visible;
+color: white;
+/* margin-right: 15px; */
+margin-bottom: 8px;
+width: 100%;
+height: 34px;
+padding: 0px;
+}
+
+#closeFilter{
+float: right;
+margin-bottom: 0.5vh ;
+cursor: pointer;
+}
+
+.FilterHide{
+	display: none;
+}
+.STIMainHold, .STIMainHoldWoman, .STIMainHoldGW, .STIMainHoldGH, .STIMainHoldGon, .STIMainHoldSyph, .STIMainHoldPubLi, .STIMainHoldScabies, #OptionsHoldeMyth {
+    /* position: fixed; */
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    /* padding-top: 34vw; */
+    /* padding: 8vw; */
+    padding-left: 5vw;
+    /* padding-left: 5vw; */
+
+}
+
+
+.MobileWH{
+	width: 80vw;
+	height: 300px;
+}
+
+.x3d_scene {
+    margin-top: 5vh;
+
+    height: 10px;
+
+     margin-left: auto;
+   margin-right: auto;
+}
+
+.siteInformationSTIs {
+	font: 900 2.0rem 'Roboto Slab', sans-serif !important;
+
+margin-top: 11vh !important;
+/* margin-left: 24%; */
+width: 94% !important;
+padding-left: 10vw !important;
+/* padding-right: 12vw; */
+/* margin-left: 3vw; */
+}
+
+
+}
+
 
 /*
 ::-webkit-scrollbar {

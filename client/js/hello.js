@@ -98,5 +98,13 @@ Template.MenuMain.events({
 
   'click #HelpLink': function (event) {
     $('.helpMain').toggleClass('HelpHide')
+  },
+  'click #toggle': function (event) {
+    $('#page-slide').toggleClass('slide')
+    $('#toggle').toggleClass('slide-tog')
+  },
+  'click .MenuOverride li': function (event) {
+    $('#page-slide').toggleClass('slide')
+    $('#toggle').toggleClass('slide-tog')
   }
 })
