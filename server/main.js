@@ -1,7 +1,7 @@
 import { Meteor } from 'meteor/meteor'
 import { HTTP } from 'meteor/http'
 var redis = require('redis')
-var client = redis.createClient(6379, '127.0.0.1')
+var client = redis.createClient(process.env.REDIS_URL)
 var apiai = require('apiai')
 var unidecode = require('unidecode')
 
@@ -84,6 +84,21 @@ Meteor.methods({
           createdHTML = mainEntityOfPage[i].mainEntityOfPage[0].text
         } else {
           createdHTML += '<button class="mainentityofpagebutton" id="mainEntityOfPage' + i + '">' + mainEntityOfPage[i].text + '</button><div class="mainentityofpage mainEntityOfPage' + i + '" >' + mainEntityOfPage[i].mainEntityOfPage[0].text + '</div>'
+        }
+      }
+      resolve(createdHTML)
+    })
+  },
+
+  getMarkdownAPI: function (mainEntityOfPage) {
+    return new Promise((resolve, reject) => {
+      var createdHTML
+      var arrayLength = mainEntityOfPage.length
+      for (var i = 0; i < arrayLength; i++) {
+        if (i === 0) {
+          createdHTML = mainEntityOfPage[i].mainEntityOfPage[0].text
+        } else {
+          createdHTML += '<button class="mainentityofpagebutton APICALL" id="mainEntityOfPage' + i + '">' + mainEntityOfPage[i].text + '</button><div class="mainentityofpage mainEntityOfPage' + i + '" >' + mainEntityOfPage[i].mainEntityOfPage[0].text + '</div>'
         }
       }
       resolve(createdHTML)

@@ -39,7 +39,7 @@ Template.ChlamydiaFemaleC.events({
   }
 })
 
-Template.GenialHerpesMale.onRendered(function () {
+Template.GenitalHerpesMale.onRendered(function () {
   STIName = 'genital-herpes'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
     console.log(result)
@@ -51,13 +51,13 @@ Template.GenialHerpesMale.onRendered(function () {
   })
 })
 
-Template.GenialHerpesMale.events({
+Template.GenitalHerpesMale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
   }
 })
 
-Template.GenialHerpesFemale.onRendered(function () {
+Template.GenitalHerpesFemale.onRendered(function () {
   STIName = 'genital-herpes'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
     console.log(result)
@@ -69,7 +69,7 @@ Template.GenialHerpesFemale.onRendered(function () {
   })
 })
 
-Template.GenialHerpesFemale.events({
+Template.GenitalHerpesFemale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
   }
