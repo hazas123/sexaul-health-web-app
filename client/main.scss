@@ -534,6 +534,9 @@ font: 900 2.2rem 'Roboto Slab', sans-serif;
 }
 
 
+#toggle{
+	display: none;
+}
 
 
 #cars{
@@ -1174,20 +1177,7 @@ top: 0;
 z-index: 5;
 }
 
-#toggle{
-	color: white;
-font-size: 52px;
-width: 60px;
-height: 60px;
-background: #4353a4;
-position: fixed;
-top: 0;
-left: 0;
-border: none;
-cursor: pointer;
-transition: left 0.2s linear;
-z-index: 2;
-}
+
 
 .MenuOverride {
     /* height: 100vw;
@@ -1578,17 +1568,17 @@ background: #fe7150;
   }
 
   #StartInformation {
-    padding-left: 0px !important;
+		padding-left: 0px !important;
     margin-top: 2vh !important;
+    width: 100%;
+    margin-left: 4vw;
   }
 
   #siteInformation {
     margin-left: 0vw !important;
     //font-size: 4em !important;
 
-    h1 {
-      font: 900 4em 'Roboto Slab', sans-serif !important;
-    }
+
   }
 
   #choiceHoldInfo {
@@ -1597,6 +1587,7 @@ background: #fe7150;
 
   .choicehold {
     padding-left: 0px !important;
+		padding-top: 1vh;
   }
 
   #siteInformation3 {
@@ -1811,6 +1802,26 @@ padding-left: 10vw !important;
 /* padding-right: 12vw; */
 /* margin-left: 3vw; */
 }
+
+.itemOpt {
+	height: 13vh;
+}
+#toggle{
+	color: white;
+font-size: 52px;
+width: 60px;
+height: 60px;
+background: #4353a4;
+position: fixed;
+top: 0;
+left: 0;
+border: none;
+cursor: pointer;
+transition: left 0.2s linear;
+z-index: 2;
+display: inherit;
+}
+
 
 
 }
