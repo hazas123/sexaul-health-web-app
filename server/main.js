@@ -40,7 +40,7 @@ Meteor.methods({
           res = unidecode(res)
           res = res.replace(/href=\\"/g, 'target=\\"_blank\\" href=\\"https://www.nhs.uk')
           var responce = JSON.parse(res)
-          Meteor.call('getMarkdown', responce.mainEntityOfPage, function (error, result) {
+          Meteor.call('getMarkdownAPI', responce.mainEntityOfPage, function (error, result) {
             if (error) {
               if (error) { throw error }
             }
@@ -98,7 +98,7 @@ Meteor.methods({
         if (i === 0) {
           createdHTML = mainEntityOfPage[i].mainEntityOfPage[0].text
         } else {
-          createdHTML += '<button class="mainentityofpagebutton APICALL" id="mainEntityOfPage' + i + '">' + mainEntityOfPage[i].text + '</button><div class="mainentityofpage mainEntityOfPage' + i + '" >' + mainEntityOfPage[i].mainEntityOfPage[0].text + '</div>'
+          createdHTML += '<button class="mainentityofpagebutton REDDIS" id="mainEntityOfPage' + i + '">' + mainEntityOfPage[i].text + '</button><div class="mainentityofpage mainEntityOfPage' + i + '" >' + mainEntityOfPage[i].mainEntityOfPage[0].text + '</div>'
         }
       }
       resolve(createdHTML)
