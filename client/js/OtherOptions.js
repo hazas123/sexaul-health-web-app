@@ -86,5 +86,8 @@ Template.OtherOptions.events({
   },
   'click #implantOPTI': function (event) {
     window.location.href = '/Implant'
+  },
+  'click #CombinedPillOPTI': function (event) {
+    window.location.href = '/CombinedPill'
   }
 })

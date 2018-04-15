@@ -80,6 +80,9 @@ Template.FemaleOptions.events({
   'click #implantOPTI': function (event) {
     window.location.href = '/Implant'
   },
+  'click #CombinedPillOPTI': function (event) {
+    window.location.href = '/CombinedPill'
+  },
   'click .FilterButton': function (event) {
     $('.FilterOptionsMobile').toggleClass('FilterHide')
   },

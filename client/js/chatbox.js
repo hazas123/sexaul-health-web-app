@@ -1,7 +1,6 @@
 import { Meteor } from 'meteor/meteor'
 import { Template } from 'meteor/templating'
 import { Session } from 'meteor/session'
-// import { ReactiveVar } from 'meteor/reactive-var'
 
 import '../templates/chatbox.html'
 const uuidv1 = require('uuid/v1')
@@ -102,7 +101,6 @@ Template.choice.events({
     }
   }
 })
-
 
 Template.chatbox.events({
   'click .Close-Chat-Bot' (event, instance) {

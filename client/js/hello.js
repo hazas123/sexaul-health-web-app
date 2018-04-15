@@ -106,5 +106,14 @@ Template.MenuMain.events({
   'click .MenuOverride li': function (event) {
     $('#page-slide').toggleClass('slide')
     $('#toggle').toggleClass('slide-tog')
+  },
+  'click .MenuLogo': function (event) {
+    $('#page-slide').toggleClass('slide')
+    $('#toggle').toggleClass('slide-tog')
+  },
+  'click #BackBtn': function (event) {
+    $('#page-slide').toggleClass('slide')
+    $('#toggle').toggleClass('slide-tog')
+    window.history.back()
   }
 })

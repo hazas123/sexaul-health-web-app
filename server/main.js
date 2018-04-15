@@ -2,6 +2,7 @@ import { Meteor } from 'meteor/meteor'
 import { HTTP } from 'meteor/http'
 var redis = require('redis')
 var client = redis.createClient(process.env.REDIS_URL)
+// var client = redis.createClient(6379, '127.0.0.1')
 var apiai = require('apiai')
 var unidecode = require('unidecode')
 

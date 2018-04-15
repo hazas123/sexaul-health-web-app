@@ -39,7 +39,7 @@
 .self .chat-message {
  background: #f04d25;
  order: -1;
- margin-left: 28%;
+ margin-left: 29%;
 }
 
 .chat-form {
@@ -50,7 +50,7 @@
 
 .chat-form textarea {
  background: #fbfbfb;
- width: 75%;
+ width: 90%;
  height: 25px;
  border: 2px solid #eee;
  border-radius: 3px;
@@ -83,7 +83,7 @@
  border-radius: 3px;
  box-shadow: 0 3px 0 #f04d25;
  cursor: pointer;
- 
+
  -webkit-transition: background .2s ease;
  -moz-transition: background .2s ease;
  -o-transition: background .2s ease;
