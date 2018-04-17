@@ -22,8 +22,6 @@ Template.OptionsSelected.helpers({
 Template.OptionsSelected.onCreated(function () {
   this.GenderExportedVar = new ReactiveVar(hello.GenderToExport)
   this.SexualityExportedVar = new ReactiveVar(hello.SexaulityToExport)
-  console.log(this.GenderExportedVar)
-  console.log(this.SexualityExportedVar)
 })
 
 Template.OptionsSelected.onRendered(function () {
@@ -32,18 +30,15 @@ Template.OptionsSelected.onRendered(function () {
 
 Template.choice.onRendered(function () {
   view = this.view
-  console.log(view)
-  console.log(GenderSel, Woman, OtherGender, Sex)
 })
 
 Template.FemaleOptions.events({
   // sti's
   'click #FemaleChlamydiaOPTI': function (event) {
     window.location.href = '/chlamydiaFemale'
-    //  console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
   },
   'click #FemaleGenitalWartsOPTI': function (event) {
-    window.location.href = '/genialWartsFemale'
+    window.location.href = '/GenitalWartsFemale'
   },
   'click #FemaleGenitalHerpesOPTI': function (event) {
     window.location.href = '/genitalHerpesFemale'

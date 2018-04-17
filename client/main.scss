@@ -56,10 +56,12 @@ table {
 
 // end of css reset
 
-$primaryColor: #4353a4;
-$secondaryColor: #f04d25;
-$secondaryColorLight: #FE7150;
-//$link-color: rgb(0, 0, 255);
+
+
+$primaryColor: #243854; // Main Blue
+$secondaryColor: #629cba; // Light Blue
+$secondaryColorLight: #fe7150; // Orange orange
+$AlternativeColor: #939393; // Grey
 
 body, html {
     height: 100%;
@@ -110,7 +112,7 @@ body, html {
 	    z-index: 10;
 	    /* background-image: url(Background_New_Light_Grey.png); */
 	    /* background-repeat: repeat; */
-	    background-color: #fe7150;
+	    background-color: $secondaryColorLight;
 	    height: 10%;
 	    width: 100%;
 	    position: absolute;
@@ -123,6 +125,44 @@ body {
 //  overflow: hidden;
 }
 
+#ChangeTextSize{
+	color: white;
+	padding: 15px 25px;
+}
+
+#ChangeTextSize  a{
+	display: inline !important;
+     padding: 0px 0px !important;
+}
+
+#ChangeTextSize  a{
+cursor: pointer;}
+
+#Small {
+	font-size: 0.7em;
+}
+
+#Medium {
+	font-size: 1.0em;
+}
+
+#Large {
+	font-size: 1.4em;
+}
+
+
+
+.Small {
+	font-size: 0.7em;
+}
+
+.Medium {
+	font-size: 1.0em;
+}
+
+.Large {
+	font-size: 1.4em;
+}
 
 // a {
 //
@@ -207,7 +247,7 @@ body {
 }
 
 #All_Show{
-	background-color: #939393;
+	background-color: $AlternativeColor;
 
 }
 #closeFilter{
@@ -245,6 +285,7 @@ display: none;
 }
 
 .conditionInfo {
+	padding-top: 5vh;
 	padding-bottom: 15vh;}
 
 .conditionInfo p strong {
@@ -278,7 +319,7 @@ position: fixed;
 /* width: 100vw; */
 z-index: -1;
 padding-top: 10vh;
-  //background-color: #243854;
+  //background-color: $primaryColor;
   //-webkit-clip-path: ellipse(100% 60% at 26% 36%);
 //clip-path: ellipse(100% 60% at 26% 36%);
 
@@ -328,7 +369,7 @@ margin-left: 0vw;
 margin-top: 0vh;
 padding-left: 1vw;
 /* height: 30%; */
-background-color: #243854;
+background-color: $primaryColor;
 font: 900 4.0rem 'Roboto Slab', sans-serif;
 color: white;
 width: 100%;
@@ -337,14 +378,14 @@ width: 100%;
 .mainentityofpagebutton{
 	display: block;
 	margin-bottom: 2vh;
-	background-color: #243854;
+	background-color: $primaryColor;
 	color: white;
 
     margin-top: 2vh;
 }
 
 #searchH {
-		background-color: #fe7150;
+		background-color: $secondaryColorLight;
 		width: 100%;
 		/* margin-left: 1vw; */
 		margin-top: 6vh;
@@ -357,7 +398,7 @@ width: 100%;
 		font: 900 1.3rem 'Roboto Slab', sans-serif;
 	}
 
-#closeMainMenuOption1{
+#SalusMainOptions{
 	/* width: 99%; */
 /* height: 50vh; */
 /* margin-left: 1vw; */
@@ -367,7 +408,7 @@ background: white;
 font: 900 2.2rem 'Roboto Slab', sans-serif;
 /* border-radius: 25px; */
 /* padding-top: 10vh; */
-color: #f04d25;
+color: $secondaryColorLight;
 }
 
 
@@ -377,7 +418,7 @@ width: 50%;
 margin-left: auto;
 margin-right: auto;
 height: 40vh;
-background: #243854;
+background: $primaryColor;
 font-size: 170%;
 border-radius: 25px;
 padding-top: 0vh;
@@ -394,7 +435,7 @@ color: $secondaryColor;
       margin-left: 300px;
       -webkit-clip-path: polygon(75% 80%, 100% 32%, 100% 100%, 70% 100%, 0 100%, 0 68%);
       clip-path: polygon(75% 80%, 100% 32%, 100% 100%, 70% 100%, 0 100%, 0 68%);
-      background-color: #243854;
+      background-color: $primaryColor;
       z-index: -2;
 }
 
@@ -408,7 +449,7 @@ width: 100vw;
 visibility: hidden;
   //-webkit-clip-path: polygon(75% 80%, 100% 32%, 100% 100%, 70% 100%, 0 100%, 0 68%);
   //clip-path: polygon(75% 80%, 100% 32%, 100% 100%, 70% 100%, 0 100%, 0 68%);
-  background-color: #243854;
+  background-color: $primaryColor;
 z-index: 2;
 -webkit-clip-path: polygon(91% 93%, 100% 60%, 100% 100%, 0 100%, 0 89%, 14% 84%);
 clip-path: polygon(91% 93%, 100% 60%, 100% 100%, 0 100%, 0 89%, 14% 84%);
@@ -422,7 +463,7 @@ height: 100vh;
 width: 100vw;
   -webkit-clip-path: polygon(75% 80%, 100% 32%, 100% 100%, 70% 100%, 0 100%, 0 68%);
   clip-path: polygon(75% 80%, 100% 32%, 100% 100%, 70% 100%, 0 100%, 0 68%);
-  background-color: #243854;
+  background-color: $primaryColor;
 z-index: -1;
 }
 
@@ -432,7 +473,7 @@ position: fixed;
 
   -webkit-clip-path: polygon(75% 80%, 100% 32%, 100% 100%, 70% 100%, 0 100%, 0 68%);
   clip-path: polygon(75% 80%, 100% 32%, 100% 100%, 70% 100%, 0 100%, 0 68%);
-  background-color: #243854;
+  background-color: $primaryColor;
 z-index: -1;
 
 opacity: 1.0;
@@ -457,12 +498,12 @@ width: 72vw;
 	margin-top: 0vh;
 	padding-left: 3vw;
 	height: 30%;
-	background-color: #243854;
+	background-color: $primaryColor;
 	/* padding-right: 0vw; */
 }
 
 #siteInformation3{
-	background-color: #fe7150;
+	background-color: $secondaryColorLight;
 /* width: 100%; */
 /* margin-left: 1vw; */
 margin-top: 6vh;
@@ -477,7 +518,7 @@ font: 900 1.5em 'Roboto Slab', sans-serif;
 
 .siteInformationSTIs {
 	font: 900 3.5rem 'Roboto Slab', sans-serif;
-	background-color: #243854;
+	background-color: $primaryColor;
 	color: white;
 	margin-top: 3%;
 	/* margin-left: 24%; */
@@ -496,7 +537,7 @@ font: 900 1.5em 'Roboto Slab', sans-serif;
 }
 
 #siteInformationHold1{
-//background-color: #243854;
+//background-color: $primaryColor;
 }
 
 #siteInformation p{
@@ -520,22 +561,22 @@ font: 900 2.2rem 'Roboto Slab', sans-serif;
 
 #MainM1{
   color: white;
-  background-color: #243854;
+  background-color: $primaryColor;
 }
 
 #MainM2{
   color: white;
-  background-color: #629cba;
+  background-color: $secondaryColor;
 }
 
 #MainM3{
   color: white;
-  background-color: #fe7150;
+  background-color: $secondaryColorLight;
 }
 
 #MainM4{
   color: white;
-  background-color: #939393;
+  background-color: $AlternativeColor;
 }
 
 #siteInformation2{
@@ -580,7 +621,7 @@ font: 900 2.2rem 'Roboto Slab', sans-serif;
 
 .GenderBackColours{
 
-	background-color: #629cba;}
+	background-color: $secondaryColor;}
 
 #SelectOptionCol0{
   background-color: $primaryColor;
@@ -802,7 +843,7 @@ float: left;
 	display: inline;
 position: relative;
     top: 3vh;
-background-color: #243854;
+background-color: $primaryColor;
 font: 700 1.5rem 'Roboto Slab', sans-serif;
 margin-right: 2%;
 margin-bottom: 0%;
@@ -819,13 +860,13 @@ height: 10vh;
   font: 700 1.2rem 'Roboto Slab', sans-serif;
 
   font-size: 200%;
-  color: #243854;
+  color: $primaryColor;
 }
 
 .ButtonStylingSTI {
 cursor: pointer;
 display: inline;
-background-color: #243854;
+background-color: $primaryColor;
 font: 700 1rem 'Roboto Slab', sans-serif;
 margin-right: 2%;
 margin-bottom: 2%;
@@ -848,12 +889,12 @@ text-align: center;
   font: 700 1.2rem 'Roboto Slab', sans-serif;
 
   font-size: 200%;
-  color: #243854; */
+  color: $primaryColor; */
 	margin-bottom: 8%;
 background-color: transparent;
 font: 700 2.5rem 'Roboto Slab', sans-serif;
 /* font-size: 200%; */
-color: #243854;
+color: $primaryColor;
 }
 
 .colArt{
@@ -949,7 +990,7 @@ height: 10px;
 }
 
 .STIsymptomInfoBox h1 {
-  color: #243854;
+  color: $primaryColor;
 }
 
 .STIsymptomInfoBoxMove{
@@ -967,6 +1008,10 @@ background-color: pink;
     padding-right: 1vw;
 
 }
+
+
+
+
 
 .OptionsHolder {
 
@@ -1020,7 +1065,7 @@ margin-bottom: 16px;}
     /* padding-left: 13%; */
     padding-left: 19%;
     color: white;
-    background-color: #243854;
+    background-color: $primaryColor;
     font: 900 4rem 'Roboto Slab', sans-serif;
 
 }
@@ -1032,7 +1077,7 @@ margin-bottom: 16px;}
 	padding: 6vh;
 
 	background-color: white;
-	color: #f04d25;
+	color: $secondaryColor;
 	font: 900 1.6rem 'Roboto Slab', sans-serif;
 }
 
@@ -1052,24 +1097,24 @@ margin-bottom: 4%;
 }
 
 #STIStyling{
-	    background-color: #243854;
+	    background-color: $primaryColor;
 }
 
 #MythStyling,.MythStyling{
-	background-color: #4353a4;
+	background-color: $primaryColor;
 }
 
 .hygiene, #hygiene {
-	background-color: #629cba;
+	background-color: $secondaryColor;
 }
 
 #Contraception{
-	background-color: #fe7150;
+	background-color: $secondaryColorLight;
 }
 
 
 .itemOpt {
-		//background-color: #4353a4;
+		//background-color: $primaryColor;
     margin: 10px;
     width: 10%;
     display: inline;
@@ -1091,13 +1136,13 @@ margin-bottom: 4%;
 }
 
 .STIStyling {
-  background-color: #243854;
+  background-color: $primaryColor;
 }
 
-.Contraception {background: #fe7150;}
+.Contraception {background: $secondaryColorLight;}
 
 .itemOptMyth{
-  background-color: #4353a4;
+  background-color: $primaryColor;
   margin: 25px ;
   border-radius: 10px;
   display: inline;
@@ -1132,7 +1177,7 @@ margin-bottom: 4%;
 }
 
 .treatmentInfo {
-background-color: #243854;
+background-color: $primaryColor;
 color: white;
 margin-top: 10%;
 width: 75%;
@@ -1212,7 +1257,7 @@ z-index: 5;
     overflow-x: hidden; */
 
 		height: 101%;
-	background-color: #243854;
+	background-color: $primaryColor;
 	overflow-x: hidden;
 	border-right: 18px solid white;
 
@@ -1249,8 +1294,8 @@ z-index: 5;
     ul li a:hover{
     color: #fff;
     background: $secondaryColorLight;
-    -webkit-box-shadow: inset -150px 0px 100px 5px $secondaryColor;
-    box-shadow: inset -150px 0px 100px 5px $secondaryColor;
+    -webkit-box-shadow: inset -150px 0px 100px 5px $secondaryColorLight;
+    box-shadow: inset -150px 0px 100px 5px $secondaryColorLight;
     }
 }
 
@@ -1358,7 +1403,7 @@ text-align: center;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #243854;
+  background-color: $primaryColor;
 	border-radius: 10px;
 }
 
@@ -1413,12 +1458,12 @@ background-color: #f4f4f4;
 #HelpLink:hover , #BackBtn:hover {
 	color: #fff;
 	background: $secondaryColorLight;
-	-webkit-box-shadow: inset -150px 0px 100px 5px $secondaryColor;
-	box-shadow: inset -150px 0px 100px 5px $secondaryColor;
+	-webkit-box-shadow: inset -150px 0px 100px 5px $secondaryColorLight;
+	box-shadow: inset -150px 0px 100px 5px $secondaryColorLight;
 }
 
 .helpHoldBack{
-			background-color: #939393;
+			background-color: $AlternativeColor;
 	    height: 100px;
 	    width: 100px;
 	    color: white;
@@ -1442,7 +1487,7 @@ background-color: #f4f4f4;
 
 .helpTitle {
 	font: 900 4.0rem 'Roboto Slab', sans-serif;
-background-color: #243854;
+background-color: $primaryColor;
 color: white;
 margin-top: 3vh;
 margin-bottom: 3vh;
@@ -1456,8 +1501,8 @@ padding-left: 10vw;
 
 
 .helpHoldInfo{
-	background-color: #939393;
-	height: 50vh;
+	background-color: $AlternativeColor;
+
 	width: 100px;
 	color: white;
 	margin-top: 3vh;
@@ -1476,27 +1521,27 @@ padding-left: 10vw;
 }
 
 .ThreeDHelp{
-background: #243854;
+background: $primaryColor;
 }
 
 .SearchHelp{
-background: #629cba;
+background: $secondaryColor;
 }
 
 .Content{
-background: #fe7150;
+background: $secondaryColorLight;
 }
 
 #ThreeDHelp{
-background: #243854;
+background: $primaryColor;
 }
 
 #SearchHelp{
-background: #629cba;
+background: $secondaryColor;
 }
 
 #Content{
-background: #fe7150;
+background: $secondaryColorLight;
 }
 
 .helpShow{
@@ -1604,12 +1649,15 @@ background: #fe7150;
   #siteInformation {
     margin-left: 0vw !important;
     //font-size: 4em !important;
-
+	text-align: center;
+	padding-left: 0vw;
+	width: 100%;
 
   }
 
   #choiceHoldInfo {
     height: 60vh !important;
+		width: 100vw !important;
   }
 
   .choicehold {
@@ -1623,10 +1671,14 @@ background: #fe7150;
     font: 900 1em 'Roboto Slab', sans-serif !important;
   }
 
-  #closeMainMenuOption1 {
+  #SalusMainOptions {
     height: auto !important;
     margin-bottom: 2em !important;
   }
+
+	#SalusMainOptions h1 {
+		text-align: center;
+	}
 
   .whiteB {
     margin-right: 0px !important;
@@ -1638,9 +1690,10 @@ background: #fe7150;
     font-size: 2em !important;
   }
   .AvaliableOptions {
-		padding-left: 7% !important;
+		// padding-left: 7% !important;
 padding-top: 8vh;
 width: 100vw;
+    margin-left: 7vw;
   }
 
 // Page sizing for mobile
@@ -1678,9 +1731,12 @@ width: 100vw;
 }
 
 .AboutContact {
-    width: 91vw;
-    padding-left: 9vw;
-    padding-right: 0vw;
+	padding-left: 4vw !important;
+	padding-right: 4vw;
+	margin-top: 4vh;
+	margin-left: 7vw;
+	margin-right: 7vw;
+	width: auto;
 }
 
 #Aboutparent {
@@ -1691,8 +1747,8 @@ width: 100vw;
     padding-bottom: 1vh;
     margin-bottom: 14vh;
     background-color: white;
-    color: #f04d25;
-    font: 900 1.6rem 'Roboto Slab', sans-serif;
+    color: $secondaryColorLight;
+    font: 900 1.0rem 'Roboto Slab', sans-serif;
 }
 
 .GenderHolders {
@@ -1706,21 +1762,30 @@ width: 100vw;
 }
 
 .HelpRow{
-	width: 80vw !important;
-    margin-left: 10vw !important;
+	width: 89vw !important;
+    margin-left: 2vw !important;
 }
 
 .HelpHolder {
     width: 101vw !important;
     /* height: 200vh; */
     z-index: 4 !important;
+		padding-top: 8vh;
     padding-bottom: 10vh !important;
     position: absolute !important;
     background-color: #f4f4f4 !important;
 }
 
 .helpHoldInfo	{
-	height: 100%;
+
+
+    color: white;
+    margin-top: 3vh;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    text-decoration: none;
+    /* display: block; */
+    padding: 25px 19px;
 }
 .helpHoldBack{
 margin-bottom: 1vh;
@@ -1746,8 +1811,9 @@ margin-bottom: 5vh;
     /* padding-left: 13%; */
     padding-left: 1%;
     color: white;
-    background-color: #243854;
-    font: 900 3rem 'Roboto Slab', sans-serif;
+    background-color: $primaryColor;
+    font: 900 2rem 'Roboto Slab', sans-serif;
+		text-align: center;
 }
 
 .FilterOptionsMobile{
@@ -1763,13 +1829,17 @@ margin-bottom: 5vh;
 .FilterButton {
     display: inherit;
     height: 9vh;
-    background-color: #939393;
+    background-color: $AlternativeColor;
     margin-bottom: 2vh;
     border-radius: 5px;
     text-align: center;
     padding-top: 5%;
 		color: white;
 		    width: 100%;
+}
+
+#SearchTitle {
+	font: 900 2rem 'Roboto Slab', sans-serif;
 }
 
 .holdbtn {
@@ -1822,24 +1892,38 @@ cursor: pointer;
 
 .siteInformationSTIs {
 	font: 900 2.0rem 'Roboto Slab', sans-serif !important;
-
-margin-top: 11vh !important;
-/* margin-left: 24%; */
-width: 94% !important;
-padding-left: 10vw !important;
-/* padding-right: 12vw; */
-/* margin-left: 3vw; */
+    margin-top: 11vh !important;
+    margin-left: 0%;
+    width: 100% !important;
+    padding-left: 10vw !important;
+    /* padding-right: 12vw; */
+    /* margin-left: 3vw; */
 }
+
+.STIsymptomInfoBox{
+margin-left: 15px;
+}
+
+.conditionInfo {
+			padding-top: 0vh;
+	    padding-right: 15px;
+}
+
 
 .itemOpt {
-	height: 13vh;
+	height: 15vh;
 }
+
+#FemaleGonorrhoeaOPTI {
+	padding-left: 3px;
+}
+
 #toggle{
 	color: white;
 font-size: 52px;
 width: 60px;
 height: 60px;
-background: #4353a4;
+background: $primaryColor;
 position: fixed;
 top: 0;
 left: 0;
@@ -1854,7 +1938,26 @@ display: inherit;
 margin-top: 49%;
 }
 
+.CircleChoiceSize{
+	height: 33vh;
+    margin-bottom: 2vh;
+}
 
+.ContentHelp {
+	display: inline;
+height: 43vh;
+width: 43vh;
+}
+
+.HelpInfo{
+	padding-top: 5vh;
+	padding-bottom: 10vh;
+}
+
+
+.HelpMobile{
+	height: 17vh;
+}
 
 }
 

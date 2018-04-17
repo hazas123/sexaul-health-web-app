@@ -69,7 +69,7 @@ Template.maleOptions.events({
     // this.myReactiveVarGender = collectingTmplInstance.myReactiveVarGender
     console.log('GenderSel', hello.GenderToExport)
     // var m = require('mymodule')
-    window.location.href = '/genialWartsMale'
+    window.location.href = '/genitalWartsMale'
     console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
   },
   'click #MaleGenitalHerpesOPTI': function (event) {

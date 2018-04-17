@@ -1,31 +1,19 @@
 import { Template } from 'meteor/templating'
-import { ReactiveVar } from 'meteor/reactive-var'
 import '../templates/OptionsSelected.html'
 import '../templates/choice.html'
 import '../js/hello.js'
 
-var hello = require('../js/choice.js')
-var view
-var GenderSel = hello.GenderToExport
-var Woman = 'Woman'
-var OtherGender = 'Other'
-var Sex = hello.SexaulityToExport
-
-// var m = require('mymodule')
-
 Template.choice.onRendered(function () {
-  view = this.view
-  console.log(view)
-  console.log(GenderSel, Woman, OtherGender, Sex)
+  // Added so this actually renders as a blaze view
+  var view = this.view
 })
 
 Template.OtherOptions.events({
   'click #MaleChlamydiaOPTI': function (event) {
     window.location.href = '/chlamydiaMale'
-    //  console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
   },
   'click #MaleGenitalWartsOPTI': function (event) {
-    window.location.href = '/genialWartsMale'
+    window.location.href = '/genitalWartsMale'
   },
   'click #MaleGenitalHerpesOPTI': function (event) {
     window.location.href = '/genitalHerpesMale'
@@ -47,10 +35,9 @@ Template.OtherOptions.events({
   }, // sti Female
   'click #FemaleChlamydiaOPTI': function (event) {
     window.location.href = '/chlamydiaFemale'
-    //  console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
   },
   'click #FemaleGenitalWartsOPTI': function (event) {
-    window.location.href = '/genialWartsFemale'
+    window.location.href = '/GenitalWartsFemale'
   },
   'click #FemaleGenitalHerpesOPTI': function (event) {
     window.location.href = '/genitalHerpesFemale'

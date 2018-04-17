@@ -9,16 +9,16 @@ Router.route('/choice', function () {
 })
 
 /*      Male sti's routes start here    */
-Router.route('/chlamydiaMale', function () {
-  this.render('ChlamydiaMaleT')
+Router.route('/ChlamydiaMale', function () {
+  this.render('ChlamydiaMale')
 })
 
 Router.route('/genitalHerpesMale', function () {
   this.render('GenitalHerpesMale')
 })
 
-Router.route('/genialWartsMale', function () {
-  this.render('GenialWartsMaleT')
+Router.route('/genitalWartsMale', function () {
+  this.render('genitalWartsMale')
 })
 
 Router.route('/gonorrhoeaMale', function () {
@@ -43,15 +43,15 @@ Router.route('/HIVMale', function () {
 /*      Female sti's routes start here    */
 
 Router.route('/chlamydiaFemale', function () {
-  this.render('ChlamydiaFemaleC')
+  this.render('ChlamydiaFemale')
 })
 
 Router.route('/genitalHerpesFemale', function () {
   this.render('GenitalHerpesFemale')
 })
 
-Router.route('/GenialWartsFemale', function () {
-  this.render('GenialWartsFemale')
+Router.route('/GenitalWartsFemale', function () {
+  this.render('GenitalWartsFemale')
 })
 
 Router.route('/gonorrhoeaFemale', function () {

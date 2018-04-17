@@ -1,4 +1,4 @@
-<template name="ChlamydiaFemaleC">
+<template name="ChlamydiaFemale">
 
   <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
 <div class="row compatabilityStyling">
@@ -48,6 +48,7 @@
             <div class="ButtonStylingSTI" id="symptom4Chl" onclick="symptomzoom3('symptomArea', 'ChlamydiaModelWoman__MA_Woman_skin', 'ChlamydiaModelWoman__MA_Blood', 'ChlamydiaModelWoman__MA_Pain_in_the_tummy')">Symptom 4</div>
             <div class="ButtonStylingSTI" id="symptom5Chl" onclick="symptomzoom4('symptomArea', 'ChlamydiaModelWoman__MA_Woman_skin', 'ChlamydiaModelWoman__MA_Pain_in_the_tummy')">Symptom 5</div>
             <div class="ButtonStylingSTI" onclick="cameraChange('Reset')" >Reset</div>
+            <div class="ButtonStylingSTI" id="moreinfo" >More Info</div>
 
             </div>
           </div>
@@ -184,6 +185,13 @@
         document.getElementById('symptom4ChlInfo').style.opacity = '0.0';
         document.getElementById('symptom5ChlInfo').style.opacity = '0.0';
       }
+
+      $("#moreinfo").click(function() {
+      $('html,body').animate({
+        scrollTop: $(".conditionInfo").offset().top},
+        'slow');
+      });
+
 
       </script>
 

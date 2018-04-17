@@ -16,12 +16,55 @@
         <li><a href="./SearchSalus">Search for Content</a></li>
         <li id="HelpLink" >Help</li>
         <li id="BackBtn" >Previous page</li>
+        <li><div id="ChangeTextSize">
+        Resize text |
+        <a class="TextSize" id="Small">A</a>
+        <a class="TextSize" id="Medium">A</a>
+        <a class="TextSize" id="Large">A</a>
+      </div></li>
       </ul>
+
       <div id="MenuFooter">
         <p>© Salus 2018</p>
       </div>
     </nav>
 
   </section>
+<script >
 
+$(".TextSize").click(function(){
+
+       if (this.id == 'Small') {
+         $("h1").addClass( "Small" );
+         $("h1").removeClass( "Medium" );
+         $("h1").removeClass( "Large" );
+
+          $("p").addClass( "Small" );
+          $("p").removeClass( "Medium" );
+          $("p").removeClass( "Large" );
+         }
+
+       if (this.id == 'Medium') {
+         $("h1").addClass( "Medium" );
+         $("h1").removeClass( "Small" );
+         $("h1").removeClass( "Large" );
+
+          $("p").addClass( "Medium" );
+          $("p").removeClass( "Small" );
+          $("p").removeClass( "Large" );
+         }
+
+       if (this.id == 'Large') {
+         $("h1").addClass( "Large" );
+         $("h1").removeClass( "Small" );
+         $("h1").removeClass( "Medium" );
+
+          $("p").addClass( "Large" );
+          $("p").removeClass( "Small" );
+          $("p").removeClass( "Medium" );
+         }
+
+   });
+
+</script>
 </template>

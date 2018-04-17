@@ -3,37 +3,33 @@ import { Meteor } from 'meteor/meteor'
 
 var STIName
 
-Template.ChlamydiaMaleT.onRendered(function () {
+Template.ChlamydiaMale.onRendered(function () {
   STIName = 'chlamydia'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
-    console.log(result)
     if (error) {
       console.log(error)
     }
     $('.conditionInfo').append('<div>' + result + '</div>')
-    console.log(result)
   })
 })
 
-Template.ChlamydiaMaleT.events({
+Template.ChlamydiaMale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
   }
 })
 
-Template.ChlamydiaFemaleC.onRendered(function () {
+Template.ChlamydiaFemale.onRendered(function () {
   STIName = 'chlamydia'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
-    console.log(result)
     if (error) {
       console.log(error)
     }
     $('.conditionInfo').append('<div>' + result + '</div>')
-    console.log(result)
   })
 })
 
-Template.ChlamydiaFemaleC.events({
+Template.ChlamydiaFemale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
   }
@@ -42,12 +38,10 @@ Template.ChlamydiaFemaleC.events({
 Template.GenitalHerpesMale.onRendered(function () {
   STIName = 'genital-herpes'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
-    console.log(result)
     if (error) {
       console.log(error)
     }
     $('.conditionInfo').append('<div>' + result + '</div>')
-    console.log(result)
   })
 })
 
@@ -60,12 +54,10 @@ Template.GenitalHerpesMale.events({
 Template.GenitalHerpesFemale.onRendered(function () {
   STIName = 'genital-herpes'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
-    console.log(result)
     if (error) {
       console.log(error)
     }
     $('.conditionInfo').append('<div>' + result + '</div>')
-    console.log(result)
   })
 })
 
@@ -75,37 +67,33 @@ Template.GenitalHerpesFemale.events({
   }
 })
 
-Template.GenialWartsMaleT.onRendered(function () {
+Template.genitalWartsMale.onRendered(function () {
   STIName = 'genital-warts'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
-    console.log(result)
     if (error) {
       console.log(error)
     }
     $('.conditionInfo').append('<div>' + result + '</div>')
-    console.log(result)
   })
 })
 
-Template.GenialWartsMaleT.events({
+Template.genitalWartsMale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
   }
 })
 
-Template.GenialWartsFemale.onRendered(function () {
+Template.GenitalWartsFemale.onRendered(function () {
   STIName = 'genital-warts'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
-    console.log(result)
     if (error) {
       console.log(error)
     }
     $('.conditionInfo').append('<div>' + result + '</div>')
-    console.log(result)
   })
 })
 
-Template.GenialWartsFemale.events({
+Template.GenitalWartsFemale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
   }
@@ -114,12 +102,10 @@ Template.GenialWartsFemale.events({
 Template.GonorrhoeaMale.onRendered(function () {
   STIName = 'gonorrhoea'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
-    console.log(result)
     if (error) {
       console.log(error)
     }
     $('.conditionInfo').append('<div>' + result + '</div>')
-    console.log(result)
   })
 })
 
@@ -132,12 +118,10 @@ Template.GonorrhoeaMale.events({
 Template.GonorrhoeaFemale.onRendered(function () {
   STIName = 'gonorrhoea'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
-    console.log(result)
     if (error) {
       console.log(error)
     }
     $('.conditionInfo').append('<div>' + result + '</div>')
-    console.log(result)
   })
 })
 
@@ -150,12 +134,10 @@ Template.GonorrhoeaFemale.events({
 Template.PubicLiceMale.onRendered(function () {
   STIName = 'pubic-lice'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
-    console.log(result)
     if (error) {
       console.log(error)
     }
     $('.conditionInfo').append('<div>' + result + '</div>')
-    console.log(result)
   })
 })
 
@@ -168,12 +150,10 @@ Template.PubicLiceMale.events({
 Template.PubicLiceFemale.onRendered(function () {
   STIName = 'pubic-lice'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
-    console.log(result)
     if (error) {
       console.log(error)
     }
     $('.conditionInfo').append('<div>' + result + '</div>')
-    console.log(result)
   })
 })
 
@@ -186,12 +166,10 @@ Template.PubicLiceFemale.events({
 Template.ScabiesMale.onRendered(function () {
   STIName = 'scabies'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
-    console.log(result)
     if (error) {
       console.log(error)
     }
     $('.conditionInfo').append('<div>' + result + '</div>')
-    console.log(result)
   })
 })
 
@@ -204,12 +182,10 @@ Template.ScabiesMale.events({
 Template.ScabiesFemale.onRendered(function () {
   STIName = 'scabies'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
-    console.log(result)
     if (error) {
       console.log(error)
     }
     $('.conditionInfo').append('<div>' + result + '</div>')
-    console.log(result)
   })
 })
 
@@ -222,12 +198,10 @@ Template.ScabiesFemale.events({
 Template.SyphilisMale.onRendered(function () {
   STIName = 'syphilis'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
-    console.log(result)
     if (error) {
       console.log(error)
     }
     $('.conditionInfo').append('<div>' + result + '</div>')
-    console.log(result)
   })
 })
 
@@ -240,12 +214,10 @@ Template.SyphilisMale.events({
 Template.SyphilisFemale.onRendered(function () {
   STIName = 'syphilis'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
-    console.log(result)
     if (error) {
       console.log(error)
     }
     $('.conditionInfo').append('<div>' + result + '</div>')
-    console.log(result)
   })
 })
 
@@ -258,12 +230,10 @@ Template.SyphilisFemale.events({
 Template.HIVMale.onRendered(function () {
   STIName = 'hiv-and-aids'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
-    console.log(result)
     if (error) {
       console.log(error)
     }
     $('.conditionInfo').append('<div>' + result + '</div>')
-    console.log(result)
   })
 })
 
@@ -276,12 +246,10 @@ Template.HIVMale.events({
 Template.HIVFemale.onRendered(function () {
   STIName = 'hiv-and-aids'
   Meteor.call('getNhsInfo', STIName, function (error, result) {
-    console.log(result)
     if (error) {
       console.log(error)
     }
     $('.conditionInfo').append('<div>' + result + '</div>')
-    console.log(result)
   })
 })
 

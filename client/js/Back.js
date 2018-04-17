@@ -1,33 +1,29 @@
 import { Template } from 'meteor/templating'
 import '../templates/ChlamydiaMale.html'
 import '../templates/OptionsSelected.html'
-import '../templates/ChlamydiaFemaleC.html'
+import '../templates/ChlamydiaFemale.html'
 
-Template.ChlamydiaMaleT.events({
+Template.ChlamydiaMale.events({
   'click #closeSTIMale': function (event) {
     window.history.back()
-    console.log('MaleClose Chlamydia')
   }
 })
 
 Template.GenitalHerpesMale.events({
   'click #closeSTIMale': function (event) {
     window.history.back()
-    console.log('MaleClose herpes')
   }
 })
 
-Template.GenialWartsMaleT.events({
+Template.genitalWartsMale.events({
   'click #closeSTIMaleGW': function (event) {
     window.history.back()
-    console.log('MaleClose warts')
   }
 })
 
 Template.GonorrhoeaMale.events({
   'click #closeSTIMaleGon': function (event) {
     window.history.back()
-    console.log('MaleClose warts')
   }
 })
 
@@ -58,7 +54,7 @@ Template.HIVMale.events({
   }
 })
 
-Template.ChlamydiaFemaleC.events({
+Template.ChlamydiaFemale.events({
   'click .closeSTIFemale': function (event) {
     window.history.back()
   }
@@ -70,7 +66,7 @@ Template.GenitalHerpesFemale.events({
   }
 })
 
-Template.GenialWartsFemale.events({
+Template.GenitalWartsFemale.events({
   'click .closeSTIFemale': function (event) {
     window.history.back()
   }

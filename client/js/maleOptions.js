@@ -38,11 +38,11 @@ Template.choice.onRendered(function () {
 
 Template.maleOptions.events({
   'click #MaleChlamydiaOPTI': function (event) {
-    window.location.href = '/chlamydiaMale'
+    window.location.href = '/ChlamydiaMale'
     //  console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
   },
   'click #MaleGenitalWartsOPTI': function (event) {
-    window.location.href = '/genialWartsMale'
+    window.location.href = '/genitalWartsMale'
   },
   'click #MaleGenitalHerpesOPTI': function (event) {
     window.location.href = '/genitalHerpesMale'
