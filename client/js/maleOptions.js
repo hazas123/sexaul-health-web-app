@@ -2,7 +2,6 @@ import { Template } from 'meteor/templating'
 import { ReactiveVar } from 'meteor/reactive-var'
 import '../templates/OptionsSelected.html'
 import '../templates/choice.html'
-import '../js/hello.js'
 
 var hello = require('../js/choice.js')
 var view

@@ -1,28 +1,6 @@
 import { Template } from 'meteor/templating'
-import { ReactiveVar } from 'meteor/reactive-var'
 import '../templates/OptionsSelected.html'
 import '../templates/choice.html'
-import '../js/hello.js'
-
-var hello = require('../js/choice.js')
-var view
-var GenderSel = hello.GenderToExport
-var Woman = 'Woman'
-var OtherGender = 'Other'
-var Sex = hello.SexaulityToExport
-
-// var m = require('mymodule')
-
-Template.OptionsSelected.helpers({
-  myValue: function () {
-        // As usual, this will be reactive.
-    return Template.instance().data.sharedVar1.get()
-  }
-})
-Template.OptionsSelected.onCreated(function () {
-  this.GenderExportedVar = new ReactiveVar(hello.GenderToExport)
-  this.SexualityExportedVar = new ReactiveVar(hello.SexaulityToExport)
-})
 
 Template.OptionsSelected.onRendered(function () {
   $('#OptionsHolder').css('visibility', 'visible')

@@ -1,7 +1,6 @@
 import { Template } from 'meteor/templating'
 import '../templates/OptionsSelected.html'
 import '../templates/choice.html'
-import '../js/hello.js'
 
 Template.choice.onRendered(function () {
   // Added so this actually renders as a blaze view
