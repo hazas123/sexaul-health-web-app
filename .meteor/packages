@@ -26,3 +26,5 @@ promise
 deanius:promise
 iron:router
 http
+email
+check

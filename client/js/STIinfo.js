@@ -1,6 +1,6 @@
 import { Template } from 'meteor/templating'
 import { Meteor } from 'meteor/meteor'
-
+import '../templates/ChlamydiaFemale.html'
 var STIName
 
 Template.ChlamydiaMale.onRendered(function () {
@@ -16,6 +16,27 @@ Template.ChlamydiaMale.onRendered(function () {
 Template.ChlamydiaMale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
+  },
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.conditionInfo').offset().top},
+      'slow')
+  },
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
   }
 })
 
@@ -32,6 +53,27 @@ Template.ChlamydiaFemale.onRendered(function () {
 Template.ChlamydiaFemale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
+  },
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.conditionInfo').offset().top},
+      'slow')
+  },
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
   }
 })
 
@@ -48,6 +90,27 @@ Template.GenitalHerpesMale.onRendered(function () {
 Template.GenitalHerpesMale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
+  },
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.conditionInfo').offset().top},
+      'slow')
+  },
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
   }
 })
 
@@ -64,6 +127,27 @@ Template.GenitalHerpesFemale.onRendered(function () {
 Template.GenitalHerpesFemale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
+  },
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.conditionInfo').offset().top},
+      'slow')
+  },
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
   }
 })
 
@@ -80,6 +164,27 @@ Template.genitalWartsMale.onRendered(function () {
 Template.genitalWartsMale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
+  },
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.conditionInfo').offset().top},
+      'slow')
+  },
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
   }
 })
 
@@ -96,6 +201,27 @@ Template.GenitalWartsFemale.onRendered(function () {
 Template.GenitalWartsFemale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
+  },
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.conditionInfo').offset().top},
+      'slow')
+  },
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
   }
 })
 
@@ -112,6 +238,27 @@ Template.GonorrhoeaMale.onRendered(function () {
 Template.GonorrhoeaMale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
+  },
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.conditionInfo').offset().top},
+      'slow')
+  },
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
   }
 })
 
@@ -128,6 +275,27 @@ Template.GonorrhoeaFemale.onRendered(function () {
 Template.GonorrhoeaFemale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
+  },
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.conditionInfo').offset().top},
+      'slow')
+  },
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
   }
 })
 
@@ -144,6 +312,27 @@ Template.PubicLiceMale.onRendered(function () {
 Template.PubicLiceMale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
+  },
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.conditionInfo').offset().top},
+      'slow')
+  },
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
   }
 })
 
@@ -160,6 +349,27 @@ Template.PubicLiceFemale.onRendered(function () {
 Template.PubicLiceFemale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
+  },
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.conditionInfo').offset().top},
+      'slow')
+  },
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
   }
 })
 
@@ -176,6 +386,27 @@ Template.ScabiesMale.onRendered(function () {
 Template.ScabiesMale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
+  },
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.conditionInfo').offset().top},
+      'slow')
+  },
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
   }
 })
 
@@ -192,6 +423,27 @@ Template.ScabiesFemale.onRendered(function () {
 Template.ScabiesFemale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
+  },
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.conditionInfo').offset().top},
+      'slow')
+  },
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
   }
 })
 
@@ -208,6 +460,27 @@ Template.SyphilisMale.onRendered(function () {
 Template.SyphilisMale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
+  },
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.conditionInfo').offset().top},
+      'slow')
+  },
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
   }
 })
 
@@ -224,6 +497,27 @@ Template.SyphilisFemale.onRendered(function () {
 Template.SyphilisFemale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
+  },
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.conditionInfo').offset().top},
+      'slow')
+  },
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
   }
 })
 
@@ -240,6 +534,27 @@ Template.HIVMale.onRendered(function () {
 Template.HIVMale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
+  },
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.conditionInfo').offset().top},
+      'slow')
+  },
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
   }
 })
 
@@ -256,5 +571,26 @@ Template.HIVFemale.onRendered(function () {
 Template.HIVFemale.events({
   'click .mainentityofpagebutton' (event) {
     $('.' + event.target.id).toggleClass('mainentityofpage')
+  },
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.conditionInfo').offset().top},
+      'slow')
+  },
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
   }
 })

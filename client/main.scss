@@ -60,8 +60,10 @@ table {
 
 $primaryColor: #243854; // Main Blue
 $secondaryColor: #629cba; // Light Blue
-$secondaryColorLight: #fe7150; // Orange orange
+$secondaryColorLight: #fe7050; // Orange orange
 $AlternativeColor: #939393; // Grey
+$GeneralWhite: #ffffff; //White
+$AlternativeColorBlue: #4353a4; otherblue
 
 body, html {
     height: 100%;
@@ -176,74 +178,69 @@ cursor: pointer;}
 // }
 
 
-
-//=== Drawing effect
-
-@mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
-  box-shadow: inset 0 0 0 $width $color;
-  color: $color;
-  transition: color $duration $duration/3;
-  position: relative;
-
-  &::before,
-  &::after {
-    border: 0 solid transparent;
-    box-sizing: border-box;
-    content: '';
-    pointer-events: none;
-    position: absolute;
-    width: 0; height: 0;
-
-    #{$vertical}: 0;
-    #{$horizontal}: 0;
-  }
-
-  &::before {
-    $h-side: if($horizontal == 'left', 'right', 'left');
-
-    border-#{$vertical}-width: $width;
-    border-#{$h-side}-width: $width;
-  }
-
-  &::after {
-    $v-side: if($vertical == 'top', 'bottom', 'top');
-
-    border-#{$v-side}-width: $width;
-    border-#{$horizontal}-width: $width;
-  }
-
-  &:hover {
-    color: $hover;
-
-    &::before,
-    &::after {
-      border-color: $hover;
-      transition: border-color 0s, width $duration, height $duration;
-      width: 100%;
-      height: 100%;
-    }
-
-    &::before { transition-delay: 0s, 0s, $duration; }
-
-    &::after { transition-delay: 0s, $duration, 0s; }
-  }
-}
-
 .draw-border {
-  @include btn-border-drawing($primaryColor, $secondaryColor, 4px, bottom, right);
+  box-shadow: inset 0 0 0 4px $secondaryColorLight;
+  color: $secondaryColorLight;
+  transition: color 0.25s 0.08333s;
+  position: relative;
 }
 
-//=== Button styling, semi-ignore
+.draw-border::before,
+.draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.draw-border:hover {
+  color: $secondaryColor;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+  border-color: $secondaryColor;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+
 .btn {
-	background: none;
-    border: none;
-    cursor: pointer;
-    line-height: 1.5;
-    font: 700 1.2rem 'Roboto Slab', sans-serif;
-    padding: 1em;
-    /* letter-spacing: 0.05rem; */
-    visibility: hidden;
-   &:focus { outline: 0; }
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 1em;
+
+  /* letter-spacing: 0.05rem; */
+}
+
+.btn:focus {
+  outline: 0;
 }
 
 #All_Show{
@@ -271,8 +268,8 @@ display: none;
     left: 0px;*/
 
 
-		background-image: url(./Logo/IntroGIF.gif);
-	height: 100%;
+	background-image: url("./Logo/intro.gif");
+	height: 100vh;
 	background-repeat: no-repeat;
 	/* background-size: 66vw; */
 	/* position: relative; */
@@ -523,7 +520,7 @@ font: 900 1.5em 'Roboto Slab', sans-serif;
 	margin-top: 3%;
 	/* margin-left: 24%; */
 	width: 100%;
-	padding-left: 10vw;
+	padding-left: 7vw;
 }
 
 #siteInformation h1{
@@ -652,6 +649,27 @@ font: 900 2.2rem 'Roboto Slab', sans-serif;
 
   &:hover, &:focus { color: $secondaryColor; }
 }
+
+.STIBackHomeHelp{
+
+			margin-right: 1vw;
+	    color: $GeneralWhite;
+	    font-size: 0.8em;
+	    padding-top: 1%;
+	    transition: all 225ms ease 0ms;
+
+
+
+  &:hover, &:focus { color: $secondaryColor;
+		.tooltiptext {
+		    visibility: visible;
+		}}
+}
+
+
+
+
+
 
 #SelectOptionCol2{
   background-color: $primaryColor;
@@ -1101,7 +1119,7 @@ margin-bottom: 4%;
 }
 
 #MythStyling,.MythStyling{
-	background-color: $primaryColor;
+	background-color: $AlternativeColorBlue;
 }
 
 .hygiene, #hygiene {
@@ -1118,7 +1136,7 @@ margin-bottom: 4%;
     margin: 10px;
     width: 10%;
     display: inline;
-    height: 11vh;
+    // height: 11vh;
     color: white;
 		cursor: pointer;
     /* padding: 10%; */
@@ -1394,29 +1412,30 @@ text-align: center;
 }
 
 .MythOverlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: $primaryColor;
-	border-radius: 10px;
+	/* position: absolute; */
+    /* top: 0; */
+    /* bottom: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* height: 100%; */
+    /* width: 100%; */
+    /* opacity: 0; */
+    padding-top: 2vh;
+    transition: .5s ease;
+    background-color: $primaryColor;
+    border-radius: 10px;
 }
 
 .MythOverlayText{
 
-  color: white;
+/*  color: white;
   font-size: 20px;
   position: absolute;
   top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: center; */
 
 }
 
@@ -1441,7 +1460,7 @@ background-color: #f4f4f4;
 	display: none;
 }
 
-#HelpLink, #BackBtn{
+#HelpLink, #ContactUs{
 	color: white;
 	text-decoration: none;
 	display: block;
@@ -1455,7 +1474,7 @@ background-color: #f4f4f4;
 	cursor: pointer;
 }
 
-#HelpLink:hover , #BackBtn:hover {
+#HelpLink:hover , #ContactUs:hover {
 	color: #fff;
 	background: $secondaryColorLight;
 	-webkit-box-shadow: inset -150px 0px 100px 5px $secondaryColorLight;
@@ -1681,9 +1700,10 @@ background: $secondaryColorLight;
 	}
 
   .whiteB {
-    margin-right: 0px !important;
-    margin-left: 0px !important;
+    margin-right: -8px !important;
+    margin-left: -7px !important;
 		padding-bottom: 10vh !important;
+		padding-left: 3vw;
   }
 
   #maleOptionsSelected {
@@ -1910,9 +1930,7 @@ margin-left: 15px;
 }
 
 
-.itemOpt {
-	height: 15vh;
-}
+
 
 #FemaleGonorrhoeaOPTI {
 	padding-left: 3px;
@@ -1958,6 +1976,14 @@ width: 43vh;
 .HelpMobile{
 	height: 17vh;
 }
+
+.itemOpt {
+/* white-space: pre-wrap;
+white-space: moz pre-wrap;
+white-space: o pre-wrap;
+word-wrap: break-word; */
+}
+
 
 }
 

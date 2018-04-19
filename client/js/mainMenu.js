@@ -17,9 +17,14 @@ Template.MenuMain.events({
     $('#page-slide').toggleClass('slide')
     $('#toggle').toggleClass('slide-tog')
   },
-  'click #BackBtn': function (event) {
+  'click #ContactUs': function (event) {
     $('#page-slide').toggleClass('slide')
     $('#toggle').toggleClass('slide-tog')
-    window.history.back()
+    window.location.href = '/ContactSalus'
+  },
+  'click .CloseHelpMenuAlt': function (event) {
+    if (!$('.helpMain').hasClass('HelpHide')) {
+      $('.helpMain').addClass('HelpHide')
+    }
   }
 })

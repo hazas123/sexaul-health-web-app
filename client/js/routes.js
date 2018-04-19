@@ -94,6 +94,9 @@ Router.route('/Myths', function () {
 Router.route('/AboutSalus', function () {
   this.render('About')
 })
+Router.route('/Disclamer', function () {
+  this.render('Disclamer')
+})
 
 Router.route('/SearchSalus', function () {
   this.render('SearchTemp')

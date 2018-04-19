@@ -6,7 +6,7 @@ import '../templates/chatbox.html'
 const uuidv1 = require('uuid/v1')
 
 Template.chatbox.events({
-  'click .chat-widget-container' (event, instance) {
+  'click .chat-widget-container, click .Close-Chat-Bot' (event, instance) {
     event.preventDefault()
 
     $('.chat-box-container').toggleClass('show')

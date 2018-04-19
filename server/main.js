@@ -1,5 +1,7 @@
 import { Meteor } from 'meteor/meteor'
 import { HTTP } from 'meteor/http'
+import { Email } from 'meteor/email'
+import { check } from 'meteor/check'
 var redis = require('redis')
 var client = redis.createClient(process.env.REDIS_URL)
 // var client = redis.createClient(6379, '127.0.0.1')
@@ -19,11 +21,9 @@ Meteor.methods({
       }
       var request = app.textRequest(val, options)
       request.on('response', function (response) {
-        console.log('RES', response.result.fulfillment.speech)
         resolve(response.result.fulfillment.speech)
       })
       request.on('error', function (error) {
-        console.log('ERROR', error)
         reject(new Error('ERROR: ' + error))
       })
       request.end()
@@ -34,14 +34,13 @@ Meteor.methods({
     return new Promise((resolve, reject) => {
       var arg = STIName
       var query = 'https://api.nhs.uk/conditions/' + arg
-      console.log('HERE', STIName)
       client.get(query, Meteor.bindEnvironment(function (error, res) {
         if (error) { reject(new Error('ERROR: ' + error)) }
         if (res) {
           res = unidecode(res)
           res = res.replace(/href=\\"/g, 'target=\\"_blank\\" href=\\"https://www.nhs.uk')
           var responce = JSON.parse(res)
-          Meteor.call('getMarkdownAPI', responce.mainEntityOfPage, function (error, result) {
+          Meteor.call('getMarkdown', responce.mainEntityOfPage, function (error, result) {
             if (error) {
               if (error) { throw error }
             }
@@ -91,18 +90,25 @@ Meteor.methods({
     })
   },
 
-  getMarkdownAPI: function (mainEntityOfPage) {
+  sendEmail (from, subject, text) {
     return new Promise((resolve, reject) => {
-      var createdHTML
-      var arrayLength = mainEntityOfPage.length
-      for (var i = 0; i < arrayLength; i++) {
-        if (i === 0) {
-          createdHTML = mainEntityOfPage[i].mainEntityOfPage[0].text
-        } else {
-          createdHTML += '<button class="mainentityofpagebutton REDDIS" id="mainEntityOfPage' + i + '">' + mainEntityOfPage[i].text + '</button><div class="mainentityofpage mainEntityOfPage' + i + '" >' + mainEntityOfPage[i].mainEntityOfPage[0].text + '</div>'
-        }
-      }
-      resolve(createdHTML)
+      // Make sure that all arguments are strings.
+      var to = 'jamessmith06@msn.com'
+      console.log(to)
+      console.log(from)
+      console.log(subject)
+      console.log(text)
+      check([to, from, subject, text], [String])
+      // console.log(stringCheck);
+      // if (!stringCheck) {
+      //   reject(new Error('ERROR: inputs not all strings'))
+      // }
+
+      // Let other method calls from the same client start running, without
+      // waiting for the email sending to complete.
+      this.unblock()
+      Email.send({ to, from, subject, text })
+      resolve(true)
     })
   }
 })
