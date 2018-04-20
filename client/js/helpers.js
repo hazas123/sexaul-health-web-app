@@ -1,5 +1,5 @@
 import { Template } from 'meteor/templating'
-var hello = require('./choice.js')
+import { Session } from 'meteor/session'
 
 Template.registerHelper('_log', function (Str) {
   console.log(Str)
@@ -49,4 +49,8 @@ Template.registerHelper('_greaterThan', function (arg1, arg2, options, context) 
     return options.inverse(context)
   }
   return arg1 >= arg2
+})
+
+Template.registerHelper('_returningUser', function () {
+  return Session.get('returningUser')
 })
