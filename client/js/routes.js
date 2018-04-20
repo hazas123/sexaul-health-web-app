@@ -108,8 +108,8 @@ Router.route('/ContactSalus', function () {
 
 //  hygiene
 
-Router.route('/AnalDouche', function () {
-  this.render('AnalDouche')
+Router.route('/RectalDouche', function () {
+  this.render('RectalDouche')
 })
 
 Router.route('/Tampon', function () {

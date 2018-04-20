@@ -63,7 +63,7 @@ Template.maleOptions.events({
   },
   // Hygine
   'click #DoucheOPTI': function (event) {
-    window.location.href = '/AnalDouche'
+    window.location.href = '/RectalDouche'
   },
   // Contraception
   'click #CondomOPTI': function (event) {

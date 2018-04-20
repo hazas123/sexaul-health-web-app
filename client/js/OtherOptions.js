@@ -61,7 +61,7 @@ Template.OtherOptions.events({
   },
   // Hygine
   'click #DoucheOPTI': function (event) {
-    window.location.href = '/AnalDouche'
+    window.location.href = '/RectalDouche'
   },
   'click #TamponOPTI': function (event) {
     window.location.href = '/Tampon'
