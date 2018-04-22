@@ -594,3 +594,98 @@ Template.HIVFemale.events({
     }
   }
 })
+
+Template.RectalDouche.events({
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
+  }
+})
+
+Template.Condom.events({
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
+  }
+})
+
+Template.CombinedPill.events({
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
+  }
+})
+
+Template.Implant.events({
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
+  }
+})
+
+Template.Tampon.events({
+  'click .STIBackHomeHelp' (event) {
+    console.log(event)
+    var BHH = event.currentTarget.id
+
+    console.log(BHH + ' h')
+
+    if (BHH === 'ReturnHome') {
+      window.location.href = '/choice'
+    }
+    if (BHH === 'PreviousPage') {
+      window.history.back()
+    }
+    if (BHH === 'Help') {
+      $('.helpMain').toggleClass('HelpHide')
+    }
+  }
+})

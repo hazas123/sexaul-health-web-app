@@ -129,7 +129,7 @@ body {
 
 #ChangeTextSize{
 	color: white;
-	padding: 15px 25px;
+	padding: 10px 25px;
 }
 
 #ChangeTextSize  a{
@@ -406,6 +406,11 @@ font: 900 2.2rem 'Roboto Slab', sans-serif;
 /* border-radius: 25px; */
 /* padding-top: 10vh; */
 color: $secondaryColorLight;
+width: 100%;
+}
+
+#moreinfoStyling{
+	width: 200px;
 }
 
 
@@ -652,17 +657,19 @@ font: 900 2.2rem 'Roboto Slab', sans-serif;
 
 .STIBackHomeHelp{
 
-			margin-right: 1vw;
-	    color: $GeneralWhite;
-	    font-size: 0.8em;
-	    padding-top: 1%;
-	    transition: all 225ms ease 0ms;
+	margin-right: 1vw;
+  color: $GeneralWhite;
+  font-size: 0.8em;
+  padding-top: 1%;
+  transition: all 225ms ease 0ms;
+	border: none;
+	background: #243854;
 
 
 
   &:hover, &:focus { color: $secondaryColor;
 		.tooltiptext {
-		    visibility: visible;
+		   visibility: visible;
 		}}
 }
 
@@ -698,6 +705,7 @@ font: 900 2.2rem 'Roboto Slab', sans-serif;
 	text-align: center;
 	border-radius: 10px;
 	color: white;
+	min-height: 30vh;
 	/* justify-content: center; */
 	flex-direction: column;
 
@@ -738,6 +746,29 @@ color: white;
 	padding-top: 1vh;
 	padding-bottom: 1vh;
 	    margin-bottom: 2vh;
+}
+
+.ResetAndMoreInfo {
+	display: inherit;
+	margin-top: 150px;
+}
+
+.ResetAndMoveInforStyling{
+height: 10vh;
+    float: left;
+	}
+
+.ToShowOnSmallSTI{
+	display: none;
+	cursor: pointer;
+
+    background-color: #243854;
+    font: 700 1rem 'Roboto Slab', sans-serif;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    color: white;
+    width: 100px;
+    text-align: center;
 }
 
 .col1Options p {font-size: 10vh;}
@@ -796,15 +827,10 @@ color: white;
 }
  .STIMainHold, .STIMainHoldWoman, .STIMainHoldGW, .STIMainHoldGH, .STIMainHoldGon, .STIMainHoldSyph, .STIMainHoldPubLi, .STIMainHoldScabies, #OptionsHoldeMyth{
 
-	 /* position: fixed; */
 	 	z-index: 2;
-width: 70vw;
-		height: 100vh;
+		width: 70vw;
 		margin: 0px;
-/* padding-top: 34vw; */
-/* padding: 8vw; */
 		padding-left: 5vw;
-/* padding-left: 5vw; */
  }
 
  .HygieneHold {
@@ -1002,6 +1028,7 @@ height: 10px;
   position: absolute ;
 
 
+
   font: 700 1.2rem 'Roboto Slab', sans-serif;
   -webkit-transition: opacity 0.5s;
   width: 70%;
@@ -1013,8 +1040,9 @@ height: 10px;
 
 .STIsymptomInfoBoxMove{
 margin-top: 5%;
+min-height: 5vh;
+//background-color: pink;
 
-background-color: pink;
 }
 
 
@@ -1268,7 +1296,23 @@ top: 0;
 z-index: 5;
 }
 
+#ReturnHome:hover, #PreviousPage:hover, #Help:hover{
+	cursor: pointer;
+}
 
+.HomeBackHelpMenuStyling{
+	color: white;
+	    font-size: 1.5em;
+	    text-decoration: none;
+	    display: block;
+	    padding: 10px 21px;
+/* border: 1px solid #2f2f2f; */
+-webkit-transition: background 0.3s linear;
+-moz-transition: background 0.3s linear;
+-ms-transition: background 0.3s linear;
+-o-transition: background 0.3s linear;
+transition: background 0.3s linear;
+cursor: pointer;}
 
 .MenuOverride {
     /* height: 100vw;
@@ -1288,21 +1332,11 @@ z-index: 5;
     ul li{
     }
     ul li a{
-    /* color: #cdcdcd;
-    text-decoration: none;
-    display: block;
-    padding: 15px 25px;
-    border: 1px solid #2f2f2f;
 
-    -webkit-transition: background 0.3s linear;
-    -moz-transition: background 0.3s linear;
-    -ms-transition: background 0.3s linear;
-    -o-transition: background 0.3s linear;
-    transition: background 0.3s linear; */
 		color: white;
     text-decoration: none;
     display: block;
-    padding: 15px 25px;
+    padding: 10px 25px;
     /* border: 1px solid #2f2f2f; */
     -webkit-transition: background 0.3s linear;
     -moz-transition: background 0.3s linear;
@@ -1465,7 +1499,7 @@ background-color: #f4f4f4;
 	color: white;
 	text-decoration: none;
 	display: block;
-	padding: 15px 25px;
+	padding: 10px 25px;
 	/* border: 1px solid #2f2f2f; */
 	-webkit-transition: background 0.3s linear;
 	-moz-transition: background 0.3s linear;
@@ -1694,11 +1728,15 @@ background: $secondaryColorLight;
   #SalusMainOptions {
     height: auto !important;
     margin-bottom: 2em !important;
+
   }
 
 	#SalusMainOptions h1 {
 		text-align: center;
 	}
+
+
+
 
   .whiteB {
     margin-right: -8px !important;
@@ -1954,12 +1992,13 @@ display: inherit;
 }
 
 .ColBot {
-margin-top: 49%;
+margin-top: 40%;
 }
 
 .CircleChoiceSize{
 	height: 33vh;
     margin-bottom: 2vh;
+		    min-height: 30vh;
 }
 
 .ContentHelp {
@@ -1985,6 +2024,24 @@ white-space: o pre-wrap;
 word-wrap: break-word; */
 }
 
+.ResetAndMoreInfo{
+display: none;
+}
+
+.ToShowOnSmallSTI{
+	display: inline;
+}
+
+.ButtonStylingSTIHolder{
+
+
+	margin-left: 13vw;
+}
+
+
+.colArt{
+	margin-top: 0px;
+}
 
 }
 

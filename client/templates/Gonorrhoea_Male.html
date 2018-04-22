@@ -3,9 +3,9 @@
 <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
 <div class="row compatabilityStyling">
 <div class="siteInformationSTIs row">
-  <div class="STIBackHomeHelp" id="ReturnHome">    <i class="fas fa-home"></i> </div>
-  <div class="STIBackHomeHelp" id="PreviousPage">  <i class="far fa-arrow-alt-circle-left"></i></div>
-  <div class="STIBackHomeHelp" id="Help">          <i class="far fa-question-circle"></i> </div>
+  <button class="STIBackHomeHelp" id="ReturnHome">    <i class="fas fa-home"></i> </button>
+  <button class="STIBackHomeHelp" id="PreviousPage">  <i class="far fa-arrow-alt-circle-left"></i></button>
+  <button class="STIBackHomeHelp" id="Help">          <i class="far fa-question-circle"></i> </button>
   <h1>Gonorrhoea  </h1>
 
 <!--<p>Sexual Health information and services</p> -->
@@ -55,13 +55,16 @@
 <div class="ButtonStylingSTI STISmallHeading">Gonorrhoea</div>
       <div class="ButtonStylingSTIHolder">
           <div class="row">
-              <div class="ButtonStylingSTI " id="symptom1GonMAN" onclick="symptomzoomMANGon('symptomAreaMANGon', 'GonorrhoeaModelMan__MA_discharge_Gon1', 'GonorrhoeaModelMan__MA_discharge_Gon', 'GonorrhoeaModelMan__MA_Discharge_Gon1')">Symptom 1</div>
-              <div class="ButtonStylingSTI " id="symptom2GonMAN" onclick="symptomzoom1MANGon('symptomAreaMANGon', 'GonorrhoeaModelMan__MA_Pee_Gon', 'GonorrhoeaModelMan__MA_Pain_When_Peeing_Gon')">Symptom 2</div>
-              <div class="ButtonStylingSTI " id="symptom3GonMAN" onclick="symptomzoom2MANGon('symptomAreaMANGon', 'GonorrhoeaModelMan__MA_Man_Skin_TextureGon', 'GonorrhoeaModelMan__MA_Cherry_Pain_Gon', 'GonorrhoeaModelMan__MA_Banana_texture_MANGW')">Symptom 3</div>
-              <div class="ButtonStylingSTI " id="symptom4GonMAN" onclick="symptomzoom3MANGon('symptomAreaMANGonEyes', 'GonorrhoeaModelMan__MA_Man_Skin_TextureGon', 'GonorrhoeaModelMan__MA_Eye_Gon_Texture')">Symptom 4</div>
-              <div class="ButtonStylingSTI " id="symptom5GonMAN" onclick="symptomzoom4MANGon('symptomAreaMANGonThroat', 'GonorrhoeaModelMan__MA_Man_Skin_TextureGon', 'GonorrhoeaModelMan__MA_Throat_Gon_Texture')">Symptom 5</div>
-              <div class="ButtonStylingSTI " onclick="cameraChangeMANGon('ResetMANGon')" >Reset</div>
-              <div class="ButtonStylingSTI" id="moreinfo" >More Info</div>
+              <button class="ButtonStylingSTI " id="symptom1GonMAN" onclick="symptomzoomMANGon('symptomAreaMANGon', 'GonorrhoeaModelMan__MA_discharge_Gon1', 'GonorrhoeaModelMan__MA_discharge_Gon', 'GonorrhoeaModelMan__MA_Discharge_Gon1')">Symptom 1</button>
+              <button class="ButtonStylingSTI " id="symptom2GonMAN" onclick="symptomzoom1MANGon('symptomAreaMANGon', 'GonorrhoeaModelMan__MA_Pee_Gon', 'GonorrhoeaModelMan__MA_Pain_When_Peeing_Gon')">Symptom 2</button>
+              <button class="ButtonStylingSTI " id="symptom3GonMAN" onclick="symptomzoom2MANGon('symptomAreaMANGon', 'GonorrhoeaModelMan__MA_Man_Skin_TextureGon', 'GonorrhoeaModelMan__MA_Cherry_Pain_Gon', 'GonorrhoeaModelMan__MA_Banana_texture_MANGW')">Symptom 3</button>
+              <button class="ButtonStylingSTI " id="symptom4GonMAN" onclick="symptomzoom3MANGon('symptomAreaMANGonEyes', 'GonorrhoeaModelMan__MA_Man_Skin_TextureGon', 'GonorrhoeaModelMan__MA_Eye_Gon_Texture')">Symptom 4</button>
+              <button class="ButtonStylingSTI " id="symptom5GonMAN" onclick="symptomzoom4MANGon('symptomAreaMANGonThroat', 'GonorrhoeaModelMan__MA_Man_Skin_TextureGon', 'GonorrhoeaModelMan__MA_Throat_Gon_Texture')">Symptom 5</button>
+
+              <button class="ToShowOnSmallSTI " onclick="cameraChangeMANGon('ResetMANGon')" >Reset</button>
+
+              <button class="ToShowOnSmallSTI  moreinfoStyling" id="moreinfo" >More Info</button>
+
             </div>
           </div>
 
@@ -88,7 +91,10 @@
           <p>Gonorrhoea can affect the throat</p>
         </div>
       </div>
-
+      <div class="ResetAndMoreInfo ">
+      <button class="ButtonStylingSTI ResetAndMoveInforStyling" onclick="cameraChangeMAN('ResetMAN')" >Reset</button>
+      <button class="ButtonStylingSTI ResetAndMoveInforStyling" id="moreinfo" >More Info <i class="far fa-arrow-alt-circle-down"></i></button>
+      </div>
       </div>
 
       </div>

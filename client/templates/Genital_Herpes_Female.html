@@ -3,9 +3,9 @@
 <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
 <div class="row compatabilityStyling">
 <div class="siteInformationSTIs row">
-  <div class="STIBackHomeHelp" id="ReturnHome">    <i class="fas fa-home"></i> </div>
-  <div class="STIBackHomeHelp" id="PreviousPage">  <i class="far fa-arrow-alt-circle-left"></i></div>
-  <div class="STIBackHomeHelp" id="Help">          <i class="far fa-question-circle"></i> </div>
+  <button class="STIBackHomeHelp" id="ReturnHome">    <i class="fas fa-home"></i> </button>
+  <button class="STIBackHomeHelp" id="PreviousPage">  <i class="far fa-arrow-alt-circle-left"></i></button>
+  <button class="STIBackHomeHelp" id="Help">          <i class="far fa-question-circle"></i> </button>
   <h1>Female Genital Herpes </h1>
 
 <!--<p>Sexual Health information and services</p> -->
@@ -51,11 +51,13 @@
 <div class="ButtonStylingSTI STISmallHeading">Genital Herpes</div>
       <div class="ButtonStylingSTIHolder">
           <div class="row">
-              <div class="ButtonStylingSTI " id="symptom1FemaleGH" onclick="symptomzoomFemaleGH('symptomAreaFemaleGH', 'Genital_Herpes_Model_Man__MA_Woman_Thigh_genital_Blister_Texture_GH' )">Symptom 1</div>
-              <div class="ButtonStylingSTI " id="symptom2FemaleGH" onclick="symptomzoom1FemaleGH('symptomAreaFemaleGHAnal', 'Genital_Herpes_Model_Man__MA_Woman_Anal_Blister_Texture_GH')">Symptom 2</div>
+              <button class="ButtonStylingSTI " id="symptom1FemaleGH" onclick="symptomzoomFemaleGH('symptomAreaFemaleGH', 'Genital_Herpes_Model_Man__MA_Woman_Thigh_genital_Blister_Texture_GH' )">Symptom 1</button>
+              <button class="ButtonStylingSTI " id="symptom2FemaleGH" onclick="symptomzoom1FemaleGH('symptomAreaFemaleGHAnal', 'Genital_Herpes_Model_Man__MA_Woman_Anal_Blister_Texture_GH')">Symptom 2</button>
 
-              <div class="ButtonStylingSTI " onclick="cameraChangeFemaleGH('ResetFemaleGH')" >Reset</div>
-              <div class="ButtonStylingSTI" id="moreinfo" >More Info</div>
+              <button class="ToShowOnSmallSTI " onclick="cameraChangeFemaleGH('ResetFemaleGH')" >Reset</button>
+
+              <button class="ToShowOnSmallSTI  moreinfoStyling" id="moreinfo" >More Info</button>
+
 
             </div>
           </div>
@@ -71,7 +73,10 @@
           <p>Red blisters near the anus</p>
         </div>
       </div>
-
+      <div class="ResetAndMoreInfo ">
+      <button class="ButtonStylingSTI ResetAndMoveInforStyling" onclick="cameraChangeMAN('ResetMAN')" >Reset</button>
+      <button class="ButtonStylingSTI ResetAndMoveInforStyling" id="moreinfo" >More Info <i class="far fa-arrow-alt-circle-down"></i></button>
+      </div>
       </div>
 
 

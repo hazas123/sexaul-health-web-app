@@ -5,9 +5,9 @@
 
 
   <div class="siteInformationSTIs row">
-    <div class="STIBackHomeHelp" id="ReturnHome">    <i class="fas fa-home"></i> </div>
-    <div class="STIBackHomeHelp" id="PreviousPage">  <i class="far fa-arrow-alt-circle-left"></i></div>
-    <div class="STIBackHomeHelp" id="Help">          <i class="far fa-question-circle"></i> </div>
+    <button class="STIBackHomeHelp" id="ReturnHome">    <i class="fas fa-home"></i> </button>
+    <button class="STIBackHomeHelp" id="PreviousPage">  <i class="far fa-arrow-alt-circle-left"></i></button>
+    <button class="STIBackHomeHelp" id="Help">          <i class="far fa-question-circle"></i> </button>
     <h1>Chlamydia </h1>
 
   <!--<p>Sexual Health information and services</p> -->
@@ -52,12 +52,15 @@
 <div class="ButtonStylingSTI STISmallHeading">Chlamydia</div>
       <div class="ButtonStylingSTIHolder">
           <div class="row">
-              <div class="ButtonStylingSTI " id="symptom1ChlMAN" onclick="symptomzoomMAN('symptomAreaMAN', 'ChlamydiaModelMan__MA_Man_Skin_TextureChlam', 'ChlamydiaModelMan__MA_Chla_Pain_peeing_Texture_MAN', 'ChlamydiaModelMan__MA_chla_Pee_texture_MAN')">Symptom 1</div>
-              <div class="ButtonStylingSTI " id="symptom2ChlMAN" onclick="symptomzoom1MAN('symptomAreaMAN', 'ChlamydiaModelMan__MA_Man_Skin_TextureChlam', 'ChlamydiaModelMan__MA_Chl_Cherry_Pain_MAN', 'ChlamydiaModelMan__MA_Banana_texture_MAN', 'ChlamydiaModelMan__MA_Banana_texture_MAN1')">Symptom 2</div>
-              <div class="ButtonStylingSTI " id="symptom3ChlMAN" onclick="symptomzoom2MAN('symptomAreaMAN', 'ChlamydiaModelMan__MA_Man_Skin_TextureChlam', 'ChlamydiaModelMan__MA_Chla_Discharge_MAN')">Symptom 3</div>
-              <div class="ButtonStylingSTI " id="symptom4ChlMAN" onclick="symptomzoom3MAN('symptomAreaMAN', 'ChlamydiaModelMan__MA_Man_Skin_TextureChlam')">Symptom 4</div>
-              <div class="ButtonStylingSTI " onclick="cameraChangeMAN('ResetMAN')" >Reset</div>
-              <div class="ButtonStylingSTI" id="moreinfo" >More Info</div>
+              <button class="ButtonStylingSTI " id="symptom1ChlMAN" onclick="symptomzoomMAN('symptomAreaMAN', 'ChlamydiaModelMan__MA_Man_Skin_TextureChlam', 'ChlamydiaModelMan__MA_Chla_Pain_peeing_Texture_MAN', 'ChlamydiaModelMan__MA_chla_Pee_texture_MAN')">Symptom 1</button>
+              <button class="ButtonStylingSTI " id="symptom2ChlMAN" onclick="symptomzoom1MAN('symptomAreaMAN', 'ChlamydiaModelMan__MA_Man_Skin_TextureChlam', 'ChlamydiaModelMan__MA_Chl_Cherry_Pain_MAN', 'ChlamydiaModelMan__MA_Banana_texture_MAN', 'ChlamydiaModelMan__MA_Banana_texture_MAN1')">Symptom 2</button>
+              <button class="ButtonStylingSTI " id="symptom3ChlMAN" onclick="symptomzoom2MAN('symptomAreaMAN', 'ChlamydiaModelMan__MA_Man_Skin_TextureChlam', 'ChlamydiaModelMan__MA_Chla_Discharge_MAN')">Symptom 3</button>
+              <button class="ButtonStylingSTI " id="symptom4ChlMAN" onclick="symptomzoom3MAN('symptomAreaMAN', 'ChlamydiaModelMan__MA_Man_Skin_TextureChlam')">Symptom 4</button>
+
+              <button class="ToShowOnSmallSTI  " onclick="cameraChangeMAN('ResetMAN')" >Reset</button>
+              <button class="ToShowOnSmallSTI  moreinfoStyling" id="moreinfo" >More Info</button>
+
+
             </div>
           </div>
 
@@ -80,6 +83,10 @@
           <p>No symptoms</p>
         </div>
 
+      </div>
+      <div class="ResetAndMoreInfo ">
+      <button class="ButtonStylingSTI ResetAndMoveInforStyling" onclick="cameraChangeMAN('ResetMAN')" >Reset</button>
+      <button class="ButtonStylingSTI ResetAndMoveInforStyling" id="moreinfo" >More Info <i class="far fa-arrow-alt-circle-down"></i></button>
       </div>
 
       </div>

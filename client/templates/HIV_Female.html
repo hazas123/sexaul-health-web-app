@@ -3,10 +3,10 @@
   <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
 <div class="row compatabilityStyling">
   <div class="siteInformationSTIs row">
-    <div class="STIBackHomeHelp" id="ReturnHome">    <i class="fas fa-home"></i> </div>
-    <div class="STIBackHomeHelp" id="PreviousPage">  <i class="far fa-arrow-alt-circle-left"></i></div>
-    <div class="STIBackHomeHelp" id="Help">          <i class="far fa-question-circle"></i> </div>
-    <h1>Female HIV </h1>
+    <button class="STIBackHomeHelp" id="ReturnHome">    <i class="fas fa-home"></i> </button>
+    <button class="STIBackHomeHelp" id="PreviousPage">  <i class="far fa-arrow-alt-circle-left"></i></button>
+    <button class="STIBackHomeHelp" id="Help">          <i class="far fa-question-circle"></i> </button>
+    <h1>Female HIV and Aids</h1>
 
   <!--<p>Sexual Health information and services</p> -->
   </div>
@@ -52,13 +52,13 @@
           <div class="row">
 
 
-            <div class="ButtonStylingSTI " id="symptom1HIV" onclick="symptomzoom1('SymptomUnmove', 'FemaleModelWoman__MA_Female_skin', 'FemaleModelWoman__MA_HIV_Glands')">Symptom 1</div>
-            <div class="ButtonStylingSTI " id="symptom2HIV" onclick="symptomzoom2('symptomAreaFemaleHIVFever', 'FemaleModelWoman__MA_Female_skin', 'FemaleModelWoman__MA_Fever_HIV_Female')">Symptom 2</div>
-            <div class="ButtonStylingSTI " id="symptom3HIV" onclick="symptomzoom3('symptomAreaFemaleHIVThroat', 'FemaleModelWoman__MA_Female_skin', 'FemaleModelWoman__MA_Throat_HIV')">Symptom 3</div>
-            <div class="ButtonStylingSTI " id="symptom4HIV" onclick="symptomzoom4('symptomAreaFemaleHIVChest', 'FemaleModelWoman__MA_Female_skin', 'FemaleModelWoman__MA_HIV_body_Rash_female')">Symptom 4</div>
+            <button class="ButtonStylingSTI " id="symptom1HIV" onclick="symptomzoom1('SymptomUnmove', 'FemaleModelWoman__MA_Female_skin', 'FemaleModelWoman__MA_HIV_Glands')">Symptom 1</button>
+            <button class="ButtonStylingSTI " id="symptom2HIV" onclick="symptomzoom2('symptomAreaFemaleHIVFever', 'FemaleModelWoman__MA_Female_skin', 'FemaleModelWoman__MA_Fever_HIV_Female')">Symptom 2</button>
+            <button class="ButtonStylingSTI " id="symptom3HIV" onclick="symptomzoom3('symptomAreaFemaleHIVThroat', 'FemaleModelWoman__MA_Female_skin', 'FemaleModelWoman__MA_Throat_HIV')">Symptom 3</button>
+            <button class="ButtonStylingSTI " id="symptom4HIV" onclick="symptomzoom4('symptomAreaFemaleHIVChest', 'FemaleModelWoman__MA_Female_skin', 'FemaleModelWoman__MA_HIV_body_Rash_female')">Symptom 4</button>
 
-            <div class="ButtonStylingSTI" onclick="cameraChange('Reset')" >Reset</div>
-            <div class="ButtonStylingSTI" id="moreinfo" >More Info</div>
+            <button class="ToShowOnSmallSTI" onclick="cameraChange('Reset')" >Reset</button>
+            <button class="ToShowOnSmallSTI  moreinfoStyling" id="moreinfo" >More Info</button>
             </div>
           </div>
 
@@ -86,7 +86,10 @@
 
 
       </div>
-
+      <div class="ResetAndMoreInfo ">
+      <button class="ButtonStylingSTI ResetAndMoveInforStyling" onclick="cameraChangeMAN('ResetMAN')" >Reset</button>
+      <button class="ButtonStylingSTI ResetAndMoveInforStyling" id="moreinfo" >More Info <i class="far fa-arrow-alt-circle-down"></i></button>
+      </div>
       </div>
 
 

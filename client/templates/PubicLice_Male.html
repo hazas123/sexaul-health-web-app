@@ -3,9 +3,9 @@
 <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"> </script>
 <div class="row compatabilityStyling">
 <div class="siteInformationSTIs row">
-  <div class="STIBackHomeHelp" id="ReturnHome">    <i class="fas fa-home"></i> </div>
-  <div class="STIBackHomeHelp" id="PreviousPage">  <i class="far fa-arrow-alt-circle-left"></i></div>
-  <div class="STIBackHomeHelp" id="Help">          <i class="far fa-question-circle"></i> </div>
+  <button class="STIBackHomeHelp" id="ReturnHome">    <i class="fas fa-home"></i> </button>
+  <button class="STIBackHomeHelp" id="PreviousPage">  <i class="far fa-arrow-alt-circle-left"></i></button>
+  <button class="STIBackHomeHelp" id="Help">          <i class="far fa-question-circle"></i> </button>
   <h1>Pubic Lice  </h1>
 
 <!--<p>Sexual Health information and services</p> -->
@@ -53,13 +53,14 @@
 <div class="ButtonStylingSTI STISmallHeading">Pubic Lice</div>
       <div class="ButtonStylingSTIHolder">
           <div class="row">
-              <div class="ButtonStylingSTI " id="symptom1PubLiMAN" onclick="symptomzoom1MANPubLi('symptomAreaMANPubLi', 'PubicLice_ModelMan__MA_Eggs_Pubic_Lice', 'PubicLice_ModelMan__MA_Pubic_Lice', 'PubicLice_ModelMan__MA_Closer_Look_Texture_PL', 'PubicLice_ModelMan__MA_Closer_Look_Block' )">Symptom 1</div>
+              <button class="ButtonStylingSTI " id="symptom1PubLiMAN" onclick="symptomzoom1MANPubLi('symptomAreaMANPubLi', 'PubicLice_ModelMan__MA_Eggs_Pubic_Lice', 'PubicLice_ModelMan__MA_Pubic_Lice', 'PubicLice_ModelMan__MA_Closer_Look_Texture_PL', 'PubicLice_ModelMan__MA_Closer_Look_Block' )">Symptom 1</button>
 
-              <div class="ButtonStylingSTI " id="symptom2PubLiMAN" onclick="symptomzoom2MANPubLi('symptomAreaMANPubLiArmpit', 'PubicLice_ModelMan__MA_Man_Skin_Texture_PubicLice', 'PubicLice_ModelMan__MA_Pubic_Lice_ArmPit_Area')">Symptom 2</div>
-              <div class="ButtonStylingSTI " id="symptom3PubLiMAN" onclick="symptomzoom3MANPubLi('symptomAreaMANPubLiBeard', 'PubicLice_ModelMan__MA_Man_Skin_Texture_PubicLice', 'PubicLice_ModelMan__MA_Beard_PL_Texture')">Symptom 3</div>
+              <button class="ButtonStylingSTI " id="symptom2PubLiMAN" onclick="symptomzoom2MANPubLi('symptomAreaMANPubLiArmpit', 'PubicLice_ModelMan__MA_Man_Skin_Texture_PubicLice', 'PubicLice_ModelMan__MA_Pubic_Lice_ArmPit_Area')">Symptom 2</button>
+              <button class="ButtonStylingSTI " id="symptom3PubLiMAN" onclick="symptomzoom3MANPubLi('symptomAreaMANPubLiBeard', 'PubicLice_ModelMan__MA_Man_Skin_Texture_PubicLice', 'PubicLice_ModelMan__MA_Beard_PL_Texture')">Symptom 3</button>
 
-              <div class="ButtonStylingSTI " onclick="cameraChangeMANPubLi('ResetMANPubLi')" >Reset</div>
-              <div class="ButtonStylingSTI" id="moreinfo" >More Info</div>
+              <button class="ToShowOnSmallSTI " onclick="cameraChangeMANPubLi('ResetMANPubLi')" >Reset</button>
+
+              <button class="ToShowOnSmallSTI  moreinfoStyling" id="moreinfo" >More Info</button>
 
             </div>
           </div>
@@ -79,7 +80,10 @@
           <p>Pubic lice can live in beard hair</p>
         </div>
       </div>
-
+      <div class="ResetAndMoreInfo ">
+      <button class="ButtonStylingSTI ResetAndMoveInforStyling" onclick="cameraChangeMAN('ResetMAN')" >Reset</button>
+      <button class="ButtonStylingSTI ResetAndMoveInforStyling" id="moreinfo" >More Info <i class="far fa-arrow-alt-circle-down"></i></button>
+      </div>
       </div>
 
       </div>
