@@ -63,7 +63,8 @@ $secondaryColor: #629cba; // Light Blue
 $secondaryColorLight: #fe7050; // Orange orange
 $AlternativeColor: #939393; // Grey
 $GeneralWhite: #ffffff; //White
-$AlternativeColorBlue: #4353a4; otherblue
+$AlternativeColorBlue: #4353a4; // otherblue
+$Black: #000000; //Black
 
 body, html {
     height: 100%;
@@ -377,7 +378,7 @@ width: 100%;
 	margin-bottom: 2vh;
 	background-color: $primaryColor;
 	color: white;
-
+cursor: pointer;
     margin-top: 2vh;
 }
 
@@ -661,7 +662,7 @@ font: 900 2.2rem 'Roboto Slab', sans-serif;
   &:hover, &:focus { color: $secondaryColor; }
 }
 
-.STIBackHomeHelp{
+.STIBackHomeHelp, .MenuBackHomeHelp{
 
 	margin-right: 1vw;
   color: $GeneralWhite;
@@ -673,7 +674,7 @@ font: 900 2.2rem 'Roboto Slab', sans-serif;
 
 
 
-  &:hover, &:focus { color: $secondaryColor;
+  &:hover, &:focus { color: $secondaryColorLight;
 		.tooltiptext {
 		   visibility: visible;
 		}}
@@ -705,6 +706,11 @@ font: 900 2.2rem 'Roboto Slab', sans-serif;
     flex:2;
     display: flex;
     justify-content: center;
+}
+
+.SubmitContactArea{
+	    padding-left: 28%;
+			text-align: inherit;
 }
 
 .CircleChoiceSize{
@@ -766,6 +772,12 @@ color: white;
 height: 10vh;
     float: left;
 	}
+
+
+th, td, tr {
+	border: 1px solid black;
+}
+
 
 .ToShowOnSmallSTI{
 	display: none;
@@ -829,6 +841,7 @@ height: 10vh;
 }
 
 
+
 #symptom1InfoMANScabiesNOHIDE {
   visibility: visible;
   height: 400px;
@@ -840,6 +853,17 @@ height: 10vh;
 		width: 70vw;
 		margin: 0px;
 		padding-left: 5vw;
+ }
+
+ #disclaimerparent{
+ 	margin-left: 0px;
+ 	/* padding-left: 10%; */
+ 	padding: 6vh;
+ 	padding-right: 6vw;
+ 	background-color: white;
+ 	color: #000000;
+	padding-bottom: 15vh;
+ 	font: 900 1.0rem 'Roboto Slab', sans-serif;
  }
 
  .HygieneHold {
@@ -870,6 +894,11 @@ padding-bottom: 20vh;
   width: 98%;
    margin-left: 1%;
 
+}
+
+.FormLabelStyling{
+	margin-bottom: 3vh ;
+	max-width: 50%;
 }
 
 .NormalWH {
@@ -916,7 +945,7 @@ height: 10vh;
   color: $primaryColor;
 }
 
-.ButtonStylingSTI {
+.ButtonStylingSTI, .ButtonStylingContactSubmit {
 cursor: pointer;
 display: inline;
 background-color: $primaryColor;
@@ -930,10 +959,13 @@ text-align: center;
 
 
 
-.ButtonStylingSTI:hover {
-  background-color: blue;
+.ButtonStylingSTI:hover, .ButtonStylingContactSubmit:hover{
+  background-color: $secondaryColorLight;
 }
 
+.mainentityofpagebutton:hover {
+	  background-color: $secondaryColorLight;
+}
 
 .STISmallHeading{
 
@@ -959,6 +991,10 @@ color: $primaryColor;
 		margin-top: 10%;
 	    height: 25%;
 	    margin-left: 25%;
+}
+
+.disclaimerHold{
+	   width: 96%;
 }
 
 .ColBot {
@@ -1093,6 +1129,10 @@ padding-right: 1vw;
 	/* border-left: 1px solid black; */
 }
 
+.ContactUsMain {
+	width: 100%;
+}
+
 .mythback{
   background: none;
 
@@ -1126,6 +1166,27 @@ margin-bottom: 16px;}
 
 }
 
+#disclaimerSelected{
+
+		margin-bottom: 5vh;
+		margin-top: 0vh;
+		 padding-left: 2%;
+
+		color: white;
+		width: 100%;
+		background-color: $primaryColor;
+		font: 900 4rem 'Roboto Slab', sans-serif;
+
+}
+
+#ContactSelected{
+	padding-left: 2%;
+}
+
+.ContactStylingH1, .DisclamerStylingH1{
+	display: inline;
+}
+
 
 #Aboutparent {
 	margin-left: 0px;
@@ -1140,6 +1201,7 @@ margin-bottom: 16px;}
 #Aboutparent h1 {
 margin-bottom: 4%;
 }
+
 
 #ReselectChoices{
 
@@ -1404,7 +1466,7 @@ left: 45vw;
 color: white;
 }
 
-#disclamer{
+#disclaimer{
 text-align: center;
 
 }
@@ -1524,6 +1586,19 @@ background-color: #f4f4f4;
 	background: $secondaryColorLight;
 	-webkit-box-shadow: inset -150px 0px 100px 5px $secondaryColorLight;
 	box-shadow: inset -150px 0px 100px 5px $secondaryColorLight;
+}
+
+
+.BigTextContactUs{
+	font-size: 2em;
+    margin-bottom: 6vh;
+		color: $primaryColor;
+}
+
+.ContactUsText {
+	margin-top: 0vh;
+    margin-bottom: 10vh;
+		color: $secondaryColorLight;
 }
 
 .helpHoldBack{
@@ -1766,6 +1841,9 @@ padding-top: 8vh;
     // margin-left: 7vw;
   }
 
+.DisclamerAvaliableOptions{
+
+}
 // Page sizing for mobile
 
 #page-slide {
@@ -1803,10 +1881,22 @@ padding-top: 8vh;
 .AboutContact {
 	padding-left: 4vw !important;
 	padding-right: 4vw;
-	margin-top: 4vh;
-	margin-left: 7vw;
-	margin-right: 7vw;
+	/* margin-top: 4vh; */
+	/* margin-left: 7vw; */
+	/* margin-right: 7vw; */
 	width: auto;
+}
+
+#disclaimerContact{
+	margin-left: 0px;
+	/* padding-left: 10%; */
+	padding: 6vh;
+	/* height: 60vh; */
+	padding-bottom: 1vh;
+	margin-bottom: 14vh;
+	background-color: white;
+	color: $primaryColor;
+	font: 900 1.0rem 'Roboto Slab', sans-serif;
 }
 
 #Aboutparent {
@@ -1877,7 +1967,7 @@ margin-bottom: 1vh;
 
 #maleOptionsSelected, #OtherOptionsSelected, #FemaleOptionsSelected, #AboutSelected, #ContactSelected {
 margin-bottom: 5vh;
-    margin-top: 6vh;
+    margin-top: 0vh;
     /* padding-left: 13%; */
     padding-left: 1%;
     color: white;
@@ -1962,12 +2052,16 @@ cursor: pointer;
 
 .siteInformationSTIs {
 	font: 900 2.0rem 'Roboto Slab', sans-serif !important;
-    margin-top: 11vh !important;
-    margin-left: 0%;
-    width: 100% !important;
-    padding-left: 10vw !important;
+	margin-top: 0vh !important;
+margin-left: 0%;
+width: 100% !important;
+padding-left: 17vw !important;
     /* padding-right: 12vw; */
     /* margin-left: 3vw; */
+}
+
+.siteInformationSTIs h1 {
+	font: 900 2.2rem 'Roboto Slab', sans-serif !important;
 }
 
 .STIsymptomInfoBox{
@@ -2080,7 +2174,33 @@ max-width: 100%;
 
 }
 
+.MenuOverride {
+    ul{
 
+    margin: 0px 0 0 0;
+
+    }
+
+}
+
+.MenuLogo{
+	width: 66vw;
+	margin-bottom: 5vh;
+}
+
+.ContactStylingH1{
+	display: block;
+}
+
+.SubmitContactArea{
+	    padding-left: 0%;
+			text-align: center;
+}
+
+#disclaimerSelected{
+padding-left: 13%;
+		font: 900 2.5rem 'Roboto Slab', sans-serif;
+}
 
 }
 

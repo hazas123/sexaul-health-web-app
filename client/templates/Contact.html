@@ -12,18 +12,26 @@
 
 
 </div> -->
-<div class="AvaliableOptions" >
+<div class="ContactUsMain" >
 <div id="ContactSelected">
-  <h1>Contact Salus</h1>
+  <button class="STIBackHomeHelp" id="ReturnHome">    <i class="fas fa-home"></i> </button>
+  <button class="STIBackHomeHelp" id="PreviousPage">  <i class="far fa-arrow-alt-circle-left"></i></button>
+  <button class="STIBackHomeHelp" id="Help">          <i class="far fa-question-circle"></i> </button>
+<h1 class="ContactStylingH1">Contact us</h1>
 </div>
 
 <div class="container">
 <div class="row">
+
+  <div class="col ContactUsText">
+    <h1 class="BigTextContactUs">Contacting Salus </h1>
+    <h1>You can use the form on this page to contact us about any enquires you may have regarding any queries you may have on Salus. We will try to get back to you as quick as we can.  </h1>
+  </div>
   <div class="col-md-6 col-md-offset-3">
     <div class="well well-sm">
       <form id="contact-form" class="form-horizontal" method="post">
       <fieldset>
-        <legend class="text-center">Contact us</legend>
+        <legend class="text-center"></legend>
         <div id="success-container" class="text-center" style="display:none;">
           <p class="lead text-success"><span class="glyphicon glyphicon-ok"></span></p>
           <p class="lead">Your message has been sent successfully!</p>
@@ -33,7 +41,7 @@
 
           <!-- Name input-->
           <div class="form-group">
-            <label class="col-md-3 control-label" for="name">Name</label>
+            <label class="col-md-3 control-label FormLabelStyling" for="name">Name</label>
             <div class="col-md-9">
               <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
             </div>
@@ -41,7 +49,7 @@
 
           <!-- Email input-->
           <div class="form-group">
-            <label class="col-md-3 control-label" for="email">Your E-mail</label>
+            <label class="col-md-3 control-label FormLabelStyling" for="email">Your E-mail</label>
             <div class="col-md-9">
               <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
             </div>
@@ -49,16 +57,16 @@
 
           <!-- Message body -->
           <div class="form-group">
-            <label class="col-md-3 control-label" for="message">Your message</label>
+            <label class="col-md-3 control-label FormLabelStyling" for="message">Your message</label>
             <div class="col-md-9">
-              <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+              <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="4"></textarea>
             </div>
           </div>
 
           <!-- Form actions -->
           <div class="form-group">
-            <div class="col-md-12 text-right" id="spin-area">
-              <button type="submit" class="btn">Submit</button>
+            <div class="col-md-12 SubmitContactArea" id="spin-area">
+              <button type="submit" class="btn ButtonStylingContactSubmit">Submit</button>
             </div>
           </div>
         </div>

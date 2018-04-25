@@ -95,7 +95,7 @@ Router.route('/AboutSalus', function () {
   this.render('About')
 })
 Router.route('/Disclamer', function () {
-  this.render('Disclamer')
+  this.render('disclaimer')
 })
 
 Router.route('/SearchSalus', function () {

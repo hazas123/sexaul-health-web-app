@@ -6,7 +6,7 @@
   <button class="STIBackHomeHelp" id="ReturnHome">    <i class="fas fa-home"></i> </button>
   <button class="STIBackHomeHelp" id="PreviousPage">  <i class="far fa-arrow-alt-circle-left"></i></button>
   <button class="STIBackHomeHelp" id="Help">          <i class="far fa-question-circle"></i> </button>
-  <h1>Female Genital Herpes </h1>
+  <h1>Scabies <i class="fas fa-venus"></i></h1>
 
 <!--<p>Sexual Health information and services</p> -->
 </div>
@@ -24,7 +24,7 @@
           <scene>
             <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
                 <viewpoint position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
-                <viewpoint id="ResetFemaleScabies" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+                <viewpoint id="Reset" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
 
 
                 <viewpoint id="symptomAreaFemaleScabiesGroin"    position="-0.00427 0.90329 -0.50908" orientation="-0.000 1.0 0.00219 3.2" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></viewpoint>
@@ -67,7 +67,7 @@
               <button class="ButtonStylingSTI " id="symptom4ScabiesFemale" onclick="symptomzoom4FemaleScabies('symptomAreaFemaleScabiesAnkle')">Ankle</button>
               <button class="ButtonStylingSTI " id="symptom5ScabiesFemale" onclick="symptomzoom5FemaleScabies('symptomAreaFemaleScabiesUnderarm')">Underarm</button>
 
-              <button class="ToShowOnSmallSTI " onclick="cameraChangeFemaleScabies('ResetFemaleScabies')" >Reset</button>
+              <button class="ToShowOnSmallSTI " onclick="cameraModelReset('Reset')" >Reset</button>
 
               <button class="ToShowOnSmallSTI  moreinfoStyling" id="moreinfo" >More Info</button>
             </div>
@@ -129,7 +129,7 @@ function symptomzoom5FemaleScabies (symptoms) {
 
 
 
-function cameraChangeFemaleScabies(Camera) {
+function cameraModelReset(Camera) {
 document.getElementById(Camera).setAttribute('set_bind','true');
 }
 

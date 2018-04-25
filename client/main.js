@@ -3,7 +3,7 @@ import { Meteor } from 'meteor/meteor'
 import { Cookies } from 'meteor/ostrio:cookies'
 import { Session } from 'meteor/session'
 import './main.html'
-import './templates/disclamerBanner'
+import './templates/disclaimerBanner'
 
 const cookies = new Cookies()
 
@@ -15,10 +15,10 @@ Meteor.startup(() => {
   }
 })
 
-Template.DisclamerBanner.events({
-  'click #closeDisclamer': function (event) {
+Template.disclaimerBanner.events({
+  'click #closedisclaimer': function (event) {
     event.preventDefault()
-    $('#disclamer').css('visibility', 'hidden')
+    $('#disclaimer').css('visibility', 'hidden')
     cookies.set('returningUser', true)
   }
 })

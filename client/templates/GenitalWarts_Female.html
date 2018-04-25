@@ -6,7 +6,7 @@
   <button class="STIBackHomeHelp" id="ReturnHome">    <i class="fas fa-home"></i> </button>
   <button class="STIBackHomeHelp" id="PreviousPage">  <i class="far fa-arrow-alt-circle-left"></i></button>
   <button class="STIBackHomeHelp" id="Help">          <i class="far fa-question-circle"></i> </button>
-  <h1>Female Genital Warts </h1>
+  <h1>Genital Warts <i class="fas fa-venus"></i></h1>
 
 <!--<p>Sexual Health information and services</p> -->
 </div>
@@ -24,7 +24,7 @@
           <scene>
             <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
                 <viewpoint position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
-                <viewpoint id="ResetFemaleGW" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+                <viewpoint id="Reset" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
                 <Viewpoint id="frontFemaleGW" position="-0.07427 0.95329 -2.79608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera"></Viewpoint>
                 <Viewpoint id="rightFemaleGW" position="-2.43383 1.07351 -1.28700" orientation="-0.00318 -0.99950 -0.03159 2.06609" description="camera"></Viewpoint>
 
@@ -57,7 +57,7 @@
 
 
 
-              <button class="ToShowOnSmallSTI " onclick="cameraChangeFemaleGW('ResetFemaleGW')" >Reset</button>
+              <button class="ToShowOnSmallSTI " onclick="cameraModelReset('Reset')" >Reset</button>
 
               <button class="ToShowOnSmallSTI  moreinfoStyling" id="moreinfo" >More Info</button>
 
@@ -80,7 +80,7 @@
         </div>
       </div>
       <div class="ResetAndMoreInfo ">
-      <button class="ButtonStylingSTI ResetAndMoveInforStyling" onclick="cameraChangeMAN('ResetMAN')" >Reset</button>
+      <button class="ButtonStylingSTI ResetAndMoveInforStyling" onclick="cameraModelReset('Reset')" >Reset</button>
       <button class="ButtonStylingSTI ResetAndMoveInforStyling" id="moreinfo" >More Info <i class="far fa-arrow-alt-circle-down"></i></button>
       </div>
       </div>
@@ -136,7 +136,7 @@ document.getElementById('symptom3InfoFemaleGW').style.opacity = '1.0';
 }
 
 
-function cameraChangeFemaleGW(Camera) {
+function cameraModelReset(Camera) {
 ResetGWF();
 document.getElementById(Camera).setAttribute('set_bind','true');
 }

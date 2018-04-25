@@ -57,7 +57,7 @@
               <button class="ButtonStylingSTI " id="symptom3ChlMAN" onclick="symptomzoom2MAN('symptomAreaMAN', 'ChlamydiaModelMan__MA_Man_Skin_TextureChlam', 'ChlamydiaModelMan__MA_Chla_Discharge_MAN')">Symptom 3</button>
               <button class="ButtonStylingSTI " id="symptom4ChlMAN" onclick="symptomzoom3MAN('symptomAreaMAN', 'ChlamydiaModelMan__MA_Man_Skin_TextureChlam')">Symptom 4</button>
 
-              <button class="ToShowOnSmallSTI  " onclick="cameraChangeMAN('ResetMAN')" >Reset</button>
+              <button class="ToShowOnSmallSTI  " onclick="cameraModelReset('Reset')" >Reset</button>
               <button class="ToShowOnSmallSTI  moreinfoStyling" id="moreinfo" >More Info</button>
 
 
@@ -85,7 +85,7 @@
 
       </div>
       <div class="ResetAndMoreInfo ">
-      <button class="ButtonStylingSTI ResetAndMoveInforStyling" onclick="cameraChangeMAN('ResetMAN')" >Reset</button>
+      <button class="ButtonStylingSTI ResetAndMoveInforStyling" onclick="cameraModelReset('Reset')" >Reset</button>
       <button class="ButtonStylingSTI ResetAndMoveInforStyling" id="moreinfo" >More Info <i class="far fa-arrow-alt-circle-down"></i></button>
       </div>
 
@@ -148,7 +148,7 @@ function symptomzoom3MAN (symptoms, texture1){
   document.getElementById('symptom4ChlInfoMAN').style.opacity = '1.0';
 }
 
-function cameraChangeMAN(Camera) {
+function cameraModelReset(Camera) {
   ResetCM();
   document.getElementById(Camera).setAttribute('set_bind','true');
 }

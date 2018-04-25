@@ -23,7 +23,7 @@
           <scene>
             <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
                 <viewpoint position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
-                <viewpoint id="ResetMANPubLi" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
+                <viewpoint id="Reset" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
                 <Viewpoint id="symptomAreaMANPubLiBeard" position="-0.00427 1.65329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
 
                 <Viewpoint id="symptomAreaMANPubLiArmpit" position="-0.00427 1.45329 -1.29608" orientation="-0.000 1.0 0.00219 3.2" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
@@ -58,7 +58,7 @@
               <button class="ButtonStylingSTI " id="symptom2PubLiMAN" onclick="symptomzoom2MANPubLi('symptomAreaMANPubLiArmpit', 'PubicLice_ModelMan__MA_Man_Skin_Texture_PubicLice', 'PubicLice_ModelMan__MA_Pubic_Lice_ArmPit_Area')">Symptom 2</button>
               <button class="ButtonStylingSTI " id="symptom3PubLiMAN" onclick="symptomzoom3MANPubLi('symptomAreaMANPubLiBeard', 'PubicLice_ModelMan__MA_Man_Skin_Texture_PubicLice', 'PubicLice_ModelMan__MA_Beard_PL_Texture')">Symptom 3</button>
 
-              <button class="ToShowOnSmallSTI " onclick="cameraChangeMANPubLi('ResetMANPubLi')" >Reset</button>
+              <button class="ToShowOnSmallSTI " onclick="cameraModelReset('Reset')" >Reset</button>
 
               <button class="ToShowOnSmallSTI  moreinfoStyling" id="moreinfo" >More Info</button>
 
@@ -81,7 +81,7 @@
         </div>
       </div>
       <div class="ResetAndMoreInfo ">
-      <button class="ButtonStylingSTI ResetAndMoveInforStyling" onclick="cameraChangeMAN('ResetMAN')" >Reset</button>
+      <button class="ButtonStylingSTI ResetAndMoveInforStyling" onclick="cameraModelReset('Reset')" >Reset</button>
       <button class="ButtonStylingSTI ResetAndMoveInforStyling" id="moreinfo" >More Info <i class="far fa-arrow-alt-circle-down"></i></button>
       </div>
       </div>
@@ -146,7 +146,7 @@ document.getElementById('symptom3InfoMANPubLi').style.opacity = '1.0';
 }
 
 
-function cameraChangeMANPubLi(Camera) {
+function cameraModelReset(Camera) {
 document.getElementById(Camera).setAttribute('set_bind','true');
 PLReset();
 }
