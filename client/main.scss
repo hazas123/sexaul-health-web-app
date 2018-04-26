@@ -613,6 +613,14 @@ font: 900 2.2rem 'Roboto Slab', sans-serif;
 	display: none;
 }
 
+.MFOBackHomeHelp {
+margin-right: 0vw!important;
+padding: 0%;
+}
+
+.MFOBackHomeHelpRightHelp {
+    margin-right: 8vw !important;
+}
 
 #cars{
 	visibility: hidden;
@@ -683,6 +691,10 @@ font: 900 2.2rem 'Roboto Slab', sans-serif;
 		   visibility: visible;
 		}}
 }
+
+
+
+
 
 .ChoiceBackHomeHelp{
 	font-size: 2.5em;
@@ -1008,7 +1020,7 @@ color: $primaryColor;
 }
 
 .disclaimerHold{
-	   width: 96%;
+	   width: 100%;
 }
 
 .ColBot {
@@ -1138,14 +1150,20 @@ padding-right: 1vw;
 .AvaliableOptions{
 	/* float: right; */
 	/* padding-left: 4vw; */
-	// width: 100%;
+	 width: 100%;
 	/* padding-right: 0%; */
 	/* border-left: 1px solid black; */
 }
 
 .AboutAvaliableOptions{
-	
+
 }
+
+.MaleFemaleOtherBackHomeHelp{
+		float: left;
+    display: inline;
+}
+
 
 .ContactUsMain {
 	width: 100%;
@@ -1177,7 +1195,7 @@ margin-bottom: 16px;}
     margin-bottom: 5vh;
     margin-top: 6vh;
     /* padding-left: 13%; */
-    padding-left: 19%;
+    padding-left: 2%;
     color: white;
     background-color: $primaryColor;
     font: 900 4rem 'Roboto Slab', sans-serif;
@@ -1202,14 +1220,14 @@ margin-bottom: 16px;}
 		width: 100%;
 		background-color: $primaryColor;
 		font: 900 4rem 'Roboto Slab', sans-serif;
-
+	margin-top: 6vh;
 }
 
 #ContactSelected{
 	padding-left: 2%;
 }
 
-.ContactStylingH1, .DisclamerStylingH1, .SearchStylingH1{
+.ContactStylingH1, .DisclamerStylingH1, .SearchStylingH1, .FemaleStylingH1, .MFOStylingH1{
 	display: inline;
 }
 
@@ -1450,7 +1468,9 @@ cursor: pointer;}
     }
 }
 
-
+.optionSelectorHolder input {
+	cursor: pointer;
+}
 
 #MainMenuOption0{
 padding-left: 26vw;
@@ -1593,7 +1613,7 @@ background-color: #f4f4f4;
 	display: none;
 }
 
-#HelpLink, #ContactUs{
+#HelpLink{
 	color: white;
 	text-decoration: none;
 	display: block;
@@ -1660,6 +1680,13 @@ padding-left: 10vw;
 }
 
 
+.HelpTitleObject {
+	color: white;
+	margin-bottom: 3vh;
+	font: 900 2.0rem 'Roboto Slab', sans-serif;
+}
+
+
 
 
 
@@ -1691,6 +1718,11 @@ background: $primaryColor;
 
 .SearchHelp{
 background: $secondaryColor;
+}
+
+.HelpHelp {
+	background-color: $GeneralWhite;
+	color: $secondaryColorLight;
 }
 
 .Content{
@@ -2225,7 +2257,7 @@ max-width: 100%;
 	margin-bottom: 5vh;
 }
 
-.ContactStylingH1,.SearchStylingH1{
+.ContactStylingH1,.SearchStylingH1,.FemaleStylingH1, .MFOStylingH1{
 	display: block;
 }
 
@@ -2278,6 +2310,16 @@ padding-left: 13%;
 .AboutBackHomeHelp {
     float: none;
     padding-left: 0vw;
+}
+
+.MaleFemaleOtherBackHomeHelp{
+
+    display: block;
+		float: none;
+}
+
+.MFOBackHomeHelpRightHelp {
+    margin-right: 0vw !important;
 }
 
 }
