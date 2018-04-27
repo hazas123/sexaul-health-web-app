@@ -293,6 +293,10 @@ display: none;
 }
 
 
+#PreviousPage, #Help {
+	    margin-left: 1vw;
+}
+
 #Hold {
 
 height: 100vh;
@@ -799,6 +803,29 @@ height: 10vh;
     float: left;
 	}
 
+	.ResetAndMoveInforStylingHy{
+		position: relative;
+		    top: 1vh;
+				height: 10vh;
+				    // float: left;
+	}
+
+
+	.ButtonStylingHyExtra {
+		cursor: pointer;
+
+    background-color: #243854;
+    font: 700 1rem 'Roboto Slab', sans-serif;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    color: white;
+    width: 100px;
+    text-align: center;
+	}
+
+.ToShowOnSmallHy{
+	display: none;
+}
 
 th, td, tr {
 	border: 1px solid black;
@@ -835,6 +862,10 @@ th, td, tr {
 
 .aiButton {
 
+}
+
+.AI{
+	color: $GeneralWhite;
 }
 
 #row2 {
@@ -881,16 +912,22 @@ th, td, tr {
 		padding-left: 5vw;
  }
 
- #disclaimerparent{
+ #disclaimerparent, #SiteMapparent{
  	margin-left: 0px;
  	/* padding-left: 10%; */
  	padding: 6vh;
- 	padding-right: 6vw;
+ 	padding-right: 15vw;
  	background-color: white;
  	color: #000000;
 	padding-bottom: 15vh;
  	font: 900 1.0rem 'Roboto Slab', sans-serif;
  }
+
+.SiteMapHeadings{
+	font-size: 2rem;
+    margin-bottom: 2vh;
+    color: $primaryColor;
+}
 
  .HygieneHold {
     /* position: fixed; */
@@ -1014,12 +1051,12 @@ color: $primaryColor;
 }
 
 .colArtHygine{
-		margin-top: 10%;
+		/* margin-top: 10%;
 	    height: 25%;
-	    margin-left: 25%;
+	    margin-left: 25%; */
 }
 
-.disclaimerHold{
+.disclaimerHold, .SiteMapHold{
 	   width: 100%;
 }
 
@@ -1210,7 +1247,7 @@ margin-bottom: 16px;}
     float: left;
 }
 
-#disclaimerSelected{
+#disclaimerSelected, #SiteMapSelected{
 
 		margin-bottom: 5vh;
 		margin-top: 0vh;
@@ -1227,7 +1264,7 @@ margin-bottom: 16px;}
 	padding-left: 2%;
 }
 
-.ContactStylingH1, .DisclamerStylingH1, .SearchStylingH1, .FemaleStylingH1, .MFOStylingH1{
+.ContactStylingH1, .DisclamerStylingH1, .SearchStylingH1, .FemaleStylingH1, .MFOStylingH1, .SiteMapStylingH1{
 	display: inline;
 }
 
@@ -1328,10 +1365,10 @@ margin-bottom: 4%;
 
 .ButtonStylingHygineHolder{
 	margin-top: 8%;
-	width: 80%;
+	    width: 100%;
 	margin-left: 15px;
 	height: 54vh;
-	overflow: scroll;
+
 }
 
 .HygineButtonHolder {
@@ -1396,7 +1433,7 @@ width: 75%;
 
 
 .compatabilityStyling{
-	padding-left: 25vw;
+	padding-left: 24vw;
     padding-right: 0vw;
 }
 
@@ -1602,7 +1639,7 @@ text-align: center;
 
 
 .HelpHolder{
-	width: 76vw;
+	width: 77vw;
 height: 100vh;
 z-index: 4;
 position: fixed;
@@ -1714,10 +1751,12 @@ padding-left: 10vw;
 
 .ThreeDHelp{
 background: $primaryColor;
+color: $GeneralWhite;
 }
 
 .SearchHelp{
 background: $secondaryColor;
+color: $GeneralWhite;
 }
 
 .HelpHelp {
@@ -1727,6 +1766,7 @@ background: $secondaryColor;
 
 .Content{
 background: $secondaryColorLight;
+color: $GeneralWhite;
 }
 
 #ThreeDHelp{
@@ -1906,7 +1946,7 @@ padding-top: 8vh;
 
 
 
-.DisclamerAvaliableOptions{
+.DisclamerAvaliableOptions, .SiteMapAvaliableOptions{
 
 }
 // Page sizing for mobile
@@ -1993,11 +2033,16 @@ padding-top: 0;
     margin-left: 2vw !important;
 }
 
+.HelpRowContent{
+	padding-bottom: 25vh;
+	background-color: #f4f4f4 ;
+}
+
 .HelpHolder {
-    width: 101vw !important;
+    width: 100vw !important;
     /* height: 200vh; */
     z-index: 4 !important;
-		padding-top: 8vh;
+		padding-top: 0vh;
     padding-bottom: 10vh !important;
     position: absolute !important;
     background-color: #f4f4f4 !important;
@@ -2182,10 +2227,14 @@ width: 43vh;
 }
 
 .HelpInfo{
+	color: $GeneralWhite ;
 	padding-top: 5vh;
 	padding-bottom: 10vh;
 }
 
+.HelpInfoStart{
+	color: $secondaryColorLight ;
+}
 
 .HelpMobile{
 	height: 17vh;
@@ -2257,7 +2306,7 @@ max-width: 100%;
 	margin-bottom: 5vh;
 }
 
-.ContactStylingH1,.SearchStylingH1,.FemaleStylingH1, .MFOStylingH1{
+.ContactStylingH1,.SearchStylingH1,.FemaleStylingH1, .MFOStylingH1, .SiteMapStylingH1{
 	display: block;
 }
 
@@ -2267,9 +2316,17 @@ max-width: 100%;
 			text-align: center;
 }
 
-#disclaimerSelected{
-padding-left: 13%;
-		font: 900 2.5rem 'Roboto Slab', sans-serif;
+#disclaimerSelected, #SiteMapSelected{
+	padding-left: 20%;
+	font: 900 2.5rem 'Roboto Slab', sans-serif;
+		margin-bottom: 0vh;
+margin-top: 0vh;
+
+color: white;
+width: 100%;
+background-color: #243854;
+
+margin-top: 0vh;
 }
 
 
@@ -2320,6 +2377,25 @@ padding-left: 13%;
 
 .MFOBackHomeHelpRightHelp {
     margin-right: 0vw !important;
+}
+
+.ToShowOnSmallHy{
+	display: initial;
+}
+
+.disclaimerTable {
+	    font-size: 0.8em;
+}
+
+.helpTitle{
+
+	 margin-top: 0vh;
+margin-bottom: 3vh;
+padding-left: 13vw;
+}
+
+.longer{
+	padding-bottom: 20vh;
 }
 
 }

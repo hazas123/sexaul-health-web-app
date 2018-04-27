@@ -98,6 +98,10 @@ Router.route('/Disclamer', function () {
   this.render('disclaimer')
 })
 
+Router.route('/SiteMap', function () {
+  this.render('SiteMap')
+})
+
 Router.route('/SearchSalus', function () {
   this.render('SearchTemp')
 })
@@ -127,12 +131,6 @@ Router.route('/Implant', function () {
 
 Router.route('/CombinedPill', function () {
   this.render('CombinedPill')
-})
-
-// TypesOfSex
-
-Router.route('/TypesOfSex', function () {
-  this.render('TypesOfSex')
 })
 /*    If just gender is selected  */
 /*
