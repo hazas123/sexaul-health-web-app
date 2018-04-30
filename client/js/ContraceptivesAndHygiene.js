@@ -32,3 +32,11 @@ Template.Implant.events({
     'slow')
   }
 })
+
+Template.Tampon.events({
+  'click #moreinfo' (event) {
+    $('html,body').animate({
+      scrollTop: $('.HygineSmallHeading').offset().top},
+    'slow')
+  }
+})

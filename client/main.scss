@@ -253,6 +253,11 @@ cursor: pointer;}
 display: none;
 }
 
+.CloseFilter:hover{
+	background-color: secondaryColorLight;
+	cursor: pointer;
+}
+
 
 /* The hero image */
 .full-image {
@@ -364,7 +369,7 @@ padding-top: 10vh;
     border-radius: 50%;}
 
 .radioClasses:checked {
-	background-color: red;
+	background-color: $secondaryColorLight;
 }
 
 
@@ -652,6 +657,12 @@ padding: 0%;
   background-color: $primaryColor;
 }
 
+.HelpInfo{
+	color: $GeneralWhite ;
+	padding-top: 5vh;
+	padding-bottom: 10vh;
+}
+
 #SelectOptionCol1{
   background-color: $primaryColor;
 
@@ -697,7 +708,15 @@ padding: 0%;
 }
 
 
+.FilterOptionsShow{
+	height: 33px;
 
+	-webkit-transition: height 1s;
+    -moz-transition: height 1s;
+    -ms-transition: height 1s;
+    -o-transition: height 1s;
+    transition: height 1s;
+}
 
 
 .ChoiceBackHomeHelp{
@@ -784,6 +803,13 @@ color: white;
 
 .HereAtSalus{
 	padding-bottom: 8vh;
+}
+
+.CloseFilter{
+	width: 100%;
+display: none;
+margin-bottom: 2vh;
+border-radius: 5px;
 }
 
 .col1Options{
@@ -1114,7 +1140,7 @@ height: 10px;
 .x3d_sceneHygine{
 	/* margin-top: 5vh; */
 
-	margin-left: 1vw;
+	    margin-left: 2vw;
 	/* margin-right: auto; */
 }
 
@@ -1213,13 +1239,33 @@ padding-right: 1vw;
 
 .whiteB {
 	margin-bottom: 10vh;
+	padding-bottom: 15vh;
 	padding-left: 2vw;
 	background-color: white;
+	margin: 0px;
 }
 
+
+
+
 .FilterOptionsAvaliable {
+	-webkit-transition: height 1s;
+	-moz-transition: height 1s;
+	-ms-transition: height 1s;
+	-o-transition: height 1s;
+	transition: height 1s;
 padding-left: 2vw;
+height: 16vh;
+overflow: hidden;
 }
+
+
+.FilterOptionsAvaliable {
+
+
+}
+
+
 
 .holdbtn {
 visibility: visible;
@@ -1264,7 +1310,7 @@ margin-bottom: 16px;}
 	padding-left: 2%;
 }
 
-.ContactStylingH1, .DisclamerStylingH1, .SearchStylingH1, .FemaleStylingH1, .MFOStylingH1, .SiteMapStylingH1{
+.ContactStylingH1, .DisclaimerStylingH1, .SearchStylingH1, .FemaleStylingH1, .MFOStylingH1, .SiteMapStylingH1{
 	display: inline;
 }
 
@@ -1644,6 +1690,7 @@ height: 100vh;
 z-index: 4;
 position: fixed;
 background-color: #f4f4f4;
+overflow: scroll;
 }
 
 .HelpHide {
@@ -1806,6 +1853,18 @@ background: $secondaryColorLight;
 
 @media screen and (max-width: 480px) {
 
+	.FilterOptionsAvaliable {
+		-webkit-transition: height 1s;
+		-moz-transition: height 1s;
+		-ms-transition: height 1s;
+		-o-transition: height 1s;
+		transition: height 1s;
+	padding-left: 2vw;
+	height: 33vh;
+	overflow: hidden;
+	}
+
+
   .full-image{
     background-image: url('./Logo/LighBack_Logo.svg') !important;
     background-color: white;
@@ -1929,7 +1988,7 @@ background: $secondaryColorLight;
   .whiteB {
 		margin-right: -8px !important;
     margin-left: -7px !important;
-    padding-bottom: 10vh !important;
+      padding-bottom: 15vh  !important;
     padding-left: 3vw;
     width: 100vw;
   }
@@ -1939,14 +1998,14 @@ background: $secondaryColorLight;
   }
   .AvaliableOptions {
 		// padding-left: 7% !important;
-padding-top: 8vh;
+// padding-top: 8vh;
 // width: 100vw;
     // margin-left: 7vw;
   }
 
 
 
-.DisclamerAvaliableOptions, .SiteMapAvaliableOptions{
+.DisclaimerAvaliableOptions, .SiteMapAvaliableOptions{
 
 }
 // Page sizing for mobile
@@ -2072,9 +2131,9 @@ margin-bottom: 1vh;
 
 
 .OptionsHolder {
-    width: 91vw;
-    /* padding-left: 2vw; */
-    /* padding-right: 1vw; */
+	width: 100vw;
+padding-left: 0vw;
+/* padding-right: 1vw; */
 }
 
 #maleOptionsSelected, #OtherOptionsSelected, #FemaleOptionsSelected, #AboutSelected, #ContactSelected {
@@ -2396,6 +2455,23 @@ padding-left: 13vw;
 
 .longer{
 	padding-bottom: 20vh;
+}
+.FilterOptionsShow{
+	height: 0px;
+
+	-webkit-transition: height 1s;
+    -moz-transition: height 1s;
+    -ms-transition: height 1s;
+    -o-transition: height 1s;
+    transition: height 1s;
+}
+
+.CloseFilter{
+	width: 100%;
+display: inherit;
+margin-bottom: 2vh;
+border-radius: 5px;
+background-color: $secondaryColorLight;
 }
 
 }

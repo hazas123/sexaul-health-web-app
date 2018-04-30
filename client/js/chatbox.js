@@ -15,7 +15,7 @@ Template.chatbox.events({
     Session.set('uniqueSessioID', uuid)
     $('.self').remove()
     $('.reply').remove()
-    $('.chatlogs').append('<div class="chat reply"><p class="chat-message">I can help by listing STI symptoms. Is this something I can help you with?</p></div>')
+    $('.chatlogs').append('<div class="chat reply"><p class="chat-message">Hi there I am the Salus&#39;s automated service, I can currently help by listing STI symptoms or directing you to parts of the website. Is there something I can help you with?</p></div>')
   },
   'click .send, keyup #chat-input' (event, instance) {
     if ((event.type === 'click') || (event.type === 'keyup' && event.which === 13)) {
@@ -42,5 +42,13 @@ Template.chatbox.events({
         $('.validation').css('visibility', 'visible')
       }
     }
+  },
+  'click #HelpAIButton': function (event) {
+    $('.helpMain').toggleClass('HelpHide')
+    $('.ThreeDHelp').addClass('helpShow')
+    $('.SearchHelp').addClass('helpShow')
+    $('.Content').addClass('helpShow')
+    $('.AI').addClass('helpShow')
+    $('.HelpHelp').removeClass('helpShow')
   }
 })

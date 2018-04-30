@@ -76,6 +76,9 @@ Template.FemaleOptions.events({
   },
   'click #Help': function (event) {
     $('.helpMain').toggleClass('HelpHide')
+  },
+  'click .CloseFilter': function (event) {
+    $('.FilterOptionsAvaliable').toggleClass('FilterOptionsShow')
   }
 })
 
