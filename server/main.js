@@ -44,7 +44,7 @@ Meteor.methods({
             if (error) {
               if (error) { throw error }
             }
-
+            Meteor._sleepForMs(3000)
             resolve(result)
           })
         } else {
@@ -63,6 +63,7 @@ Meteor.methods({
               if (error) {
                 if (error) { throw error }
               }
+              Meteor._sleepForMs(3000)
               resolve(result)
             })
           } catch (e) {
@@ -92,17 +93,9 @@ Meteor.methods({
 
   sendEmail (from, subject, text) {
     return new Promise((resolve, reject) => {
-      // Make sure that all arguments are strings.
       var to = 'jamessmith06@msn.com'
-      console.log(to)
-      console.log(from)
-      console.log(subject)
-      console.log(text)
+      // Make sure that all arguments are strings.
       check([to, from, subject, text], [String])
-      // console.log(stringCheck);
-      // if (!stringCheck) {
-      //   reject(new Error('ERROR: inputs not all strings'))
-      // }
 
       // Let other method calls from the same client start running, without
       // waiting for the email sending to complete.

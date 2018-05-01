@@ -27,7 +27,7 @@
     <h1 class="BigTextContactUs">Contacting Salus </h1>
     <h1>You can use the form on this page to contact us about any enquires you may have regarding any queries you may have on Salus. We will try to get back to you as quick as we can.  </h1>
   </div>
-  <div class="col-md-6 col-md-offset-3">
+  <div class="col-md-6 col-md-offset-3 FormBottomPaddingContactUs">
     <div class="well well-sm">
       <form id="contact-form" class="form-horizontal" method="post">
       <fieldset>
@@ -35,6 +35,10 @@
         <div id="success-container" class="text-center" style="display:none;">
           <p class="lead text-success"><span class="glyphicon glyphicon-ok"></span></p>
           <p class="lead">Your message has been sent successfully!</p>
+        </div>
+        <div id="fail-container" class="text-center" style="display:none;">
+          <p class="lead text-fail"><span class="glyphicon glyphicon-exclamation-sign"></span></p>
+          <p class="lead">Your message failed to send please try again!</p>
         </div>
 
         <div id="form-container">
@@ -44,6 +48,7 @@
             <label class="col-md-3 control-label FormLabelStyling" for="name">Name</label>
             <div class="col-md-9">
               <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+              <span id="nameInvalid" class="contactValidationHide contactValidationStyle">Invalid</span>
             </div>
           </div>
 
@@ -52,6 +57,7 @@
             <label class="col-md-3 control-label FormLabelStyling" for="email">Your E-mail</label>
             <div class="col-md-9">
               <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+              <span id="emailInvalid" class="contactValidationHide contactValidationStyle">Invalid</span>
             </div>
           </div>
 
@@ -59,7 +65,8 @@
           <div class="form-group">
             <label class="col-md-3 control-label FormLabelStyling" for="message">Your message</label>
             <div class="col-md-9">
-              <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="3"></textarea>
+              <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="1"></textarea>
+              <span id="messageInvalid" class="contactValidationHide contactValidationStyle">Invalid</span>
             </div>
           </div>
 

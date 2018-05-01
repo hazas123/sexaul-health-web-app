@@ -30,10 +30,13 @@ Template.chatbox.events({
       var clientCheck = /^[a-zA-Z0-9 .-?]+$/.test(val)
       if (clientCheck) {
         $('.chatlogs').append('<div class="chat self"><p class="chat-message">' + val + '</p></div>')
+        $('.chatlogs').append('<div id="wave" class="chat reply"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>')
+        $('.chatlogs').animate({scrollTop: $('.chatlogs').prop('scrollHeight')}, 1000)
         Meteor.call('callAPI', val, uuid, function (error, result) {
           if (error) {
             console.log(error)
           }
+          $('#wave').remove()
           $('.chatlogs').append('<div class="chat reply"><p class="chat-message">' + result + '</p></div>')
         })
         $('.chatlogs').animate({scrollTop: $('.chatlogs').prop('scrollHeight')}, 1000)

@@ -85,5 +85,13 @@ Template.MenuMain.events({
     $('.Content').addClass('helpShow')
     $('.AI').addClass('helpShow')
     $('.HelpHelp').removeClass('helpShow')
+  },
+  'click .ResetSize': function (event) {
+    $('h1').removeClass('Small')
+    $('h1').removeClass('Medium')
+    $('h1').removeClass('Large')
+    $('p').removeClass('Small')
+    $('p').removeClass('Medium')
+    $('p').removeClass('Large')
   }
 })

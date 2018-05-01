@@ -48,6 +48,14 @@ Template.HelpGuide.events({
     $('.Content').addClass('helpShow')
     $('.AI').addClass('helpShow')
     $('.HelpHelp').removeClass('helpShow')
+  },
+  'click #AIFromSearch': function (event) {
+    $('.ThreeDHelp').addClass('helpShow')
+    $('.SearchHelp').addClass('helpShow')
+    $('.Content').addClass('helpShow')
+    $('.AI').addClass('helpShow')
+    $('.HelpHelp').addClass('helpShow')
+    $('.' + 'AI').toggleClass('helpShow')
   }
 })
 /*

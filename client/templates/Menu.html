@@ -1,27 +1,28 @@
 <template name='MenuMain'>
 
   <section id="page-slide">
-  <button id="toggle">
+  <div id="toggle">
       <i class="fas fa-bars"></i>
-    </button>
+    </div>
     <nav class="MenuOverride" role='navigation'>
       <a href="./choice" ><img src="./Logo/logoOnDark.svg" alt="logo" class="MenuLogo CloseHelpMenuAlt" /></a>
       <ul>
-        <li class="HomeBackHelpMenuStyling">  <button class="MenuBackHomeHelp" id="ReturnHome">    <i class="fas fa-home"></i> </button>
+        <li class="HomeBackHelpMenuStyling ResetSize">
+          <button class="MenuBackHomeHelp" id="ReturnHome">    <i class="fas fa-home"></i> </button>
           <button class="MenuBackHomeHelp" id="PreviousPage">  <i class="far fa-arrow-alt-circle-left"></i></button>
           <button class="MenuBackHomeHelp" id="Help">          <i class="far fa-question-circle"></i> </button></li>
-        <li class="CloseHelpMenuAlt"><a href="./AboutSalus">About Salus</a></li>
-        <li class="CloseHelpMenuAlt"><a href="./Disclaimer">Disclaimer</a></li>
-        <li class="CloseHelpMenuAlt" ><a href="./SearchSalus">Search for Content</a></li>
+        <li class="CloseHelpMenuAlt ResetSize"><a href="./AboutSalus">About Salus</a></li>
+        <li class="CloseHelpMenuAlt ResetSize"><a href="./Disclaimer">Disclaimer</a></li>
+        <li class="CloseHelpMenuAlt ResetSize" ><a href="./SearchSalus">Search for Content</a></li>
         <!-- <li id="HelpLink" >Help</li> -->
-        <li class="CloseHelpMenuAlt" id="ContactUs"><a href="./ContactSalus">Contact Us</a></li>
+        <li class="CloseHelpMenuAlt ResetSize" id="ContactUs"><a href="./ContactSalus">Contact Us</a></li>
         <li><div id="ChangeTextSize">
         Resize text |
         <a class="TextSize" id="Small">A</a>
         <a class="TextSize" id="Medium">A</a>
         <a class="TextSize" id="Large">A</a>
       </div></li>
-        <li class="CloseHelpMenuAlt" ><a href="./SiteMap">Site Map</a></li>
+        <li class="CloseHelpMenuAlt ResetSize" ><a href="./SiteMap">Site Map</a></li>
       </ul>
 
       <div id="MenuFooter">
@@ -67,4 +68,13 @@ $(".TextSize").click(function(){
    });
 
 </script>
+<!--
+$("h1").removeClass( "Small" );
+$("h1").removeClass( "Medium" );
+$("h1").removeClass( "Large" );
+
+
+ $("p").removeClass( "Small" );
+ $("p").removeClass( "Medium" );
+  $("p").removeClass( "Large" ); -->
 </template>

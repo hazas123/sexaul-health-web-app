@@ -65,6 +65,8 @@ $AlternativeColor: #939393; // Grey
 $GeneralWhite: #ffffff; //White
 $AlternativeColorBlue: #4353a4; // otherblue
 $Black: #000000; //Black
+$ValidaionRed: #eeabab; //red
+
 
 body, html {
     height: 100%;
@@ -618,6 +620,10 @@ font: 900 2.2rem 'Roboto Slab', sans-serif;
 
 }
 
+.FormBottomPaddingContactUs{
+	padding-bottom: 0vh;
+}
+
 #toggle{
 	display: none;
 }
@@ -754,6 +760,20 @@ padding: 0%;
 .SubmitContactArea{
 	    padding-left: 28%;
 			text-align: inherit;
+}
+
+ul {
+ margin: 0;
+ padding: 0;
+ list-style: circle;}
+
+.DisclaimerLists{
+	padding-left: 2vw;
+}
+
+.DisclaimerLists li{
+	margin-top: 1vh;
+	margin-bottom: 1vh;
 }
 
 .CircleChoiceSize{
@@ -955,6 +975,10 @@ th, td, tr {
     color: $primaryColor;
 }
 
+.HelpRowContent{
+	margin-right: 0px;
+}
+
  .HygieneHold {
     /* position: fixed; */
     z-index: 2;
@@ -986,8 +1010,13 @@ padding-bottom: 20vh;
 }
 
 .FormLabelStyling{
-	margin-bottom: 3vh ;
+    margin-bottom: 1vh;
 	max-width: 50%;
+}
+
+.contactValidationStyle{
+	color: $ValidaionRed;
+
 }
 
 .NormalWH {
@@ -1144,7 +1173,9 @@ height: 10px;
 	/* margin-right: auto; */
 }
 
-
+.SearchImageHeight3DAI{
+	height: 50vh;
+}
 
 
 .STIInfo{
@@ -1732,25 +1763,28 @@ overflow: scroll;
 }
 
 .helpHoldBack{
-			background-color: $AlternativeColor;
-	    height: 100px;
-	    width: 100px;
-	    color: white;
-	    margin-left: 1vw;
-	    margin-right: 1vw;
-	    text-decoration: none;
-	    display: block;
-	    padding: 29px 43px;
-	    /* border: 1px solid #2f2f2f; */
-	    -webkit-transition: background 0.3s linear;
-	    -moz-transition: background 0.3s linear;
-	    -ms-transition: background 0.3s linear;
-	    -o-transition: background 0.3s linear;
-	    transition: background 0.3s linear;
-	    cursor: pointer;
+	background-color: #939393;
+height: 100px;
+width: 100px;
+color: white;
+margin-left: 1vw;
+margin-right: 1vw;
+text-decoration: none;
+display: block;
+text-align: center;
+padding-top: 3%;
+/* padding: 29px 36px; */
+/* border: 1px solid #2f2f2f; */
+-webkit-transition: background 0.3s linear;
+-moz-transition: background 0.3s linear;
+-ms-transition: background 0.3s linear;
+-o-transition: background 0.3s linear;
+transition: background 0.3s linear;
+cursor: pointer;
 }
 
 .HelpRow{
+	margin-right: 0px;
 // width: 100%;
 }
 
@@ -1761,6 +1795,7 @@ color: white;
 margin-top: 3vh;
 margin-bottom: 3vh;
 padding-left: 10vw;
+    width: 76vw;
 }
 
 
@@ -1793,7 +1828,7 @@ padding-left: 10vw;
 	-ms-transition: background 0.3s linear;
 	-o-transition: background 0.3s linear;
 	transition: background 0.3s linear;
-	cursor: pointer;
+	// cursor: pointer;
 }
 
 .ThreeDHelp{
@@ -1833,10 +1868,27 @@ background: $secondaryColorLight;
 }
 
 #CloseHelp {
-		position: absolute;
+		/*position: absolute;
     right: 2vw;
 		cursor: pointer;
+		color: $GeneralWhite; */
+		color: $GeneralWhite;
+position: absolute;
+right: 1vw;
+top: 0.3vh;
+padding: 0.2vw;
+padding-left: 0.5vw;
+padding-right: 0.5vw;
+cursor: pointer;
+font-size: 0.9em;
+background-color: #243852;
+border-color: #243852;
 }
+
+#CloseHelp:hover {
+
+background-color: $secondaryColorLight;}
+
 
 .SearchImageHeight{
 	height: 25vh;
@@ -1848,6 +1900,13 @@ background: $secondaryColorLight;
 
 .FilterButton{
 	display: none;
+}
+
+.contactValidation{
+	border: solid 3px $ValidaionRed;
+}
+.contactValidationHide{
+	 display: none;
 }
 
 
@@ -1987,7 +2046,7 @@ background: $secondaryColorLight;
 
   .whiteB {
 		margin-right: -8px !important;
-    margin-left: -7px !important;
+    margin-left: 0px !important;
       padding-bottom: 15vh  !important;
     padding-left: 3vw;
     width: 100vw;
@@ -2088,13 +2147,14 @@ padding-top: 0;
 }
 
 .HelpRow{
-	width: 89vw !important;
-    margin-left: 2vw !important;
+	width: 80vw !important;
+	margin-left: 6vw !important;
 }
 
 .HelpRowContent{
 	padding-bottom: 25vh;
 	background-color: #f4f4f4 ;
+	margin-right: -15px;
 }
 
 .HelpHolder {
@@ -2120,6 +2180,7 @@ padding-top: 0;
 }
 .helpHoldBack{
 margin-bottom: 1vh;
+    padding-top: 7%;
 }
 
 .compatabilityStyling {
@@ -2267,6 +2328,7 @@ cursor: pointer;
 transition: left 0.2s linear;
 z-index: 2;
 display: inherit;
+padding-left: 2%;
 }
 
 .ColBot {
@@ -2296,8 +2358,10 @@ width: 43vh;
 }
 
 .HelpMobile{
-	height: 17vh;
+	height: 32vh;
 }
+
+
 
 .itemOpt {
 /* white-space: pre-wrap;
@@ -2451,6 +2515,7 @@ margin-top: 0vh;
 	 margin-top: 0vh;
 margin-bottom: 3vh;
 padding-left: 13vw;
+    width: 100vw;
 }
 
 .longer{
@@ -2473,6 +2538,18 @@ margin-bottom: 2vh;
 border-radius: 5px;
 background-color: $secondaryColorLight;
 }
+
+.FormBottomPaddingContactUs{
+	padding-bottom: 15vh;
+}
+
+.HelpMobile {
+    height: 14vh;
+	}
+
+	.SearchImageHeight3DAI {
+	    height: 32vh;
+	}
 
 }
 
