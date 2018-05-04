@@ -3,6 +3,7 @@ import { Template } from 'meteor/templating'
 import { Session } from 'meteor/session'
 
 import '../templates/chatbox.html'
+import '../templates/choice.html'
 const uuidv1 = require('uuid/v1')
 
 Template.chatbox.events({

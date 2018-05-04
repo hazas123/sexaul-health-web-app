@@ -4,7 +4,6 @@ import { Email } from 'meteor/email'
 import { check } from 'meteor/check'
 var redis = require('redis')
 var client = redis.createClient(process.env.REDIS_URL)
-// var client = redis.createClient(6379, '127.0.0.1')
 var apiai = require('apiai')
 var unidecode = require('unidecode')
 
@@ -15,7 +14,7 @@ Meteor.startup(() => {
 Meteor.methods({
   callAPI: function (val, uuid) {
     return new Promise((resolve, reject) => {
-      var app = apiai('ae024febf4ff42c9930027e13f69cd28')
+      var app = apiai(process.env.DIALOG_API_KEY)
       var options = {
         sessionId: uuid
       }
@@ -49,7 +48,7 @@ Meteor.methods({
           })
         } else {
           var options = {
-            'headers': {'subscription-key': 'cbc7eaba65544f048e7d2ce0d93d1977'}
+            'headers': {'subscription-key': process.env.NHS_API_KEY }
           }
           try {
             const result = HTTP.call('GET', 'https://api.nhs.uk/conditions/' + arg, options)
@@ -93,7 +92,7 @@ Meteor.methods({
 
   sendEmail (from, subject, text) {
     return new Promise((resolve, reject) => {
-      var to = 'jamessmith06@msn.com'
+      var to = process.env.TO_EMAIL
       // Make sure that all arguments are strings.
       check([to, from, subject, text], [String])
 

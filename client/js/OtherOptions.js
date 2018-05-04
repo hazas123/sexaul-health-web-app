@@ -1,5 +1,5 @@
 import { Template } from 'meteor/templating'
-import '../templates/OptionsSelected.html'
+
 import '../templates/choice.html'
 
 Template.choice.onRendered(function () {

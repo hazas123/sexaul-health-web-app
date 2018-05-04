@@ -1,6 +1,5 @@
 import { Template } from 'meteor/templating'
 import '../templates/ChlamydiaMale.html'
-import '../templates/OptionsSelected.html'
 import '../templates/ChlamydiaFemale.html'
 
 Template.ChlamydiaMale.events({

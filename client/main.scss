@@ -92,24 +92,7 @@ body, html {
 
 }
 
-.MenuLogoExtra {
-	height: 10px;
-	background-color: white;
-	background-image: url("./Background_New_Light_Grey.png");
-	background-repeat: repeat;
-}
 
-#mainBackground{
-  background-image: url("./Background_New_Light_Grey.png");
-  background-repeat: repeat;
-  width: 300px;
-  //height: 300vh;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: -7;
-  border-right: 3px solid $primaryColor ;
-}
 
 #MenuFooter{
 			color: white;
@@ -138,10 +121,8 @@ body {
 #ChangeTextSize  a{
 	display: inline !important;
      padding: 0px 0px !important;
+		 cursor: pointer;
 }
-
-#ChangeTextSize  a{
-cursor: pointer;}
 
 #Small {
 	font-size: 0.7em;
@@ -168,18 +149,6 @@ cursor: pointer;}
 .Large {
 	font-size: 1.4em;
 }
-
-// a {
-//
-//     color: $primaryColor;
-//     transition: all 225ms ease 0ms;
-//
-//     &:hover,
-//     &:focus {
-//         color: lighten($link-color, 50%);
-//     }
-// }
-
 
 .draw-border {
   box-shadow: inset 0 0 0 4px $secondaryColorLight;
@@ -256,8 +225,9 @@ display: none;
 }
 
 .CloseFilter:hover{
-	background-color: secondaryColorLight;
+	background-color: $secondaryColorLight;
 	cursor: pointer;
+
 }
 
 
@@ -598,19 +568,18 @@ font: 900 2.2rem 'Roboto Slab', sans-serif;
 }
 
 #siteInformation2{
-	/* margin-top: 0vh; */
+
     margin-left: -1vw;
-    font: 20 1.2rem 'Roboto Slab', sans-serif;
-    /* width: 99%; */
+
     color: white;
     height: 30%;
     color: white;
 }
 
 #siteInformation2 h1{
-	// padding: 12%;
+
 	font: 900 2.0rem 'Roboto Slab', sans-serif;
-	// padding-top: 25%;
+
 }
 
 
@@ -637,14 +606,6 @@ padding: 0%;
     margin-right: 8vw !important;
 }
 
-#cars{
-	visibility: hidden;
-}
-
-
-
-
-
 /* Place text in the middle of the image */
 .image-content {
 	text-align: center;
@@ -659,33 +620,12 @@ padding: 0%;
 
 	background-color: $secondaryColor;}
 
-#SelectOptionCol0{
-  background-color: $primaryColor;
-}
+
 
 .HelpInfo{
 	color: $GeneralWhite ;
 	padding-top: 5vh;
 	padding-bottom: 10vh;
-}
-
-#SelectOptionCol1{
-  background-color: $primaryColor;
-
-  #col2Options{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 10% 0 10%;
-
-    select {
-      margin-bottom: 5%;
-    }
-  }
-}
-
-.choice{
-
 }
 
 .proceed{
@@ -737,25 +677,14 @@ padding: 0%;
 
 
 
-#SelectOptionCol2{
-  background-color: $primaryColor;
-}
 
-#SelectOptionCol3{
-  background-color: $primaryColor;
-}
 
 #SelectOptionCol4{
 	padding-top: 50px;
 
 }
 
-#row1 {
-    //background-color: white;
-    flex:2;
-    display: flex;
-    justify-content: center;
-}
+
 
 .SubmitContactArea{
 	    padding-left: 28%;
@@ -830,6 +759,7 @@ color: white;
 display: none;
 margin-bottom: 2vh;
 border-radius: 5px;
+color: $GeneralWhite;
 }
 
 .col1Options{
@@ -913,29 +843,6 @@ th, td, tr {
 .AI{
 	color: $GeneralWhite;
 }
-
-#row2 {
-    background-color: red;
-    display: flex;
-    flex: .2;
-    justify-content: center;
-}
-#col5 {
-    background-color: pink;
-
-    margin: 25px;
-}
-
-#col6 {
-  background-color: grey;
-   /* 1:1 Aspect Ratio */
-
-  margin: 25px ;
-  border-radius: 50%;
-}
-
-
-
 
 /* disables choices options */
 .disableItemSelect {

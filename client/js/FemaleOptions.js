@@ -1,10 +1,6 @@
 import { Template } from 'meteor/templating'
-import '../templates/OptionsSelected.html'
-import '../templates/choice.html'
 
-Template.OptionsSelected.onRendered(function () {
-  $('#OptionsHolder').css('visibility', 'visible')
-})
+import '../templates/choice.html'
 
 Template.choice.onRendered(function () {
   view = this.view
@@ -79,15 +75,5 @@ Template.FemaleOptions.events({
   },
   'click .CloseFilter': function (event) {
     $('.FilterOptionsAvaliable').toggleClass('FilterOptionsShow')
-  }
-})
-
-Template.OptionsSelected.helpers({
-    // This is what will be sent to Child1 and Child2.
-  GenderExportedVar () {
-    return Template.instance().GenderExportedVar.get()
-  },
-  SexualityExportedVar () {
-    return Template.instance().SexualityExportedVar.get()
   }
 })

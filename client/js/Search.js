@@ -2,10 +2,7 @@ import { Template } from 'meteor/templating'
 import { ReactiveVar } from 'meteor/reactive-var'
 import { Session } from 'meteor/session'
 
-import '../templates/OptionsSelected.html'
 import '../templates/choice.html'
-var GenderToExport
-// var SexaulityToExport
 
 Template.SearchTemp.helpers({
     // This is what will be sent to Child1 and Child2.
