@@ -59,14 +59,6 @@ If any dependencies have changed after pulling down the most recent changes, run
 npm start : will start the meteor app
 npm lint : will the linting check
 
-## Testing
-
-NONE ATM
-
-### Automated Testing
-
-NONE ATM
-
 ## Built With
 
 In short, this app uses [Meteor](https://www.meteor.com/) as the application framework, with [Spacebars](http://blazejs.org/api/spacebars.html) for creating the templates and [less](http://lesscss.org/) for creating the CSS.
@@ -77,4 +69,7 @@ Uses standard js linting
 
 ## Deploying
 
-UNKNOW AT PRESENT
+This application is deplyed via Heroku you can deploy by running the following
+```
+git push heroku master
+```
