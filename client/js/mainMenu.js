@@ -38,8 +38,8 @@ Template.MenuMain.events({
     $('.HelpHelp').removeClass('helpShow')
   },
   'click #ContactUs': function (event) {
-    $('#page-slide').toggleClass('slide')
-    $('#toggle').toggleClass('slide-tog')
+    $('#page-slide').removeClass('slide')
+    $('#toggle').removeClass('slide-tog')
     $('.ThreeDHelp').addClass('helpShow')
     $('.SearchHelp').addClass('helpShow')
     $('.Content').addClass('helpShow')

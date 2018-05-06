@@ -227,6 +227,11 @@ display: none;
 .CloseFilter:hover{
 	background-color: $secondaryColorLight;
 	cursor: pointer;
+	-webkit-transition: background 0.3s linear;
+-moz-transition: background 0.3s linear;
+-ms-transition: background 0.3s linear;
+-o-transition: background 0.3s linear;
+transition: background 0.3s linear;
 
 }
 
@@ -268,6 +273,11 @@ display: none;
 	//padding-bottom: 15vh;
 	//background-color: red;
 }
+
+.conditionInfo ul{
+
+padding-left: 2vw;}
+
 
 
 #PreviousPage, #Help {
@@ -544,7 +554,13 @@ text-align: center;
 vertical-align: middle;
 /* padding-top: 6vh; */
 font: 900 2.2rem 'Roboto Slab', sans-serif;
+-webkit-transition: background 0.3s linear;
+-moz-transition: background 0.3s linear;
+-ms-transition: background 0.3s linear;
+-o-transition: background 0.3s linear;
+transition: background 0.3s linear;
 }
+
 
 
 #MainM1{
@@ -706,13 +722,13 @@ ul {
 }
 
 .CircleChoiceSize{
-	height: 30vh;
+
 	width: 100%;
 	display: flex;
 	text-align: center;
 	border-radius: 10px;
 	color: white;
-	min-height: 30vh;
+	min-height: 100%;
 	/* justify-content: center; */
 	flex-direction: column;
 
@@ -862,6 +878,7 @@ th, td, tr {
 	 	z-index: 2;
 		width: 70vw;
 		margin: 0px;
+		height: 100%;
 		padding-left: 5vw;
  }
 
@@ -959,6 +976,12 @@ width: 100px;
 margin-top: 0vh;
 text-align: center;
 height: 10vh;
+cursor: pointer;
+}
+
+.ButtonStylingHygine:hover{
+	background-color: $secondaryColorLight;
+
 }
 
 .HygineSmallHeading{
@@ -1005,6 +1028,11 @@ background-color: transparent;
 font: 700 2.5rem 'Roboto Slab', sans-serif;
 /* font-size: 200%; */
 color: $primaryColor;
+}
+
+.ToShowOnSmallHy:hover{
+	background-color: $secondaryColorLight;
+
 }
 
 .colArt{
@@ -1312,6 +1340,16 @@ margin-bottom: 4%;
     /* padding-right: 0%; */
     /* border-left: 1px solid black; */
 		 min-height: 12vh;
+		 -webkit-transition: background 0.3s linear;
+-moz-transition: background 0.3s linear;
+-ms-transition: background 0.3s linear;
+-o-transition: background 0.3s linear;
+transition: background 0.3s linear;
+}
+
+.itemOpt:hover{
+	background-color:  $AlternativeColor;
+
 }
 
 .STITitle {
@@ -1679,7 +1717,7 @@ margin-right: 1vw;
 text-decoration: none;
 display: block;
 text-align: center;
-padding-top: 3%;
+// padding-top: 3%;
 /* padding: 29px 36px; */
 /* border: 1px solid #2f2f2f; */
 -webkit-transition: background 0.3s linear;
@@ -1688,6 +1726,11 @@ padding-top: 3%;
 -o-transition: background 0.3s linear;
 transition: background 0.3s linear;
 cursor: pointer;
+}
+
+#ThreeDHelp:hover, #SearchHelp:hover, #Content:hover, #AI:hover, {
+	background-color: $AlternativeColorBlue;
+
 }
 
 .HelpRow{
@@ -1814,6 +1857,15 @@ background-color: $secondaryColorLight;}
 }
 .contactValidationHide{
 	 display: none;
+}
+
+#MainM1:hover, #MainM2:hover, #MainM3:hover, #MainM4:hover {
+background-color: $AlternativeColorBlue ;
+-webkit-transition: background 0.3s linear;
+-moz-transition: background 0.3s linear;
+-ms-transition: background 0.3s linear;
+-o-transition: background 0.3s linear;
+transition: background 0.3s linear;
 }
 
 
@@ -2167,7 +2219,7 @@ cursor: pointer;
     /* position: fixed; */
     z-index: 2;
     width: 100vw;
-    height: 100vh;
+    // height: 100vh;
     margin: 0px;
     /* padding-top: 34vw; */
     /* padding: 8vw; */
@@ -2243,7 +2295,7 @@ margin-top: 40%;
 }
 
 .CircleChoiceSize{
-	height: 33vh;
+
     margin-bottom: 2vh;
 		    min-height: 30vh;
 }
@@ -2406,7 +2458,7 @@ margin-top: 0vh;
 }
 
 .MFOBackHomeHelpRightHelp {
-    margin-right: 0vw !important;
+  //  margin-right: 0vw !important;
 }
 
 .ToShowOnSmallHy{
@@ -2456,6 +2508,11 @@ background-color: $secondaryColorLight;
 
 	.SearchImageHeight3DAI {
 	    height: 32vh;
+	}
+
+	.ToShowOnSmallHy:hover{
+		background-color: $secondaryColorLight;
+
 	}
 
 }
