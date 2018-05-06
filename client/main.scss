@@ -644,12 +644,13 @@ padding: 0%;
 	padding-bottom: 10vh;
 }
 
-.proceed{
-  color: $primaryColor !important;
-  transition: all 225ms ease 0ms;
+.proceed  a{
+  color: $primaryColor !important;}
 
-  &:hover, &:focus { color: $secondaryColor; }
-}
+.proceed  a:hover{
+  color: $secondaryColorLight !important;}
+
+
 
 .STIBackHomeHelp, .MenuBackHomeHelp, .ChoiceBackHomeHelp{
 
@@ -1869,6 +1870,16 @@ background-color: $AlternativeColorBlue ;
 transition: background 0.3s linear;
 }
 
+.chatlogs a{
+	color: $secondaryColorLight;
+}
+
+.chatlogs a:hover{
+	color: $AlternativeColor;
+}
+
+
+
 
 @media screen and (max-width: 480px) {
 
@@ -1911,6 +1922,8 @@ transition: background 0.3s linear;
   .chatlogs {
     height: 15em !important;
   }
+
+
 
   .chat-form textarea {
     height: 2.5em !important;

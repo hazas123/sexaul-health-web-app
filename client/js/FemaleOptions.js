@@ -1,11 +1,7 @@
 import { Template } from 'meteor/templating'
-
 import '../templates/choice.html'
 
-Template.choice.onRendered(function () {
-  view = this.view
-})
-
+// set click events on the diffrent STI's
 Template.FemaleOptions.events({
   // sti's
   'click #FemaleChlamydiaOPTI': function (event) {

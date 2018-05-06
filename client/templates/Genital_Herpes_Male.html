@@ -93,6 +93,8 @@
 </div></div>
 <script type="text/javascript">
 
+// the following functions are used to switch the visibility on or off for the selected nodes(DOM objects) within the x3d scene assets depending on the symptom selected
+
 function symptomzoomMANGH(symptoms, texture1) {
   ResetGHM();
 
@@ -120,10 +122,6 @@ document.getElementById(Camera).setAttribute('set_bind','true');
 
 }
 
-//function ChlamydiaName(){
-//document.getElementById('Genital_Herpes_Model_Man__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
-//document.getElementById('Genital_Herpes_Model_Man__MA_typeBlinn1').setAttribute('transparency', '0.0');
-//}
 function ResetGHM(){
   document.getElementById('Genital_Herpes_Model_Man__MA_Man_Skin_TextureGH').setAttribute('transparency', '0.0');
   document.getElementById('Genital_Herpes_Model_Man__MA_Blister_Texture_GH').setAttribute('transparency', '1.0');

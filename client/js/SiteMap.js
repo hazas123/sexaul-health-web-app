@@ -1,5 +1,6 @@
 import { Template } from 'meteor/templating'
 
+// sets click events
 Template.SiteMap.events({
 
   'click #ReturnHome': function (event) {

@@ -2,6 +2,7 @@ import { Template } from 'meteor/templating'
 import '../templates/ChlamydiaMale.html'
 import '../templates/ChlamydiaFemale.html'
 
+// sets up click events for back buttons on the site
 Template.ChlamydiaMale.events({
   'click #closeSTIMale': function (event) {
     window.history.back()

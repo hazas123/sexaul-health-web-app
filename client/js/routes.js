@@ -1,5 +1,6 @@
 import {Router} from 'meteor/iron:router'
 
+// all of the blow just renders a template when a route is hit
 Router.route('/', function () {
   this.render('loadingScreen')
 })

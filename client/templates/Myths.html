@@ -5,14 +5,6 @@
 <div class="MythsStyleHolder">
 
 
-
-
-<!-- <div id="ReselectChoices" class="MobileMythSettings FullScreenMythSetting-2">
-<img src="./Logo/Logo_Normal.png"  alt="Logo"/>
-
-
-</div> -->
-
 <div id="closeMyths">Close STI</div>
 <div class="AvaliableOptions" >
 <div id="OtherOptionsSelected">
@@ -85,7 +77,7 @@
   </div>
 
   <div class="MobileMythSettings FullScreenMythSetting itemOptMyth HideObjectClassStyling">
-  
+
     <div class="MythOverlay">
     <div class="MythOverlayText">Fill me with something </div>
   </div>
@@ -103,38 +95,6 @@
 
 
 
-<script >
-
-
-
-  var $btns = $('.btn').click(function() {
-    console.log('clicked');
-    console.log(this.id);
-    if (this.id == 'all') {
-      console.log('all');
-      $('#parent > button').fadeIn(450);
-    } else {
-      console.log('else');
-      var $el = $('.' + this.id).fadeIn(450);
-      $('#parent > button').not($el).hide();
-    }
-    $btns.removeClass('active');
-    $(this).addClass('active');
-  })
-
-
-// ask james
-$('.holdbtn').click(function() {
-
-  $('.itemOpt').sort(function(a, b) {
-    if (a.textContent < b.textContent) {
-      return -1;
-    } else {
-      return 1;
-    }
-  }).appendTo('#parent');
-})
-</script>
 
 
 

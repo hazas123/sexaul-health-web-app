@@ -3,6 +3,7 @@ import { HTTP } from 'meteor/http'
 import { Email } from 'meteor/email'
 import { check } from 'meteor/check'
 var redis = require('redis')
+// enviroment variable used to store reddit url
 var client = redis.createClient(process.env.REDIS_URL)
 var apiai = require('apiai')
 var unidecode = require('unidecode')
@@ -12,7 +13,9 @@ Meteor.startup(() => {
 })
 
 Meteor.methods({
+  // function uses APIai SDK to send and recive messages from dialog flow
   callAPI: function (val, uuid) {
+    // Promise used to make code run asynchronous
     return new Promise((resolve, reject) => {
       var app = apiai(process.env.DIALOG_API_KEY)
       var options = {
@@ -29,40 +32,52 @@ Meteor.methods({
     })
   },
 
+  // fuction to get infomation from NHS
   getNhsInfo: function (STIName) {
+    // Promise used to make code run asynchronous
     return new Promise((resolve, reject) => {
       var arg = STIName
+      // build up api query
       var query = 'https://api.nhs.uk/conditions/' + arg
+      // checks if query is in reddis
       client.get(query, Meteor.bindEnvironment(function (error, res) {
         if (error) { reject(new Error('ERROR: ' + error)) }
         if (res) {
+          // decodes unicode characters
           res = unidecode(res)
+          // formats links back to nhs
           res = res.replace(/href=\\"/g, 'target=\\"_blank\\" href=\\"https://www.nhs.uk')
+          // parse rsponce in to JSON Object
           var responce = JSON.parse(res)
           Meteor.call('getMarkdown', responce.mainEntityOfPage, function (error, result) {
             if (error) {
               if (error) { throw error }
             }
-            Meteor._sleepForMs(3000)
             resolve(result)
           })
         } else {
+          // if key doesnt't exist in reddis make the API call
           var options = {
-            'headers': {'subscription-key': process.env.NHS_API_KEY }
+            // enviroment verable used to store api key
+            'headers': { 'subscription-key': process.env.NHS_API_KEY }
           }
           try {
+            // make the API call
             const result = HTTP.call('GET', 'https://api.nhs.uk/conditions/' + arg, options)
+            // add it it reddis on okay
             client.set(query, result.content, function (error) {
               if (error) { throw error }
             })
+            // decodes unicode characters
             res = unidecode(result.content)
+            // formats links back to nhs
             res = res.replace(/href=\\"/g, 'target=\\"_blank\\" href=\\"https://www.nhs.uk')
+            // parse rsponce in to JSON Object
             responce = JSON.parse(res)
             Meteor.call('getMarkdown', responce.mainEntityOfPage, function (error, result) {
               if (error) {
                 if (error) { throw error }
               }
-              Meteor._sleepForMs(3000)
               resolve(result)
             })
           } catch (e) {
@@ -76,16 +91,20 @@ Meteor.methods({
   },
 
   getMarkdown: function (mainEntityOfPage) {
+    // Promise used to make code run asynchronous
     return new Promise((resolve, reject) => {
       var createdHTML
+      // get how many entites there are from the API
       var arrayLength = mainEntityOfPage.length
       for (var i = 0; i < arrayLength; i++) {
+        // build up HTML from the retuned JSON object
         if (i === 0) {
           createdHTML = mainEntityOfPage[i].mainEntityOfPage[0].text
         } else {
           createdHTML += '<button class="mainentityofpagebutton" id="mainEntityOfPage' + i + '">' + mainEntityOfPage[i].text + '</button><div class="mainentityofpage mainEntityOfPage' + i + '" >' + mainEntityOfPage[i].mainEntityOfPage[0].text + '</div>'
         }
       }
+      // pass back the crated html
       resolve(createdHTML)
     })
   },

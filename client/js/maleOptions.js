@@ -1,14 +1,10 @@
 import { Template } from 'meteor/templating'
-import { ReactiveVar } from 'meteor/reactive-var'
-
 import '../templates/choice.html'
 
-// var m = require('mymodule')
-
+// set click events on the diffrent STI's
 Template.maleOptions.events({
   'click #MaleChlamydiaOPTI': function (event) {
     window.location.href = '/ChlamydiaMale'
-    //  console.log('yummy ', hello.GenderToExport, 'another', hello.SexaulityToExport)
   },
   'click #MaleGenitalWartsOPTI': function (event) {
     window.location.href = '/genitalWartsMale'

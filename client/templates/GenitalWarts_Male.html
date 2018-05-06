@@ -8,7 +8,6 @@
   <button class="MFOBackHomeHelp MFOBackHomeHelpRightHelp STIBackHomeHelp " id="Help"> <i class="far fa-question-circle"></i> </button>
   <h1>Genital Warts  <i class="fas fa-mars"></i></h1>
 
-<!--<p>Sexual Health information and services</p> -->
 </div>
 <div class="STIMainHold row">
 
@@ -24,8 +23,6 @@
             <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
                 <viewpoint position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
                 <viewpoint id="Reset" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
-                <Viewpoint id="frontMANGW" position="-0.07427 0.95329 -2.79608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera"></Viewpoint>
-                <Viewpoint id="rightMANGW" position="-2.43383 1.07351 -1.28700" orientation="-0.00318 -0.99950 -0.03159 2.06609" description="camera"></Viewpoint>
 
                 <Viewpoint id="symptomAreaMANGW" position="-0.00427 0.85329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
               <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
@@ -91,6 +88,9 @@
 
 <script type="text/javascript">
 
+// the following functions are used to switch the visibility on or off for the selected nodes(DOM objects) within the x3d scene assets depending on the symptom selected
+
+
 function symptomzoomMANGW(symptoms, texture1) {
   ResetGWM();
 
@@ -117,10 +117,7 @@ document.getElementById(Camera).setAttribute('set_bind','true');
 
 }
 
-//function ChlamydiaName(){
-//document.getElementById('Genital_WartsModelMan__MA_typeBlinn1').setAttribute('diffuseColor', '0 5 0');
-//document.getElementById('Genital_WartsModelMan__MA_typeBlinn1').setAttribute('transparency', '0.0');
-//}
+
 function ResetGWM(){
   document.getElementById('Genital_WartsModelMan__MA_Man_Skin_TextureGW').setAttribute('transparency', '0.0');
   document.getElementById('Genital_WartsModelMan__MA_GW_Skin_Change_Texture_MAN_001').setAttribute('transparency', '1.0');

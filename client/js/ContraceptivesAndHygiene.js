@@ -1,6 +1,6 @@
 import { Template } from 'meteor/templating'
-import { Meteor } from 'meteor/meteor'
 
+// set click events
 Template.RectalDouche.events({
   'click #moreinfo' (event) {
     $('html,body').animate({

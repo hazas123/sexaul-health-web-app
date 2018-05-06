@@ -8,7 +8,7 @@
     <button class="MFOBackHomeHelp MFOBackHomeHelpRightHelp STIBackHomeHelp " id="Help"> <i class="far fa-question-circle"></i> </button>
     <h1>HIV <i class="fas fa-mars"></i></h1>
 
-  <!--<p>Sexual Health information and services</p> -->
+
   </div>
   <div class="STIMainHold row">
 
@@ -24,8 +24,6 @@
               <Background metadata='X3DMetadataObject' skyColor='(1,1,1)' topUrl='[]' transparency='0.0' ></Background>
                   <viewpoint position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
                   <viewpoint id="Reset" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
-                  <Viewpoint id="front" position="-0.07427 0.95329 -2.79608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera"></Viewpoint>
-                  <Viewpoint id="right" position="-2.43383 1.07351 -1.28700" orientation="-0.00318 -0.99950 -0.03159 2.06609" description="camera"></Viewpoint>
 
                   <viewpoint id="SymptomUnmove" position="-0.02427 0.95329 -2.79608"  orientation='-0.000 1.0 0.00219 3.2'></viewpoint>
 
@@ -35,7 +33,7 @@
                   <Viewpoint id="symptomAreaMaleHIVChest" position="-0.00427 1.45329 -0.49608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera" centerOfRotation="0.000000 0.850177 -0.107276"></Viewpoint>
 
 
-                <!--<navigationInfo type="turntable" speed="0"> </navigationInfo> -->
+
                   <Transform><inline  nameSpaceName="MaleModelHIV" mapDEFToID="true" url="./STI_Models_Male/HIV_Man_01.x3d"  ></inline></Transform>
               </scene>
             </x3d>
@@ -103,6 +101,8 @@
   </div>
 
 <script type="text/javascript">
+
+// the following functions are used to switch the visibility on or off for the selected nodes(DOM objects) within the x3d scene assets depending on the symptom selected
 
 
       function symptomzoom1(symptoms, texture1, texture2) {

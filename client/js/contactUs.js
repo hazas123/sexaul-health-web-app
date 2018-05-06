@@ -1,10 +1,8 @@
 import { Meteor } from 'meteor/meteor'
 import { Template } from 'meteor/templating'
-import { Session } from 'meteor/session'
-
 import '../templates/Contact.html'
 
-
+// set click events
 Template.ContactTemp.events({
   'click .btn' (event, instance) {
     var formContainer = $('#form-container')
@@ -12,12 +10,16 @@ Template.ContactTemp.events({
     var failContainer = $('#fail-container')
 
     event.preventDefault()
+    // get the enterd name, email & message
     var email = $('#contact-form')['0'][2].value
     var name = $('#contact-form')['0'][1].value
     var message = $('#contact-form')['0'][3].value
+    // test that enterd email is vaild
     var emailCheck = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)
+    // test that enterd name and message is not blank
     var nameCheck = /.*\S.*/.test(name)
     var messageCheck = /.*\S.*/.test(message)
+    // apply error message if its not what we expect
     if (!emailCheck) {
       $('#emailInvalid').removeClass('contactValidationHide')
       $('#email').addClass('contactValidation')
@@ -40,6 +42,7 @@ Template.ContactTemp.events({
       $('#message').removeClass('contactValidation')
     }
 
+    // if all the enterd values are what we expect pass them to server side function to send emil
     if (emailCheck && nameCheck && messageCheck) {
       Meteor.call('sendEmail', $('#contact-form')['0'][2].value, $('#contact-form')['0'][1].value, $('#contact-form')['0'][3].value, function (error, result) {
         if (error) {
@@ -50,10 +53,7 @@ Template.ContactTemp.events({
         formContainer.slideUp()
       })
     }
-  }
-})
-
-Template.ContactTemp.events({
+  },
   'click #ReturnHome': function (event) {
     if (!$('.helpMain').hasClass('HelpHide')) {
       $('.helpMain').addClass('HelpHide')

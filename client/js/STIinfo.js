@@ -23,11 +23,7 @@ Template.ChlamydiaMale.events({
       'slow')
   },
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
-
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
     }
@@ -60,11 +56,7 @@ Template.ChlamydiaFemale.events({
       'slow')
   },
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
-
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
     }
@@ -97,11 +89,7 @@ Template.GenitalHerpesMale.events({
       'slow')
   },
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
-
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
     }
@@ -134,11 +122,7 @@ Template.GenitalHerpesFemale.events({
       'slow')
   },
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
-
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
     }
@@ -171,10 +155,7 @@ Template.genitalWartsMale.events({
       'slow')
   },
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
@@ -208,10 +189,7 @@ Template.GenitalWartsFemale.events({
       'slow')
   },
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
@@ -245,10 +223,7 @@ Template.GonorrhoeaMale.events({
       'slow')
   },
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
@@ -282,10 +257,7 @@ Template.GonorrhoeaFemale.events({
       'slow')
   },
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
@@ -319,10 +291,7 @@ Template.PubicLiceMale.events({
       'slow')
   },
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
@@ -356,10 +325,7 @@ Template.PubicLiceFemale.events({
       'slow')
   },
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
@@ -393,10 +359,7 @@ Template.ScabiesMale.events({
       'slow')
   },
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
@@ -430,10 +393,7 @@ Template.ScabiesFemale.events({
       'slow')
   },
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
@@ -467,10 +427,7 @@ Template.SyphilisMale.events({
       'slow')
   },
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
@@ -504,10 +461,7 @@ Template.SyphilisFemale.events({
       'slow')
   },
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
@@ -541,10 +495,7 @@ Template.HIVMale.events({
       'slow')
   },
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
@@ -578,10 +529,7 @@ Template.HIVFemale.events({
       'slow')
   },
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
@@ -597,10 +545,7 @@ Template.HIVFemale.events({
 
 Template.RectalDouche.events({
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
@@ -616,10 +561,7 @@ Template.RectalDouche.events({
 
 Template.Condom.events({
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
@@ -635,10 +577,7 @@ Template.Condom.events({
 
 Template.CombinedPill.events({
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
@@ -654,10 +593,7 @@ Template.CombinedPill.events({
 
 Template.Implant.events({
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'
@@ -673,10 +609,7 @@ Template.Implant.events({
 
 Template.Tampon.events({
   'click .STIBackHomeHelp' (event) {
-    console.log(event)
     var BHH = event.currentTarget.id
-
-    console.log(BHH + ' h')
 
     if (BHH === 'ReturnHome') {
       window.location.href = '/choice'

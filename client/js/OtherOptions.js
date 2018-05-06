@@ -1,12 +1,7 @@
 import { Template } from 'meteor/templating'
-
 import '../templates/choice.html'
 
-Template.choice.onRendered(function () {
-  // Added so this actually renders as a blaze view
-  var view = this.view
-})
-
+// set click events on the diffrent STI's
 Template.OtherOptions.events({
   'click #MaleChlamydiaOPTI': function (event) {
     window.location.href = '/chlamydiaMale'

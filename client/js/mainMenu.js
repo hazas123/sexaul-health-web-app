@@ -1,5 +1,6 @@
 import { Template } from 'meteor/templating'
 
+// set menu click events
 Template.MenuMain.events({
 
   'click #HelpLink': function (event) {

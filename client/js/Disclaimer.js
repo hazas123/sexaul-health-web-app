@@ -1,5 +1,6 @@
 import { Template } from 'meteor/templating'
 
+// set click events
 Template.disclaimer.events({
 
   'click #ReturnHome': function (event) {

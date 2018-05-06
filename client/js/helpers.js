@@ -7,8 +7,6 @@ Template.registerHelper('_log', function (Str) {
 
 Template.registerHelper('_equals', function (arg1, arg2, options, context) {
   if (arguments.length < 3) throw new Error('Handlebars Helper "equals" needs 2 parameters')
-  console.log('arg1', arg1)
-  console.log('arg2', arg2)
   if (options && options.hasOwnProperty('fn') && options.fn instanceof Function) {
     if (arg1 === arg2) {
       return options.fn(context)

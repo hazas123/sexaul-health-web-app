@@ -6,12 +6,6 @@
 
 
 
-
-<!-- <div id="ReselectChoices" class="col-2">
-<img src="./Logo/Logo_Normal.png"  alt="Logo"/>
-
-
-</div> -->
 <div class="AvaliableOptions" >
 <div id="maleOptionsSelected">
 
@@ -110,13 +104,9 @@
 
 
   var $btns = $('.btn').click(function() {
-    console.log('clicked');
-    console.log(this.id);
     if (this.id == 'all') {
-      console.log('all');
       $('#parent > button').fadeIn(450);
     } else {
-      console.log('else');
       var $el = $('.' + this.id).fadeIn(450);
       $('#parent > button').not($el).hide();
     }
@@ -124,8 +114,6 @@
     $(this).addClass('active');
   })
 
-
-// ask james
 $('.holdbtn').click(function() {
 
   $('.itemOpt').sort(function(a, b) {
